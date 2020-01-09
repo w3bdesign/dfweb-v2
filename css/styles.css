@@ -24,10 +24,14 @@
 
 /* Slutt CSS for IE 11 og 10 */
 
-html {
+* {
     box-sizing: border-box;
+}
+
+html {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -35,6 +39,8 @@ body {
     margin: 30px 50px;
     line-height: 1.4;
 }
+
+
 
 .btn {
     background: var(--dark);
@@ -57,7 +63,7 @@ img {
 
 /* Navigering */
 
-.main-nav {   
+.main-nav {
     background: var(--dark);
 }
 
@@ -141,7 +147,7 @@ img {
     grid-area: top-box-a;
 }
 
-.top-box-a  a{
+.top-box-a a {
     color: #fff;
 }
 
@@ -153,7 +159,9 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.bokser .fab { padding: 10px;}
+.bokser .fab {
+    padding: 10px;
+}
 
 .boks {
     background: var(--primary);
@@ -179,20 +187,19 @@ img {
     grid-template-columns: 1fr;
     background: var(--primary);
     color: var(--text);
-    box-shadow: var(--shadow);    
+    box-shadow: var(--shadow);
 }
 
 
 .boks p {
-	text-align: center;
+    text-align: center;
 }
 
 .bokser a {
-	color: #fff;
+    color: #fff;
 }
 
-.portfolio-content span
-{
+.portfolio-content span {
     padding: 0.5rem;
 
 }
@@ -207,7 +214,8 @@ img {
     box-shadow: var(--shadow);
 }
 
-h3, .portfolio-content span{
+h3,
+.portfolio-content span {
     text-align: center;
     text-transform: uppercase;
 }
@@ -217,26 +225,26 @@ h3, .portfolio-content span{
     grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     /*grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));*/
-   
-   
+
+
 }
 
 .portfolio img {
-	width: auto;
-	box-shadow: var(--shadow);
-	max-height: 300px;
+    width: auto;
+    box-shadow: var(--shadow);
+    max-height: 300px;
 }
 
 /* Footer */
 footer {
-   margin-top: 2rem;
+    margin-top: 2rem;
     background: var(--dark);
     color: var(--text);
     text-align: center;
     padding: 1rem;
-    
-    
-    
+
+
+
 }
 
 /* Animasjoner */
@@ -253,8 +261,9 @@ footer {
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-  }
-  .hvr-sweep-to-top:before {
+}
+
+.hvr-sweep-to-top:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -273,16 +282,22 @@ footer {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+}
+
+.hvr-sweep-to-top:hover,
+.hvr-sweep-to-top:focus,
+.hvr-sweep-to-top:active {
     color: white;
-  }
-  .hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+}
+
+.hvr-sweep-to-top:hover:before,
+.hvr-sweep-to-top:focus:before,
+.hvr-sweep-to-top:active:before {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
-  }
+}
 
-  /* Overline From Center */
+/* Overline From Center */
 .hvr-overline-from-center {
     display: inline-block;
     vertical-align: middle;
@@ -291,8 +306,9 @@ footer {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-  }
-  .hvr-overline-from-center:before {
+}
+
+.hvr-overline-from-center:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -307,17 +323,19 @@ footer {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-  .hvr-overline-from-center:hover:before, .hvr-overline-from-center:focus:before, .hvr-overline-from-center:active:before {
-    left: 20px;   
+}
+
+.hvr-overline-from-center:hover:before,
+.hvr-overline-from-center:focus:before,
+.hvr-overline-from-center:active:before {
+    left: 20px;
     right: 20px;
-  }
+}
 
 
 /* Media Queries */
 
-@media (min-width: 740px) and (max-width:960px)
-{
+@media (min-width: 740px) and (max-width:960px) {
     .bokser {
         display: grid;
         grid-gap: 20px;
@@ -328,8 +346,7 @@ footer {
 
 
 
-@media (min-width: 700px)
-{
+@media (min-width: 700px) {
     .main-nav li:first-of-type {
         border-left: none;
     }
@@ -354,12 +371,11 @@ footer {
             'top-box-a top-box-a';
     }
 
-    .top-box-a
-    {
+    .top-box-a {
         grid-template-columns: 1fr;
     }
 
-    .top-box-a a {       
+    .top-box-a a {
         padding: 15px;
     }
 
@@ -384,9 +400,9 @@ footer {
     .portfolio {
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: 1fr;       
+        grid-template-columns: 1fr;
     }
-    
+
 }
 
 @media (max-width: 500px) {
@@ -398,21 +414,20 @@ footer {
     .portfolio {
         display: grid;
         grid-gap: 20px;
-        grid-template-columns: 1fr;       
+        grid-template-columns: 1fr;
     }
 
-      .topp-kontainer {
+    .topp-kontainer {
         grid-template-areas:
             'showcase'
             'top-box-a';
     }
 
-    .top-box-a a {       
+    .top-box-a a {
         padding: 15px;
     }
 
-    .top-box-a
-    {
+    .top-box-a {
         grid-template-columns: 1fr;
     }
 
