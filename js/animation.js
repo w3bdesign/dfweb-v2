@@ -19,9 +19,9 @@ timeline.from('.portfolio-header', { duration: 1, opacity: 0 });
 
 timeline.from('.port-1', { duration: 0.4, opacity: 0 });
 timeline.from('.port-2', { duration: 0.4, opacity: 0 });
-/*
 timeline.from('.port-3', { duration: 0.4, opacity: 0 });
 
+/*
 timeline.from('.port-4', { duration: 0.4, opacity: 0 });
 timeline.from('.port-5', { duration: 0.4, opacity: 0 });
 timeline.from('.port-6', { duration: 0.4, opacity: 0 });
