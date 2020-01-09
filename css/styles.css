@@ -24,12 +24,9 @@
 
 /* Slutt CSS for IE 11 og 10 */
 
-* {
-    box-sizing: border-box;
-}
-
 html {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
     color: var(--text);
     scroll-behavior: smooth;
 }
@@ -39,8 +36,6 @@ body {
     margin: 30px 50px;
     line-height: 1.4;
 }
-
-
 
 .btn {
     background: var(--dark);
@@ -54,12 +49,10 @@ img {
     max-width: 100%;
 }
 
-
 .wrapper {
     display: grid;
     grid-gap: 20px;
 }
-
 
 /* Navigering */
 
@@ -77,7 +70,6 @@ img {
 }
 
 .main-nav a {
-    /* background: var(--primary); */
     background: var(--dark);
     display: block;
     text-decoration: none;
