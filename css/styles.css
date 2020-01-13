@@ -80,10 +80,6 @@ img {
     font-size: 1.1rem;
 }
 
-.main-nav a:hover {
-    color: var(--light);
-}
-
 /* Topp Kontainer */
 .topp-kontainer {
     display: grid;
