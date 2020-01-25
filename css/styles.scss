@@ -1,8 +1,5 @@
-$primary: rgba(13, 50, 77, 1);
-$dark: rgba(14, 8, 0, 1);
-$light: rgba(157, 162, 171, 1);
-$shadow: rgba(104, 104, 104, 0.8);
-$text: #fff;
+// TODO Replace with @use
+@import 'variabler';
 
 /* CSS for Scrollmagic */
 .reveal {
