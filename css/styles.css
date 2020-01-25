@@ -1,5 +1,5 @@
 /* CSS for Scrollmagic */
-#reveal1, #reveal2, #reveal3, #reveal4 {
+.reveal {
     opacity: 0;
     -webkit-transform: scale(0.9);
          -moz-transform: scale(0.9);
@@ -12,7 +12,7 @@
              -o-transition: all 1s ease-in-out;
                     transition: all 1s ease-in-out;
 }
-#reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible {
+.reveal.visible {
     opacity: 1;
     -webkit-transform: none;
          -moz-transform: none;
