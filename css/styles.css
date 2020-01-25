@@ -114,8 +114,8 @@ img {
 .showcase {
   grid-area: showcase;
   min-height: 100px;
-  max-height: 200px;
-  background: url(https://image.ibb.co/kYJK8x/showcase.jpg);
+  /*max-height: 200px;*/
+  background: url(../img/background.jpg);
   background-size: cover;
   background-position: center;
   padding: 3rem;
@@ -126,7 +126,7 @@ img {
   box-shadow: var(--shadow);
 }
 
-.showcase h1 {
+.showcase h2 {
   font-size: 4rem;
   margin-bottom: 0;
   color: var(--text);
