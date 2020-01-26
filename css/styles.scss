@@ -1,6 +1,6 @@
 // TODO Replace with @use and clean up folder-structure
 @import 'variabler';
-@import "../css/hover/hover.scss";
+@import '../css/hover/hover.scss';
 
 /* CSS for Scrollmagic */
 .reveal {
@@ -73,25 +73,25 @@ img {
 
 .main-nav {
   background: $dark;
-}
 
-.main-nav ul {
-  display: grid;
-  grid-gap: 20px;
-  padding: 0px;
-  list-style: none;
-  grid-template-columns: repeat(4, 1fr);
-}
+  ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0px;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-.main-nav a {
-  background: $dark;
-  display: block;
-  text-decoration: none;
-  padding: 0.8rem;
-  text-align: center;
-  color: $text;
-  text-transform: uppercase;
-  font-size: 1.1rem;
+  a {
+    background: $dark;
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: $text;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
 }
 
 /* Topp Kontainer */
@@ -106,7 +106,7 @@ img {
 /* Showcase */
 .showcase {
   grid-area: showcase;
-  min-height: 100px;  
+  min-height: 100px;
   background: url(../img/background.jpg);
   background-size: cover;
   background-position: center;
@@ -116,18 +116,18 @@ img {
   align-items: start;
   justify-content: center;
   box-shadow: $shadow;
-}
 
-.showcase h2 {
-  font-size: 4rem;
-  margin-bottom: 0;
-  color: $text;
-}
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: $text;
+  }
 
-.showcase p {
-  font-size: 1.3rem;
-  margin-top: 0;
-  color: $text;
+  p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: $text;
+  }
 }
 
 /* Top Box */
@@ -138,18 +138,18 @@ img {
   justify-items: center;
   box-shadow: $shadow;
   padding: 1.5rem;
-}
 
-.top-box .price {
-  font-size: 2.5rem;
+  .price {
+    font-size: 2.5rem;
+  }
 }
 
 .top-box-a {
   grid-area: top-box-a;
-}
 
-.top-box-a a {
-  color: #fff;
+  a {
+    color: #fff;
+  }
 }
 
 /* Bokser */
@@ -158,10 +158,10 @@ img {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
 
-.bokser .fab {
-  padding: 10px;
+  .fab {
+    padding: 10px;
+  }
 }
 
 .boks {
@@ -221,13 +221,13 @@ h3,
 .portfolio {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);  
-}
+  grid-template-columns: repeat(2, 1fr);
 
-.portfolio img {
-  width: auto;
-  box-shadow: $shadow;
-  max-height: 300px;
+  .portfolio img {
+    width: auto;
+    box-shadow: $shadow;
+    max-height: 300px;
+  }
 }
 
 /* Footer */
@@ -255,7 +255,7 @@ footer {
     border-left: none;
   }
 
-  .main-nav li {    
+  .main-nav li {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
   }
 }

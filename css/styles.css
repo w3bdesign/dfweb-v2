@@ -336,7 +336,7 @@ h3,
       grid-template-columns: repeat(2, 1fr);
 }
 
-.portfolio img {
+.portfolio .portfolio img {
   width: auto;
   -webkit-box-shadow: rgba(104, 104, 104, 0.8);
           box-shadow: rgba(104, 104, 104, 0.8);
