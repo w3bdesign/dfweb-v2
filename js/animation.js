@@ -1,18 +1,15 @@
 const startScrollMagic = () => {
-  // init controller
   const controller = new ScrollMagic.Controller();
-  // build scene
   const revealElements = document.getElementsByClassName('reveal');
   for (let i = 0; i < revealElements.length; i++) {
-    // create a scene for each element
-    const myOffset = i === revealElements.length -1 ? -100 : 300;
+    const myOffset = i === revealElements.length - 1 ? -100 : 300;
     new ScrollMagic.Scene({
-      triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-      offset: myOffset, // default = 100
-      reverse: false, // only do once
+      triggerElement: revealElements[i],
+      offset: myOffset, // standard = 100
+      reverse: false,
       triggerHook: 0.9
     })
-      .setClassToggle(revealElements[i], 'visible') // add class toggle
+      .setClassToggle(revealElements[i], 'visible')
       .addTo(controller);
   }
 };
