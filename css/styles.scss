@@ -205,8 +205,7 @@ img {
 
 .portfolio-header {
   display: grid;
-  grid-template-columns: 1fr;
-  /* background: $primary; */
+  grid-template-columns: 1fr;  
   background: $dark;
   color: $text;
   box-shadow: $shadow;
