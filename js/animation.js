@@ -5,7 +5,7 @@ const startScrollMagic = () => {
   const revealElements = document.getElementsByClassName('reveal');
   for (let i = 0; i < revealElements.length; i++) {
     // create a scene for each element
-    const myOffset = i === revealElements.length -1 ? -100 : 200;
+    const myOffset = i === revealElements.length -1 ? -100 : 300;
     new ScrollMagic.Scene({
       triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
       offset: myOffset, // default = 100
