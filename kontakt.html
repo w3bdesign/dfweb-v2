@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Portefølje" />
+    <link rel="stylesheet" type="text/css" href="scss/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@0.6.0/modern-normalize.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Portefølje</title>
+  </head>
+
+  <body>
+    <div class="ieonly" style="display: none;">
+      <h1>
+        Beklager, men vi støtter ikke IE11 eller eldre nettlesere<br />Vennligst
+        bytt til
+        <a
+          href="https://www.mozilla.org/nb-NO/firefox/new/"
+          title="Firefox"
+          rel="noreferrer"
+          >Mozilla Firefox</a
+        >
+      </h1>
+    </div>
+    <div class="wrapper">
+      <!-- Navigasjon -->
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="index.html" title="Hjem" class="main-nav-hjem fade"
+              >Hjem</a
+            >
+          </li>
+          <li>
+            <a href="portefølje.html" title="Om meg" class="main-nav-ommeg fade"
+              >Portefølje</a
+            >
+          </li>
+          <li>
+            <a
+              href="./upload/CV.pdf"
+              target="_blank"
+              title="CV"
+              rel="noreferrer"
+              class="main-nav-cv fade"
+              >CV</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/daniel-fjeldstad-1947a043/"
+              target="_blank"
+              title="Kontakt"
+              rel="noreferrer"
+              class="main-nav-kontakt fade"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Portefølje -->
+      <section class="portfolio-header reveal">
+        <h3>Kontaktskjema</h3>
+      </section>
+
+      <section class="kontakt">
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name"/></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email"/></label>
+          </p>
+          <p>
+            <label
+              >Your Role:
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label
+            >
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </section>
+
+      <!-- Bunn / footer -->
+      <footer class="reveal">
+        <p>Daniel &copy; 2020</p>
+      </footer>
+    </div>
+    <!-- Wrapper Slutt -->
+
+    <!-- Inkluder GSAP for animasjoner -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+
+    <!-- Inkluder ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+    <script src="./js/animation.js"></script>
+  </body>
+</html>
