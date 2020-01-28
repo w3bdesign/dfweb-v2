@@ -1,8 +1,15 @@
-// TODO Replace with @use and clean up folder-structure
-@import 'variabler';
-@import '../css/hover/hover';
+// TODO Clean up folder-structure
+@use 'variabler' as variabler;
 
-/* CSS for Scrollmagic */
+/* Effekter */
+.fade {
+  transition: background-color 500ms;
+  &:hover {
+    background-color: variabler.$light;
+  }
+}
+
+/* CSS for Scrollmagic  */
 .reveal {
   opacity: 0;
   -webkit-transform: scale(0.9);
@@ -42,19 +49,19 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  color: $text;
+  color: variabler.$text;
   scroll-behavior: smooth;
 }
 
 body {
-  background: $text;
+  background: variabler.$text;
   margin: 30px 50px;
   line-height: 1.4;
 }
 
 .btn {
-  background: $dark;
-  color: $text;
+  background: variabler.$dark;
+  color: variabler.$text;
   padding: 0.6rem 1.3rem;
   text-decoration: none;
   border: 0;
@@ -72,23 +79,23 @@ img {
 /* Navigering */
 
 .main-nav {
-  background: $dark;
+  background: variabler.$dark;
 
   ul {
     display: grid;
     grid-gap: 20px;
-    padding: 0px;
+    padding: 0px 20px 0px 20px;
     list-style: none;
     grid-template-columns: repeat(4, 1fr);
   }
 
   a {
-    background: $dark;
+    background: variabler.$dark;
     display: block;
     text-decoration: none;
     padding: 0.8rem;
     text-align: center;
-    color: $text;
+    color: variabler.$text;
     text-transform: uppercase;
     font-size: 1.1rem;
   }
@@ -115,28 +122,28 @@ img {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  box-shadow: $shadow;
+  box-shadow: variabler.$shadow;
 
   h2 {
     font-size: 4rem;
     margin-bottom: 0;
-    color: $text;
+    color: variabler.$text;
   }
 
   p {
     font-size: 1.3rem;
     margin-top: 0;
-    color: $text;
+    color: variabler.$text;
   }
 }
 
 /* Top Box */
 .top-box {
-  background: $primary;
+  background: variabler.$primary;
   display: grid;
   align-items: center;
   justify-items: center;
-  box-shadow: $shadow;
+  box-shadow: variabler.$shadow;
   padding: 1.5rem;
 
   .price {
@@ -165,16 +172,16 @@ img {
 }
 
 .boks {
-  background: $primary;
+  background: variabler.$primary;
   text-align: center;
   padding: 1.5rem 2rem;
-  box-shadow: $shadow;
+  box-shadow: variabler.$shadow;
 }
 
 /* Info */
 .info {
-  background: $primary;
-  box-shadow: $shadow;
+  background: variabler.$primary;
+  box-shadow: variabler.$shadow;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(2, 1fr);
@@ -186,9 +193,9 @@ img {
 .portfolio-content {
   display: grid;
   grid-template-columns: 1fr;
-  background: $primary;
-  color: $text;
-  box-shadow: $shadow;
+  background: variabler.$primary;
+  color: variabler.$text;
+  box-shadow: variabler.$shadow;
 }
 
 .boks p {
@@ -205,10 +212,10 @@ img {
 
 .portfolio-header {
   display: grid;
-  grid-template-columns: 1fr;  
-  background: $dark;
-  color: $text;
-  box-shadow: $shadow;
+  grid-template-columns: 1fr;
+  background: variabler.$dark;
+  color: variabler.$text;
+  box-shadow: variabler.$shadow;
 }
 
 h3,
@@ -224,7 +231,7 @@ h3,
 
   .portfolio img {
     width: auto;
-    box-shadow: $shadow;
+    box-shadow: variabler.$shadow;
     max-height: 300px;
   }
 }
@@ -232,8 +239,8 @@ h3,
 /* Footer */
 footer {
   margin-top: 2rem;
-  background: $dark;
-  color: $text;
+  background: variabler.$dark;
+  color: variabler.$text;
   text-align: center;
   padding: 1rem;
 }
@@ -336,11 +343,4 @@ footer {
   .showcase {
     align-items: center;
   }
-}
-
-.hvr-overline-from-center:hover:before,
-.hvr-overline-from-center:focus:before,
-.hvr-overline-from-center:active:before {
-  left: 20px;
-  right: 20px;
 }
