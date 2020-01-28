@@ -1,8 +1,8 @@
 @use 'mixins/variabler' as variabler;
+@use "mixins/media_queries";
 @use "mixins/scrollmagic";
 @use "mixins/navigering";
 @use "mixins/portefolje";
-@use "mixins/media_queries";
 @use "mixins/form";
 
 /* Effekter */
@@ -87,11 +87,16 @@ img {
 /* Top Box */
 .top-box {
   background: variabler.$primary;
-  display: grid;
+  /*display: grid;
   align-items: center;
-  justify-items: center;
+  justify-items: center;*/
+  text-align: center;
   box-shadow: variabler.$shadow;
   padding: 1.5rem;
+
+  p {
+    text-align: left;
+  }
 
   .price {
     font-size: 2.5rem;
@@ -107,9 +112,9 @@ img {
 /* Bokser */
 
 .bokser {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /*display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;*/
 
   .fab {
     padding: 10px;

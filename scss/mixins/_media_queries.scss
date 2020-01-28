@@ -10,11 +10,19 @@
   }
 }
 
-@media (min-width: 740px) and (max-width: 960px) {
+@media (min-width: 851px) {
   .bokser {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .bokser {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -29,7 +37,11 @@
 }
 
 @media (max-width: 700px) {
- 
+  .bokser {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   .showcase {
     align-items: center !important;
