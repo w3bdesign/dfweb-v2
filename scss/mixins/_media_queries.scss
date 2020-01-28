@@ -84,13 +84,8 @@
   }
 
   .top-box-a {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
   }
-
-  .top-box-a a {
-    padding: 15px;
-  }
-
   .showcase h1 {
     font-size: 2.5rem;
   }
@@ -131,10 +126,6 @@
     grid-template-areas:
       'showcase'
       'top-box-a' !important;
-  }
-
-  .top-box-a a {
-    padding: 15px;
   }
 
   .top-box-a {

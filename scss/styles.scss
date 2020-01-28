@@ -5,12 +5,12 @@
 @use "mixins/kontakt";
 @use "mixins/top-box";
 @use "mixins/media_queries";
-
+ 
 /* Effekter */
 .fade {
   transition: background-color 500ms;
   &:hover {
-    background-color: variabler.$light; 
+    background-color: variabler.$light;  
   }
 }
 
@@ -23,7 +23,7 @@ html {
   color: variabler.$text;
   scroll-behavior: smooth;
 }
-
+ 
 body {
   background: variabler.$text;
   margin: 30px 50px;
