@@ -1,5 +1,10 @@
 /* Portefølje */
 @use 'variabler' as variabler;
+.portfolio-header {
+h4 {
+	text-align: center;
+}
+}
 
 .portfolio-content {
   display: grid;

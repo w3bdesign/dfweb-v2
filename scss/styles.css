@@ -37,6 +37,10 @@
 }
 
 /* Portefølje */
+.portfolio-header h4 {
+  text-align: center;
+}
+
 .portfolio-content {
   display: grid;
   grid-template-columns: 1fr;
