@@ -28,10 +28,9 @@
 }
 
 @media (min-width: 700px) {
-
   .main-nav {
     background: variabler.$dark;
-  
+
     ul {
       display: grid;
       grid-gap: 20px;
@@ -47,18 +46,21 @@
     li:first-of-type {
       border-left: none;
     }
-  } 
+  }
 }
 
 @media (max-width: 700px) {
+  .kontakt-div input,
+  .kontakt-div textarea {
+    min-width: 400px;
+  }
 
   .main-nav {
-    a {	
+    a {
       border: 1px solid variabler.$light;
     }
-  
+
     ul {
-     
       grid-template-columns: 1fr;
     }
   }
@@ -84,7 +86,7 @@
   }
 
   .top-box-a {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
   .showcase h1 {
     font-size: 2.5rem;
@@ -112,6 +114,21 @@
 }
 
 @media (max-width: 500px) {
+  .kontakt-div {
+    padding: 0px;
+    min-width: 90vw;
+  }
+
+  .kontakt-div input,
+  .kontakt-div textarea {
+    min-width: 230px;
+  }
+
+  .portfolio-header.reveal.visible,
+  .main-nav {
+    max-width: 90vw;
+  }
+
   .main-nav {
     background: none;
   }

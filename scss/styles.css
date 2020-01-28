@@ -206,6 +206,11 @@ footer {
   }
 }
 @media (max-width: 700px) {
+  .kontakt-div input,
+.kontakt-div textarea {
+    min-width: 400px;
+  }
+
   .main-nav a {
     border: 1px solid #9da2ab;
   }
@@ -262,6 +267,21 @@ footer {
   }
 }
 @media (max-width: 500px) {
+  .kontakt-div {
+    padding: 0px;
+    min-width: 90vw;
+  }
+
+  .kontakt-div input,
+.kontakt-div textarea {
+    min-width: 230px;
+  }
+
+  .portfolio-header.reveal.visible,
+.main-nav {
+    max-width: 90vw;
+  }
+
   .main-nav {
     background: none;
   }
