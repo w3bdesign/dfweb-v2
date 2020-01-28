@@ -171,6 +171,10 @@
           box-shadow: rgba(104, 104, 104, 0.8);
 }
 
+.portfolio .boks p {
+  text-align: center;
+}
+
 .boks p {
   text-align: center;
 }
@@ -371,8 +375,8 @@ img {
 /* Bokser */
 .bokser {
   /*display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr;*/
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;*/
 }
 .bokser .fab {
   padding: 10px;
