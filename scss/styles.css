@@ -126,6 +126,12 @@ footer {
   }
 }
 @media (max-width: 700px) {
+  .showcase {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+
   .main-nav {
     background: none;
   }
