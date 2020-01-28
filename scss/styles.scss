@@ -12,22 +12,21 @@
   }
 }
 
-* { font-family: Arial, Helvetica, sans-serif;}
+* {
+  font-family: Arial, Helvetica, sans-serif; // Nødvendig etter Normalize.css
+}
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   color: variabler.$text;
   scroll-behavior: smooth;
 }
 
-
-
 body {
   background: variabler.$text;
   margin: 30px 50px;
   line-height: 1.4;
-  padding: 20px;
+  padding: 20px; // Nødvendig etter Normalize.css
 }
 
 .btn {
