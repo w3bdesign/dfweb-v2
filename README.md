@@ -2,6 +2,6 @@
 <a href="https://validator.w3.org/" title="HTML validator"><img src="https://github.com/w3bdesign/dfweb/blob/master/badges/html5valid.svg" alt="Valid HTML 5">
 
 # Dfweb
-Portfolio
-<hr>
-Portefølje
+
+Currently a continous work in progress.
+
