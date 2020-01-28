@@ -127,7 +127,7 @@ footer {
   }
 
   .topp-kontainer {
-    grid-template-areas: "showcase showcase" "top-box-a top-box-a";
+    grid-template-areas: "showcase showcase" "top-box-a top-box-a" !important;
   }
 
   .top-box-a {
@@ -174,7 +174,7 @@ footer {
   }
 
   .topp-kontainer {
-    grid-template-areas: "showcase" "top-box-a";
+    grid-template-areas: "showcase" "top-box-a" !important;
   }
 
   .top-box-a a {

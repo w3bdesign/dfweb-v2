@@ -36,7 +36,7 @@
   .topp-kontainer {
     grid-template-areas:
       'showcase showcase'
-      'top-box-a top-box-a';
+      'top-box-a top-box-a' !important;
   }
 
   .top-box-a {
@@ -86,7 +86,7 @@
   .topp-kontainer {
     grid-template-areas:
       'showcase'
-      'top-box-a';
+      'top-box-a' !important;
   }
 
   .top-box-a a {
