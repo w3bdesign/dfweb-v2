@@ -2,15 +2,15 @@
 @use "mixins/scrollmagic";
 @use "mixins/navigering";
 @use "mixins/portefolje";
-@use "mixins/media_queries"; 
-@use "mixins/form"; 
- 
+@use "mixins/media_queries";
+@use "mixins/form";
+
 /* Effekter */
 .fade {
   transition: background-color 500ms;
   &:hover {
     background-color: variabler.$light;
-  } 
+  }
 }
 
 * {
@@ -52,8 +52,8 @@ img {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
-    'showcase showcase top-box-a'
-    'showcase showcase top-box-a';
+    'showcase showcase showcase'
+    'showcase showcase showcase';
 }
 
 /* Showcase */
@@ -66,7 +66,8 @@ img {
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  //align-items: start;
+  align-items: center;
   justify-content: center;
   box-shadow: variabler.$shadow;
 
@@ -98,8 +99,6 @@ img {
 }
 
 .top-box-a {
-  grid-area: top-box-a;
-
   a {
     color: #fff;
   }
@@ -122,6 +121,10 @@ img {
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: variabler.$shadow;
+}
+
+.boks p {
+  text-align: left;
 }
 
 /* Info */

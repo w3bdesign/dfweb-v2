@@ -18,6 +18,8 @@ const startAnimation = () => {
   // Lag en timeline instans
   const timeline = gsap.timeline();
 
+  timeline.from('.topp-kontainer', { duration: 0.4, opacity: 0 });
+
   // Main nav
   timeline.from('.main-nav-hjem', { duration: 0.4, x: -2500 });
   timeline.from('.main-nav-ommeg', { duration: 0.4, x: -2500 });
