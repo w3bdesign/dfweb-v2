@@ -1,0 +1,22 @@
+@use 'variabler' as variabler;
+/* Top Box */
+.top-box {
+    background: variabler.$primary;  
+    text-align: center;
+    box-shadow: variabler.$shadow;
+    padding: 1.5rem;
+  
+    p {
+      text-align: left;
+    }
+  
+    .price {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .top-box-a {
+    a {
+      color: #fff;
+    }
+  }

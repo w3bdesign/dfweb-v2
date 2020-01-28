@@ -1,15 +1,16 @@
 @use 'mixins/variabler' as variabler;
-@use "mixins/media_queries";
 @use "mixins/scrollmagic";
 @use "mixins/navigering";
 @use "mixins/portefolje";
-@use "mixins/form";
+@use "mixins/kontakt";
+@use "mixins/top-box";
+@use "mixins/media_queries";
 
 /* Effekter */
 .fade {
   transition: background-color 500ms;
   &:hover {
-    background-color: variabler.$light;
+    background-color: variabler.$light; 
   }
 }
 
@@ -47,13 +48,13 @@ img {
   grid-gap: 20px;
 }
 
-/* Topp Kontainer */
-.topp-kontainer {
+/* Topp Kontainer */ 
+.topp-kontainer { 
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
     'showcase showcase showcase'
-    'showcase showcase showcase';
+    'showcase showcase showcase';  
 }
 
 /* Showcase */
@@ -84,37 +85,11 @@ img {
   }
 }
 
-/* Top Box */
-.top-box {
-  background: variabler.$primary;
-  /*display: grid;
-  align-items: center;
-  justify-items: center;*/
-  text-align: center;
-  box-shadow: variabler.$shadow;
-  padding: 1.5rem;
 
-  p {
-    text-align: left;
-  }
-
-  .price {
-    font-size: 2.5rem;
-  }
-}
-
-.top-box-a {
-  a {
-    color: #fff;
-  }
-}
 
 /* Bokser */
 
-.bokser {
-  /*display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr;*/
+.bokser { 
 
   .fab {
     padding: 10px;
@@ -125,11 +100,11 @@ img {
   background: variabler.$primary;
   text-align: center;
   padding: 1.5rem 2rem;
-  box-shadow: variabler.$shadow;
+  box-shadow: variabler.$shadow; 
 }
 
 .boks p {
-  text-align: left;
+  text-align: left; 
 }
 
 /* Info */
