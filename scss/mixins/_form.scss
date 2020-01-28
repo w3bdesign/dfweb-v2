@@ -1,0 +1,25 @@
+/* CSS for Form */
+@use "variabler" as variabler;
+
+.kontakt-div {
+  input,
+  textarea {
+    color: variabler.$primary;
+    min-width: 400px;
+  }
+}
+
+.kontakt-div {
+  background-color: #0d324d;
+  min-width: 400px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.kontakt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

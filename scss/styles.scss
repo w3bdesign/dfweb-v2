@@ -2,14 +2,15 @@
 @use "mixins/scrollmagic";
 @use "mixins/navigering";
 @use "mixins/portefolje";
-@use "mixins/media_queries";
-
+@use "mixins/media_queries"; 
+@use "mixins/form";   
+ 
 /* Effekter */
 .fade {
   transition: background-color 500ms;
   &:hover {
     background-color: variabler.$light;
-  }
+  } 
 }
 
 * {

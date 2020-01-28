@@ -11,10 +11,13 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@0.6.0/modern-normalize.min.css"
     />
+    <!-- Rensket med PurgeCSS -->
+    <link rel="stylesheet" href="./css/purecss.min.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -64,7 +67,7 @@
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/daniel-fjeldstad-1947a043/"
+              href="kontakt.html"
               target="_blank"
               title="Kontakt"
               rel="noreferrer"
@@ -81,29 +84,39 @@
       </section>
 
       <section class="kontakt">
-        <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label
-              >Your Role:
-              <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select></label
-            >
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+        <div class="kontakt-div">
+          <form
+            name="kontaktskjema"
+            method="POST"
+            data-netlify="true"
+            class="pure-form"
+          >
+            <fieldset class="pure-group">
+              <h4>Vennligst fyll ut skjemaet under</h4>
+              <label for="text">
+                Fullt navn
+                <br />
+                <input id="text" type="text" placeholder="Fullt navn" />
+              </label>
+
+              <label for="phone"
+                >Telefon
+                <br />
+                <input id="phone" type="text" placeholder="Telefon" />
+              </label>
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="textarea"
+                >Hva ønsker du å si?
+                <br />
+                <textarea id="textarea"></textarea>
+              </label>
+            </fieldset>
+
+            <button type="submit" class="btn fade">Send skjema</button>
+          </form>
+        </div>
       </section>
 
       <!-- Bunn / footer -->

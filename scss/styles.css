@@ -196,6 +196,38 @@ footer {
             align-items: center;
   }
 }
+/* CSS for Form */
+.kontakt-div input,
+.kontakt-div textarea {
+  color: #0d324d;
+  min-width: 400px;
+}
+
+.kontakt-div {
+  background-color: #0d324d;
+  min-width: 400px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.kontakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* Effekter */
 .fade {
   -webkit-transition: background-color 500ms;
