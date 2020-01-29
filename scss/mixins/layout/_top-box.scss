@@ -1,22 +1,24 @@
 @use '../variabler' as variabler;
 /* Top Box */
 .top-box {
-    background: variabler.$primary;  
-    text-align: center;
-    box-shadow: variabler.$shadow;
-    padding: 1.5rem;
-  
-    p {
-      text-align: left;
-    }
-  
-    .price {
-      font-size: 2.5rem;
-    }
+  background: variabler.$primary;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+
+  p {
+    text-align: left;
   }
-  
-  .top-box-a {
-    a {
-      color: #fff;
-    }
+
+  .price {
+    font-size: 2.5rem;
   }
+}
+
+.top-box-a {
+  a {
+    color: #fff;
+  }
+}
