@@ -1,29 +1,29 @@
 @use 'mixins/variabler' as variabler;
 @use "mixins/scrollmagic";
-@use "mixins/navigering";
-@use "mixins/portefolje";
-@use "mixins/kontakt";
-@use "mixins/top-box";
+@use "mixins/layout/navigering";
+@use "mixins/layout/portefolje";
+@use "mixins/layout/kontakt";
+@use "mixins/layout/top-box";
 @use "mixins/media_queries";
- 
+
 /* Effekter */
 .fade {
   transition: background-color 500ms;
   &:hover {
-    background-color: variabler.$light;     
-  }   
-} 
-  
+    background-color: variabler.$light;
+  }
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif; // Nødvendig etter Normalize.css
-} 
+}
 
 html {
   box-sizing: border-box;
   color: variabler.$text;
   scroll-behavior: smooth;
 }
- 
+
 body {
   background: variabler.$text;
   margin: 30px 50px;
@@ -35,12 +35,12 @@ body {
   background: variabler.$dark;
   color: variabler.$text;
   padding: 0.6rem 1.3rem;
-  text-decoration: none; 
+  text-decoration: none;
   border: 0;
 }
 
 img {
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .wrapper {
@@ -48,13 +48,13 @@ img {
   grid-gap: 20px;
 }
 
-/* Topp Kontainer */ 
-.topp-kontainer { 
+/* Topp Kontainer */
+.topp-kontainer {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
     'showcase showcase showcase'
-    'showcase showcase showcase';  
+    'showcase showcase showcase';
 }
 
 /* Showcase */
@@ -85,12 +85,9 @@ img {
   }
 }
 
-
-
 /* Bokser */
 
-.bokser { 
-
+.bokser {
   .fab {
     padding: 10px;
   }
@@ -100,11 +97,11 @@ img {
   background: variabler.$primary;
   text-align: center;
   padding: 1.5rem 2rem;
-  box-shadow: variabler.$shadow; 
+  box-shadow: variabler.$shadow;
 }
 
 .boks p {
-  text-align: left; 
+  text-align: left;
 }
 
 /* Info */
