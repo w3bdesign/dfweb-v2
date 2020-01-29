@@ -3,5 +3,13 @@
 
 # Dfweb
 
-Currently a continous work in progress.
+Currently a work in progress.
 
+## Features:
+
+- SASS with CSS Grid for layout
+- Minified CSS with PurgeCSS
+- GSAP for animations
+- Scrollmagic for scrolling animations
+- Contact form with PureCSS
+- Netlify Forms with Google CAPTCHA
