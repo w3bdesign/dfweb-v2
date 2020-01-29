@@ -13,3 +13,4 @@ Currently a work in progress.
 - Scrollmagic for scrolling animations
 - Contact form with PureCSS
 - Netlify Forms with Google CAPTCHA
+- Modern Normalize.css
