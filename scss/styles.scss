@@ -54,7 +54,7 @@ img {
   grid-gap: 20px;
   grid-template-areas:
     'showcase showcase showcase'
-    'showcase showcase showcase';
+    'showcase showcase showcase'; 
 }
 
 /* Showcase */
@@ -96,7 +96,7 @@ img {
 .boks {
   background: variabler.$primary;
   text-align: center;
-  padding: 1.5rem 2rem;  
+  padding: 1.5rem 2rem;
   -webkit-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);

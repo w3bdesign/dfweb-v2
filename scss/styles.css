@@ -175,6 +175,13 @@ footer {
     text-align: center;
   }
 }
+/* Start media query */
+@media (max-width: 1639px) {
+  .portfolio .boks p {
+    text-align: left;
+    min-height: 50px;
+  }
+}
 @media (min-width: 851px) {
   .bokser {
     display: grid;
@@ -267,8 +274,7 @@ footer {
     grid-gap: 20px;
     grid-template-columns: 1fr;
   }
-}
-@media (max-width: 500px) {
+
   .kontakt-div {
     padding: 0px;
     min-width: 90vw;
@@ -277,11 +283,6 @@ footer {
   .kontakt-div input,
 .kontakt-div textarea {
     min-width: 230px;
-  }
-
-  .portfolio-header.reveal.visible,
-.main-nav {
-    max-width: 90vw;
   }
 
   .main-nav {
@@ -311,6 +312,12 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .portfolio-header.reveal.visible,
+.main-nav {
+    max-width: 90vw;
   }
 }
 /* Effekter */
