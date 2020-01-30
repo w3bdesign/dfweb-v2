@@ -164,7 +164,7 @@ footer {
   color: #fff;
 }
 
-/* CSS for IE 11 og 10 */
+/* CSS for IE */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .wrapper {
     display: none !important;
@@ -303,9 +303,12 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .showcase h1,
-.showcase p {
+  .showcase h1 {
     text-align: center;
+  }
+
+  .showcase p {
+    text-align: left;
   }
 
   .showcase {

@@ -1,5 +1,5 @@
 @use 'variabler' as variabler;
-/* CSS for IE 11 og 10 */
+/* CSS for IE */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .wrapper {
     display: none !important;
@@ -129,7 +129,7 @@
   .kontakt-div input,
   .kontakt-div textarea {
     min-width: 230px;
-  } 
+  }
 
   .main-nav {
     background: none;
@@ -151,9 +151,12 @@
     grid-template-columns: 1fr;
   }
 
-  .showcase h1,
-  .showcase p {
+  .showcase h1 {
     text-align: center;
+  }
+
+  .showcase p {
+    text-align: left;
   }
 
   .showcase {
@@ -161,7 +164,7 @@
   }
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .portfolio-header.reveal.visible,
   .main-nav {
     max-width: 90vw;
