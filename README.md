@@ -14,3 +14,11 @@ Currently a work in progress.
 - Contact form with PureCSS
 - Netlify Forms with Google CAPTCHA
 - Modern Normalize.css
+
+## TODO
+
+- Restructure and reorder SASS and implement BEM
+- Possibly implement more with Vanilla Javascript/CSS?
+- Download CSS from CDNs and serve from one place (Netlify CDN)
+- Create new and improved design
+- Add responsive hamburger menu
