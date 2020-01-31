@@ -3,7 +3,7 @@
 
 # Dfweb
 
-Currently a work in progress.
+Currently a work in progress, but version 1 has been released for now.
 
 ## Features:
 
@@ -17,6 +17,7 @@ Currently a work in progress.
 
 ## TODO
 
+- Add more projects
 - Restructure and reorder SASS and implement BEM
 - Possibly implement more with Vanilla Javascript/CSS?
 - Download CSS from CDNs and serve from one place (Netlify CDN)
