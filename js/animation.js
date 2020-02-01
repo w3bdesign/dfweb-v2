@@ -24,10 +24,10 @@ const startAnimation = () => {
  
 
   // Main nav
-  timeline.from('.main-nav-hjem', { duration: 0.3, x: -2500 });
-  timeline.from('.main-nav-ommeg', { duration: 0.3, x: -2500 });
-  timeline.from('.main-nav-cv', { duration: 0.3, x: -2500 });
-  timeline.from('.main-nav-kontakt', { duration: 0.3, x: -2500 });
+  timeline.from('.main-nav-hjem', { duration: 0.4, x: -2500 });
+  timeline.from('.main-nav-ommeg', { duration: 0.4, x: -2500 });
+  timeline.from('.main-nav-cv', { duration: 0.4, x: -2500 });
+  timeline.from('.main-nav-kontakt', { duration: 0.4, x: -2500 });
 };
 
 startAnimation();
