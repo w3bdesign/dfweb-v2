@@ -286,7 +286,7 @@ footer {
   }
 
   .pure-form .pure-group input:last-child, .pure-form .pure-group textarea:last-child {
-    margin: 10px;
+    margin: 15px !important;
   }
 
   .captcha {
