@@ -286,11 +286,11 @@ footer {
   }
 
   .pure-form .pure-group input:last-child, .pure-form .pure-group textarea:last-child {
-    margin: 20px;
+    margin: 10px;
   }
 
   .captcha {
-    padding: 15px;
+    padding: 10px;
   }
 
   .main-nav {
