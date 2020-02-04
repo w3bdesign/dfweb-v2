@@ -7,6 +7,7 @@ Currently a work in progress, but version 1 has been released for now.
 
 ## Features:
 
+- Semantic HTML5 with a minimum of DIVs
 - SASS with CSS Grid for layout
 - Minified CSS with PurgeCSS
 - GSAP for animations
