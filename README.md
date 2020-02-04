@@ -14,6 +14,7 @@ Currently a work in progress, but version 1 has been released for now.
 - Contact form with PureCSS
 - Netlify Forms with Google CAPTCHA
 - Modern Normalize.css
+- 100% score on accessibility checks. 
 
 ## TODO
 
