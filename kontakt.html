@@ -112,6 +112,8 @@
                   name="navn"
                   type="text"
                   placeholder="Fullt navn"
+                  required="true"
+                  aria-required="true"
                 />
               </label>
 
@@ -121,8 +123,10 @@
                 <input
                   id="phone"
                   name="telefon"
-                  type="text"
+                  type="number"
                   placeholder="Telefon"
+                  required="true"
+                  aria-required="true"
                 />
               </label>
             </fieldset>
@@ -131,7 +135,12 @@
               <label for="textarea"
                 >Hva ønsker du å si?
                 <br />
-                <textarea name="tekst" id="textarea"></textarea>
+                <textarea
+                  name="tekst"
+                  id="textarea"
+                  required="true"
+                  aria-required="true"
+                ></textarea>
               </label>
             </fieldset>
 
