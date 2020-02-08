@@ -1,169 +1,4 @@
 @charset "UTF-8";
-/* CSS for Scrollmagic  */
-.reveal {
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.reveal.visible {
-  opacity: 1;
-  -webkit-transform: none;
-  transform: none;
-}
-
-/* Navigering */
-.main-nav {
-  background: #0e0800;
-}
-.main-nav ul {
-  display: grid;
-  grid-gap: 20px;
-  padding: 0px 20px 0px 20px;
-  list-style: none;
-}
-.main-nav a {
-  background: #0e0800;
-  display: block;
-  text-decoration: none;
-  padding: 0.8rem;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-}
-
-/* Portefølje */
-.portfolio-header h4 {
-  text-align: center;
-  padding: 10px;
-}
-
-.portfolio-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  background: #0d324d;
-  color: #fff;
-  -webkit-box-shadow: rgba(104, 104, 104, 0.8);
-          box-shadow: rgba(104, 104, 104, 0.8);
-}
-
-.portfolio .boks p {
-  text-align: center;
-}
-
-.boks p {
-  text-align: center;
-}
-
-.bokser a {
-  color: #fff;
-}
-
-.portfolio-content span {
-  padding: 0.5rem;
-}
-
-.portfolio-header {
-  display: grid;
-  grid-template-columns: 1fr;
-  background: #0e0800;
-  color: #fff;
-  -webkit-box-shadow: rgba(104, 104, 104, 0.8);
-          box-shadow: rgba(104, 104, 104, 0.8);
-}
-
-h3,
-.portfolio-content span {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.portfolio {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
-}
-.portfolio .portfolio img {
-  width: auto;
-  -webkit-box-shadow: rgba(104, 104, 104, 0.8);
-          box-shadow: rgba(104, 104, 104, 0.8);
-  max-height: 300px;
-}
-
-/* Footer */
-footer {
-  margin-top: 2rem;
-  background: #0e0800;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
-
-/* CSS for Form */
-.kontakt-div input,
-.kontakt-div textarea {
-  color: #0d324d;
-  min-width: 400px;
-}
-
-.kontakt-div {
-  background-color: #0d324d;
-  min-width: 400px;
-  padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -webkit-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
-}
-
-.kontakt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.captcha {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/* Top Box */
-.top-box {
-  background: #0d324d;
-  text-align: center;
-  -webkit-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
-  padding: 1.5rem;
-}
-.top-box p {
-  text-align: left;
-}
-.top-box .price {
-  font-size: 2.5rem;
-}
-
-.top-box-a a {
-  color: #fff;
-}
-
 /* CSS for IE */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .wrapper {
@@ -328,48 +163,19 @@ footer {
     max-width: 90vw;
   }
 }
-/* Effekter */
-.fade {
-  -webkit-transition: background-color 500ms;
-  transition: background-color 500ms;
-}
-.fade:hover {
-  background-color: #9da2ab;
-}
-
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/* CSS for Scrollmagic  */
+.reveal {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #fff;
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #fff;
-  margin: 30px 50px;
-  line-height: 1.4;
-  padding: 20px;
-}
-
-.btn {
-  background: #0e0800;
-  color: #fff;
-  padding: 0.6rem 1.3rem;
-  text-decoration: none;
-  border: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-.wrapper {
-  display: grid;
-  grid-gap: 20px;
+.reveal.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
 }
 
 /* Topp Kontainer */
@@ -377,6 +183,25 @@ img {
   display: grid;
   grid-gap: 20px;
   grid-template-areas: "showcase showcase showcase" "showcase showcase showcase";
+}
+
+/* Top Box */
+.top-box {
+  background: #0d324d;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+}
+.top-box p {
+  text-align: left;
+}
+.top-box .price {
+  font-size: 2.5rem;
+}
+
+.top-box-a a {
+  color: #fff;
 }
 
 /* Showcase */
@@ -414,6 +239,63 @@ img {
   color: #fff;
 }
 
+/* Hoved */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  margin: 30px 50px;
+  line-height: 1.4;
+  padding: 20px;
+}
+
+.btn {
+  background: #0e0800;
+  color: #fff;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Navigering */
+.main-nav {
+  background: #0e0800;
+}
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0px 20px 0px 20px;
+  list-style: none;
+}
+.main-nav a {
+  background: #0e0800;
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
 /* Bokser */
 .bokser .fab {
   padding: 10px;
@@ -431,13 +313,127 @@ img {
   text-align: left;
 }
 
-/* Info */
-.info {
+/* Effekter */
+.fade {
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+.fade:hover {
+  background-color: #9da2ab;
+}
+
+/* Portefølje */
+.portfolio-header h4 {
+  text-align: center;
+  padding: 10px;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: 1fr;
   background: #0d324d;
+  color: #fff;
   -webkit-box-shadow: rgba(104, 104, 104, 0.8);
           box-shadow: rgba(104, 104, 104, 0.8);
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 3rem;
 }
+
+.portfolio .boks p {
+  text-align: center;
+}
+
+.boks p {
+  text-align: center;
+}
+
+.bokser a {
+  color: #fff;
+}
+
+.portfolio-content span {
+  padding: 0.5rem;
+}
+
+.portfolio-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #0e0800;
+  color: #fff;
+  -webkit-box-shadow: rgba(104, 104, 104, 0.8);
+          box-shadow: rgba(104, 104, 104, 0.8);
+}
+
+h3,
+.portfolio-content span {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.portfolio .portfolio img {
+  width: auto;
+  -webkit-box-shadow: rgba(104, 104, 104, 0.8);
+          box-shadow: rgba(104, 104, 104, 0.8);
+  max-height: 300px;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background: #0e0800;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* CSS for Form */
+.kontakt-div input,
+.kontakt-div textarea {
+  color: #0d324d;
+  min-width: 400px;
+}
+
+.kontakt-div {
+  background-color: #0d324d;
+  min-width: 400px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.kontakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.captcha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Variabler, Media query og Scrollmagic */
+/* Forside */
+/* Felles */
+/* Portefølje */
+/* Kontaktskjema */
