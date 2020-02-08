@@ -18,6 +18,7 @@ Currently a work in progress, but version 1 has been released for now.
 - Netlify Forms with honeypot
 - Modern Normalize.css
 - 100% score on accessibility checks
+- HTML5 form validation in contact form
 
 ## TODO
 
