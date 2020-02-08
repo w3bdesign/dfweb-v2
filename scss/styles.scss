@@ -1,5 +1,4 @@
 /* Variabler, Media query og Scrollmagic */
-
 @use "mixins/media_queries";
 @use 'mixins/variabler' as variabler;
 @use "mixins/scrollmagic";
@@ -10,16 +9,13 @@
 @use "mixins/layout/forside/showcase";
 
 /* Felles */
-
 @use "mixins/layout/felles/hoved";
 @use "mixins/layout/felles/navigering";
 @use "mixins/layout/felles/bokser";
 @use "mixins/layout/felles/effekter";
 
 /* Portefølje */
-
 @use "mixins/layout/portefolje/portefolje";
 
 /* Kontaktskjema */
-
 @use "mixins/layout/kontakt/kontaktskjema";

@@ -1,11 +1,12 @@
 @use '../../variabler' as variabler;
+
 /* Top Box */
 .top-box {
   background: variabler.$primary;
   text-align: center;
-  -webkit-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: variabler.$box-shadow;
+  -moz-box-shadow: variabler.$box-shadow;
+  box-shadow: variabler.$box-shadow;
   padding: 1.5rem;
 
   p {
