@@ -54,105 +54,110 @@
     </div>
     <div class="wrapper">
       <!-- Navigasjon -->
-      <nav class="main-nav">
-        <ul>
-          <li>
-            <a href="index.html" title="Hjem" class="main-nav-hjem fade"
-              >Hjem</a
-            >
-          </li>
-          <li>
-            <a href="portefølje.html" title="Om meg" class="main-nav-ommeg fade"
-              >Portefølje</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/daniel-fjeldstad-1947a043/"
-              target="_blank"
-              title="CV"
-              rel="noreferrer"
-              class="main-nav-cv fade"
-              >CV</a
-            >
-          </li>
-          <li>
-            <a
-              href="kontakt.html"
-              title="Kontakt"
-              rel="noreferrer"
-              class="main-nav-kontakt fade"
-              >Kontakt</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <header>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="#" title="Hjem" class="main-nav-hjem fade">Hjem</a>
+            </li>
+            <li>
+              <a
+                href="portefølje.html"
+                title="Om meg"
+                class="main-nav-ommeg fade"
+                >Portefølje</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/daniel-fjeldstad-1947a043/"
+                target="_blank"
+                title="CV"
+                rel="noreferrer"
+                class="main-nav-cv fade"
+                >CV</a
+              >
+            </li>
+            <li>
+              <a
+                href="kontakt.html"
+                title="Kontakt"
+                rel="noreferrer"
+                class="main-nav-kontakt fade"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
       <!-- Portefølje -->
-      <section class="portfolio-header">
-        <h3>Kontaktskjema</h3>
-      </section>
+      <main>
+        <section class="portfolio-header">
+          <h3>Kontaktskjema</h3>
+        </section>
 
-      <section class="kontakt">
-        <div class="kontakt-div">
-          <form
-            name="kontaktskjema"
-            method="POST"
-            data-netlify="true"
-            class="pure-form"
-            netlify-honeypot="bot-field"
-          >
-            <fieldset class="pure-group">
-              <h4>Vennligst fyll ut skjemaet under</h4>
-              <label for="text">
-                Fullt navn
-                <br />
-                <input
-                  id="text"
-                  name="navn"
-                  type="text"
-                  placeholder="Fullt navn"
-                  required="true"
-                  aria-required="true"
-                />
-              </label>
+        <section class="kontakt">
+          <div class="kontakt-div">
+            <form
+              name="kontaktskjema"
+              method="POST"
+              data-netlify="true"
+              class="pure-form"
+              netlify-honeypot="bot-field"
+            >
+              <fieldset class="pure-group">
+                <h4>Vennligst fyll ut skjemaet under</h4>
+                <label for="text">
+                  Fullt navn
+                  <br />
+                  <input
+                    id="text"
+                    name="navn"
+                    type="text"
+                    placeholder="Fullt navn"
+                    required="true"
+                    aria-required="true"
+                  />
+                </label>
 
-              <label for="phone"
-                >Telefon (uten mellomrom)
-                <br />
-                <input
-                  id="phone"
-                  name="telefon"
-                  type="text"
-                  placeholder="Telefon"
-                  required="true"
-                  aria-required="true"
-                  pattern=".[0-9]{7}"
-                />
-              </label>
-            </fieldset>
+                <label for="phone"
+                  >Telefon (uten mellomrom)
+                  <br />
+                  <input
+                    id="phone"
+                    name="telefon"
+                    type="text"
+                    placeholder="Telefon"
+                    required="true"
+                    aria-required="true"
+                    pattern=".[0-9]{7}"
+                  />
+                </label>
+              </fieldset>
 
-            <fieldset class="pure-group">
-              <label for="textarea"
-                >Hva ønsker du å si?
-                <br />
-                <textarea
-                  name="tekst"
-                  id="textarea"
-                  required="true"
-                  aria-required="true"
-                ></textarea>
-              </label>
-            </fieldset>
+              <fieldset class="pure-group">
+                <label for="textarea"
+                  >Hva ønsker du å si?
+                  <br />
+                  <textarea
+                    name="tekst"
+                    id="textarea"
+                    required="true"
+                    aria-required="true"
+                  ></textarea>
+                </label>
+              </fieldset>
 
-            <button type="submit" class="btn fade">Send skjema</button>
-            <br />&nbsp;
-            <label style="position: absolute; display: none;"
-              >Don’t fill this out if you're human: <input name="bot-field"
-            /></label>
-          </form>
-        </div>
-      </section>
+              <button type="submit" class="btn fade">Send skjema</button>
+              <br />&nbsp;
+              <label style="position: absolute; display: none;"
+                >Don’t fill this out if you're human: <input name="bot-field"
+              /></label>
+            </form>
+          </div>
+        </section>
+      </main>
 
       <!-- Bunn / footer -->
       <footer>
