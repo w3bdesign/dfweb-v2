@@ -34,6 +34,13 @@
     grid-gap: 20px;
     grid-template-columns: 1fr;
   }
+
+  .portfolio {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
 }
 
 @media (min-width: 700px) {
@@ -171,7 +178,7 @@
 
 @media (max-width: 500px) {
   .portfolio-header.reveal.visible,
-  .main-nav, * {
-    max-width: 90vw !important;
+  .main-nav {
+    max-width: 90vw;
   }
 }
