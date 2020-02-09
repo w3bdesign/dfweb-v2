@@ -278,6 +278,7 @@ img {
 /* Navigering */
 .main-nav {
   background: #0e0800;
+  opacity: 0;
 }
 .main-nav ul {
   display: grid;

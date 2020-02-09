@@ -17,6 +17,8 @@ const startScrollMagic = () => {
 const startAnimation = () => {
   // Lag en timeline instans
   const timeline = gsap.timeline();
+  
+  timeline.to('.main-nav', { duration: 0.5, opacity: 1 });  
 
   timeline.from('.topp-kontainer', { duration: 0.5, opacity: 0 });  
   timeline.from('.portfolio-header', { duration: 0.5, opacity: 0 }); 
