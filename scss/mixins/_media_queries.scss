@@ -124,8 +124,10 @@
 
   .kontakt-div {
     padding: 0px;
-    min-width: 90vw;
+    min-width: 90vw;    
   }
+
+  
 
   .kontakt-div input,
   .kontakt-div textarea {
@@ -172,7 +174,7 @@
 
 @media (max-width: 500px) {
   .portfolio-header.reveal.visible,
-  .main-nav {
+  .main-nav, .portfolio-header {
     max-width: 90vw;
   }
 }
