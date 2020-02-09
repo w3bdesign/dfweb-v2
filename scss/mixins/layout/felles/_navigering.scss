@@ -2,8 +2,7 @@
 @use '../../variabler' as variabler;
 
 .main-nav {
-  background: variabler.$dark;
-  opacity: 0;
+  background: variabler.$dark;  
 
   ul {
     display: grid;

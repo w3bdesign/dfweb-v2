@@ -34,6 +34,7 @@
 @media (min-width: 700px) {
   .main-nav {
     background: #0e0800;
+    opacity: 0;
   }
   .main-nav ul {
     display: grid;
@@ -75,7 +76,7 @@
   }
 
   .main-nav {
-    background: none;
+    background: none !important;
   }
 
   .topp-kontainer {
@@ -285,7 +286,6 @@ img {
 /* Navigering */
 .main-nav {
   background: #0e0800;
-  opacity: 0;
 }
 .main-nav ul {
   display: grid;
