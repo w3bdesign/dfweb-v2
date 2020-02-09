@@ -30,12 +30,6 @@
     grid-gap: 20px;
     grid-template-columns: 1fr;
   }
-
-  .portfolio {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-  }
 }
 @media (min-width: 700px) {
   .main-nav {
@@ -114,7 +108,7 @@
   .portfolio {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .kontakt-div {
