@@ -53,7 +53,7 @@
 @media (max-width: 700px) {
   .kontakt-div input,
 .kontakt-div textarea {
-    min-width: 400px;
+    min-width: 90vw;
   }
 
   .main-nav a {
@@ -160,8 +160,12 @@
 }
 @media (max-width: 500px) {
   .portfolio-header.reveal.visible,
-.main-nav, .portfolio-header, * {
+.main-nav, .portfolio-header {
     max-width: 90vw;
+  }
+
+  .kontakt-div {
+    padding: 0px !important;
   }
 }
 /* CSS for Scrollmagic  */
@@ -401,12 +405,12 @@ footer {
 .kontakt-div input,
 .kontakt-div textarea {
   color: #0d324d;
-  min-width: 400px;
+  min-width: 280px;
 }
 
 .kontakt-div {
   background-color: #0d324d;
-  min-width: 400px;
+  min-width: 280px;
   padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
