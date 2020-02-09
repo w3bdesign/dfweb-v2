@@ -171,7 +171,7 @@
 
 @media (max-width: 500px) {
   .portfolio-header.reveal.visible,
-  .main-nav {
-    max-width: 90vw;
+  .main-nav, * {
+    max-width: 90vw !important;
   }
 }
