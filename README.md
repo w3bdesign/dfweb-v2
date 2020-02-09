@@ -9,6 +9,7 @@ Currently a work in progress, but version 1 has been released for now.
 
 - 100% score on Google Pagespeed Insights (Desktop)
 - 100% score in GTMetrix
+- 100% score on accessibility checks
 - Semantic HTML5 with a minimum of DIVs
 - SASS with CSS Grid for layout
 - Minified CSS with PurgeCSS
@@ -17,7 +18,6 @@ Currently a work in progress, but version 1 has been released for now.
 - Contact form with PureCSS
 - Netlify Forms with honeypot
 - Modern Normalize.css
-- 100% score on accessibility checks
 - HTML5 form validation in contact form
 
 ## TODO
