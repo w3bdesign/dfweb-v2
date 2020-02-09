@@ -160,7 +160,7 @@
 }
 @media (max-width: 500px) {
   .portfolio-header.reveal.visible,
-.main-nav, .portfolio-header, .kontakt-div {
+.main-nav, .portfolio-header, * {
     max-width: 90vw;
   }
 }
