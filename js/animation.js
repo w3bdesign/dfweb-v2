@@ -14,23 +14,4 @@ const startScrollMagic = () => {
   }
 };
 
-const startAnimation = () => {
-  // Lag en timeline instans
-  const timeline = gsap.timeline();
-  
-  timeline.to('.main-nav', { duration: 0.5, opacity: 1 });  
-
-  timeline.from('.topp-kontainer', { duration: 0.5, opacity: 0 });  
-  timeline.from('.portfolio-header', { duration: 0.5, opacity: 0 }); 
-  timeline.from('.portfolio', { duration: 0.5, opacity: 0 }); 
- 
-
-  // Main nav
-  timeline.from('.main-nav-hjem', { duration: 0.4, x: -2500 });
-  timeline.from('.main-nav-ommeg', { duration: 0.4, x: -2500 });
-  timeline.from('.main-nav-cv', { duration: 0.4, x: -2500 });
-  timeline.from('.main-nav-kontakt', { duration: 0.4, x: -2500 });
-};
-
-startAnimation();
 startScrollMagic();

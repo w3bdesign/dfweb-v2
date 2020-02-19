@@ -34,7 +34,6 @@
 @media (min-width: 700px) {
   .main-nav {
     background: #0e0800;
-    opacity: 0;
   }
   .main-nav ul {
     display: grid;
@@ -183,6 +182,35 @@
   transform: none;
 }
 
+.animasjon {
+  -webkit-animation: animasjon 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: animasjon 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes animasjon {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes animasjon {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* Topp Kontainer */
 .topp-kontainer {
   display: grid;
@@ -326,11 +354,11 @@ img {
 }
 
 /* Effekter */
-.fade {
+.animasjon {
   -webkit-transition: background-color 500ms;
   transition: background-color 500ms;
 }
-.fade:hover {
+.animasjon:hover {
   background-color: #9da2ab;
 }
 
@@ -350,10 +378,6 @@ img {
 }
 
 .portfolio .boks p {
-  text-align: center;
-}
-
-.boks p {
   text-align: center;
 }
 
@@ -457,8 +481,9 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/* Variabler, Media query og Scrollmagic */
+/* Variabler, Media query, Animasjoner og Scrollmagic */
 /* Forside */
 /* Felles */
 /* Portefølje */
 /* Kontaktskjema */
+/*# sourceMappingURL=styles.css.map */

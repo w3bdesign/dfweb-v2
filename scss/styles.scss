@@ -1,17 +1,18 @@
-/* Variabler, Media query og Scrollmagic */
+/* Variabler, Media query, Animasjoner og Scrollmagic */
 @use "mixins/media_queries"; // Denne bør være først
 @use 'mixins/variabler' as variabler;
 @use "mixins/scrollmagic";
+@use "mixins/animations";
 
 /* Forside */
-@use "mixins/layout/forside/toppkontainer"; 
-@use "mixins/layout/forside/top-box"; 
+@use "mixins/layout/forside/toppkontainer";
+@use "mixins/layout/forside/top-box";
 @use "mixins/layout/forside/showcase";
 @use "mixins/layout/forside/noscript";
 
 /* Felles */
 @use "mixins/layout/felles/hoved";
-@use "mixins/layout/felles/navigering"; 
+@use "mixins/layout/felles/navigering";
 @use "mixins/layout/felles/bokser";
 @use "mixins/layout/felles/effekter";
 
@@ -19,5 +20,4 @@
 @use "mixins/layout/portefolje/portefolje";
 
 /* Kontaktskjema */
-@use "mixins/layout/kontakt/kontaktskjema";       
-   
+@use "mixins/layout/kontakt/kontaktskjema";   
