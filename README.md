@@ -13,7 +13,7 @@ Currently a work in progress, but version 1 has been released for now.
 - Semantic HTML5 with a minimum of DIVs
 - SASS with CSS Grid for layout
 - Minified CSS with PurgeCSS
-- GSAP for animations
+- CSS3 for animations
 - Scrollmagic for scrolling animations
 - Contact form with PureCSS
 - Netlify Forms with honeypot
