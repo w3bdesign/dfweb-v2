@@ -22,7 +22,7 @@ Currently a work in progress, but version 1 has been released for now.
 
 ## TODO
 
-- ~~Replace GSAP with CSS ~~
+- ~~Replace GSAP with CSS~~
 - Add more projects
 - ~~Restructure and reorder SASS and implement BEM~~
 - Possibly implement more with Vanilla Javascript/CSS?
