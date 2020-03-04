@@ -407,7 +407,7 @@ h3,
 .portfolio {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 .portfolio .portfolio img {
   width: auto;

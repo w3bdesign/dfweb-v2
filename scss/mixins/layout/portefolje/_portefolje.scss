@@ -1,10 +1,11 @@
 /* Portefølje */
 @use '../../variabler' as variabler;
+
 .portfolio-header {
-h4 {
-  text-align: center;
-  padding: 10px;
-}
+  h4 {
+    text-align: center;
+    padding: 10px;
+  }
 }
 
 .portfolio-content {
@@ -16,7 +17,7 @@ h4 {
 }
 
 .portfolio .boks p {
-	text-align: center;
+  text-align: center;
 }
 
 .bokser a {
@@ -44,7 +45,8 @@ h3,
 .portfolio {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  //VAR: grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
   .portfolio img {
     width: auto;
