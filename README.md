@@ -22,6 +22,7 @@ Currently a work in progress, but version 1 has been released for now.
 
 ## TODO
 
+- Add page transitions with Barba.js & GSAP
 - Replace media queries with CSS Grid auto-fit?
 - ~~Replace GSAP with CSS~~
 - Add more projects
