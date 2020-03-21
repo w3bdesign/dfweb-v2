@@ -1,0 +1,21 @@
+{
+  "name": "dfweb",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/b4611f60-865d-4387-a096-125d89c96228/deploy-status)](https://app.netlify.com/sites/elegant-sinoussi-21cfec/deploys)\r <a href=\"https://validator.w3.org/\" title=\"HTML validator\"><img src=\"https://github.com/w3bdesign/dfweb/blob/master/badges/html5valid.svg\" alt=\"Valid HTML 5\"></a>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3bdesign/dfweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w3bdesign/dfweb/issues"
+  },
+  "homepage": "https://github.com/w3bdesign/dfweb#readme"
+}
