@@ -39,8 +39,7 @@
 
 @media (min-width: 700px) {
   .main-nav {
-    background: variabler.$dark;
-   // opacity: 0;
+    background: variabler.$dark;   
     ul {
       display: grid;
       grid-gap: 20px;
