@@ -5,6 +5,8 @@
 
 Currently a work in progress, but version 1 has been released for now.
 
+Version 2 will be a Gatsby portfolio website.
+
 ## Features:
 
 - 100% score on Google Pagespeed Insights (Desktop)
