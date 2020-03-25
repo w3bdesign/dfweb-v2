@@ -16,19 +16,8 @@ import React from "react"
 import { Button } from "../components/Button.component"
 
 export default () => (
-
-
-
-
-<div class="flex items-center justify-center h-screen">
-    
-<div class="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
-<Button>Button 1</Button>
+  <div class="flex items-center justify-center h-screen">
+    <Button>Button 1</Button>
     <Button>Button 2</Button>
-</div>
-
-</div>
-
-
-
+  </div>
 )
