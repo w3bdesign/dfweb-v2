@@ -5,5 +5,15 @@
  */
 
 module.exports = {
-  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-purgecss"],
+  plugins: [
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-purgecss",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+  ],
 }
