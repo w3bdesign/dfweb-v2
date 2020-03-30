@@ -10,6 +10,8 @@ https://dev.to/sm0ke/tailwind-css-open-source-components-364h
 
 https://github.com/creativetimofficial/tailwind-starter-kit
 
+https://github.com/framer/motion
+
 */
 
 import React from "react"
