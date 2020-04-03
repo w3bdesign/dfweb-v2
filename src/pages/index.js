@@ -15,10 +15,14 @@ https://github.com/framer/motion
 */
 
 import React from "react"
-import { Button } from "../components/Button.component"
+import Button from "../components/Button.component"
+import Navbar from "../components/Navbar.component"
+
+// flex items-center justify-center h-screen
 
 export default () => (
-  <div class="flex items-center justify-center h-screen">
+  <div class="">
+    <Navbar />
     <Button>Button 1</Button>
     <Button>Button 2</Button>
   </div>
