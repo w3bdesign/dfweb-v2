@@ -21,11 +21,12 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-remark": "^2.7.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
-    "prettier": "^2.0.4",
-    "tailwindcss": "^1.2.0"
+    "prettier": "^2.0.4"
+    
   },
   "repository": {
     "type": "git",
