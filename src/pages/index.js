@@ -21,15 +21,17 @@ https://www.youtube.com/watch?v=nqNIy8HkEQ8&app=desktop
 */
 
 import React from "react"
-import Button from "../components/Button.component"
-import Navbar from "../components/Navbar.component"
+import Navbar from "../components/Header/Navbar.component"
+import NavbarContent from "../components/Header/NavbarContent.component"
+import { MenuToggle } from "../components/Animation/MenuToggle.component"
 
 // flex items-center justify-center h-screen
 
 export default () => (
-  <div class="">
-    <Navbar />
-    <Button>Button 1</Button>
-    <Button>Button 2</Button>
+  <div className="">
+    <Navbar>
+      <NavbarContent />
+      <MenuToggle />
+    </Navbar>
   </div>
 )
