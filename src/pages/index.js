@@ -27,10 +27,14 @@ import NavbarContent from "../components/Header/NavbarContent.component"
 
 // flex items-center justify-center h-screen
 
-export default () => (
-  <div className="">
-    <Navbar>
-      <NavbarContent />      
-    </Navbar>
-  </div>
-)
+function IndexPage() {
+  return (
+    <div className="">
+      <Navbar>
+        <NavbarContent />
+      </Navbar>
+    </div>
+  )
+}
+
+export default IndexPage;
