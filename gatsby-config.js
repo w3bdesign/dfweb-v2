@@ -22,7 +22,7 @@ module.exports = {
         path: `${__dirname}/src/markdown-pages`,
       },
     },
-    "gatsby-transformer-remark"
-    
+    "gatsby-transformer-remark",
+    "gatsby-plugin-react-svg"
   ],
 }
