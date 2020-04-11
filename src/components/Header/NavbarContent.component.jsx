@@ -1,5 +1,7 @@
 import React from "react"
-import AppLogo from "../../logo/dfweb-hvit.svg"
+import AppLogo from "../../logo/logo.svg"
+
+//import { motion } from "framer-motion"
 
 export default function NavbarContent() {
   return (
@@ -13,7 +15,7 @@ export default function NavbarContent() {
             <AppLogo style={{height:'100px'}}/>
           </a>
         </div>
-        <div className="flex content-center justify-between w-full m-24 md:w-1/2 md:justify-end">
+        <div className="flex content-center justify-between w-full md:w-1/2 md:justify-end">
           <ul className="flex items-center justify-between flex-1 list-reset md:flex-none">
             <li className="mr-3">
               <a

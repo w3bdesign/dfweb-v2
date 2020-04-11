@@ -23,7 +23,8 @@ https://www.youtube.com/watch?v=nqNIy8HkEQ8&app=desktop
 import React from "react"
 import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
-//import { MenuToggle } from "../components/Animation/MenuToggle.component"
+
+
 
 // flex items-center justify-center h-screen
 
