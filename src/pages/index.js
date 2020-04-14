@@ -21,8 +21,10 @@ https://www.youtube.com/watch?v=nqNIy8HkEQ8&app=desktop
 */
 
 import React from "react"
+
 import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
+import FontAwesome from "../components/FontAwesome/FontAwesome"
 
 // flex items-center justify-center h-screen
 
@@ -42,13 +44,12 @@ function IndexPage() {
                 mySQL, Wordpress, HTML, CSS, Javascript, React, Redux, Docker og
                 mye mer.
               </p>
+              <FontAwesome />
             </div>
           </div>
-
           <div className="grid gap-4 p-4 mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
             <div className="p-12 text-lg text-white rounded bg-hero">
               <p className="text-3xl text-center">Om Meg</p>
-              <p></p>
               <p className="mt-6 text-lg">
                 Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
                 Javascript. Jeg har arbeidet med Wordpress og Woocommerce siden
