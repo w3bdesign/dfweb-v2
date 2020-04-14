@@ -1,6 +1,7 @@
 import React from "react"
+import { Link } from "gatsby"
+
 import AppLogo from "./Applogo.component"
-//import { AnimatedLogo } from "../Animation/AnimatedLogo.component"
 
 export default function NavbarContent() {
   return (
@@ -10,28 +11,28 @@ export default function NavbarContent() {
         <div className="flex content-center justify-between w-full md:w-1/2 md:justify-end">
           <ul className="flex items-center justify-between flex-1 list-reset md:flex-none">
             <li className="mr-3">
-              <a
+              <Link
                 className="inline-block m-4 text-xl text-white underline"
-                href="#link"
+                to="/"
               >
                 Hjem
-              </a>
+              </Link>
             </li>
             <li className="mr-3">
-              <a
-                className="inline-block m-4 text-xl text-gray-400 no-underline hover:text-gray-200 hover:underline"
-                href="#link"
+              <Link
+                className="inline-block m-4 text-xl text-white underline"
+                to="/"
               >
                 Portefølje
-              </a>
+              </Link>
             </li>
             <li className="mr-3">
-              <a
-                className="inline-block m-4 text-xl text-gray-400 no-underline hover:text-gray-200 hover:underline "
-                href="#link"
+              <Link
+                className="inline-block m-4 text-xl text-white underline"
+                to="/"
               >
                 Kontakt
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
