@@ -38,9 +38,9 @@ function IndexPage() {
             <div className="p-12 font-sans text-lg text-center text-white rounded bg-hero">HERO</div>
           </div>
 
-          <div className="container grid grid-cols-2 gap-4 p-4 mt-4 ">
-            <div className="p-12 m-2 text-lg text-center text-white rounded bg-hero">HERO</div>
-            <div className="p-12 m-2 text-lg text-center text-white rounded bg-hero">HERO</div>
+          <div className="grid grid-cols-2 gap-4 p-4 mt-4 ">
+            <div className="p-12 text-lg text-center text-white rounded bg-hero">HERO</div>
+            <div className="p-12 text-lg text-center text-white rounded bg-hero">HERO</div>
           </div>
         </div>
       </div>
