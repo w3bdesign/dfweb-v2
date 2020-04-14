@@ -5,6 +5,7 @@ import {
   faHtml5,
   faJs,
   faReact,
+  faGithub
 } from "@fortawesome/free-brands-svg-icons"
 
 export const FontAwesome = () => {
@@ -28,6 +29,11 @@ export const FontAwesome = () => {
       <FontAwesomeIcon
         className="m-2"
         icon={faReact}
+        style={{ fontSize: "50px" }}
+      />
+      <FontAwesomeIcon
+        className="m-2"
+        icon={faGithub}
         style={{ fontSize: "50px" }}
       />
     </p>
