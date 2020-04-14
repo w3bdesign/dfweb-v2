@@ -24,18 +24,28 @@ import React from "react"
 import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 
-
-
 // flex items-center justify-center h-screen
 
 function IndexPage() {
   return (
-    <div className="">
-      <Navbar>
-        <NavbarContent />
-      </Navbar>
-    </div>
+    <>
+      <div className="">
+        <Navbar>
+          <NavbarContent />
+        </Navbar>
+        <div className="container mx-auto rounded">
+          <div className="container p-4 mx-auto mt-4 ">
+            <div className="p-12 font-sans text-lg text-center text-white rounded bg-hero">HERO</div>
+          </div>
+
+          <div className="container grid grid-cols-2 gap-4 p-4 mt-4 ">
+            <div className="p-12 m-2 text-lg text-center text-white rounded bg-hero">HERO</div>
+            <div className="p-12 m-2 text-lg text-center text-white rounded bg-hero">HERO</div>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 
-export default IndexPage;
+export default IndexPage

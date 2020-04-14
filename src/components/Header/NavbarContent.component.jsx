@@ -1,6 +1,6 @@
 import React from "react"
 import AppLogo from "../../logo/logo.svg"
-import { AnimatedLogo } from "../Animation/AnimatedLogo.component"
+//import { AnimatedLogo } from "../Animation/AnimatedLogo.component"
 
 export default function NavbarContent() {
   return (
@@ -12,7 +12,7 @@ export default function NavbarContent() {
             href="#link"
           >
             <AppLogo style={{ height: "100px" }} />
-            <AnimatedLogo style={{ height: "100px" }} />
+            
           </a>
         </div>
         <div className="flex content-center justify-between w-full md:w-1/2 md:justify-end">
