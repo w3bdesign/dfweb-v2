@@ -17,17 +17,14 @@ export const FontAwesome = () => {
   // We avoid repeating ourselves by using a map() here
   return (
     <p className="mt-4 text-center">
-      {ICONS.map((icon) => 
-        
-          <FontAwesomeIcon 
+      {ICONS.map((icon) => (
+        <FontAwesomeIcon
           className="m-2"
-          key={uuidv4()}                
+          key={uuidv4()}
           icon={icon}
           style={{ fontSize: "50px" }}
-        />         
-          
-         
-      )}
+        />
+      ))}
     </p>
   )
 }
