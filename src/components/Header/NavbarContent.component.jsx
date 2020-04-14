@@ -20,7 +20,7 @@ export default function NavbarContent() {
             </li>
             <li className="mr-3">
               <Link
-                className="inline-block m-4 text-xl text-white underline"
+                className="inline-block m-4 text-xl text-white"
                 to="/"
               >
                 Portefølje
@@ -28,7 +28,7 @@ export default function NavbarContent() {
             </li>
             <li className="mr-3">
               <Link
-                className="inline-block m-4 text-xl text-white underline"
+                className="inline-block m-4 text-xl text-white"
                 to="/"
               >
                 Kontakt

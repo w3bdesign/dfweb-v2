@@ -35,12 +35,17 @@ function IndexPage() {
         </Navbar>
         <div className="container mx-auto rounded">
           <div className="container p-4 mx-auto mt-4 ">
-            <div className="p-12 font-sans text-lg text-center text-white rounded bg-hero">HERO</div>
+            <div className="p-12 font-sans text-lg text-white rounded bg-hero">
+              <p className="text-3xl text-center">Hei!</p>
+              <p className="text-lg">Jeg heter Daniel Fjeldstad og er en webutvikler som kan PHP, mySQL, Wordpress, HTML, CSS, Javascript, React, Redux, Docker og mye mer. </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4 p-4 mt-4 ">
-            <div className="p-12 text-lg text-center text-white rounded bg-hero">HERO</div>
-            <div className="p-12 text-lg text-center text-white rounded bg-hero">HERO</div>
+            <div className="p-12 text-lg text-center text-white rounded bg-hero">
+            <p className="text-xl text-center">xx x xx x x x xx  </p>
+            </div>
+            <div className="p-12 text-lg text-center text-white rounded bg-hero"><p className="text-xl text-center">xx x xx x x x xx  </p></div>
           </div>
         </div>
       </div>
