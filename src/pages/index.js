@@ -26,8 +26,6 @@ import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 import FontAwesome from "../components/FontAwesome/FontAwesome"
 
-// flex items-center justify-center h-screen
-
 function IndexPage() {
   return (
     <>
@@ -56,7 +54,6 @@ function IndexPage() {
                 2011 hvor jeg har arbeidet frilans via Fiverr og kan skilte med
                 100% positiv tilbakemelding på samtlige oppdrag.
               </p>
-
               <p className="mt-6 text-lg">
                 Har også erfaring med Opencart og Magento.
               </p>
