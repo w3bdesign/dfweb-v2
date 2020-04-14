@@ -1,20 +1,12 @@
 import React from "react"
-import AppLogo from "../../logo/logo.svg"
+import AppLogo from "./Applogo.component"
 //import { AnimatedLogo } from "../Animation/AnimatedLogo.component"
 
 export default function NavbarContent() {
   return (
     <>
       <div className="container flex flex-wrap items-center mx-auto">
-        <div className="flex justify-center w-full font-extrabold text-white md:w-1/2 md:justify-start">
-          <a
-            className="text-white no-underline hover:text-white hover:no-underline"
-            href="#link"
-          >
-            <AppLogo style={{ height: "100px" }} />
-            
-          </a>
-        </div>
+        <AppLogo />
         <div className="flex content-center justify-between w-full md:w-1/2 md:justify-end">
           <ul className="flex items-center justify-between flex-1 list-reset md:flex-none">
             <li className="mr-3">
