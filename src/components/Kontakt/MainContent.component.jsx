@@ -4,27 +4,23 @@ function MainContent() {
   return (
     <>
       <div className="container mx-auto rounded">
-        <div className="p-4 mx-auto mt-4 ">
-          <div className="p-12 font-sans text-lg text-white rounded bg-hero">
-            <p className="text-lg">Kontakt</p>
-          </div>
-        </div>
-        <div className="p-4 mx-auto mt-4 ">
-          <div className="p-12 font-sans text-lg text-white rounded bg-hero">
+        <div className="p-4 mx-auto mt-4">
+          <div className="p-6 font-sans text-lg rounded bg-hero">
+            <h3 className="m-2 text-3xl text-center text-white">Kontakt</h3>
             <form
+              className="text-center"
               name="kontaktskjema"
               method="POST"
               data-netlify="true"
-              className="pure-form"
               netlify-honeypot="bot-field"
             >
               <input type="hidden" name="bot-field" />
-              <fieldset className="pure-group">
-                <h4>Vennligst fyll ut skjemaet under</h4>
-                <label htmlFor="text">
+              <fieldset>
+                <label className="text-white" htmlFor="text">
                   Fullt navn
                   <br />
                   <input
+                    className="p-2 m-2 text-black rounded"
                     id="text"
                     name="navn"
                     type="text"
@@ -33,11 +29,13 @@ function MainContent() {
                     aria-required="true"
                   />
                 </label>
-
-                <label htmlFor="phone">
-                  Telefon (uten mellomrom)
+                </fieldset>
+                <fieldset>
+                <label className="text-white" htmlFor="phone">
+                Telefonnummer
                   <br />
                   <input
+                    className="p-2 m-2 text-black rounded"
                     id="phone"
                     name="telefon"
                     type="text"
@@ -48,11 +46,12 @@ function MainContent() {
                   />
                 </label>
               </fieldset>
-              <fieldset className="pure-group">
-                <label htmlFor="textarea">
+              <fieldset>
+                <label className="text-white" htmlFor="textarea">
                   Hva ønsker du å si?
                   <br />
                   <textarea
+                    className="p-2 m-2 text-black rounded"
                     name="tekst"
                     id="textarea"
                     required="true"
@@ -60,14 +59,9 @@ function MainContent() {
                   ></textarea>
                 </label>
               </fieldset>
-              <button type="submit" className="button">
+              <button type="submit" className="m-4 text-white rounded button">
                 Send skjema
               </button>
-              <br />
-              &nbsp;
-              <label style={{ position: "absolute", display: "none" }}>
-                Don’t fill this out if you are human: <input name="bot-field" />
-              </label>
             </form>
           </div>
         </div>
