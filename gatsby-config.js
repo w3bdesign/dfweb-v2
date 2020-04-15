@@ -7,14 +7,13 @@
 module.exports = {
   plugins: [
     "gatsby-plugin-postcss",
-    { 
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: false, 
-         develop: false, 
-         tailwind: true,  
-         ignore: ["fontawesome-svg-core/"],
-      }
+        printRejected: false,
+        develop: false,
+        tailwind: true,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -24,6 +23,6 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
-    "gatsby-plugin-react-svg"
+    "gatsby-plugin-react-svg",
   ],
 }

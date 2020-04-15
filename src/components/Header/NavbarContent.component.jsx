@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import AppLogo from "./Applogo.component"
 
-export default function NavbarContent(props) {
+export default function NavbarContent() {
   return (
     <>
       <div className="container flex flex-wrap items-center mx-auto">
@@ -13,7 +13,7 @@ export default function NavbarContent(props) {
           <ul className="flex items-center justify-between flex-1 list-reset md:flex-none">
             <li className="mr-3">
               <Link
-                className="inline-block m-4 text-xl text-white"
+                className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
                 to="/"
               >
@@ -22,7 +22,7 @@ export default function NavbarContent(props) {
             </li>
             <li className="mr-3">
               <Link
-                className="inline-block m-4 text-xl text-white"
+                className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
                 to="/portefølje"
               >
@@ -31,7 +31,7 @@ export default function NavbarContent(props) {
             </li>
             <li className="mr-3">
               <Link
-                className="inline-block m-4 text-xl text-white"
+                className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
                 to="/cv"
               >
@@ -40,7 +40,7 @@ export default function NavbarContent(props) {
             </li>
             <li className="mr-3">
               <Link
-                className="inline-block m-4 text-xl text-white"
+                className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
                 to="/kontakt"
               >
