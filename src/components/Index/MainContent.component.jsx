@@ -42,7 +42,15 @@ function MainContent() {
             <p className="text-3xl text-center">Github</p>
             <p className="mt-6 text-lg">
               Jeg oppdaterer jevnlig min Github konto med nye prosjekter. Hvis
-              du er interessert kan du ta en titt HER
+              du er interessert kan du ta en titt{" "}
+              <a
+                className="underline"
+                href="https://github.com/w3bdesign"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                HER
+              </a>
             </p>
           </div>
         </div>

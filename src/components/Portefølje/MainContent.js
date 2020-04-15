@@ -9,8 +9,16 @@ function MainContent() {
             <p className="text-lg">Innhold Portefølje</p>
           </div>
         </div>
-        <div className="grid gap-4 p-4 mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
+        <div className="grid gap-4 p-4 mt-4 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
           <div className="p-12 text-lg text-white rounded bg-hero">
+            <p className="text-lg">Innhold Portefølje</p>
+          </div>
+          <div className="p-12 text-lg text-white rounded bg-hero">
+            <p className="text-lg">Innhold Portefølje</p>
+            <p className="text-lg">Innhold Portefølje</p>
+          </div>
+          <div className="p-12 text-lg text-white rounded bg-hero">
+            <p className="text-lg">Innhold Portefølje</p>
             <p className="text-lg">Innhold Portefølje</p>
           </div>
           <div className="p-12 text-lg text-white rounded bg-hero">
