@@ -13,6 +13,7 @@ module.exports = {
         printRejected: false,
         develop: false,
         tailwind: true,
+        ignore: ["fontawesome-svg-core/"],
       },
     },
     {
