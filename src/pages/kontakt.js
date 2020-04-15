@@ -3,7 +3,7 @@ import React from "react"
 import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 
-import MainContent from "../components/Kontakt/MainContent"
+import MainContent from "../components/Kontakt/MainContent.component"
 
 function KontaktPage() {
   return (
