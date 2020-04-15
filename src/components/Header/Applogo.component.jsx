@@ -6,7 +6,7 @@ export default function AppLogo() {
     <div className="flex justify-center w-full font-extrabold text-white md:w-1/2 md:justify-start">
       <a
         className="text-white no-underline hover:text-white hover:no-underline"
-        href="#link"
+        href="/"
       >
         <Logo style={{ height: "100px" }} />
       </a>
