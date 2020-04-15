@@ -33,7 +33,7 @@ function IndexPage() {
       <Navbar>
         <NavbarContent />
       </Navbar>
-      <MainContent/>
+      <MainContent />
     </>
   )
 }
