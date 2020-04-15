@@ -23,7 +23,7 @@ export const FontAwesome = () => {
           className="m-2"
           key={uuidv4()}
           icon={icon}
-          style={{ fontSize: "50px", maxHeight:"10px" }}
+          style={{ fontSize: "50px", maxHeight:"100px" }}
         />
       ))}
     </p>
