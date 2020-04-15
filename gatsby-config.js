@@ -34,5 +34,6 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-plugin-react-svg",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-netlify-headers"
   ],
 }
