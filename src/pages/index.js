@@ -27,8 +27,6 @@ import NavbarContent from "../components/Header/NavbarContent.component"
 
 import MainContent from "../components/Index/MainContent"
 
-import { Helmet } from "react-helmet"
-
 function IndexPage() {
   return (
     <>
