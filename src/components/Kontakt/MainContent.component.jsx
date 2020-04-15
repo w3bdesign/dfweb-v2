@@ -18,6 +18,7 @@ function MainContent() {
               className="pure-form"
               netlify-honeypot="bot-field"
             >
+              <input type="hidden" name="bot-field" />
               <fieldset className="pure-group">
                 <h4>Vennligst fyll ut skjemaet under</h4>
                 <label htmlFor="text">
