@@ -21,7 +21,7 @@ function MainContent() {
                   Fullt navn
                   <br />
                   <input
-                    className="p-2 m-2 text-black rounded focus:shadow-outline"
+                    className="w-64 p-2 m-2 text-black rounded focus:shadow-outline"
                     id="text"
                     name="navn"
                     type="text"
@@ -30,13 +30,13 @@ function MainContent() {
                     aria-required="true"
                   />
                 </label>
-                </fieldset>
-                <fieldset>
+              </fieldset>
+              <fieldset>
                 <label className="text-white" htmlFor="phone">
-                Telefonnummer
+                  Telefonnummer
                   <br />
                   <input
-                    className="p-2 m-2 text-black rounded focus:shadow-outline"
+                    className="w-64 p-2 m-2 text-black rounded focus:shadow-outline"
                     id="phone"
                     name="telefon"
                     type="text"
@@ -52,7 +52,7 @@ function MainContent() {
                   Hva ønsker du å si?
                   <br />
                   <textarea
-                    className="p-2 m-2 text-black rounded focus:shadow-outline"
+                    className="w-64 p-2 m-2 text-black rounded focus:shadow-outline"
                     name="tekst"
                     id="textarea"
                     required="true"
@@ -60,7 +60,10 @@ function MainContent() {
                   ></textarea>
                 </label>
               </fieldset>
-              <button type="submit" className="p-4 m-4 text-white rounded bg-button hover:shadow-outline">
+              <button
+                type="submit"
+                className="p-4 m-4 text-white rounded bg-button hover:shadow-outline"
+              >
                 Send skjema
               </button>
             </form>
