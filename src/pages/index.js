@@ -21,7 +21,6 @@ https://www.youtube.com/watch?v=nqNIy8HkEQ8&app=desktop
 */
 
 import React from "react"
-import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
