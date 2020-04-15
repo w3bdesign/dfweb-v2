@@ -4,6 +4,7 @@ module.exports = {
       colors: {
         hero: "#564787",
         main: "#9ad4d6",
+        button: "#7180ac"
       },
     },
   },
