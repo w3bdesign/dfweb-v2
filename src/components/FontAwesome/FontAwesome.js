@@ -19,11 +19,11 @@ export const FontAwesome = () => {
     <p className="mt-4 text-center">
       {ICONS.map((icon) => (
         <FontAwesomeIcon
-        style={{ height: "100px" }}
+       
           className="m-2"
           key={uuidv4()}
           icon={icon}
-          style={{ fontSize: "50px" }}
+          style={{ fontSize: "50px", maxHeight:"10px" }}
         />
       ))}
     </p>
