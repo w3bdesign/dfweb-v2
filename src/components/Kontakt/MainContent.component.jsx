@@ -11,10 +11,9 @@ function MainContent() {
               className="text-center"
               name="kontaktskjema"
               method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
+              data-netlify="true"              
             >
-              <input type="hidden" name="bot-field" />
+             
               <input type="hidden" name="form-name" value="kontaktskjema" />
               <fieldset>
                 <label className="text-white" htmlFor="text">
