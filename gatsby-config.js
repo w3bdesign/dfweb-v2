@@ -12,6 +12,7 @@ module.exports = {
       "Portefølje for Daniel Fjeldstad, en utvikler som kan PHP, Javascript, Wordpress, React med mer.",
     url: "https://www.dfweb.no", // No trailing slash allowed!
     image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@occlumency"
   },
   plugins: [
     "gatsby-plugin-postcss",
