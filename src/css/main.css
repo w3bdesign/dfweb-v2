@@ -2,25 +2,4 @@
 
 @import "tailwindcss/components";
 
-.motion-container {
-    width: 150px;
-    height: 150px;
-    display: grid;
-    overflow: hidden;
-    margin: 0;
-    list-style: none;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(2, 2fr);
-    gap: 15px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-  }
-  
-  .item {
-    background: white;
-    border-radius: 100%;
-  }
-
-
 @import "tailwindcss/utilities";
