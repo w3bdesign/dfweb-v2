@@ -2,4 +2,8 @@
 
 @import "tailwindcss/components";
 
+body {
+    font-family: "Lato";
+  }
+
 @import "tailwindcss/utilities";

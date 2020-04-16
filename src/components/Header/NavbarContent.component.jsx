@@ -15,9 +15,9 @@ export default function NavbarContent() {
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
-                to="/"
+                to="/nyindex"
               >
-                Hjem
+                Ny Index
               </Link>
             </li>
             <li className="mr-3">
