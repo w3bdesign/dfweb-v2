@@ -27,6 +27,9 @@ function MainContent() {
             Woocommerce
           </div>
         </div>
+        <div className="grid gap-4 p-4 mt-4 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
+          <Portfolio />
+        </div>
       </div>
     </>
   )
