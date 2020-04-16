@@ -19,16 +19,15 @@ const container = {
 */
 
 const container = {
-  hidden: { opacity: 0, scale: 0, y:"100%" },
+  hidden: { opacity: 0, scale: 0, y: "100%" },
   visible: {
     opacity: 1,
     scale: 1,
-    y:"0%",
+    y: "0%",
     transition: {
       delay: 1,
       staggerChildren: 1,
       ease: "easeInOut",
-     
     },
   },
 }
@@ -38,7 +37,7 @@ const transition = {
   ease: "easeInOut",
   staggerChildren: 1,
 }
-
+// https://codesandbox.io/s/framer-motion-magic-expand-hwugd?file=/src/App.js
 export const Portfolio = () => (
   <>
     {[0, 1, 2, 3].map((index) => (
@@ -46,12 +45,19 @@ export const Portfolio = () => (
         key={index}
         className="p-12 text-lg text-white rounded bg-hero"
         variants={container}
-        transition={{duration: index}}
+        transition={{ duration: index }}
         initial="hidden"
         animate="visible"
       >
         <p className="text-lg text-center">Innhold Portefølje</p>
-        <motion.div variants={container} initial="hidden" animate="visible" className="text-lg text-center">Les mer innhold</motion.div>
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="text-lg text-center"
+        >
+          Les mer innhold
+        </motion.div>
       </motion.div>
     ))}
   </>
