@@ -3,6 +3,7 @@
 Inspirational resources: 
 
 https://www.dcode.no/
+https://www.coretrek.no/
 
 */
 
