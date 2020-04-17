@@ -20,7 +20,7 @@ function MainContent() {
             </div>
           </div>
         </div>
-        <div className="mt-4">
+        <div className="mt-8">
           <div className="container max-w-4xl p-4 m-4 mx-auto text-lg text-left text-black bg-white rounded shadow-lg">
           <p className="p-4 m-4 text-3xl text-center">Om Meg</p>
             <p className="mx-auto">
