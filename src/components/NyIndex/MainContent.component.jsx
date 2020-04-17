@@ -6,7 +6,7 @@ import hero from "../../../static/blue-hero.jpg"
 function MainContent() {
   return (
     <>
-      <div className="mx-auto rounded shadow-large">
+      <div className="mx-auto bg-gray-200 rounded shadow-large">
         <div className="mx-auto">
           <div
             className="flex flex-col justify-center pr-16 text-lg text-white rounded"
@@ -21,9 +21,9 @@ function MainContent() {
           </div>
         </div>
         <div className="mt-4">
-          <div className="container max-w-4xl p-4 m-4 mx-auto text-lg text-left text-black bg-gray-100 rounded shadow-lg">
-            <p className="mt-4 text-3xl text-center">Om Meg</p>
-            <p className="mx-auto mt-6">
+          <div className="container max-w-4xl p-4 m-4 mx-auto text-lg text-left text-black bg-white rounded shadow-lg">
+          <p className="p-4 m-4 text-3xl text-center">Om Meg</p>
+            <p className="mx-auto">
               Jeg heter Daniel Fjeldstad og er en webutvikler som kan:
               <br />
               PHP, mySQL, Wordpress, HTML, CSS, Javascript, React, Redux, Docker
@@ -50,7 +50,7 @@ function MainContent() {
               og 2020.
             </p>
             <p className="p-4 m-4 text-3xl text-center">Github</p>
-            <p className="mt-6">
+            <p>
               Jeg oppdaterer jevnlig min Github konto med nye prosjekter.
               <br />
               Hvis du er interessert kan du ta en titt{" "}
