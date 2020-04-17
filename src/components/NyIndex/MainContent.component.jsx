@@ -21,16 +21,16 @@ function MainContent() {
           </div>
         </div>
         <div className="mt-4">
-          <div className="container max-w-4xl p-6 m-6 mx-auto text-lg text-left text-black bg-gray-100 rounded shadow-lg">
-            <p className="mt-6 text-3xl text-center">Om Meg</p>
-            <p className="mx-auto mt-8">
+          <div className="container max-w-4xl p-4 m-4 mx-auto text-lg text-left text-black bg-gray-100 rounded shadow-lg">
+            <p className="mt-4 text-3xl text-center">Om Meg</p>
+            <p className="mx-auto mt-6">
               Jeg heter Daniel Fjeldstad og er en webutvikler som kan:
               <br />
               PHP, mySQL, Wordpress, HTML, CSS, Javascript, React, Redux, Docker
               og mye mer.
             </p>
-            <FontAwesome className="mt-8" />
-            <p className="mx-auto mt-8">
+            <FontAwesome className="m-8" />
+            <p className="mx-auto mt-6">
               Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
               Javascript.
               <br />
@@ -41,7 +41,7 @@ function MainContent() {
               Har også erfaring med Opencart og Magento.
             </p>
 
-            <p className="mx-auto mt-8">
+            <p className="mx-auto mt-6">
               Jeg har også erfaring med andre teknologier som React, moderne
               Javascript (ES6+), Node.js, Firebase, Context, Redux, Axios,
               Docker med mer.
@@ -49,8 +49,8 @@ function MainContent() {
               På Portefølje kan du se eksempler på arbeid jeg har gjort i 2019
               og 2020.
             </p>
-            <p className="p-6 m-6 text-3xl text-center">Github</p>
-            <p className="mt-8">
+            <p className="p-4 m-4 text-3xl text-center">Github</p>
+            <p className="mt-6">
               Jeg oppdaterer jevnlig min Github konto med nye prosjekter.
               <br />
               Hvis du er interessert kan du ta en titt{" "}
