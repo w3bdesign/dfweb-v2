@@ -8,9 +8,9 @@ function MainContent() {
     <>
       <div className="mx-auto rounded shadow-large">
         <div className="mx-auto">
-          <div className="text-lg text-white rounded">
+          <div className="text-lg text-white rounded" style={{ backgroundImage: `url(${hero})`, height: "450px" }}>
           
-            <img src={hero} />
+           
             <p className="text-3xl text-center">Hei! (Ny index)</p>
             <p className="text-lg">
               Jeg heter Daniel Fjeldstad og er en webutvikler som kan PHP,
