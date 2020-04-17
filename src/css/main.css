@@ -3,7 +3,11 @@
 @import "tailwindcss/components";
 
 body {
-    font-family: "Lato";
-  }
+  font-family: "Lato";
+}
+
+.svg-inline--fa:hover {
+  color: blue;
+}
 
 @import "tailwindcss/utilities";
