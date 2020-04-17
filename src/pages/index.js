@@ -18,6 +18,8 @@ https://dev.to/sebastianguenther/react-how-to-design-smooth-page-transitions-and
 
 https://www.youtube.com/watch?v=nqNIy8HkEQ8&app=desktop
 
+https://konstantinlebedev.com/framer-motion-intro/
+
 */
 
 import React from "react"
