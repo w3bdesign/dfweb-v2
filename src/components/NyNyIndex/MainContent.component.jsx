@@ -11,9 +11,9 @@ function MainContent() {
           className="flex flex-col justify-center text-lg text-white rounded"
           style={{ backgroundImage: `url(${hero})`, height: "450px" }}
         >
-          <div className="p-4 text-white rounded">
+          <div className="text-white rounded ">
             <p className="text-5xl text-center">Hei!</p>
-            <p className="p-12 text-lg xl:text-center lg:text-center md:text-center xl:text-2xl lg:text-2xl md:text-xl">
+            <p className="p-12 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-center md:text-center xl:text-2xl lg:text-xl md:text-xl xs:">
               Jeg heter Daniel Fjeldstad og er en webutvikler som kan PHP,
               mySQL, Wordpress, HTML, CSS, Javascript, React, Redux, Docker og
               mye mer.
