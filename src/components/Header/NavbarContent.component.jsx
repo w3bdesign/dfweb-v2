@@ -20,6 +20,15 @@ export default function NavbarContent() {
                 Ny Index
               </Link>
             </li>
+           <li className="mr-3">
+              <Link
+                className="inline-block m-4 text-xl text-white hover:underline"
+                activeClassName="underline"
+                to="/nynyindex"
+              >
+                Ny Ny Index
+              </Link>
+            </li>
             <li className="mr-3">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"

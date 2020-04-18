@@ -7,7 +7,7 @@ body {
 }
 
 .svg-inline--fa:hover {
-  color: blue;
+  color: silver;
 }
 
 @import "tailwindcss/utilities";
