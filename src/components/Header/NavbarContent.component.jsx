@@ -2,16 +2,18 @@ import React from "react"
 import { Link } from "gatsby"
 
 import AppLogo from "./Applogo.component"
+import Hamburger from "./Hamburger.component"
 
 export default function NavbarContent() {
   return (
     <>
-      <div className="container flex flex-wrap items-center mx-auto">
+      <div className="container flex items-center mx-auto md:flex-wrap lg:flex-wrap xl:flex-wrap">
         <AppLogo />
-
+        <Hamburger /> 
         <div className="flex content-center justify-between w-full md:w-1/2 md:justify-end">
-          <ul className="flex items-center justify-between flex-1 list-reset md:flex-none">
-          <li className="mr-3">
+          
+          <ul className="items-center justify-between flex-1 hidden list-reset md:flex lg:flex xl:flex">
+            <li className="mr-3">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
@@ -29,7 +31,7 @@ export default function NavbarContent() {
                 Design #2
               </Link>
             </li>
-           <li className="mr-3">
+            <li className="mr-3">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"

@@ -8,7 +8,7 @@ function MainContent() {
     <>
       <div className="mx-auto rounded shadow-large">
         <div
-          className="flex flex-col justify-center text-lg text-white rounded"
+          className="flex flex-col justify-center text-lg text-white"
           style={{ backgroundImage: `url(${hero})`, height: "450px" }}
         >
           <div className="text-white rounded ">
