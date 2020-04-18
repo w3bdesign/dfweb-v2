@@ -12,7 +12,7 @@ import React from "react"
 import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 
-import MainContent from "../components/NyIndex/MainContent.component"
+import MainContent from "../components/Design2/MainContent.component"
 
 function IndexPage() {
   return (

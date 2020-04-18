@@ -24,7 +24,7 @@ export default function NavbarContent() {
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
-                to="/nyindex"
+                to="/design2"
               >
                 Design #2
               </Link>
@@ -33,7 +33,7 @@ export default function NavbarContent() {
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
-                to="/nynyindex"
+                to="/design3"
               >
                 Design #3
               </Link>
