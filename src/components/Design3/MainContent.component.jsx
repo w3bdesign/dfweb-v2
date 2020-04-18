@@ -22,7 +22,7 @@ function MainContent() {
           </div>
         </div>
         <div className="container grid gap-4 p-4 mx-auto mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
-          <div className="p-12 text-lg text-white rounded bg-hero">
+          <div className="p-8 text-lg text-white rounded bg-hero">
             <p className="text-3xl text-center">Om Meg</p>
             <p className="mt-6 text-lg">
               Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
@@ -43,7 +43,7 @@ function MainContent() {
               </p>
             </p>
           </div>
-          <div className="p-12 text-lg text-white rounded bg-hero">
+          <div className="p-8 text-lg text-white rounded bg-hero">
             <p className="text-3xl text-center">Github</p>
             <p className="mt-6 text-lg">
               Jeg oppdaterer jevnlig min Github konto med nye prosjekter.
