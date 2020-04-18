@@ -8,12 +8,12 @@ function MainContent() {
     <>
       <div className="mx-auto rounded shadow-large">
         <div
-          className="flex flex-col justify-center pr-16 text-lg text-white rounded"
+          className="flex flex-col justify-center text-lg text-white rounded"
           style={{ backgroundImage: `url(${hero})`, height: "450px" }}
         >
-          <div className="p-12 font-sans text-lg text-white rounded">
+          <div className="p-4 text-white rounded">
             <p className="text-5xl text-center">Hei!</p>
-            <p className="text-2xl text-center">
+            <p className="p-12 text-lg xl:text-center lg:text-center md:text-center xl:text-2xl lg:text-2xl md:text-xl">
               Jeg heter Daniel Fjeldstad og er en webutvikler som kan PHP,
               mySQL, Wordpress, HTML, CSS, Javascript, React, Redux, Docker og
               mye mer.
@@ -59,7 +59,7 @@ function MainContent() {
                 HER
               </a>
               <br />
-              <br />             
+              <br />
               TODO: Legg til mer tekst her.
             </p>
           </div>
