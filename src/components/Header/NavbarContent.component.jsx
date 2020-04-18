@@ -11,13 +11,22 @@ export default function NavbarContent() {
 
         <div className="flex content-center justify-between w-full md:w-1/2 md:justify-end">
           <ul className="flex items-center justify-between flex-1 list-reset md:flex-none">
+          <li className="mr-3">
+              <Link
+                className="inline-block m-4 text-xl text-white hover:underline"
+                activeClassName="underline"
+                to="/"
+              >
+                Design #1
+              </Link>
+            </li>
             <li className="mr-3">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
                 to="/nyindex"
               >
-                Ny Index
+                Design #2
               </Link>
             </li>
            <li className="mr-3">
@@ -26,7 +35,7 @@ export default function NavbarContent() {
                 activeClassName="underline"
                 to="/nynyindex"
               >
-                Ny Ny Index
+                Design #3
               </Link>
             </li>
             <li className="mr-3">

@@ -7,10 +7,10 @@ function MainContent() {
   return (
     <>
       <div className="mx-auto rounded shadow-large">
-      <div
-            className="flex flex-col justify-center pr-16 text-lg text-white rounded"
-            style={{ backgroundImage: `url(${hero})`, height: "450px" }}
-          >
+        <div
+          className="flex flex-col justify-center pr-16 text-lg text-white rounded"
+          style={{ backgroundImage: `url(${hero})`, height: "450px" }}
+        >
           <div className="p-12 font-sans text-lg text-white rounded">
             <p className="text-5xl text-center">Hei!</p>
             <p className="text-2xl text-center">
@@ -46,8 +46,10 @@ function MainContent() {
           <div className="p-12 text-lg text-white rounded bg-hero">
             <p className="text-3xl text-center">Github</p>
             <p className="mt-6 text-lg">
-              Jeg oppdaterer jevnlig min Github konto med nye prosjekter. Hvis
-              du er interessert kan du ta en titt{" "}
+              Jeg oppdaterer jevnlig min Github konto med nye prosjekter.
+              <br />
+              <br />
+              Hvis du er interessert kan du ta en titt{" "}
               <a
                 className="underline"
                 href="https://github.com/w3bdesign"
@@ -56,6 +58,9 @@ function MainContent() {
               >
                 HER
               </a>
+              <br />
+              <br />             
+              TODO: Legg til mer tekst her.
             </p>
           </div>
         </div>
