@@ -19,15 +19,42 @@ export default function Hamburger() {
         style={{ height: "70px" }}
       />
       {isExpanded && (
-        <div className="mt-20 bg-white w-30 h-30">
-          <ul className="items-center justify-between flex-1 hidden list-reset md:flex lg:flex xl:flex">
-            <li className="mr-3">
+        <div className="absolute right-0 bg-gray-800 w-30 h-60">
+          <ul className="">
+            <li className="m-6">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
                 to="/design3"
               >
                 Hjem
+              </Link>
+            </li>
+            <li className="m-6">
+              <Link
+                className="inline-block m-4 text-xl text-white hover:underline"
+                activeClassName="underline"
+                to="/design3"
+              >
+                Portefølje
+              </Link>
+            </li>
+            <li className="m-6">
+              <Link
+                className="inline-block m-4 text-xl text-white hover:underline"
+                activeClassName="underline"
+                to="/design3"
+              >
+                CV
+              </Link>
+            </li>
+            <li className="m-6">
+              <Link
+                className="inline-block m-4 text-xl text-white hover:underline"
+                activeClassName="underline"
+                to="/design3"
+              >
+                Kontakt
               </Link>
             </li>
           </ul>
