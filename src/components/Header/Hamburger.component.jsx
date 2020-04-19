@@ -1,6 +1,16 @@
 // https://www.youtube.com/watch?v=97A3uRS7_YA
+
 // https://github.com/syntacticsolutions/react-navigation-menu
+
 // https://codesandbox.io/s/framer-motion-side-menu-mx2rw?fontsize=14&module=%2Fsrc%2FExample.tsx
+
+// Animation:
+
+// https://dev.to/sebastianguenther/react-how-to-design-smooth-page-transitions-and-animations-1fii
+
+// https://www.youtube.com/watch?v=nqNIy8HkEQ8&app=desktop
+
+// https://konstantinlebedev.com/framer-motion-intro/
 
 import React, { useState } from "react"
 import { Link } from "gatsby"
@@ -25,7 +35,7 @@ export default function Hamburger() {
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
-                to="/design3"
+                to="/"
               >
                 Hjem
               </Link>
@@ -34,7 +44,7 @@ export default function Hamburger() {
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
-                to="/design3"
+                to="/portefølje"
               >
                 Portefølje
               </Link>
@@ -43,7 +53,7 @@ export default function Hamburger() {
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
-                to="/design3"
+                to="/cv"
               >
                 CV
               </Link>
@@ -52,7 +62,7 @@ export default function Hamburger() {
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
-                to="/design3"
+                to="/kontakt"
               >
                 Kontakt
               </Link>

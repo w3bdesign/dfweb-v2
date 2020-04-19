@@ -12,14 +12,6 @@ https://github.com/creativetimofficial/tailwind-starter-kit
 
 https://github.com/framer/motion
 
-//
-
-https://dev.to/sebastianguenther/react-how-to-design-smooth-page-transitions-and-animations-1fii
-
-https://www.youtube.com/watch?v=nqNIy8HkEQ8&app=desktop
-
-https://konstantinlebedev.com/framer-motion-intro/
-
 */
 
 import React from "react"
