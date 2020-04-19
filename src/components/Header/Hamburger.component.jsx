@@ -12,10 +12,30 @@
 
 // https://konstantinlebedev.com/framer-motion-intro/
 
+// https://andrejgajdos.com/orchestrating-animations-with-framer-motion-in-react-js/
+
 import React, { useState } from "react"
 import { Link } from "gatsby"
 
+import {motion} from "framer-motion"
+
 import HamburgerSVG from "../../svg/hamburger.svg"
+
+
+export const MenuLabelVariants = {
+  expanded: {
+    opacity: 1,
+    display: "flex"
+  },
+  collapsed: {
+    opacity: 0,
+    transitionEnd: {
+      display: "none"
+    }
+  }
+ };
+ 
+ 
 
 export default function Hamburger() {
   const [isExpanded, setisExpanded] = useState(false)
@@ -25,12 +45,19 @@ export default function Hamburger() {
         onClick={() => {
           setisExpanded(!isExpanded)
         }}
-        className="w-10 m-4 text-white hover:text-black"
+        className="w-10 m-4 text-white"
         style={{ height: "70px" }}
       />
       {isExpanded && (
-        <div className="absolute right-0 bg-gray-800 w-30 h-60">
-          <ul className="">
+        <motion.div className="absolute right-0 text-center bg-gray-800 w-30 h-60"
+        initial={{
+          width: "0%"
+        }}
+        animate={{
+          width: "100%"
+        }}
+        >
+          <ul>
             <li className="m-6">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
@@ -68,7 +95,7 @@ export default function Hamburger() {
               </Link>
             </li>
           </ul>
-        </div>
+        </motion.div>
       )}
     </div>
   )
