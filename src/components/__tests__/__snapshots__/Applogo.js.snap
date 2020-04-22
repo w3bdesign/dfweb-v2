@@ -7,6 +7,14 @@ exports[`AppLogo renders correctly 1`] = `
   <a
     className="text-white"
     href="/"
-  />
+  >
+    <Logo
+      style={
+        Object {
+          "height": "70px",
+        }
+      }
+    />
+  </a>
 </div>
 `;
