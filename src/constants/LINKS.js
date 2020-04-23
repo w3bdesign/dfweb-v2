@@ -4,15 +4,15 @@ export const LINKS = [
     text: "Hjem",
   },
   {
-    url: "/Portefølje",
+    url: "/portefølje",
     text: "Portefølje",
   },
   {
-    url: "/CV",
+    url: "/cv",
     text: "CV",
   },
   {
-    url: "/Kontakt",
+    url: "/kontakt",
     text: "Kontakt",
   },
 ]
