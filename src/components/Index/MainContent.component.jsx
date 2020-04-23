@@ -7,10 +7,11 @@ import { TimelineLite, TweenMax, Power3 } from "gsap"
 import heroimage from "../../../static/blue-hero.jpg"
 
 function MainContent() {
+  // GSAP animations
   let app = useRef(null)
   let heroRef = useRef(null)
   let heroContent = useRef(null)
-  let ommeg = useRef(null)
+  let omMeg = useRef(null)
   let tl = new TimelineLite({ delay: 0.8 })
 
   useEffect(() => {
@@ -18,8 +19,8 @@ function MainContent() {
     const secondHeroContent = heroContent.children[1]
     const thirdHeroContent = heroContent.children[2]
 
-    const ommegContent = ommeg.children[0]
-    const ommegContent2 = ommeg.children[1]
+    const ommegContent = omMeg.children[0]
+    const ommegContent2 = omMeg.children[1]
 
     //Remove initial flash
 
@@ -79,7 +80,7 @@ function MainContent() {
     <>
       <div
         ref={(el) => (app = el)}
-        className="invisible mx-auto rounded shadow-large"
+        className="invisible mx-auto bg-gray-200 rounded shadow-large"
       >
         <div
           ref={(el) => (heroRef = el)}
@@ -97,10 +98,10 @@ function MainContent() {
           </div>
         </div>
         <div
-          ref={(el) => (ommeg = el)}
+          ref={(el) => (omMeg = el)}
           className="container grid gap-4 p-4 mx-auto mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
         >
-          <div className="p-8 text-lg text-white rounded bg-hero">
+          <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
             <p className="text-3xl text-center">Om Meg</p>
             <p className="mt-6 text-lg">
               Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
@@ -121,7 +122,7 @@ function MainContent() {
               og 2020.
             </p>
           </div>
-          <div className="p-8 text-lg text-white rounded bg-hero">
+          <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
             <p className="text-3xl text-center">Github</p>
             <p className="mt-6 text-lg">
               Jeg oppdaterer jevnlig min Github konto med nye prosjekter.
