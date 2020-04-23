@@ -12,7 +12,8 @@ function MainContent() {
   let heroRef = useRef(null)
   let heroContent = useRef(null)
   let omMeg = useRef(null)
-  let tl = new TimelineLite({ delay: 0.1 })
+  
+  let tl = new TimelineLite({ delay: 0.2 })
 
   useEffect(() => {
     const firstHeroContent = heroContent.children[0]
