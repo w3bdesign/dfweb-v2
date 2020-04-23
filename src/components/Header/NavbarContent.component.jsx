@@ -16,11 +16,11 @@ export default function NavbarContent() {
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
-                to="/design3"
+                to="/"
               >
                 Hjem
               </Link>
-            </li>            
+            </li>
             <li className="mr-3">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
