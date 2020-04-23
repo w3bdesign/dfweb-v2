@@ -42,7 +42,7 @@ export default function Hamburger() {
         onClick={() => {
           setisExpanded(!isExpanded)
         }}
-        className="w-10 m-4 text-white"
+        className="w-10 m-4 text-white hover:text-gray-500"
         style={{ height: "70px" }}
       />
       {isExpanded && (

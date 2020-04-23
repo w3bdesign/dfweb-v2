@@ -15,9 +15,11 @@ const SEO = ({ title, description, image, article }) => {
     siteUrl,
     defaultImage,
     twitterUsername,
+    lang,
   } = site.siteMetadata
 
   const seo = {
+    lang: lang || "nb",
     title: title || defaultTitle,
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
@@ -25,7 +27,11 @@ const SEO = ({ title, description, image, article }) => {
   }
 
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+    <Helmet
+      title={seo.title}
+      titleTemplate={titleTemplate}
+      htmlAttributes={seo.lang}
+    >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 
