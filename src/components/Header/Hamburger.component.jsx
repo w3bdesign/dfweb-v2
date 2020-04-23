@@ -17,30 +17,27 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 import HamburgerSVG from "../../svg/hamburger.svg"
-
 
 export const MenuLabelVariants = {
   expanded: {
     opacity: 1,
-    display: "flex"
+    display: "flex",
   },
   collapsed: {
     opacity: 0,
     transitionEnd: {
-      display: "none"
-    }
-  }
- };
- 
- 
+      display: "none",
+    },
+  },
+}
 
 export default function Hamburger() {
   const [isExpanded, setisExpanded] = useState(false)
   return (
-    <div className="md:hidden lg:hidden xl:hidden">
+    <div className="z-50 md:hidden lg:hidden xl:hidden">
       <HamburgerSVG
         onClick={() => {
           setisExpanded(!isExpanded)
@@ -49,13 +46,14 @@ export default function Hamburger() {
         style={{ height: "70px" }}
       />
       {isExpanded && (
-        <motion.div className="absolute right-0 text-center bg-gray-800 w-30 h-60"
-        initial={{
-          width: "0%"
-        }}
-        animate={{
-          width: "100%"
-        }}
+        <motion.div
+          className="absolute right-0 text-center bg-gray-800 w-30 h-60"
+          initial={{
+            width: "0%",
+          }}
+          animate={{
+            width: "100%",
+          }}
         >
           <ul>
             <li className="m-6">
