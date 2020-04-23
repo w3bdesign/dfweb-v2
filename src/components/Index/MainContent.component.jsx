@@ -78,6 +78,7 @@ function MainContent() {
 
   return (
     <>
+    <main id="maincontent">
       <div
         ref={(el) => (app = el)}
         className="invisible mx-auto bg-gray-200 rounded shadow-large"
@@ -87,7 +88,8 @@ function MainContent() {
           className="flex flex-col justify-center text-lg text-white"
           style={{ backgroundImage: `url(${heroimage})`, height: "450px" }}
         >
-          <div ref={(el) => (heroContent = el)} className="text-white rounded ">
+          <div ref={(el) => (heroContent = el)} className="text-white rounded">
+            <section>
             <p className="text-5xl text-center">Hei!</p>
             <p className="p-12 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-center md:text-center xl:text-2xl lg:text-xl md:text-xl xs:">
               Jeg heter Daniel Fjeldstad og er en webutvikler som kan PHP,
@@ -95,6 +97,7 @@ function MainContent() {
               mye mer.
             </p>
             <FontAwesome />
+            </section>
           </div>
         </div>
         <div
@@ -102,6 +105,7 @@ function MainContent() {
           className="container grid gap-4 p-4 mx-auto mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
         >
           <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
+          <section>
             <p className="text-3xl text-center">Om Meg</p>
             <p className="mt-6 text-lg">
               Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
@@ -109,6 +113,7 @@ function MainContent() {
               2011 hvor jeg har arbeidet frilans via Fiverr og kan skilte med
               100% positiv tilbakemelding på samtlige oppdrag.
             </p>
+            
             <p className="mt-6 text-lg">
               Har også erfaring med Opencart og Magento.
             </p>
@@ -121,8 +126,10 @@ function MainContent() {
               På Portefølje kan du se eksempler på arbeid jeg har gjort i 2019
               og 2020.
             </p>
+            </section>
           </div>
           <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
+          <section>
             <p className="text-3xl text-center">Github</p>
             <p className="mt-6 text-lg">
               Jeg oppdaterer jevnlig min Github konto med nye prosjekter.
@@ -141,9 +148,11 @@ function MainContent() {
               <br />
               TODO: Legg til mer tekst her.
             </p>
+            </section>
           </div>
         </div>
       </div>
+      </main>
     </>
   )
 }

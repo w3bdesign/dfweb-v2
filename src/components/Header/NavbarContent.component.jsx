@@ -10,6 +10,7 @@ import LINKS from "../../constants/LINKS"
 export default function NavbarContent() {
   return (
     <>
+     <nav>
       <div className="container flex items-center mx-auto md:flex-wrap lg:flex-wrap xl:flex-wrap">
         <AppLogo />
         <div className="flex content-center justify-between md:w-1/2 md:justify-end">
@@ -29,6 +30,7 @@ export default function NavbarContent() {
           </ul>
         </div>
       </div>
+      </nav>
     </>
   )
 }
