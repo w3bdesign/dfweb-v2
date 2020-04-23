@@ -14,7 +14,7 @@ import NavbarContent from "../components/Header/NavbarContent.component"
 
 import MainContent from "../components/Design3/MainContent.component"
 
-function NyIndexPage() {
+function IndexPage() {
   return (
     <>
       <Navbar>
@@ -25,4 +25,4 @@ function NyIndexPage() {
   )
 }
 
-export default NyIndexPage
+export default IndexPage
