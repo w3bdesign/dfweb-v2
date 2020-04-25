@@ -10,6 +10,9 @@ export const Portfolio = () => (
       <div
         key={name}
         className="p-12 text-lg text-black bg-white rounded shadow-lg"
+        data-sal="fade"
+        data-sal-delay="1000"
+        data-sal-easing="ease"
       >
         <p className="text-lg text-center">{name}</p>
         <div className="mt-6 text-lg text-left">
