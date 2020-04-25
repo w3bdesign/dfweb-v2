@@ -44,9 +44,7 @@ export const Portfolio = () => (
           <div className="mt-6 text-lg text-left">
             <p>{description}</p>
 
-            <p className="mt-6">{subdescription}</p>
-
-            <p className="mt-6">{category}</p>
+            <p className="mt-6">{subdescription}</p>            
 
             <p className="mt-6">
               <img src={reactimage} alt="React" />
