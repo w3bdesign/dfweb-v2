@@ -5,32 +5,34 @@ import { Portfolio } from "../Animation/Portfolio.component"
 function MainContent() {
   return (
     <>
-      <div className="container mx-auto rounded">
-        <div className="p-4 mx-auto mt-4 ">
-          <div className="p-4 font-sans text-lg font-bold text-center text-white rounded bg-hero">
-            Javascript
+      <main className="bg-graybg">
+        <div className="container mx-auto rounded">
+          <div className="p-4 mx-auto mt-4 ">
+            <div className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg">
+              Javascript
+            </div>
+          </div>
+          <div className="grid gap-4 p-4 mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
+            <Portfolio />
+          </div>
+          <div className="p-4 mx-auto mt-4 ">
+          <div className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg">
+              React
+            </div>
+          </div>
+          <div className="grid gap-4 p-4 mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
+            <Portfolio />
+          </div>
+          <div className="p-4 mx-auto mt-4 ">
+          <div className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg">
+              Woocommerce
+            </div>
+          </div>
+          <div className="grid gap-4 p-4 mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
+            <Portfolio />
           </div>
         </div>
-        <div className="grid gap-4 p-4 mt-4 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
-          <Portfolio />
-        </div>
-        <div className="p-4 mx-auto mt-4 ">
-          <div className="p-4 font-sans text-lg font-bold text-center text-white rounded bg-hero">
-            React
-          </div>
-        </div>
-        <div className="grid gap-4 p-4 mt-4 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
-          <Portfolio />
-        </div>
-        <div className="p-4 mx-auto mt-4 ">
-          <div className="p-4 font-sans text-lg font-bold text-center text-white rounded bg-hero">
-            Woocommerce
-          </div>
-        </div>
-        <div className="grid gap-4 p-4 mt-4 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
-          <Portfolio />
-        </div>
-      </div>
+      </main>
     </>
   )
 }

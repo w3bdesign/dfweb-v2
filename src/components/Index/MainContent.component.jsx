@@ -82,7 +82,7 @@ function MainContent() {
     <main id="maincontent">
       <div
         ref={(el) => (app = el)}
-        className="invisible mx-auto bg-gray-200 rounded shadow-large"
+        className="invisible mx-auto rounded bg-graybg shadow-large"
       >
         <div
           ref={(el) => (heroRef = el)}

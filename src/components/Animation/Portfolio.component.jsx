@@ -43,27 +43,31 @@ const transition = {
 // https://codesandbox.io/s/framer-motion-magic-expand-hwugd?file=/src/App.js
 export const Portfolio = () => (
   <>
-    {PROJECTS.map(({ name, description, category, image }) => (
+    {PROJECTS.map(({ name, description, subdescription, category, image }) => (
       <motion.div
         key={name}
-        className="p-12 text-lg text-white rounded bg-hero"
+        className="p-12 text-lg text-black bg-white rounded shadow-lg"
         variants={container}
         transition={{ duration: 1 }}
         initial="hidden"
         animate="visible"
       >
-        <p className="text-lg text-center"> {name}</p>
+        <p className="text-lg text-center">{name}</p>
         <motion.div
           variants={container}
           initial="hidden"
           animate="visible"
-          className="text-lg text-center"
+          className="mt-6 text-lg text-left"
         >
-          {description}
-          <br />
-          {category}
-          <br />
-          <img src={reactimage} alt="React" />
+          <p>{description}</p>
+
+          <p className="mt-6">{subdescription}</p>
+
+          <p className="mt-6">{category}</p>
+
+          <p className="mt-6">
+            <img src={reactimage} alt="React" />
+          </p>
         </motion.div>
       </motion.div>
     ))}
