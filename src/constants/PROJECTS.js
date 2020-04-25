@@ -6,6 +6,7 @@ export const PROJECTS = [
     category: "Javascript",
     urlwww: "",
     urlgithub:"",
+    fontawesome:"faJs",
     image: "../../../static/react.webp",
   },
   {
@@ -15,6 +16,7 @@ export const PROJECTS = [
     category: "React",
     urlwww: "",
     urlgithub:"",
+    fontawesome:"faReact",
     image: "../../../static/react.webp",
   },
   {
@@ -24,6 +26,7 @@ export const PROJECTS = [
     category: "React",
     urlwww: "",
     urlgithub:"",
+    fontawesome:"faReact",
     image: "../../../static/react.webp",
   },
   {
@@ -32,7 +35,8 @@ export const PROJECTS = [
     subdescription:"Inneholder: Standard Javascript, Materialize CSS, Input validering, Fetch API, jQuery.",
     category: "Javascript",
     urlwww: "https://v1.dfweb.no",
-    urlgithub:"",
+    urlgithub:"https://github.com/w3bdesign/dfweb-v1",
+    fontawesome:"faJs",
     image: "../../../static/react.webp",
   },
 ]
