@@ -8,7 +8,7 @@ function MainContent() {
       <main className="bg-graybg">
         <div className="container mx-auto rounded">
           <div className="p-4 mx-auto mt-4 ">
-            <div className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg">
+            <div className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg reveal">
               Javascript
             </div>
           </div>
@@ -16,7 +16,7 @@ function MainContent() {
             <Portfolio />
           </div>
           <div className="p-4 mx-auto mt-4 ">
-          <div className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg">
+            <div className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg reveal">
               React
             </div>
           </div>
@@ -24,7 +24,7 @@ function MainContent() {
             <Portfolio />
           </div>
           <div className="p-4 mx-auto mt-4 ">
-          <div className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg">
+            <div className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg reveal">
               Woocommerce
             </div>
           </div>
