@@ -37,8 +37,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-svg",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-scroll-reveal",   
+    "gatsby-plugin-react-helmet",    
     "gatsby-plugin-netlify"
   ],
 }
