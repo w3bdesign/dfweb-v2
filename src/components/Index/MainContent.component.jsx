@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react"
 
 import FontAwesome from "../FontAwesome/FontAwesome"
 
-import { TimelineLite, TweenLite, Power3 } from "gsap"
+import { TimelineLite, TweenMax, Power3 } from "gsap"
 
 import heroimage from "../../../static/blue-hero.webp"
 
@@ -25,7 +25,7 @@ function MainContent() {
 
     //Remove initial flash
 
-    TweenLite.to(app, 0, { css: { visibility: "visible" } })
+    TweenMax.to(app, 0, { css: { visibility: "visible" } })
 
     /*
      tl.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children ], 1, {
