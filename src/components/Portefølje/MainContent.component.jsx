@@ -9,7 +9,7 @@ function MainContent() {
         <div className="container mx-auto rounded">
           <div className="p-4 mx-auto mt-4 ">
             <div
-              className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg reveal"
+              className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg"
               data-sal="fade"
               data-sal-delay="1000"
               data-sal-easing="ease"
@@ -22,7 +22,7 @@ function MainContent() {
           </div>
           <div className="p-4 mx-auto mt-4 ">
             <div
-              className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg reveal"
+              className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg"
               data-sal="fade"
               data-sal-delay="1000"
               data-sal-easing="ease"
@@ -40,7 +40,7 @@ function MainContent() {
             data-sal-easing="ease"
           >
             <div
-              className="p-4 font-sans text-lg font-bold text-center text-black bg-white rounded shadow-lg reveal"
+             className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg"
               data-sal="fade"
               data-sal-delay="1000"
               data-sal-easing="ease"
