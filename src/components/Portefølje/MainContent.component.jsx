@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Portfolio } from "../Animation/Portfolio.component"
+import { Portfolio } from "./Portefølje.component"
 
 function MainContent() {
   return (
@@ -12,7 +12,7 @@ function MainContent() {
               Javascript
             </div>
           </div>
-          <div className="grid gap-4 p-4 mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
+          <div className="grid gap-4 p-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
             <Portfolio />
           </div>
           <div className="p-4 mx-auto mt-4 ">
@@ -20,7 +20,7 @@ function MainContent() {
               React
             </div>
           </div>
-          <div className="grid gap-4 p-4 mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
+          <div className="grid gap-4 p-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
             <Portfolio />
           </div>
           <div className="p-4 mx-auto mt-4 ">
@@ -28,7 +28,7 @@ function MainContent() {
               Woocommerce
             </div>
           </div>
-          <div className="grid gap-4 p-4 mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1 ">
+          <div className="grid gap-4 p-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
             <Portfolio />
           </div>
         </div>
