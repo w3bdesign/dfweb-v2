@@ -13,7 +13,7 @@ function MainContent() {
   let heroContent = useRef(null)
   let omMeg = useRef(null)
   
-  let tl = new TimelineLite({ delay: 0.2 })
+  let timeline = new TimelineLite({ delay: 0.2 })
 
   useEffect(() => {
     const firstHeroContent = heroContent.children[0]
@@ -28,7 +28,7 @@ function MainContent() {
     TweenMax.to(app, 0, { css: { visibility: "visible" } })
 
     /*
-     tl.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children ], 1, {
+     timeline.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children ], 1, {
       y: 44,
       ease:Power3.easeOut,
       delay: .8
@@ -37,23 +37,23 @@ function MainContent() {
     .from(contentButton, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.6)
     */
 
-    tl.from(heroRef, 2.0, { y: 1280, ease: Power3.easeOut }, "Start")
+    timeline.from(heroRef, 2.0, { y: 1280, ease: Power3.easeOut }, "Start")
 
-    tl.from(
+    timeline.from(
       firstHeroContent,
       1,
       { y: 20, opacity: 0, ease: Power3.easeOut },
       1.2,
       "Start"
     )
-    tl.from(
+    timeline.from(
       secondHeroContent,
       1,
       { y: 20, opacity: 0, ease: Power3.easeOut },
       1.4,
       "Start"
     )
-    tl.from(
+    timeline.from(
       thirdHeroContent,
       1,
       { y: 20, opacity: 0, ease: Power3.easeOut },
@@ -61,14 +61,14 @@ function MainContent() {
       "Start"
     )
 
-    tl.from(
+    timeline.from(
       ommegContent,
       1,
       { y: 20, opacity: 0, ease: Power3.easeOut },
       1.8,
       "Start"
     )
-    tl.from(
+    timeline.from(
       ommegContent2,
       1,
       { y: 20, opacity: 0, ease: Power3.easeOut },
