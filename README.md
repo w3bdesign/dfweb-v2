@@ -3,9 +3,9 @@
 
 # Dfweb
 
-Currently a work in progress, but version 1 has been released for now.
+Version 1 of my personal portfolio.
 
-Version 2 will be a Gatsby portfolio website.
+Version 2 is currently under development and will be published soon.
 
 URL for development site: https://dev.dfweb.no/
 
