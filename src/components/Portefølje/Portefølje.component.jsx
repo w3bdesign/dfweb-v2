@@ -27,10 +27,7 @@ export const Portfolio = () => (
       }) => (
         <div
           key={name}
-          className="p-12 text-lg text-black bg-white rounded shadow-lg"
-          data-sal="fade"
-          data-sal-delay="1000"
-          data-sal-easing="ease"
+          className="p-12 text-lg text-black bg-white rounded shadow-lg"          
         >
            <p className="text-center">
          
