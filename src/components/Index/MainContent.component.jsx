@@ -24,7 +24,6 @@ function MainContent() {
     const ommegContent2 = omMeg.children[1]
 
     //Remove initial flash
-
     TweenMax.to(app, 0, { css: { visibility: "visible" } })
 
     /*
