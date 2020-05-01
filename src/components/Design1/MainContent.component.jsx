@@ -27,16 +27,6 @@ function MainContent() {
 
     TweenMax.to(app, 0, { css: { visibility: "visible" } })
 
-    /*
-     timeline.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children ], 1, {
-      y: 44,
-      ease:Power3.easeOut,
-      delay: .8
-    }, .15, 'Start')
-    .from(contentP, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.4)
-    .from(contentButton, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.6)
-    */
-
     timeline.from(heroRef, 2.0, { y: 1280, ease: Power3.easeOut }, "Start")
 
     timeline.from(
@@ -75,7 +65,7 @@ function MainContent() {
       2.0,
       "Start"
     )
-  }, [tl])
+  }, [timeline])
 
   return (
     <>
@@ -91,7 +81,7 @@ function MainContent() {
         >
           <div ref={(el) => (heroContent = el)} className="text-white rounded">
             <section>
-            <p className="text-5xl text-center">Hei!</p>
+            <p className="text-5xl text-center">Hei! Design1</p>
             <p className="p-12 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-center md:text-center xl:text-2xl lg:text-xl md:text-xl xs:">
               Jeg heter Daniel Fjeldstad og er en webutvikler som kan PHP,
               mySQL, Wordpress, HTML, CSS, Javascript, React, Redux, Docker og

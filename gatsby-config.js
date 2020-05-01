@@ -15,7 +15,7 @@ module.exports = {
     twitterUsername: "@occlumency",
   },
   plugins: [
-    "gatsby-plugin-postcss",   
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-prefetch-google-fonts",
       options: {
@@ -37,7 +37,9 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-svg",
-    "gatsby-plugin-react-helmet",    
-    "gatsby-plugin-netlify"
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-robots-txt",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-netlify",
   ],
 }

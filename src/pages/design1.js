@@ -1,18 +1,9 @@
-/*
-
-Inspirational resources: 
-
-https://www.dcode.no/
-https://www.coretrek.no/
-
-*/
-
 import React from "react"
 
 import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 
-import MainContent from "../components/Index/MainContent.component"
+import MainContent from "../components/Design1/MainContent.component"
 
 function IndexPage() {
   return (
