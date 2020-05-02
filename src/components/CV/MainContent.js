@@ -30,6 +30,7 @@ function MainContent() {
                     <Page
                       renderMode="svg"
                       className="flex content-center justify-center"
+                      scale="1.5"
                       pageNumber={page.pageNumber}
                     />
                   </Document>
