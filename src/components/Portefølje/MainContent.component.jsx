@@ -22,13 +22,10 @@ const srConfig = (delay = 200) => ({
 function MainContent() {
   const firstRevealContainer = useRef(null)
   const secondRevealContainer = useRef(null)
-  const thirdRevealContainer = useRef(null)
 
   useEffect(() => {
     sr.reveal(firstRevealContainer.current, srConfig())
     sr.reveal(secondRevealContainer.current, srConfig())
-    sr.reveal(thirdRevealContainer.current, srConfig())
-
   }, [])
 
   return (
@@ -40,7 +37,7 @@ function MainContent() {
               Javascript
             </div>
           </div>
-          <div className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1" ref={firstRevealContainer}>
+          <div className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
             <Portfolio />
           </div>
           <div className="mx-auto">
@@ -48,7 +45,10 @@ function MainContent() {
               React
             </div>
           </div>
-          <div className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1" ref={secondRevealContainer}>
+          <div
+            className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
+            ref={firstRevealContainer}
+          >
             <Portfolio />
           </div>
           <div className="mx-auto">
@@ -56,7 +56,10 @@ function MainContent() {
               Woocommerce
             </div>
           </div>
-          <div className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1" ref={thirdRevealContainer}>
+          <div
+            className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
+            ref={secondRevealContainer}
+          >
             <Portfolio />
           </div>
         </div>
