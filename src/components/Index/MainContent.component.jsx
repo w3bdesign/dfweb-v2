@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import { Link } from "gatsby"
 
-import FontAwesome from "../FontAwesome/FontAwesome"
+import FontAwesome from "../FontAwesome/FontAwesome.component"
 
 import { TimelineLite, TweenMax, Power3 } from "gsap"
 

@@ -5,7 +5,7 @@ import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 
 // Main
-import MainContent from "../components/Design1/MainContent.component"
+import MainContent from "../components/Design1/Design1Content.component"
 
 // Footer
 import Footer from "../components/Footer/Footer.component"

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
 
-import FontAwesome from "../FontAwesome/FontAwesome"
+import FontAwesome from "../FontAwesome/FontAwesome.component"
 
 import { TimelineLite, TweenMax, Power3 } from "gsap"
 
