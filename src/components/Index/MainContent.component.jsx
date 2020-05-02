@@ -141,17 +141,14 @@ function MainContent() {
                   arbeider også med Docker, PHP, Wordpress, MongoDB og mySQL.
                   <br />
                   <br />
-                  Kildekoden publiserer jeg på Github.
-                  <br />
-                  <br />
-                  Hvis du er interessert kan du ta en titt{" "}
+                  Kildekoden publiserer jeg på{" "}
                   <a
                     className="underline"
                     href="https://github.com/w3bdesign"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    HER
+                    GITHUB
                   </a>
                   <br />
                   <br />

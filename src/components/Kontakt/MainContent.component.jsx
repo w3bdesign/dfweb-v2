@@ -5,9 +5,9 @@ function MainContent() {
     <>
       <main id="maincontent">
         <div className="bg-graybg">
-          <div className="container mx-auto bg-white shadow-lg">
+          <div className="container mx-auto bg-white rounded shadow-lg">
             <div className="p-4 mx-auto mt-4">
-              <div className="p-6 text-lg rounded">
+              <div className="p-4 text-lg rounded">
                 <h3 className="m-2 text-3xl text-center text-black">Kontakt</h3>
                 <form
                   className="text-center"
@@ -21,7 +21,7 @@ function MainContent() {
                       Fullt navn
                       <br />
                       <input
-                        className="w-64 p-2 m-2 placeholder-black rounded shadow-outline focus:bg-gray-500"
+                        className="w-64 p-2 m-2 placeholder-black border border-gray-500 rounded focus:shadow-outline"
                         id="text"
                         name="navn"
                         type="text"
@@ -36,7 +36,7 @@ function MainContent() {
                       Telefonnummer
                       <br />
                       <input
-                        className="w-64 p-2 m-2 placeholder-black rounded shadow-outline focus:bg-gray-500"
+                        className="w-64 p-2 m-2 placeholder-black border border-gray-500 rounded focus:shadow-outline"
                         id="phone"
                         name="telefon"
                         type="text"
@@ -52,7 +52,7 @@ function MainContent() {
                       Hva ønsker du å si?
                       <br />
                       <textarea
-                        className="w-64 p-2 m-2 placeholder-black rounded shadow-outline focus:bg-gray-500"
+                        className="w-64 p-2 m-2 placeholder-black border border-gray-500 rounded focus:shadow-outline"
                         name="tekst"
                         id="textarea"
                         required="true"
