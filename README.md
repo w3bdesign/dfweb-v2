@@ -26,6 +26,7 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 - Google fonts with Gatsby plugin for prefetching
 - Gatsby plugin for generating robots.txt and sitemap.xml
 - UUID for unique IDs for mapped elements
+- Scrollreveal for smooth reveal of content
 
 ## TODO
 
