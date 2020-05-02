@@ -71,6 +71,7 @@ function MainContent() {
             </div>
           </div>
         </div>
+        <div id="kontakt-filler" className="mt-48"><br/><br/></div>
       </main>
     </>
   )
