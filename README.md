@@ -19,18 +19,17 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 ## Features:
 
 - Gatsby as main project dependency
-- GSAP, React Spring and Framer Motion for animations 
-- FontAwesome SVG icons for project icons
+- GSAP and Framer Motion for animations 
+- FontAwesome SVG icons for project icons (@FortAwesome)
 - Tailwind CSS for styling
 - React Helmet for modifying HTML header
 - Google fonts with Gatsby plugin for prefetching
 - Gatsby plugin for generating robots.txt and sitemap.xml
 - UUID for unique IDs for mapped elements
 - Scrollreveal for smooth reveal of content
+- React-pdf for displaying PDF CV
 
 ## TODO
 
-- Replace PROJECTS.json constant with a Apollo Graphql backend (No Markdown parsing here, sorry)
-- Add React Spring animations for portfolio
-
-
+- Replace PROJECTS.json constant with a Apollo Graphql backend (No Markdown parsing)
+- Add React Spring animations for portfolio (click for flip)
