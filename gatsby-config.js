@@ -12,6 +12,18 @@ module.exports = {
   plugins: [
     "gatsby-plugin-postcss",
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `DFWeb`,
+        short_name: `DFWeb`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/svg/favicon.svg`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-prefetch-google-fonts",
       options: {
         fonts: [
