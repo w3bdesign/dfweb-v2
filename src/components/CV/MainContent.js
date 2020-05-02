@@ -22,7 +22,7 @@ function MainContent() {
 
                 <div className="mt-0 sm:mt-2 xs:mt-2">
                   <Document
-                    className="hidden mt-4 xl:block lg:block"
+                    className="hidden mt-4 text-center xl:block lg:block"
                     error="En feil har oppstått under lasting av PDF"
                     loading="Laster inn PDF ..."
                     file={myCV}
