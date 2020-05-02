@@ -37,7 +37,7 @@ function MainContent() {
                 </div>
 
                 <div className="mx-auto mt-0 text-center sm:mt-2 xs:mt-2">
-                  <button className="p-4 text-white rounded bg-button hover:shadow-outline">
+                  <button className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700">
                     <a href={myCV}>Last ned PDF</a>
                   </button>
                 </div>

@@ -27,10 +27,9 @@ export const Portfolio = () => (
       }) => (
         <div
           key={name}
-          className="p-12 text-lg text-black bg-white rounded shadow-lg"          
+          className="p-12 text-lg text-black bg-white rounded shadow-lg"
         >
-           <p className="text-center">
-         
+          <p className="text-center">
             <FontAwesomeIcon
               className="m-2 text-black"
               icon={faReact}
@@ -41,19 +40,19 @@ export const Portfolio = () => (
           <div className="mt-6 text-lg text-left">
             <p>{description}</p>
 
-            <p className="mt-6">{subdescription}</p>            
+            <p className="mt-6">{subdescription}</p>
 
             <p className="mt-6">
               <img src={reactimage} alt="React" />
             </p>
             <div className="flex justify-center">
               <a href={urlgithub}>
-                <button className="px-8 py-4 mt-6 ml-4 font-bold text-white bg-gray-800 rounded hover:bg-gray-700">
+                <button className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700">
                   Github
                 </button>
               </a>
               <a href={urlwww}>
-                <button className="px-8 py-4 mt-6 ml-4 font-bold text-white bg-gray-800 rounded hover:bg-gray-700">
+                <button className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700">
                   Besøk
                 </button>
               </a>

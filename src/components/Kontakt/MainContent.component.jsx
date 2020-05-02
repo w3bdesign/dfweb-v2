@@ -62,7 +62,7 @@ function MainContent() {
                   </fieldset>
                   <button
                     type="submit"
-                    className="p-4 m-4 text-white rounded bg-button hover:shadow-outline"
+                    className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700"
                   >
                     Send skjema
                   </button>
