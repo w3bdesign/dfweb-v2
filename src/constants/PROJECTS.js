@@ -1,12 +1,11 @@
 export const PROJECTS = [
   {
     name: "Statens Vegvesen",
-    description: "Henter kjøretøyinformasjon fra REST API hos https://www.vegvesen.no ",
+    description: "Henter kjøretøyinformasjon fra https://www.vegvesen.no ",
     subdescription:"Inneholder: Standard Javascript, Materialize CSS, Input validering, Fetch API, jQuery.",
     category: "Javascript",
-    urlwww: "",
-    urlgithub:"",
-    fontawesome:"faJs",
+    urlwww: "https://sleepy-payne-cbfe8b.netlify.com/",
+    urlgithub:"https://github.com/w3bdesign/Statens-Vegvesen",    
     image: "../../../static/react.webp",
   },
   {
@@ -14,9 +13,8 @@ export const PROJECTS = [
     description: "Nettbutikk laget i React med Create React App. ",
     subdescription:"Inneholder: Standard Javascript, Materialize CSS, Input validering, Fetch API, jQuery.",
     category: "React",
-    urlwww: "",
-    urlgithub:"",
-    fontawesome:"faReact",
+    urlwww: "https://react-ecommerce-shop.netlify.app/",
+    urlgithub:"https://github.com/w3bdesign/react-ecommerce",    
     image: "../../../static/react.webp",
   },
   {
@@ -24,9 +22,8 @@ export const PROJECTS = [
     description: "TODO applikasjon med React Hooks og Ant Design. ",
     subdescription:"Inneholder: Standard Javascript, Materialize CSS, Input validering, Fetch API, jQuery.",
     category: "React",
-    urlwww: "",
-    urlgithub:"",
-    fontawesome:"faReact",
+    urlwww: "https://react-todo-hooks.netlify.com/",
+    urlgithub:"https://github.com/w3bdesign/todo-hooks",    
     image: "../../../static/react.webp",
   },
   {
@@ -35,8 +32,7 @@ export const PROJECTS = [
     subdescription:"Inneholder: Standard Javascript, Materialize CSS, Input validering, Fetch API, jQuery.",
     category: "Javascript",
     urlwww: "https://v1.dfweb.no",
-    urlgithub:"https://github.com/w3bdesign/dfweb-v1",
-    fontawesome:"faJs",
+    urlgithub:"https://github.com/w3bdesign/dfweb-v1",    
     image: "../../../static/react.webp",
   },
 ]
