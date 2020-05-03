@@ -11,7 +11,7 @@ export const PROJECTS = [
   {
     name: "Nettbutikk i React",
     description: "Nettbutikk laget i React med Create React App. ",
-    subdescription:"Inneholder: Standard Javascript, Materialize CSS, Input validering, Fetch API, jQuery.",
+    subdescription:"Inneholder: React, Firebase, Firestore, Redux, Stripe, Styled components.",
     category: "React",
     urlwww: "https://react-ecommerce-shop.netlify.app/",
     urlgithub:"https://github.com/w3bdesign/react-ecommerce",    
