@@ -45,7 +45,7 @@ export const Portfolio = () => (
             <p className="mt-6">
               <img src={reactimage} alt="React" />
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-4">
               <a href={urlgithub}>
                 <button className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700">
                   Github
