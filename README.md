@@ -10,6 +10,7 @@
 
 # Dfweb
 
+<<<<<<< HEAD
 Second version of my portfolio website with Gatsby instead of plain HTML.
 
 Uses Tailwind and PurgeCSS for styling.
@@ -34,3 +35,25 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 - Implement E2E testing
 - Replace PROJECTS.json constant with a Apollo Graphql backend (No Markdown parsing)
 - Add React Spring animations for portfolio (click for flip)
+=======
+Version 1 of my personal portfolio.
+
+Version 2 is currently under development and will be published soon.
+
+URL for development site: https://dev.dfweb.no/
+
+## Features:
+
+- 100% score on Google Pagespeed Insights (Desktop)
+- 100% score in GTMetrix
+- 100% score on accessibility checks
+- Semantic HTML5 with a minimum of DIVs
+- SASS with CSS Grid for layout
+- Minified CSS with PurgeCSS
+- CSS3 for animations
+- Scrollmagic for scrolling animations
+- Contact form with PureCSS
+- Netlify Forms with honeypot
+- Modern Normalize.css
+- HTML5 form validation in contact form
+>>>>>>> master
