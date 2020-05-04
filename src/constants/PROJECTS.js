@@ -41,7 +41,7 @@ export const PROJECTS = [
     subdescription:"Inneholder: Wordpress, Woocommerce, Pckasse",
     category: "Woocommerce",
     urlwww: "https://www.stylechild.no/",
-    urlgithub:"https://github.com/w3bdesign/",    
+    urlgithub:"",    
     image: "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588558961/Dfweb/style-child_uuginq.jpg",
   },
   {
@@ -50,8 +50,17 @@ export const PROJECTS = [
     subdescription:"Inneholder: Wordpress, Woocommerce, Pckasse",
     category: "Woocommerce",
     urlwww: "https://www.minhestebutikk.no/",
-    urlgithub:"https://github.com/w3bdesign/",    
+    urlgithub:"",    
     image: "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588559104/Dfweb/min-hestebutikk_sg6hfe.jpg",
+  },
+  {
+    name: "Dfweb versjon 2",
+    description: "Nåværende portefølje med Gatsby og React.",
+    subdescription:"Inneholder: Gatsby, GSAP, Framer Motion, Tailwind CSS ",
+    category: "React",
+    urlwww: "https://www.dfweb.no/",
+    urlgithub:"https://github.com/w3bdesign/dfweb",    
+    image: "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588559314/Dfweb/dfweb-v2_g9wjyw.jpg",
   },
 ]
 
