@@ -2,7 +2,7 @@
   "name": "dfweb-v2",
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
