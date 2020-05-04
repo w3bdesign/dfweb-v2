@@ -6,7 +6,7 @@ export const PROJECTS = [
     category: "Javascript",
     urlwww: "https://sleepy-payne-cbfe8b.netlify.app/",
     urlgithub:"https://github.com/w3bdesign/Statens-Vegvesen",    
-    image: "https://res.cloudinary.com/duelisue0/image/upload/v1588556573/Dfweb/statens-vegvesen_xsth2e.jpg",
+    image: "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588556573/Dfweb/statens-vegvesen_xsth2e.jpg",
   },
   {
     name: "Nettbutikk i React",
@@ -15,7 +15,7 @@ export const PROJECTS = [
     category: "React",
     urlwww: "https://react-ecommerce-shop.netlify.app/",
     urlgithub:"https://github.com/w3bdesign/react-ecommerce",    
-    image: "https://res.cloudinary.com/duelisue0/image/upload/v1588556748/Dfweb/react-ecommerce_pxj0my.jpg",
+    image: "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588556748/Dfweb/react-ecommerce_pxj0my.jpg",
   },
   {
     name: "TODO med React Hooks",
@@ -24,7 +24,7 @@ export const PROJECTS = [
     category: "React",
     urlwww: "https://react-todo-hooks.netlify.app/",
     urlgithub:"https://github.com/w3bdesign/todo-hooks",    
-    image: "https://res.cloudinary.com/duelisue0/image/upload/v1588555098/Dfweb/todo-hooks_ectluc.jpg",
+    image: "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588555098/Dfweb/todo-hooks_ectluc.jpg",
   },
   {
     name: "DFWeb versjon 1",
@@ -33,7 +33,25 @@ export const PROJECTS = [
     category: "Javascript",
     urlwww: "https://v1.dfweb.no",
     urlgithub:"https://github.com/w3bdesign/dfweb-v1",    
-    image: "https://res.cloudinary.com/duelisue0/image/upload/v1588556839/Dfweb/dfweb-v1_txl9wx.jpg",
+    image: "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588556839/Dfweb/dfweb-v1_txl9wx.jpg",
+  },
+  {
+    name: "Style Child",
+    description: "Nettbutikk med Woocommerce og Pckasse integrasjon.",
+    subdescription:"Inneholder: Wordpress, Woocommerce, Pckasse",
+    category: "Woocommerce",
+    urlwww: "https://www.stylechild.no/",
+    urlgithub:"https://github.com/w3bdesign/",    
+    image: "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588558961/Dfweb/style-child_uuginq.jpg",
+  },
+  {
+    name: "Min Hestebutikk",
+    description: "Nettbutikk med Woocommerce og Pckasse integrasjon.",
+    subdescription:"Inneholder: Wordpress, Woocommerce, Pckasse",
+    category: "Woocommerce",
+    urlwww: "https://www.minhestebutikk.no/",
+    urlgithub:"https://github.com/w3bdesign/",    
+    image: "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588559104/Dfweb/min-hestebutikk_sg6hfe.jpg",
   },
 ]
 

@@ -38,7 +38,7 @@ function MainContent() {
             </div>
           </div>
           <div className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
-            <Portfolio />
+            <Portfolio filter="Javascript"/>
           </div>
           <div className="mx-auto">
             <div className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
@@ -49,7 +49,7 @@ function MainContent() {
             className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
             ref={firstRevealContainer}
           >
-            <Portfolio />
+            <Portfolio filter="React"/>
           </div>
           <div className="mx-auto">
             <div className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
@@ -60,7 +60,7 @@ function MainContent() {
             className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
             ref={secondRevealContainer}
           >
-            <Portfolio />
+            <Portfolio filter="Woocommerce"/>
           </div>
         </div>
       </main>
