@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppLogo renders correctly 1`] = `
+<div
+  className="flex w-full font-extrabold text-white md:w-1/2 md:justify-start"
+>
+  <a
+    className="text-white"
+    href="/"
+  >
+    <Logo
+      style={
+        Object {
+          "height": "70px",
+        }
+      }
+    />
+  </a>
+</div>
+`;

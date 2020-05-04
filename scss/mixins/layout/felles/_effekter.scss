@@ -1,8 +1,0 @@
-/* Effekter */
-@use "../../variabler";
-.animasjon {
-  transition: background-color 500ms;
-  &:hover {
-    background-color: variabler.$light;
-  }
-}
