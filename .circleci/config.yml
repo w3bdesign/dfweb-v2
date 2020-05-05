@@ -1,21 +1,17 @@
 version: 2.1
-
+orbs:
+  node: circleci/node@1.1.6
 jobs:
-  build:
-    docker:
-      - image: cimg/base:2020.01
+  build-and-test:
+    executor:
+      name: node/default
     steps:
       - checkout
-      - run:
-          name: Install dependencies and build project
-          command: gatsby build
-      - sonarcloud/scan
-
-orbs:
-  sonarcloud: sonarsource/sonarcloud@1.0.1
-
+      - node/with-cache:
+          steps:
+            - run: npm install
+            - run: npm test
 workflows:
-  main:
-    jobs:
-      - build:
-          context: SonarCloud
+    build-and-test:
+      jobs:
+        - build-and-test
