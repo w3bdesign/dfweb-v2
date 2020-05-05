@@ -6,7 +6,7 @@ import myCV from "../../../static/CV-dfweb.pdf"
 // https://github.com/wojtekmaj/react-pdf#enable-pdfjs-worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
-function MainContent() {
+function CVContent() {
   const page = {
     pageNumber: 1,
   }
@@ -50,4 +50,4 @@ function MainContent() {
   )
 }
 
-export default MainContent
+export default CVContent
