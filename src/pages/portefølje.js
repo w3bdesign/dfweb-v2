@@ -10,7 +10,7 @@ import PorteføljeContent from "../components/Portefølje/PorteføljeContent.com
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
-function PorteføljePage() {
+function Portefølje() {
   return (
     <>
       <Navbar>
@@ -22,4 +22,4 @@ function PorteføljePage() {
   )
 }
 
-export default PorteføljePage
+export default Portefølje

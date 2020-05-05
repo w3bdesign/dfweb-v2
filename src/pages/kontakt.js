@@ -10,7 +10,7 @@ import KontaktContent from "../components/Kontakt/KontaktContent.component"
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
-function KontaktPage() {
+function Kontakt() {
   return (
     <>
       <Navbar>
@@ -22,4 +22,4 @@ function KontaktPage() {
   )
 }
 
-export default KontaktPage
+export default Kontakt
