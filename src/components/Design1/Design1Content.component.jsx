@@ -6,7 +6,7 @@ import { TimelineLite, TweenMax, Power3 } from "gsap"
 
 import heroimage from "../../../static/blue-hero.webp"
 
-function MainContent() {
+function Design1Content() {
   // GSAP animations
   let app = useRef(null)
   let heroRef = useRef(null)
@@ -150,4 +150,4 @@ function MainContent() {
   )
 }
 
-export default MainContent
+export default Design1Content

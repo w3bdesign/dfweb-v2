@@ -5,7 +5,7 @@ import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 
 // Main content
-import MainContent from "../components/Kontakt/KontaktContent.component"
+import KontaktContent from "../components/Kontakt/KontaktContent.component"
 
 // Footer
 import Footer from "../components/Footer/Footer.component"
@@ -16,7 +16,7 @@ function KontaktPage() {
       <Navbar>
         <NavbarContent />
       </Navbar>
-      <MainContent />
+      <KontaktContent />
       <Footer />
     </>
   )

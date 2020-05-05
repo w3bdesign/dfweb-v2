@@ -1,6 +1,6 @@
 import React from "react"
 
-function MainContent() {
+function KontaktContent() {
   return (
     <>
       <main id="maincontent">
@@ -80,4 +80,4 @@ function MainContent() {
   )
 }
 
-export default MainContent
+export default KontaktContent
