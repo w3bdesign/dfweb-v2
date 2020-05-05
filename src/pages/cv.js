@@ -10,7 +10,7 @@ import CVContent from "../components/CV/CVContent.component"
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
-function CVPage() {
+function CV() {
   return (
     <>
       <Navbar>
@@ -22,4 +22,4 @@ function CVPage() {
   )
 }
 
-export default CVPage
+export default CV

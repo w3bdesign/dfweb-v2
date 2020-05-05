@@ -19,7 +19,7 @@ import MainContent from "../components/Index/MainContent.component"
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
-function IndexPage() {
+function Index() {
   return (
     <>
       <Navbar>
@@ -31,4 +31,4 @@ function IndexPage() {
   )
 }
 
-export default IndexPage
+export default Index

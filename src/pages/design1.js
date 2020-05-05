@@ -10,7 +10,7 @@ import Design1Content from "../components/Design1/Design1Content.component"
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
-function IndexPage() {
+function Design1() {
   return (
     <>
       <Navbar>
@@ -22,4 +22,4 @@ function IndexPage() {
   )
 }
 
-export default IndexPage
+export default Design1
