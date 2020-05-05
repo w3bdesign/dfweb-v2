@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 
 import { Portfolio } from "./Portefølje.component"
-import sr from "../../utils/scrollreveal"
+import ScrollShow from "../../utils/scrollshow"
 
 const srConfig = (delay = 200) => ({
   origin: "bottom",
@@ -19,13 +19,13 @@ const srConfig = (delay = 200) => ({
   viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
 })
 
-function CVContent() {
+function PorteføljeContent() {
   const firstRevealContainer = useRef(null)
   const secondRevealContainer = useRef(null)
 
   useEffect(() => {
-    sr.reveal(firstRevealContainer.current, srConfig())
-    sr.reveal(secondRevealContainer.current, srConfig())
+    ScrollShow.reveal(firstRevealContainer.current, srConfig())
+    ScrollShow.reveal(secondRevealContainer.current, srConfig())
   }, [])
 
   return (
@@ -68,4 +68,4 @@ function CVContent() {
   )
 }
 
-export default CVContent
+export default PorteføljeContent

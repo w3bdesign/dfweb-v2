@@ -5,7 +5,7 @@ import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 
 // Main content
-import MainContent from "../components/Portefølje/PorteføljeContent.component"
+import PorteføljeContent from "../components/Portefølje/PorteføljeContent.component"
 
 // Footer
 import Footer from "../components/Footer/Footer.component"
@@ -16,7 +16,7 @@ function PorteføljePage() {
       <Navbar>
         <NavbarContent />
       </Navbar>
-      <MainContent />
+      <PorteføljeContent />
       <Footer />
     </>
   )
