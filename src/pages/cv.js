@@ -5,7 +5,7 @@ import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 
 // Main content
-import MainContent from "../components/CV/CVContent.component"
+import CVContent from "../components/CV/CVContent.component"
 
 // Footer
 import Footer from "../components/Footer/Footer.component"
@@ -16,7 +16,7 @@ function CVPage() {
       <Navbar>
         <NavbarContent />
       </Navbar>
-      <MainContent />
+      <CVContent />
       <Footer />
     </>
   )
