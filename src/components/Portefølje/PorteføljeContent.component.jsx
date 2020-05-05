@@ -19,7 +19,7 @@ const srConfig = (delay = 200) => ({
   viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
 })
 
-function MainContent() {
+function CVContent() {
   const firstRevealContainer = useRef(null)
   const secondRevealContainer = useRef(null)
 
@@ -68,4 +68,4 @@ function MainContent() {
   )
 }
 
-export default MainContent
+export default CVContent
