@@ -7,4 +7,4 @@
 [[plugins]]
   package = "netlify-plugin-cypress"
   [plugins.inputs]
-    record = false
+    record = true
