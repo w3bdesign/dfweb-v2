@@ -27,7 +27,8 @@ export default function Hamburger() {
       <HamburgerSVG
       id="hamburger"
         onClick={() => {
-          setisExpanded(!isExpanded)
+          // Make Cypress tests fail on purpose
+          //setisExpanded(!isExpanded)
         }}
         className="w-10 m-4 text-white hover:text-gray-500 h-8"       
       />
