@@ -25,6 +25,7 @@ export default function Hamburger() {
   return (
     <div className="z-50 md:hidden lg:hidden xl:hidden">
       <HamburgerSVG
+      id="hamburger"
         onClick={() => {
           setisExpanded(!isExpanded)
         }}
@@ -32,6 +33,7 @@ export default function Hamburger() {
       />
       {isExpanded && (
         <motion.div
+          id="mobile-menu"
           className="absolute right-0 text-center bg-gray-800 w-30 h-60"
           initial={{
             width: "0%",

@@ -11,9 +11,9 @@ export default function NavbarContent() {
   return (
     <>
     
-      <div className="container flex items-center mx-auto md:flex-wrap lg:flex-wrap xl:flex-wrap">
+      <div id="main-navigation" className="container flex items-center mx-auto md:flex-wrap lg:flex-wrap xl:flex-wrap">
         <AppLogo />
-        <div className="flex content-center justify-between md:w-1/2 md:justify-end">
+        <div id="hamburger-div" className="flex content-center justify-between md:w-1/2 md:justify-end">
           <Hamburger />
           <ul className="items-center justify-between flex-1 hidden list-reset md:flex lg:flex xl:flex">
             {LINKS.map((link) => (
