@@ -9,6 +9,8 @@ Second version of my portfolio website with Gatsby instead of plain HTML.
 
 Uses Tailwind and PurgeCSS for styling.
 
+Uses Cypress for testing.
+
 First version is located here: https://github.com/w3bdesign/dfweb-v1
 
 ## Features:
@@ -27,5 +29,6 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 
 ## TODO
 
+- Implement additional Cypress tests (for example mobile testing)
 - Replace PROJECTS.json constant with a Apollo Graphql backend (No Markdown parsing)
 - Add React Spring animations for portfolio (click for flip)
