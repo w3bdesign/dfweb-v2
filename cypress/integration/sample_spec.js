@@ -1,5 +1,8 @@
-describe('My First Test', () => {
-    it('Does not do much!', () => {
-      expect(true).to.equal(true)
-    })
+/* globals cy */
+
+describe(`The Home Page`, () => {
+  it(`successfully loads`, () => {
+    cy.visit(`/`)
+    //.waitForRouteChange()
   })
+})
