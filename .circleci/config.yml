@@ -7,5 +7,6 @@ orbs:
   cypress: cypress-io/cypress@1
 workflows:
   build:
-    jobs:      
+    jobs:  
+      # - npm run test:e2e:ci
       - cypress/run # "run" job comes from "cypress" orb
