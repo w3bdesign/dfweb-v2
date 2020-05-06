@@ -5,15 +5,14 @@ describe('Navigation', () => {
         // browser with a 720p monitor
         cy.viewport(1280, 720)
       })
-
       
-      it('Mobile menu should not be visible', () => {
+      it('Hamburger should not be visible', () => {
         cy.get('#main-navigation').should('be.visible')
-        cy.get('#mobile-menu').should('not.be.visible')       
+        cy.get('#hamburger').should('not.be.visible')       
       })
     })
   
-    context('iphone-5 resolution', () => {
+    context('Iphone-5 resolution', () => {
       beforeEach(() => {
         // run these tests as if in a mobile browser
         // and ensure our responsive UI is correct
