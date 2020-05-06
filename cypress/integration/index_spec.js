@@ -2,9 +2,9 @@
 
 describe(`The Home Page`, () => {
   it(`successfully loads`, () => {
-    cy.visit(`/`).waitForRouteChange()
+    cy.visit(`/`)//.waitForRouteChange()
   })
-  it(`contains the title with an SVG icon and text "Gatsbygram"`, () => {  
-    cy.getTestElement(`daniel`).contains(`Daniel`)
+  it(`Contains my name in the hero section`, () => {  
+    cy.get('[data-cy=daniel]').contains(`Daniel`)
   })
 })
