@@ -1,8 +1,8 @@
 /* globals cy */
 
 describe(`The Home Page`, () => {
-  it(`successfully loads`, () => {
-    cy.visit(`/`)//.waitForRouteChange()
+  beforeEach(() => {
+    cy.visit('/')
   })
   it(`Contains my name in the hero section`, () => {  
     cy.get('[data-cy=daniel]').contains(`Daniel`)
