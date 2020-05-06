@@ -4,6 +4,7 @@ describe('Navigation', () => {
         // run these tests as if in a desktop
         // browser with a 720p monitor
         cy.viewport(1280, 720)
+        cy.visit('/')
       })
       
       it('Hamburger should not be visible', () => {
@@ -17,6 +18,7 @@ describe('Navigation', () => {
         // run these tests as if in a mobile browser
         // and ensure our responsive UI is correct
         cy.viewport('iphone-5')
+        cy.visit('/')
       })
   
       it('Displays mobile menu on click', () => {
