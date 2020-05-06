@@ -1,16 +1,10 @@
-# explicit commands for building the site
-# and the folder to publish
+# to be able to build this site locally, let's specify
+# build settings in this file
 [build]
-command = "npm run build"
-publish = "build"
-
-[build.environment]
-# cache Cypress binary in local "node_modules" folder
-# so Netlify caches it
-CYPRESS_CACHE_FOLDER = "./node_modules/CypressBinary"
-# set TERM variable for terminal output
-TERM = "xterm"
-
+  command = "npm run build"
+  publish = "public"
+# Cypress plugin
 [[plugins]]
-# local Cypress plugin will test our site after it is built
-package = "netlify-plugin-cypress"
+  package = "netlify-plugin-cypress"
+  [plugins.inputs]
+    record = false
