@@ -19,7 +19,7 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 - Gatsby as main project dependency
 - GSAP and Framer Motion for animations 
 - Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
-- Sonarcloud integration on every push
+- Sonarcloud integration on every push to maintain code quality
 - FontAwesome SVG icons for project icons (@FortAwesome)
 - Tailwind CSS for styling
 - React Helmet for modifying HTML header
