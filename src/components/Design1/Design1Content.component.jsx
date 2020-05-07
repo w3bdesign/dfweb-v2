@@ -4,7 +4,7 @@ import FontAwesome from "../FontAwesome/FontAwesome.component"
 
 import { TimelineLite, TweenMax, Power3 } from "gsap"
 
-import heroimage from "../../../static/blue-hero.webp"
+import heroimage from "../../../static/blue-hero.jpg"
 
 function Design1Content() {
   // GSAP animations
