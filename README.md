@@ -8,7 +8,7 @@
 
 Second version of my portfolio website with Gatsby instead of plain HTML.
 
-Uses Tailwind and PurgeCSS for styling.
+Uses Tailwind CSS for styling.
 
 Uses Cypress for testing.
 
