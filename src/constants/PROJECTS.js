@@ -1,8 +1,8 @@
 export const PROJECTS = [
   {
     name: "Statens Vegvesen",
-    description: "Henter kjøretøyinformasjon fra https://www.vegvesen.no ",
-    subdescription:"Inneholder: Javascript, Materialize CSS, Fetch, jQuery.",
+    description: "Henter informasjon fra https://www.vegvesen.no ",
+    subdescription:"Inneholder: Javascript, Materialize, jQuery.",
     category: "Javascript",
     urlwww: "https://sleepy-payne-cbfe8b.netlify.app/",
     urlgithub:"https://github.com/w3bdesign/Statens-Vegvesen",    
