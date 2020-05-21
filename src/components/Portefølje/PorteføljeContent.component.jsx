@@ -1,7 +1,25 @@
 import React, { useEffect, useRef } from "react"
+import { StaticQuery, graphql } from "gatsby"
 
 import { Portfolio } from "./Portefølje.component"
 import ScrollShow from "../../utils/scrollshow"
+
+const PROJECT_QUERY = graphql`
+  query MyQuery {
+    Project {
+      allProjects {
+        id
+        name
+        description
+        subdescription
+        category
+        urlwww
+        urlgithub
+        image
+      }
+    }
+  }
+`
 
 const srConfig = (delay = 200) => ({
   origin: "bottom",
@@ -38,7 +56,15 @@ function PorteføljeContent() {
             </div>
           </div>
           <div className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
-            <Portfolio filter="Javascript"/>
+            <StaticQuery
+              query={PROJECT_QUERY}
+              render={(data) => (
+                <Portfolio
+                  filter="Javascript"
+                  projects={data.Project.allProjects}
+                />
+              )}
+            />
           </div>
           <div className="mx-auto">
             <div className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
@@ -49,7 +75,12 @@ function PorteføljeContent() {
             className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
             ref={firstRevealContainer}
           >
-            <Portfolio filter="React"/>
+            <StaticQuery
+              query={PROJECT_QUERY}
+              render={(data) => (
+                <Portfolio filter="React" projects={data.Project.allProjects} />
+              )}
+            />
           </div>
           <div className="mx-auto">
             <div className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
@@ -60,7 +91,15 @@ function PorteføljeContent() {
             className="grid gap-4 pt-4 pb-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
             ref={secondRevealContainer}
           >
-            <Portfolio filter="Woocommerce"/>
+            <StaticQuery
+              query={PROJECT_QUERY}
+              render={(data) => (
+                <Portfolio
+                  filter="Woocommerce"
+                  projects={data.Project.allProjects}
+                />
+              )}
+            />
           </div>
         </div>
       </main>
