@@ -1,29 +1,9 @@
 import * as React from "react"
 import { v4 as uuidv4 } from "uuid"
-import { graphql } from "gatsby"
 
-import PROJECTS from "../../constants/PROJECTS"
-
-/*
-
-query Projects {
-  allProjects {
-    id
-    name
-    description
-    subdescription
-    category
-    urlwww
-    urlgithub
-    image
-  }
-}
-
-*/
-
-export const Portfolio = ({ filter }) => (
+export const Portfolio = ({ filter, projects }) => (
   <>
-    {PROJECTS.map(
+    {projects.map(
       ({
         name,
         description,
@@ -69,20 +49,3 @@ export const Portfolio = ({ filter }) => (
     )}
   </>
 )
-
-/*
-export const query = graphql`
-  query Projects {
-    allProjects {
-      id
-      name
-      description
-      subdescription
-      category
-      urlwww
-      urlgithub
-      image
-    }
-  }
-`
-*/
