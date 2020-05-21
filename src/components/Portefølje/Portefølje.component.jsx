@@ -1,7 +1,25 @@
 import * as React from "react"
 import { v4 as uuidv4 } from "uuid"
+import { graphql } from "gatsby"
 
 import PROJECTS from "../../constants/PROJECTS"
+
+/*
+
+query Projects {
+  allProjects {
+    id
+    name
+    description
+    subdescription
+    category
+    urlwww
+    urlgithub
+    image
+  }
+}
+
+*/
 
 export const Portfolio = ({ filter }) => (
   <>
@@ -30,7 +48,7 @@ export const Portfolio = ({ filter }) => (
                 <img src={image} alt="React" />
               </p>
               <div className="flex justify-center mt-4">
-                { /* Display only Github button if not empty  */}              
+                {/* Display only Github button if not empty  */}
                 {urlgithub && (
                   <a href={urlgithub}>
                     <button className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700">
@@ -51,3 +69,20 @@ export const Portfolio = ({ filter }) => (
     )}
   </>
 )
+
+/*
+export const query = graphql`
+  query Projects {
+    allProjects {
+      id
+      name
+      description
+      subdescription
+      category
+      urlwww
+      urlgithub
+      image
+    }
+  }
+`
+*/
