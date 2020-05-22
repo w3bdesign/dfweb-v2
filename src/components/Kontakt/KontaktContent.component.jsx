@@ -5,6 +5,7 @@ function KontaktContent() {
     <>
       <main id="maincontent">
         <div className="bg-graybg">
+          <div className="px-4 p lg:px-0 xl:px-0 md:px-0">
           <div className="container mx-auto bg-white rounded shadow-lg">
             <div className="p-4 mx-auto mt-4">
               <div className="p-4 text-lg rounded">
@@ -74,6 +75,7 @@ function KontaktContent() {
         <div id="kontakt-filler" className="mt-48">
           <br />
           <br />
+        </div>
         </div>
       </main>
     </>
