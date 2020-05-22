@@ -8,7 +8,7 @@
 
 Second version of my portfolio website with Gatsby instead of plain HTML.
 
-Uses a remote GraphQL API for portfolio information.
+Uses a remote GraphQL API for fetching portfolio projects.
 
 Uses Tailwind CSS for styling.
 
