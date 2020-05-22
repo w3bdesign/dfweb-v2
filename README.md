@@ -8,6 +8,8 @@
 
 Second version of my portfolio website with Gatsby instead of plain HTML.
 
+Uses a remote GraphQL API for portfolio information.
+
 Uses Tailwind CSS for styling.
 
 Uses Cypress for testing.
@@ -18,6 +20,7 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 
 - Gatsby as main project dependency
 - GSAP and Framer Motion for animations 
+- GraphQL for fetching portfolio information
 - Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
 - Sonarcloud integration on every push to maintain code quality
 - FontAwesome SVG icons for project icons (@FortAwesome)
@@ -32,5 +35,4 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 ## TODO
 
 - Implement additional Cypress tests (for example mobile testing)
-- Replace PROJECTS.json constant with a Apollo Graphql backend (No Markdown parsing)
 - Add React Spring animations for portfolio (click for flip)
