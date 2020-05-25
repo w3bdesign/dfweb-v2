@@ -95,7 +95,7 @@ function MainContent() {
             >
               <section>
                 <p className="text-5xl text-center">Hei!</p>
-                <p data-cy="daniel" className="p-12 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-center md:text-center xl:text-2xl lg:text-xl md:text-xl xs:">
+                <p data-cy="daniel" className="p-12 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-center md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-full">
                   Jeg heter Daniel Fjeldstad og er en webutvikler som kan PHP,
                   mySQL, Wordpress, HTML, CSS, Javascript, React, Redux, Docker
                   og mye mer.
