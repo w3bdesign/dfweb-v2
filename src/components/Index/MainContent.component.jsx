@@ -120,7 +120,6 @@ function MainContent() {
                   siden 2011 hvor jeg har arbeidet frilans via Fiverr og kan
                   skilte med 100% positiv tilbakemelding på samtlige oppdrag.
                 </p>
-
                 <p className="mt-6 text-lg">
                   Har også erfaring med Opencart og Magento.
                 </p>
