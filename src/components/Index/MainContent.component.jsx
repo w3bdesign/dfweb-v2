@@ -95,8 +95,11 @@ function MainContent() {
             >
               <section>
                 <p className="text-5xl text-center">Hei!</p>
-                <p data-cy="daniel" className="p-12 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full">
-                  Jeg heter Daniel Fjeldstad og er en webutvikler som kan PHP,
+                <p
+                  data-cy="daniel"
+                  className="p-12 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full"
+                >
+                  Jeg heter Daniel Fjeldstadog er en webutvikler som kan PHP,
                   mySQL, Wordpress, HTML, CSS, Javascript, React, Redux, Docker
                   og mye mer.
                 </p>
@@ -110,7 +113,7 @@ function MainContent() {
           >
             <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
               <section>
-                <p className="text-3xl text-center">Om Meg</p>
+                <h1 className="text-3xl text-center">Om Meg</h1>
                 <p className="mt-6 text-lg">
                   Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
                   Javascript. Jeg har arbeidet med Wordpress og Woocommerce
@@ -134,7 +137,7 @@ function MainContent() {
             </div>
             <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
               <section>
-                <p className="text-3xl text-center">Prosjekter</p>
+                <h1 className="text-3xl text-center">Prosjekter</h1>
                 <p className="mt-6 text-lg">
                   Jeg arbeider jevnlig med hobbyprosjekter. Prosjektene baserer
                   seg primært på Javascript, React, HTML og CSS, men jeg
