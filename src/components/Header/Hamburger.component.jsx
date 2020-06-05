@@ -30,7 +30,7 @@ export default function Hamburger() {
         onClick={() => {
           setisExpanded(!isExpanded)
         }}
-        className="w-10 m-4 text-white hover:text-gray-500 h-8"
+        className="w-10 h-8 m-4 text-white hover:text-gray-500"
       />
       {isExpanded && (
         <motion.div
@@ -44,7 +44,7 @@ export default function Hamburger() {
           }}
         >
           <ul>
-            <li className="m-6">
+            <li className="w-full border-t border-gray-600 border-solid shadow-md ">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
@@ -53,7 +53,7 @@ export default function Hamburger() {
                 Hjem
               </Link>
             </li>
-            <li className="m-6">
+            <li className="w-full border-t border-gray-600 border-solid shadow-md ">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
@@ -62,7 +62,7 @@ export default function Hamburger() {
                 Portefølje
               </Link>
             </li>
-            <li className="m-6">
+            <li className="w-full border-t border-gray-600 border-solid shadow-md ">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
@@ -71,7 +71,7 @@ export default function Hamburger() {
                 CV
               </Link>
             </li>
-            <li className="m-6">
+            <li className="w-full border-t border-gray-600 border-solid shadow-md ">
               <Link
                 className="inline-block m-4 text-xl text-white hover:underline"
                 activeClassName="underline"
