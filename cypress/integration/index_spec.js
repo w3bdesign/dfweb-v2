@@ -2,9 +2,9 @@
 
 describe(`The Home Page`, () => {
   beforeEach(() => {
-    cy.visit('/')
+    cy.visit("/")
   })
-  it(`Contains my name in the hero section`, () => {  
-    cy.get('[data-cy=daniel]').contains(`Daniel`)
+  it(`Contains my name in the hero section`, () => {
+    cy.get("[data-cy=daniel]").contains(`Daniel`)
   })
 })

@@ -26,7 +26,7 @@ function Index() {
         <NavbarContent />
       </Navbar>
       <MainContent />
-      <Footer/>
+      <Footer />
     </>
   )
 }
