@@ -23,7 +23,7 @@ cy.visit(`/`).waitForRouteChange()
 
     it(`renders user avatar and name`, () => {
       cy.getTestElement(`user-avatar`).get(`img`)
-      cy.getTestElement(`username`).contains(`kyle__mathews`)
+      cy.getTestElement(`username`).contains(`kyle__mathews`) 
     })
 
     it(`shows user's posts and followers count`, () => {
