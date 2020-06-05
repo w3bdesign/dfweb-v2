@@ -25,12 +25,12 @@ export default function Hamburger() {
   return (
     <div className="z-50 md:hidden lg:hidden xl:hidden">
       <HamburgerSVG
-      id="hamburger"
-      data-cy="hamburger"
-        onClick={() => {          
+        id="hamburger"
+        data-cy="hamburger"
+        onClick={() => {
           setisExpanded(!isExpanded)
         }}
-        className="w-10 m-4 text-white hover:text-gray-500 h-8"       
+        className="w-10 m-4 text-white hover:text-gray-500 h-8"
       />
       {isExpanded && (
         <motion.div
