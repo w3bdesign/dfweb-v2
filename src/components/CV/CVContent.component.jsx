@@ -14,7 +14,7 @@ function CVContent() {
   return (
     <>
       <main id="maincontent">
-        <div className="bg-graybg">
+        <div className="mt-24 bg-graybg">
           <div className="px-4 p lg:px-0 xl:px-0 md:px-0">
             <div className="container mx-auto bg-white rounded shadow-lg">
               <div className="p-4 mx-auto mt-4">

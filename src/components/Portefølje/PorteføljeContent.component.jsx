@@ -50,7 +50,7 @@ function PorteføljeContent() {
 
   return (
     <>
-      <main className="bg-graybg">
+      <main className="mt-24 bg-graybg">
         <div className="container mx-auto rounded">
           <div className="px-4 mx-auto mt-4 lg:px-0 xl:px-0 md:px-0">
             <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
