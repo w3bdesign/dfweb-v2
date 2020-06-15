@@ -4,18 +4,18 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Portfolio } from "./Portefølje.component"
 import ScrollShow from "../../utils/scrollshow"
 
-const PROJECT_QUERY = graphql`
+const ALL_PROJECTS_QUERY = graphql`
   query MyQuery {
     Project {
       allProjects {
         id
-        name
-        description
-        subdescription
-        category
-        urlwww
-        urlgithub
         image
+        name
+        subdescription
+        urlgithub
+        urlwww
+        category
+        description
       }
     }
   }
@@ -41,7 +41,7 @@ function PorteføljeContent() {
   const firstRevealContainer = useRef(null)
   const secondRevealContainer = useRef(null)
 
-  const projectdata = useStaticQuery(PROJECT_QUERY)
+  const projectData = useStaticQuery(ALL_PROJECTS_QUERY)  
 
   useEffect(() => {
     ScrollShow.reveal(firstRevealContainer.current, srConfig())
@@ -58,10 +58,7 @@ function PorteføljeContent() {
             </div>
           </div>
           <div className="grid gap-4 px-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
-            <Portfolio
-              filter="Javascript"
-              projects={projectdata.Project.allProjects}
-            />
+            <Portfolio filter="Javascript" projects={projectData.Project.allProjects} />
           </div>
           <div className="px-4 mx-auto lg:px-0 xl:px-0 md:px-0">
             <div className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
@@ -72,10 +69,7 @@ function PorteføljeContent() {
             className="grid gap-4 px-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
             ref={firstRevealContainer}
           >
-            <Portfolio
-              filter="React"
-              projects={projectdata.Project.allProjects}
-            />
+            <Portfolio filter="React" projects={projectData.Project.allProjects} />
           </div>
           <div className="px-4 mx-auto lg:px-0 xl:px-0 md:px-0">
             <div className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
@@ -88,7 +82,7 @@ function PorteføljeContent() {
           >
             <Portfolio
               filter="Woocommerce"
-              projects={projectdata.Project.allProjects}
+              projects={projectData.Project.allProjects}
             />
           </div>
         </div>
