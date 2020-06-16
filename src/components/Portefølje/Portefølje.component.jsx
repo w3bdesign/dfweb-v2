@@ -1,7 +1,9 @@
-import * as React from "react"
-import { v4 as uuidv4 } from "uuid"
+import React, { useState } from "react"
+import { nanoid } from "nanoid"
 
-export const Portfolio = ({ filter, projects }) => (
+export const Portfolio = ({ filter, projects }) => {
+  const [uniqueId] = useState(nanoid)
+  return (
   <>
     {projects.map(
       ({
@@ -16,7 +18,7 @@ export const Portfolio = ({ filter, projects }) => (
         // Use ternary to apply filter so we only see projects from the relevant category
         return filter === category ? (
           <div
-            key={uuidv4()}
+            key={uniqueId}
             className="p-12 text-lg text-black bg-white rounded shadow-lg"
           >
             <p className="text-xl font-black text-center">{name}</p>
@@ -49,3 +51,4 @@ export const Portfolio = ({ filter, projects }) => (
     )}
   </>
 )
+    }

@@ -28,7 +28,7 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 - React Helmet for modifying HTML header
 - Google fonts with Gatsby plugin for prefetching
 - Gatsby plugin for generating robots.txt and sitemap.xml
-- UUID for unique IDs for mapped elements
+- Nanoid for unique IDs for mapped elements
 - Scrollreveal for smooth reveal of content
 - React-PDF for displaying PDF CV
 

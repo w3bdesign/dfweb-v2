@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
-import { v4 as uuidv4 } from "uuid"
+import { nanoid } from "nanoid"
 
 import AppLogo from "./Applogo.component"
 import Hamburger from "./Hamburger.component"
@@ -8,6 +8,7 @@ import Hamburger from "./Hamburger.component"
 import LINKS from "../../constants/LINKS"
 
 export default function NavbarContent() {
+  const [uniqueId] = useState(nanoid)
   return (
     <>
       <div
@@ -24,7 +25,7 @@ export default function NavbarContent() {
           <Hamburger />
           <ul className="items-center justify-between flex-1 hidden list-reset md:flex lg:flex xl:flex">
             {LINKS.map((link) => (
-              <li key={uuidv4()} className="mr-3">
+              <li key={uniqueId} className="mr-3">
                 <Link
                   className="inline-block m-4 text-xl text-white hover:underline"
                   activeClassName="underline"
