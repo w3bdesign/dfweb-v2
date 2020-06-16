@@ -27,16 +27,6 @@ function MainContent() {
     //Remove initial flash
     TweenMax.to(app, 0, { css: { visibility: "visible" } })
 
-    /*
-     timeline.staggerFrom([headlineFirst.children, headlineSecond.children, headlineThird.children ], 1, {
-      y: 44,
-      ease:Power3.easeOut,
-      delay: .8
-    }, .15, 'Start')
-    .from(contentP, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.4)
-    .from(contentButton, 1, {y: 20, opacity: 0, ease: Power3.easeOut}, 1.6)
-    */
-
     timeline.from(heroRef, 2.0, { y: 1280, ease: Power3.easeOut }, "Start")
 
     timeline.from(
@@ -126,7 +116,7 @@ function MainContent() {
                 <p className="mt-6 text-lg">
                   Jeg har også erfaring med andre teknologier som React, moderne
                   Javascript (ES6+), Node.js, Firebase, Context, Redux, Axios,
-                  Docker med mer.
+                  Docker, NextJS, Gatsby med mer.
                 </p>
                 <p className="mt-6 text-lg">
                   På Portefølje kan du se eksempler på arbeid jeg har gjort i
