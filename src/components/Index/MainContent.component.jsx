@@ -18,11 +18,9 @@ function MainContent() {
 
   useEffect(() => {
     const firstHeroContent = heroContent.children[0]
-    const secondHeroContent = heroContent.children[1]
-    const thirdHeroContent = heroContent.children[2]
 
-    const ommegContent = omMeg.children[0]
-    const ommegContent2 = omMeg.children[1]
+    const omMegContent = omMeg.children[0]
+    const omMegContent2 = omMeg.children[1]
 
     //Remove initial flash
     TweenMax.to(app, 0, { css: { visibility: "visible" } })
@@ -36,30 +34,16 @@ function MainContent() {
       1.2,
       "Start"
     )
-    timeline.from(
-      secondHeroContent,
-      1,
-      { y: 20, opacity: 0, ease: Power3.easeOut },
-      1.4,
-      "Start"
-    )
-    timeline.from(
-      thirdHeroContent,
-      1,
-      { y: 20, opacity: 0, ease: Power3.easeOut },
-      1.6,
-      "Start"
-    )
 
     timeline.from(
-      ommegContent,
+      omMegContent,
       1,
       { y: 20, opacity: 0, ease: Power3.easeOut },
       1.8,
       "Start"
     )
     timeline.from(
-      ommegContent2,
+      omMegContent2,
       1,
       { y: 20, opacity: 0, ease: Power3.easeOut },
       2.0,
