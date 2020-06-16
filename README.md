@@ -18,6 +18,7 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 ## Features:
 
 - Gatsby as main project dependency
+- 100% handcoded React and Javascript code
 - GSAP and Framer Motion for animations
 - GraphQL for fetching portfolio information
 - Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
@@ -29,7 +30,7 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 - Gatsby plugin for generating robots.txt and sitemap.xml
 - UUID for unique IDs for mapped elements
 - Scrollreveal for smooth reveal of content
-- React-pdf for displaying PDF CV
+- React-PDF for displaying PDF CV
 
 ## TODO
 
