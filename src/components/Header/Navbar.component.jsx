@@ -7,7 +7,7 @@ export default function Navbar({ children }) {
     <>
       <SEO />
       <header>
-        <nav className="fixed top-0 z-50 w-full p-2 bg-gray-800">
+        <nav className="fixed top-0 z-50 w-full p-2 bg-gray-800 shadow-lg">
           {children}
         </nav>
       </header>
