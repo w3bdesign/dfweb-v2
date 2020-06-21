@@ -34,4 +34,5 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 ## TODO
 
 - Implement additional Cypress tests (for example mobile testing)
+- Add more animation effects
 - Add React Spring animations for portfolio (click for flip)
