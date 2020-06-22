@@ -1,72 +1,10 @@
-import React, { useEffect, useRef } from "react"
+import React from "react"
 
 import FontAwesome from "../FontAwesome/FontAwesome.component"
-
-import { TimelineLite, TweenMax, Power3 } from "gsap"
 
 import heroimage from "../../../static/blue-hero.jpg"
 
 function Design1Content() {
-  // GSAP animations
-  let app = useRef(null)
-  let heroRef = useRef(null)
-  let heroContent = useRef(null)
-  let omMeg = useRef(null)
-
-  let timeline = new TimelineLite({ delay: 0.2 })
-
-  useEffect(() => {
-    const firstHeroContent = heroContent.children[0]
-    const secondHeroContent = heroContent.children[1]
-    const thirdHeroContent = heroContent.children[2]
-
-    const ommegContent = omMeg.children[0]
-    const ommegContent2 = omMeg.children[1]
-
-    //Remove initial flash
-
-    TweenMax.to(app, 0, { css: { visibility: "visible" } })
-
-    timeline.from(heroRef, 2.0, { y: 1280, ease: Power3.easeOut }, "Start")
-
-    timeline.from(
-      firstHeroContent,
-      1,
-      { y: 20, opacity: 0, ease: Power3.easeOut },
-      1.2,
-      "Start"
-    )
-    timeline.from(
-      secondHeroContent,
-      1,
-      { y: 20, opacity: 0, ease: Power3.easeOut },
-      1.4,
-      "Start"
-    )
-    timeline.from(
-      thirdHeroContent,
-      1,
-      { y: 20, opacity: 0, ease: Power3.easeOut },
-      1.6,
-      "Start"
-    )
-
-    timeline.from(
-      ommegContent,
-      1,
-      { y: 20, opacity: 0, ease: Power3.easeOut },
-      1.8,
-      "Start"
-    )
-    timeline.from(
-      ommegContent2,
-      1,
-      { y: 20, opacity: 0, ease: Power3.easeOut },
-      2.0,
-      "Start"
-    )
-  }, [timeline])
-
   return (
     <>
       <main id="maincontent">

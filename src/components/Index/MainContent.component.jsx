@@ -1,72 +1,25 @@
-import React, { useEffect, useRef } from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 import FontAwesome from "../FontAwesome/FontAwesome.component"
 
-import { TimelineLite, TweenMax, Power3 } from "gsap"
-
 import heroimage from "../../../static/blue-hero.jpg"
 
 function MainContent() {
-  // GSAP animations
-  let app = useRef(null)
-  let heroRef = useRef(null)
-  let heroContent = useRef(null)
-  let omMeg = useRef(null)
-
-  let timeline = new TimelineLite({ delay: 0.2 })
-
-  useEffect(() => {
-    const firstHeroContent = heroContent.children[0]
-
-    const omMegContent = omMeg.children[0]
-    const omMegContent2 = omMeg.children[1]
-
-    //Remove initial flash
-    TweenMax.to(app, 0, { css: { visibility: "visible" } })
-
-    timeline.from(heroRef, 2.0, { y: 1280, ease: Power3.easeOut }, "Start")
-
-    timeline.from(
-      firstHeroContent,
-      1,
-      { y: 20, opacity: 0, ease: Power3.easeOut },
-      1.2,
-      "Start"
-    )
-
-    timeline.from(
-      omMegContent,
-      1,
-      { y: 20, opacity: 0, ease: Power3.easeOut },
-      1.8,
-      "Start"
-    )
-    timeline.from(
-      omMegContent2,
-      1,
-      { y: 20, opacity: 0, ease: Power3.easeOut },
-      2.0,
-      "Start"
-    )
-  }, [timeline])
-
   return (
     <>
       <main id="maincontent">
-        <div
-          ref={(el) => (app = el)}
-          className="invisible mx-auto mt-20 rounded bg-graybg shadow-large"
-        >
+        <div className="mx-auto mt-20 rounded bg-graybg shadow-large">
           <div
-            ref={(el) => (heroRef = el)}
-            className="flex flex-col justify-center text-lg text-white"
-            style={{ backgroundImage: `url(${heroimage})`, height: "450px" }}
+            className="flex flex-col justify-center text-lg text-white
+            
+            "
+            style={{
+              backgroundImage: `url(${heroimage})`,
+              height: "450px",
+            }}
           >
-            <div
-              ref={(el) => (heroContent = el)}
-              className="text-white rounded"
-            >
+            <div className="text-white rounded animate__animated animate__fadeInUp">
               <section>
                 <p className="text-5xl text-center">Hei!</p>
                 <p
@@ -81,10 +34,7 @@ function MainContent() {
               </section>
             </div>
           </div>
-          <div
-            ref={(el) => (omMeg = el)}
-            className="container grid gap-4 p-4 mx-auto mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
-          >
+          <div className="container grid gap-4 p-4 mx-auto mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
             <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
               <section>
                 <h1 className="text-3xl text-center">Om Meg</h1>
