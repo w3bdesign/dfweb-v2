@@ -11,15 +11,13 @@ function MainContent() {
       <main id="maincontent">
         <div className="mx-auto mt-20 rounded bg-graybg shadow-large">
           <div
-            className="flex flex-col justify-center text-lg text-white
-            
-            "
+            className="flex flex-col justify-center text-lg text-white "
             style={{
               backgroundImage: `url(${heroimage})`,
               height: "450px",
             }}
           >
-            <div className="text-white rounded animate__animated animate__fadeInUp">
+            <div className="text-white rounded">
               <section>
                 <p className="text-5xl text-center">Hei!</p>
                 <p
