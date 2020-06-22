@@ -3,6 +3,7 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=w3bdesign_dfweb&metric=alert_status)](https://sonarcloud.io/dashboard?id=w3bdesign_dfweb)
 ![GitHub last commit](https://img.shields.io/github/last-commit/w3bdesign/dfweb)
 
+
 # Dfweb
 
 Second version of my portfolio website with Gatsby instead of plain HTML.
