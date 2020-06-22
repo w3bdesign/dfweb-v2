@@ -18,20 +18,19 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 ## Features:
 
 - Gatsby as main project dependency
-- GSAP and Framer Motion for animations
+- Animate.css for animations
 - GraphQL for fetching portfolio information
 - Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
 - Sonarcloud integration on every push to maintain code quality
-- FontAwesome SVG icons for project icons (@FortAwesome)
+- FontAwesome SVG icons for project icons
 - Tailwind CSS for styling
 - React Helmet for modifying HTML header
 - Google fonts with Gatsby plugin for prefetching
 - Gatsby plugin for generating robots.txt and sitemap.xml
 - UUID for unique IDs for mapped elements
-- Scrollreveal for smooth reveal of content
-- React-pdf for displaying PDF CV
+- ScrollReveal for reveaingl content on portfolio
+- React-PDF for displaying PDF CV
 
 ## TODO
 
 - Implement additional Cypress tests (for example mobile testing)
-- Add React Spring animations for portfolio (click for flip)
