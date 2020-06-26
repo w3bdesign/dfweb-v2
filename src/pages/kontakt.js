@@ -13,6 +13,10 @@ import Footer from "../components/Footer/Footer.component"
 // Transition animations
 import Transition from "../utils/transition"
 
+/**
+ * Contact form page
+ */
+
 function Kontakt() {
   return (
     <>

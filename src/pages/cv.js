@@ -13,6 +13,10 @@ import Footer from "../components/Footer/Footer.component"
 // Transition animations
 import Transition from "../utils/transition"
 
+/**
+ * Display CV using react-pdf
+ */
+
 function CV() {
   return (
     <>

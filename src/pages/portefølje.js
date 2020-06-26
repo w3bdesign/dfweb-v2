@@ -13,6 +13,11 @@ import Footer from "../components/Footer/Footer.component"
 // Transition animations
 import Transition from "../utils/transition"
 
+/**
+ * Portfolio page
+ * Includes Scroll-Reveal for scrolling reveal animations
+ */
+
 function Portefølje() {
   return (
     <>
