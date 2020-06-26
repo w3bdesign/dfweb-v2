@@ -1,20 +1,21 @@
 import React from "react"
+import loadable from '@loadable/component'
 
 // Header
-import Navbar from "../components/Header/Navbar.component"
-import NavbarContent from "../components/Header/NavbarContent.component"
+const Navbar = loadable(() => import("../components/Header/Navbar.component"))
+const NavbarContent = loadable(() => import("../components/Header/NavbarContent.component"))
 
 // SEO component with title and description
-import SEO from "../components/SEO/SEO.component"
+const SEO = loadable(() => import("../components/SEO/SEO.component"))
 
 // Main
-import MainContent from "../components/Index/MainContent.component"
+const MainContent = loadable(() => import("../components/Index/MainContent.component"))
 
 // Footer
-import Footer from "../components/Footer/Footer.component"
+const Footer = loadable(() => import("../components/Footer/Footer.component"))
 
 // Transition animations
-import Transition from "../utils/transition"
+const Transition = loadable(() => import("../utils/transition"))
 
 /**
  * Main index page
