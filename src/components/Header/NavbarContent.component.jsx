@@ -7,6 +7,12 @@ import Hamburger from "./Hamburger.component"
 
 import LINKS from "../../constants/LINKS"
 
+/**
+ * Display the menu and the links
+ * On mobile, we display a hamburger icon and include the Hamburger component
+ * We reduce code duplication by loading the links from a JSON object and map over it
+ */
+
 export default function NavbarContent() {
   return (
     <>

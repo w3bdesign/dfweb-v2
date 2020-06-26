@@ -6,6 +6,11 @@ import myCV from "../../../static/CV-dfweb.pdf"
 // https://github.com/wojtekmaj/react-pdf#enable-pdfjs-worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
+/**
+ * Displays the CV content using react-pdf
+ * On mobile, we only show a link to display the PDF directly
+ */
+
 function CVContent() {
   const page = {
     pageNumber: 1,
@@ -20,7 +25,6 @@ function CVContent() {
               <div className="p-4 mx-auto mt-4">
                 <div className="p-4 text-lg rounded">
                   <h3 className="m-2 text-3xl text-center text-black">CV</h3>
-
                   <div className="mt-0 sm:mt-2 xs:mt-2">
                     <Document
                       className="hidden mt-4 text-center xl:block lg:block"

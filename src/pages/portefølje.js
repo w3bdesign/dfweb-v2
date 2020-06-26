@@ -4,6 +4,9 @@ import React from "react"
 import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 
+// SEO component with title and description
+import SEO from "../components/SEO/SEO.component"
+
 // Main content
 import PorteføljeContent from "../components/Portefølje/PorteføljeContent.component"
 
@@ -21,6 +24,7 @@ import Transition from "../utils/transition"
 function Portefølje() {
   return (
     <>
+    <SEO title="Portefølje - Portefølje Daniel Fjeldstad" />
       <Navbar>
         <NavbarContent />
       </Navbar>

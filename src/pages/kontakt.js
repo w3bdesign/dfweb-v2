@@ -4,6 +4,9 @@ import React from "react"
 import Navbar from "../components/Header/Navbar.component"
 import NavbarContent from "../components/Header/NavbarContent.component"
 
+// SEO component with title and description
+import SEO from "../components/SEO/SEO.component"
+
 // Main content
 import KontaktContent from "../components/Kontakt/KontaktContent.component"
 
@@ -20,11 +23,12 @@ import Transition from "../utils/transition"
 function Kontakt() {
   return (
     <>
+      <SEO title="Kontakt - Portefølje Daniel Fjeldstad" />
       <Navbar>
         <NavbarContent />
       </Navbar>
       <Transition>
-      <KontaktContent />
+        <KontaktContent />
       </Transition>
       <Footer />
     </>
