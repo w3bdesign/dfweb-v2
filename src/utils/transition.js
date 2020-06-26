@@ -7,17 +7,20 @@ import { motion, AnimatePresence } from "framer-motion"
  * @param {Object} children JSX element(s) to animate
  */
 const Transition = ({ children }) => {
-  const duration = 0.5
+  const duration = 1
+  const delay = 0
 
   const variants = {
     initial: {
       opacity: 0,
+    // opacity: 1
     },
     enter: {
       opacity: 1,
+     
       transition: {
         duration: duration,
-        delay: duration,
+        delay: delay,
         when: "beforeChildren",
       },
     },
