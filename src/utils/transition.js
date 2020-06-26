@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion"
  * @param {Object} children JSX element(s) to animate
  */
 const Transition = ({ children }) => {
-  const duration = 0.5
+  const duration = 0.1
 
   const variants = {
     initial: {
