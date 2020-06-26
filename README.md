@@ -19,7 +19,8 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 ## Features:
 
 - Gatsby as main project dependency
-- Animate.css for animations
+- Animate.css for menu animations
+- Framer motion for enter/exit animations
 - GraphQL for fetching portfolio information
 - Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
 - Sonarcloud integration on every push to maintain code quality
@@ -35,3 +36,4 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 ## TODO
 
 - Implement additional Cypress tests (for example mobile testing)
+- Implement additional tests with React-Testing-Library

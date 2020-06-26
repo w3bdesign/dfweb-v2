@@ -10,13 +10,18 @@ import KontaktContent from "../components/Kontakt/KontaktContent.component"
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
+// Transition animations
+import Transition from "../utils/transition"
+
 function Kontakt() {
   return (
     <>
       <Navbar>
         <NavbarContent />
       </Navbar>
+      <Transition>
       <KontaktContent />
+      </Transition>
       <Footer />
     </>
   )

@@ -10,13 +10,18 @@ import PorteføljeContent from "../components/Portefølje/PorteføljeContent.com
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
+// Transition animations
+import Transition from "../utils/transition"
+
 function Portefølje() {
   return (
     <>
       <Navbar>
         <NavbarContent />
       </Navbar>
+      <Transition>
       <PorteføljeContent />
+      </Transition>
       <Footer />
     </>
   )

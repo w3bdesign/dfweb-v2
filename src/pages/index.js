@@ -19,13 +19,18 @@ import MainContent from "../components/Index/MainContent.component"
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
+// Transition animations
+import Transition from "../utils/transition"
+
 function Index() {
   return (
     <>
       <Navbar>
         <NavbarContent />
       </Navbar>
-      <MainContent />
+      <Transition>
+        <MainContent />
+      </Transition>
       <Footer />
     </>
   )
