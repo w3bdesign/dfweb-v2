@@ -37,10 +37,22 @@ const srConfig = (delay = 200) => ({
   viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
 })
 
+/**
+ * Fetch portfolio projects from GraphQL
+ * Also uses ScrollReveal for displaying projects during scrolling
+ * Displays portfolio entries based on the projects filter prop passed to Portfolio
+ */
 function PorteføljeContent() {
+  
+  /**
+   * Setup references to containers so we can use ScrollReveal
+   */
   const firstRevealContainer = useRef(null)
   const secondRevealContainer = useRef(null)
 
+  /**
+   * GraphQL setup
+   */
   const projectData = useStaticQuery(ALL_PROJECTS_QUERY)
   const { allProjects } = projectData.Project
 

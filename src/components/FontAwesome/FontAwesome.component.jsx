@@ -13,6 +13,10 @@ import { v4 as uuidv4 } from "uuid"
 
 const ICONS = [faWordpress, faHtml5, faJs, faReact, faGithub]
 
+/**
+ * Display technologies used as FontAwesome SVG icons
+ */
+
 export const FontAwesome = () => {
   // We avoid repeating ourselves by using a map() here
   return (

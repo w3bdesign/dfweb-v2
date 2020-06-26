@@ -1,5 +1,8 @@
 import React from "react"
 
+/**
+ * Footer for site
+ */
 export default function Footer() {
   return (
     <>

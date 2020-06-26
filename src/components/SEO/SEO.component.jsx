@@ -4,6 +4,15 @@ import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
+/**
+ * Setup site meta data through React-helmet
+ *
+ * @param {Object} title Title of site
+ * @param {Object} description Description of site
+ * @param {Object} image Meta image of site
+ * @param {Boolean} article If page is article type, display relevant meta property
+ */
+
 const SEO = ({ title, description, image, article }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)

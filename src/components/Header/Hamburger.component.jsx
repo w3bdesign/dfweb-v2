@@ -3,6 +3,12 @@ import { Link } from "gatsby"
 
 import HamburgerSVG from "../../svg/hamburger.svg"
 
+/**
+ * Mobile menu 
+ * Uses state to keep track of if the menu is expanded. 
+ * If yes, we add Animate.css animation classes
+ */
+
 export default function Hamburger() {
   const [isExpanded, setisExpanded] = useState(false)
   const [isInitialRender, setisInitialRender] = useState(true)
@@ -23,7 +29,7 @@ export default function Hamburger() {
         // Start the mobile menu initially as hidden, then remove hidden class if we have clicked on the mobile menu
         // Add Animate.css animation classes once we click on the mobile menu
       }
-      
+
       <div
         id="mobile-menu"
         className={`absolute right-0 w-full text-center bg-gray-800 w-30 h-60  ${

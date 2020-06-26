@@ -1,3 +1,7 @@
+/**
+ * Config file for ScrollReveal
+ */
+
 import ScrollReveal from "scrollreveal"
 
 const isSSR = typeof window === "undefined"

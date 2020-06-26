@@ -10,6 +10,10 @@ import Design1Content from "../components/Design1/Design1Content.component"
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
+/**
+ * Experimental design
+ */
+
 function Design1() {
   return (
     <>
