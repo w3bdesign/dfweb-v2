@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 import FontAwesome from "../FontAwesome/FontAwesome.component"
 import BackgroundMain from "./BackgroundMain.component"
 
-import heroimage from "../../../static/blue-hero.jpg"
-
 /**
  * Main content that is displayed from index.js
  */
@@ -15,13 +13,7 @@ function MainContent() {
     <>
       <main id="maincontent">
         <div className="mx-auto mt-20 rounded bg-graybg shadow-large">
-
-           <BackgroundMain>
-         
-
-
-
-
+          <BackgroundMain>
             <div className="text-white rounded">
               <section>
                 <p className="text-5xl text-center">Hei!</p>
