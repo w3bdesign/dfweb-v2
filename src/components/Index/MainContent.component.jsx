@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import FontAwesome from "../FontAwesome/FontAwesome.component"
-import BackgroundMain from "./BackgroundMain.component"
+import HeroBackgroundMain from "./HeroBackgroundMain.component"
 
 /**
  * Main content that is displayed from index.js
@@ -13,7 +13,7 @@ function MainContent() {
     <>
       <main id="maincontent">
         <div className="mx-auto mt-20 rounded bg-graybg shadow-large">
-          <BackgroundMain>
+          <HeroBackgroundMain>
             <div className="text-white rounded">
               <section>
                 <p className="text-5xl text-center">Hei!</p>
@@ -28,7 +28,7 @@ function MainContent() {
                 <FontAwesome />
               </section>
             </div>
-          </BackgroundMain>
+          </HeroBackgroundMain>
           <div className="container grid gap-4 p-4 mx-auto mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
             <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
               <section>
