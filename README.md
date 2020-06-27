@@ -20,7 +20,6 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 
 - Gatsby as main project dependency
 - Animate.css for menu animations
-- Framer motion for enter/exit animations
 - GraphQL for fetching portfolio information
 - Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
 - Sonarcloud integration on every push to maintain code quality
