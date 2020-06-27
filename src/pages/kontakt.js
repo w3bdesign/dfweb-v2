@@ -13,9 +13,6 @@ import KontaktContent from "../components/Kontakt/KontaktContent.component"
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
-// Transition animations
-import Transition from "../utils/transition"
-
 /**
  * Contact form page
  */
@@ -27,9 +24,9 @@ function Kontakt() {
       <Navbar>
         <NavbarContent />
       </Navbar>
-      <Transition>
-        <KontaktContent />
-      </Transition>
+
+      <KontaktContent />
+
       <Footer />
     </>
   )

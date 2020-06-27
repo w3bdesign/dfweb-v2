@@ -13,9 +13,6 @@ import MainContent from "../components/Index/MainContent.component"
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
-// Transition animations
-//import Transition from "../utils/transition"
-
 /**
  * Main index page
  */
@@ -27,9 +24,9 @@ function Index() {
       <Navbar>
         <NavbarContent />
       </Navbar>
-      
-        <MainContent />
-      
+
+      <MainContent />
+
       <Footer />
     </>
   )

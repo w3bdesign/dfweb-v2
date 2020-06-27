@@ -13,9 +13,6 @@ import CVContent from "../components/CV/CVContent.component"
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
-// Transition animations
-import Transition from "../utils/transition"
-
 /**
  * Display CV using react-pdf
  * Shows download link on mobile
@@ -24,13 +21,13 @@ import Transition from "../utils/transition"
 function CV() {
   return (
     <>
-    <SEO title="CV - Portefølje Daniel Fjeldstad" />
+      <SEO title="CV - Portefølje Daniel Fjeldstad" />
       <Navbar>
         <NavbarContent />
       </Navbar>
-      <Transition>
+
       <CVContent />
-      </Transition>
+
       <Footer />
     </>
   )
