@@ -21,8 +21,7 @@ const BackgroundMain = ({ className, children }) => (
       const imageData = data.desktop.childImageSharp.fluid
       return (
         <BackgroundImage
-          Tag="section"
-          //className={className}
+          Tag="section"          
           className="flex flex-col justify-center text-lg text-white" 
           style={{             
             height: "450px",
