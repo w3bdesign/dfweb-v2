@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
     title: "Portefølje",
@@ -54,7 +56,16 @@ module.exports = {
         ignore: ["fontawesome-svg-core/"],
       },
     },
-    "gatsby-plugin-react-svg",    
+    "gatsby-plugin-react-svg",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `static`),
+      },
+    },
+    "gatsby-transformer-sharp", 
+    "gatsby-plugin-sharp",    
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-sitemap",
