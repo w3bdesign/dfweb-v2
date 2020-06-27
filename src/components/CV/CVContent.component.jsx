@@ -1,10 +1,7 @@
 import React from "react"
-import { Document, Page, pdfjs } from "react-pdf"
+import { Document, Page } from "react-pdf"
 
 import myCV from "../../../static/CV-dfweb.pdf"
-
-// https://github.com/wojtekmaj/react-pdf#enable-pdfjs-worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 /**
  * Displays the CV content using react-pdf

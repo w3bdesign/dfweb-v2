@@ -13,9 +13,6 @@ import PorteføljeContent from "../components/Portefølje/PorteføljeContent.com
 // Footer
 import Footer from "../components/Footer/Footer.component"
 
-// Transition animations
-import Transition from "../utils/transition"
-
 /**
  * Portfolio page
  * Includes Scroll-Reveal for scrolling reveal animations
@@ -24,13 +21,13 @@ import Transition from "../utils/transition"
 function Portefølje() {
   return (
     <>
-    <SEO title="Portefølje - Portefølje Daniel Fjeldstad" />
+      <SEO title="Portefølje - Portefølje Daniel Fjeldstad" />
       <Navbar>
         <NavbarContent />
       </Navbar>
-      <Transition>
+
       <PorteføljeContent />
-      </Transition>
+
       <Footer />
     </>
   )
