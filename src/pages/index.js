@@ -1,21 +1,20 @@
 import React from "react"
-import loadable from '@loadable/component'
 
 // Header
-const Navbar = loadable(() => import("../components/Header/Navbar.component"))
-const NavbarContent = loadable(() => import("../components/Header/NavbarContent.component"))
+import Navbar from "../components/Header/Navbar.component"
+import NavbarContent from "../components/Header/NavbarContent.component"
 
 // SEO component with title and description
-const SEO = loadable(() => import("../components/SEO/SEO.component"))
+import SEO from "../components/SEO/SEO.component"
 
 // Main
-const MainContent = loadable(() => import("../components/Index/MainContent.component"))
+import MainContent from "../components/Index/MainContent.component"
 
 // Footer
-const Footer = loadable(() => import("../components/Footer/Footer.component"))
+import Footer from "../components/Footer/Footer.component"
 
 // Transition animations
-const Transition = loadable(() => import("../utils/transition"))
+//import Transition from "../utils/transition"
 
 /**
  * Main index page
@@ -28,9 +27,9 @@ function Index() {
       <Navbar>
         <NavbarContent />
       </Navbar>
-      <Transition>
+      
         <MainContent />
-      </Transition>
+      
       <Footer />
     </>
   )

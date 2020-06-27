@@ -5,6 +5,10 @@ import FontAwesome from "../FontAwesome/FontAwesome.component"
 
 import heroimage from "../../../static/blue-hero.jpg"
 
+/**
+ * Main content that is displayed from index.js
+ */
+
 function MainContent() {
   return (
     <>
