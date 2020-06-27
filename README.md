@@ -6,7 +6,7 @@
 
 # Dfweb
 
-Second version of my portfolio website with Gatsby instead of plain HTML.
+Second version of my portfolio website with Gatsby instead of plain HTML and Javascript.
 
 Uses a remote GraphQL API for fetching portfolio projects.
 
