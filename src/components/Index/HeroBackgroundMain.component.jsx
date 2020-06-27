@@ -3,7 +3,12 @@ import { graphql, StaticQuery } from "gatsby"
 
 import BackgroundImage from "gatsby-background-image"
 
-const BackgroundMain = ({ className, children }) => (
+/**
+ * Background for the main hero element on the front page
+ * 
+ * @param {Object} children JSX elements passed in to be rendered within the background component
+ */
+const HeroBackgroundMain = ({ children }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -17,7 +22,7 @@ const BackgroundMain = ({ className, children }) => (
       }
     `}
     render={(data) => {
-      // Set ImageData
+      // Set imageData
       const imageData = data.desktop.childImageSharp.fluid
       return (
         <BackgroundImage
@@ -35,4 +40,4 @@ const BackgroundMain = ({ className, children }) => (
   />
 )
 
-export default BackgroundMain
+export default HeroBackgroundMain
