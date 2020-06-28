@@ -26,10 +26,11 @@ const HeroBackgroundMain = ({ children }) => (
       const imageData = data.desktop.childImageSharp.fluid
       return (
         <BackgroundImage
-          Tag="section"          
+          Tag="section"  
+          fadeIn={false}       
           className="flex flex-col justify-center text-lg text-white" 
           style={{             
-            height: "450px",
+            height: "450px",           
           }}
           fluid={imageData}         
         >

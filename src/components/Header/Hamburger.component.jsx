@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 import HamburgerSVG from "../../svg/hamburger.svg"
 
 /**
- * Mobile menu 
- * Uses state to keep track of if the menu is expanded. 
+ * Mobile menu
+ * Uses state to keep track of if the menu is expanded.
  * If yes, we add Animate.css animation classes
  */
 
@@ -13,15 +13,17 @@ export default function Hamburger() {
   const [isExpanded, setisExpanded] = useState(false)
   const [isInitialRender, setisInitialRender] = useState(true)
 
+  const handleMobileMenuClick = () => {
+    setisExpanded(!isExpanded)
+    setisInitialRender(false)
+  }
+
   return (
     <div className="z-50 md:hidden lg:hidden xl:hidden">
       <HamburgerSVG
         id="hamburger"
         data-cy="hamburger"
-        onClick={() => {
-          setisExpanded(!isExpanded)
-          setisInitialRender(false)
-        }}
+        onClick={handleMobileMenuClick}
         className="w-10 h-8 m-4 text-white hover:text-gray-500"
       />
 
