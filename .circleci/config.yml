@@ -17,4 +17,4 @@ jobs:
             - /home/circleci/.npm
       - run:
           name: Run Tests
-          command: npm jest
+          command: npm run jest
