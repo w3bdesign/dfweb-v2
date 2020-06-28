@@ -5,7 +5,7 @@ import BackgroundImage from "gatsby-background-image"
 
 /**
  * Background for the main hero element on the front page
- * 
+ *
  * @param {Object} children JSX elements passed in to be rendered within the background component
  */
 const HeroBackgroundMain = ({ children }) => (
@@ -26,15 +26,15 @@ const HeroBackgroundMain = ({ children }) => (
       const imageData = data.desktop.childImageSharp.fluid
       return (
         <BackgroundImage
-          Tag="section"  
-          fadeIn={false}       
-          className="flex flex-col justify-center text-lg text-white" 
-          style={{             
-            height: "450px",           
+          Tag="section"
+          fadeIn={false}
+          className="flex flex-col justify-center text-lg text-white"
+          style={{
+            height: "400px",
           }}
-          fluid={imageData}         
+          fluid={imageData}
         >
-         {children}
+          {children}
         </BackgroundImage>
       )
     }}
