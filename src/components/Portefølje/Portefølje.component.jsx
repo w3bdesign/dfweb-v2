@@ -23,13 +23,12 @@ export const Portfolio = ({ filter, projects }) => (
         return filter === category ? (
           <div
             key={uuidv4()}
-            className="p-12 text-lg text-black bg-white rounded shadow-lg"
+            className="p-6 text-lg text-black bg-white rounded shadow-lg xl:p-12 lg:p-12 md:p-12"
           >
             <p className="text-xl font-black text-center">{name}</p>
             <div className="mt-6 text-lg text-left">
               <p>{description}</p>
               <p className="mt-6">{subdescription}</p>
-
               <p className="mt-6">
                 <img src={image} alt="React" />
               </p>
