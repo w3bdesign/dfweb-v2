@@ -1,7 +1,7 @@
 import React from "react"
 import { Document, Page } from "react-pdf"
 
-import myCV from "../../../static/CV-dfweb.pdf"
+import myCV from "../../assets/CV-dfweb.pdf"
 
 /**
  * Displays the CV content using react-pdf
