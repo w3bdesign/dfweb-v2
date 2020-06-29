@@ -3,7 +3,9 @@ import { Link } from "gatsby"
 
 import FontAwesome from "../FontAwesome/FontAwesome.component"
 
-import heroimage from "../../../static/blue-hero.jpg"
+import HeroImage from "../../assets/blue-hero.jpg"
+
+
 
 /**
  * Main content that is displayed from index.js
@@ -17,7 +19,7 @@ function MainContent() {
         <div
             className="flex flex-col justify-center text-lg text-white "
             style={{
-              backgroundImage: `url(${heroimage})`,
+              backgroundImage: `url(${HeroImage})`,
               height: "450px",
             }}
           >

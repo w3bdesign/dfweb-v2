@@ -2,7 +2,7 @@ import React from "react"
 
 import FontAwesome from "../FontAwesome/FontAwesome.component"
 
-import heroimage from "../../../static/blue-hero.jpg"
+import heroimage from "../../assets/blue-hero.jpg"
 
 /**
  * Sample design I am experimenting with
