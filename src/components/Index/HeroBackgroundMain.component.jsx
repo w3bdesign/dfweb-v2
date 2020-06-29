@@ -24,19 +24,12 @@ const HeroBackgroundMain = ({ children }) => (
     render={(data) => {
       // Set imageData
       const imageData = data.desktop.childImageSharp.fluid
-      let imageLoaded = false
-      /**
-       * Hide the hero element until it reports that the background has loaded
-       */
 
       return (
         <BackgroundImage
           Tag="section"
           fadeIn={false}
-          onLoaded={(imageLoaded = true)}
-          className={`flex flex-col justify-center text-lg text-white ${
-            imageLoaded ? `` : `hidden`
-          }`}
+          className="flex flex-col justify-center text-lg text-white"
           style={{
             height: "400px",
           }}
