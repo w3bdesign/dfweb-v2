@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import BackgroundImage from "gatsby-background-image"
@@ -24,22 +24,18 @@ const HeroBackgroundMain = ({ children }) => (
     render={(data) => {
       // Set imageData
       const imageData = data.desktop.childImageSharp.fluid
-      const [isLoading, setisLoading] = useState(true)
-
+      let imageLoaded = false
       /**
        * Hide the hero element until it reports that the background has loaded
        */
-      const backgroundHasLoaded = () => {
-        setisLoading(false)
-      }
 
       return (
         <BackgroundImage
-          onLoad={backgroundHasLoaded}
           Tag="section"
           fadeIn={false}
+          onLoaded={(imageLoaded = true)}
           className={`flex flex-col justify-center text-lg text-white ${
-            isLoading ? `` : `hidden`
+            imageLoaded ? `` : `hidden`
           }`}
           style={{
             height: "400px",
