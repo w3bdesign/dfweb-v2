@@ -1,13 +1,14 @@
 import React from "react"
 
-// Header
-import Navbar from "../components/Header/Navbar.component"
+// Layout
+import Layout from "../components/Header/Layout.component"
 
 function ErrorPage() {
   return (
     <>
-      <Navbar />
+     <Layout>
       <h1>Oppps... something went wrong</h1>
+      </Layout>
     </>
   )
 }
