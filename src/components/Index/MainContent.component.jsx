@@ -5,8 +5,6 @@ import FontAwesome from "../FontAwesome/FontAwesome.component"
 
 import HeroImage from "../../assets/blue-hero.jpg"
 
-
-
 /**
  * Main content that is displayed from index.js
  */
@@ -17,11 +15,7 @@ function MainContent() {
       <main id="maincontent">
         <div className="mx-auto mt-20 rounded bg-graybg shadow-large">
         <div
-            className="flex flex-col justify-center text-lg text-white "
-            style={{
-              backgroundImage: `url(${HeroImage})`,
-              height: "450px",
-            }}
+            id="main-hero" className="flex flex-col justify-center text-lg text-white "            
           >
             <div className="text-white rounded">
               <section>
