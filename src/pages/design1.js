@@ -2,7 +2,7 @@ import React from "react"
 
 // Header
 import Navbar from "../components/Header/Navbar.component"
-import NavbarContent from "../components/Header/NavbarContent.component"
+import NavbarContent from "../components/Header/Navbar.component"
 
 // Main
 import Design1Content from "../components/Design1/Design1Content.component"

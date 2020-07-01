@@ -2,7 +2,6 @@ import React from "react"
 
 // Header
 import Navbar from "./Navbar.component"
-import NavbarContent from "./NavbarContent.component"
 
 // Footer
 import Footer from "../Footer/Footer.component"
@@ -15,9 +14,7 @@ import Footer from "../Footer/Footer.component"
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar>
-        <NavbarContent />
-      </Navbar>
+      <Navbar />
       {children}
       <Footer />
     </>
