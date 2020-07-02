@@ -31,7 +31,7 @@ function MainContent() {
               </section>
             </div>
           </div>
-          <div className="container grid gap-4 p-4 mx-auto mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
+          <div className="container grid gap-4 p-4 mx-auto mt-2 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
             <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
               <section>
                 <h1 className="text-3xl text-center">Om Meg</h1>
