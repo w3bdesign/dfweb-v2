@@ -15,9 +15,9 @@ function MainContent() {
       <main id="maincontent">
         <div className="mx-auto mt-20 rounded bg-graybg shadow-large">
         <div
-            id="main-hero" className="flex flex-col justify-center text-lg text-white "            
+            id="main-hero" className="flex flex-col justify-center text-lg text-white"            
           >
-            <div className="text-white rounded">
+            <div className="text-white rounded animate__animated animate__flipInX">
               <section>
                 <p className="text-5xl text-center">Hei!</p>
                 <p
