@@ -3,8 +3,6 @@ import { Link } from "gatsby"
 
 import FontAwesome from "../FontAwesome/FontAwesome.component"
 
-import HeroImage from "../../assets/blue-hero.jpg"
-
 /**
  * Main content that is displayed from index.js
  */
@@ -14,8 +12,9 @@ function MainContent() {
     <>
       <main id="maincontent">
         <div className="mx-auto mt-20 rounded bg-graybg shadow-large">
-        <div
-            id="main-hero" className="flex flex-col justify-center text-lg text-white"            
+          <div
+            id="main-hero"
+            className="flex flex-col justify-center text-lg text-white"
           >
             <div className="text-white rounded animate__animated animate__flipInX">
               <section>
@@ -32,7 +31,7 @@ function MainContent() {
               </section>
             </div>
           </div>
-          <div className="container grid gap-4 p-4 mx-auto mt-4 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
+          <div className="container grid gap-4 p-4 mx-auto mt-2 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
             <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
               <section>
                 <h1 className="text-3xl text-center">Om Meg</h1>
