@@ -16,4 +16,12 @@ body {
   height: 450px;
 }
 
+/* All delay classes will take less time to start */
+.animate__delay-1s {
+  --animate-delay: 0.25s;
+}
+.animate__delay-2s {
+  --animate-delay: 0.5s;
+}
+
 @import "tailwindcss/utilities";
