@@ -42,12 +42,12 @@ function MainContent() {
                   skilte med 100% positiv tilbakemelding på samtlige oppdrag.
                 </p>
                 <p className="mt-6 text-lg">
-                  Har også erfaring med Opencart og Magento.
+                  Har også bidratt til flere open-source prosjekter på Github.
                 </p>
                 <p className="mt-6 text-lg">
                   Jeg har også erfaring med andre teknologier som React, moderne
                   Javascript (ES6+), Node.js, Firebase, Context, Redux, Axios,
-                  Docker, NextJS, Gatsby med mer.
+                  Docker, NextJS, Gatsby, Opencart, Magento med mer.
                 </p>
                 <p className="mt-6 text-lg">
                   På Portefølje kan du se eksempler på arbeid jeg har gjort i
