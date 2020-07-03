@@ -19,14 +19,16 @@ function MainContent() {
             <div className="text-white rounded animate__animated animate__flipInX">
               <section>
                 <p className="text-5xl text-center">Hei!</p>
-                <p
+                <h1
                   data-cy="daniel"
-                  className="p-12 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full"
+                  className="px-12 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full"
                 >
-                  Jeg heter Daniel Fjeldstad og er en webutvikler som kan PHP,
-                  mySQL, Wordpress, HTML, CSS, Javascript, React, Redux, Docker
-                  og mye mer.
-                </p>
+                  Jeg heter Daniel Fjeldstad og er en webutvikler.
+                </h1>
+                <h2 className="px-12 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full">
+                  Jeg kan PHP, mySQL, Wordpress, HTML, CSS, Javascript, React,
+                  Redux, Docker og mye mer.
+                </h2>
                 <FontAwesome />
               </section>
             </div>
@@ -47,11 +49,7 @@ function MainContent() {
                 <p className="mt-6 text-lg">
                   Jeg har også erfaring med andre teknologier som React, moderne
                   Javascript (ES6+), Node.js, Firebase, Context, Redux, Axios,
-                  Docker, NextJS, Gatsby, Opencart, Magento med mer.
-                </p>
-                <p className="mt-6 text-lg">
-                  På Portefølje kan du se eksempler på arbeid jeg har gjort i
-                  2019 og 2020.
+                  Docker, NextJS, Gatsby, MongoDB, Opencart, Magento med mer.
                 </p>
               </section>
             </div>
@@ -59,9 +57,7 @@ function MainContent() {
               <section>
                 <h1 className="text-3xl text-center">Prosjekter</h1>
                 <p className="mt-6 text-lg">
-                  Jeg arbeider jevnlig med hobbyprosjekter. Prosjektene baserer
-                  seg primært på Javascript, React, HTML og CSS, men jeg
-                  arbeider også med Docker, PHP, Wordpress, MongoDB og mySQL.
+                  Jeg arbeider jevnlig med hobbyprosjekter. 
                   <br />
                   <br />
                   Kildekoden publiserer jeg på{" "}
@@ -73,12 +69,14 @@ function MainContent() {
                   >
                     GITHUB
                   </a>
-                  <br />
-                  <br />
-                  Hvis du er interessert i min portefølje kan du ta en titt{" "}
+                </p>
+                <p className="mt-6 text-lg">
+                  På{" "}
                   <Link className="underline" to="/portefølje">
-                    HER
+                    {" "}
+                    PORTEFØLJE{" "}
                   </Link>
+                  kan du se eksempler på arbeid jeg har gjort i 2019 og 2020.
                 </p>
               </section>
             </div>
