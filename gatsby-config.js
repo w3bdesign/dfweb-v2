@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: "Portefølje",
     siteUrl: "https://www.dfweb.no",
-    titleTemplate: "%s · Daniel Fjeldstad",
+    titleTemplate: "%s Daniel Fjeldstad",
     description:
       "Portefølje for Daniel Fjeldstad, en utvikler som kan PHP, Javascript, Wordpress, React med mer.",
     url: "https://www.dfweb.no", // No trailing slash allowed!
