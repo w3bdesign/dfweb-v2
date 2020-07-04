@@ -9,6 +9,8 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons"
 
+import { faCopyright } from "@fortawesome/free-regular-svg-icons"
+
 import { v4 as uuidv4 } from "uuid"
 
 const ICONS = [faWordpress, faHtml5, faJs, faReact, faGithub]
@@ -30,6 +32,16 @@ export const FontAwesome = () => {
         />
       ))}
     </p>
+  )
+}
+
+export const FontAwesomeCopyright = () => {
+  return (
+    <FontAwesomeIcon
+      className="mt-2"
+      icon={faCopyright}
+      style={{ fontSize: "20px" }}
+    />
   )
 }
 
