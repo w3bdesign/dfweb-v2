@@ -16,7 +16,7 @@ import KontaktContent from "../components/Kontakt/KontaktContent.component"
 function Kontakt() {
   return (
     <>
-      <SEO title="Kontakt - Portefølje Daniel Fjeldstad" />
+      <SEO title="Kontakt - Portefølje - " />
       <Layout>
         <KontaktContent />
       </Layout>

@@ -17,7 +17,7 @@ import PorteføljeContent from "../components/Portefølje/PorteføljeContent.com
 function Portefølje() {
   return (
     <>
-      <SEO title="Portefølje - Portefølje Daniel Fjeldstad" />
+      <SEO title="Portefølje - " />
       <Layout>
         <PorteføljeContent />
       </Layout>
