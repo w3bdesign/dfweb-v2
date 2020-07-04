@@ -16,7 +16,7 @@ import MainContent from "../components/Index/MainContent.component"
 function Index() {
   return (
     <>
-      <SEO title="Forside - Portefølje Daniel Fjeldstad" />
+      <SEO title="Forside - Portefølje - " />
       <Layout>
         <MainContent />
       </Layout>

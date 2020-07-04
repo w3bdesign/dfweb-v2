@@ -17,7 +17,7 @@ import CVContent from "../components/CV/CVContent.component"
 function CV() {
   return (
     <>
-      <SEO title="CV - Portefølje Daniel Fjeldstad" />
+      <SEO title="CV - Portefølje - " />
       <Layout>
         <CVContent />
       </Layout>
