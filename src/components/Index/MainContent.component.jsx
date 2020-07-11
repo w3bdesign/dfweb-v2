@@ -18,7 +18,9 @@ function MainContent() {
           >
             <div className="text-white rounded">
               <section>
-                <p className="text-5xl text-center animate__animated animate__fadeInDown">Hei!</p>
+                <p className="text-5xl text-center animate__animated animate__fadeInDown">
+                  Hei!
+                </p>
                 <h1
                   data-cy="daniel"
                   className="px-12 text-lg animate__animated animate__fadeInDown animate__delay-2s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full"
@@ -57,7 +59,7 @@ function MainContent() {
               <section>
                 <h1 className="text-3xl text-center">Prosjekter</h1>
                 <p className="mt-6 text-lg">
-                  Jeg arbeider jevnlig med hobbyprosjekter. 
+                  Jeg arbeider jevnlig med hobbyprosjekter.
                   <br />
                   <br />
                   Kildekoden publiserer jeg på{" "}
