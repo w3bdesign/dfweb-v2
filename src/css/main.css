@@ -7,12 +7,18 @@ body {
   background-color: #f2f2f2;
 }
 
+#test {
+  font-size: 2rem;
+  color: #fff;
+}
+
 #hamburger {
   width: 2.5rem;
   height: 2rem;
   margin: 1rem;
   color: #fff;
   cursor: pointer;
+  
 }
 
 .shadow-outline-red {
