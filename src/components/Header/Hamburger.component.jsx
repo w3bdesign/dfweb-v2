@@ -24,7 +24,6 @@ export default function Hamburger() {
         id="hamburger"
         data-cy="hamburger"
         onClick={handleMobileMenuClick}
-        className="w-10 h-8 m-4 text-white hover:text-gray-500"
       />
       {/* 
         Start the mobile menu initially as hidden, then remove hidden class if we have clicked on the mobile menu
