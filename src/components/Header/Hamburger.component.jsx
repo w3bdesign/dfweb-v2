@@ -25,6 +25,7 @@ export default function Hamburger() {
         data-cy="hamburger"
         onClick={handleMobileMenuClick}
       />
+
       {/* 
         Start the mobile menu initially as hidden, then remove hidden class if we have clicked on the mobile menu
         Add Animate.css animation classes once we click on the mobile menu

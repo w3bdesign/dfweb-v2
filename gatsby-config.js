@@ -56,6 +56,7 @@ module.exports = {
         ignore: ["fontawesome-svg-core/"],
       },
     },
+    "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-react-svg",     
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-robots-txt",
