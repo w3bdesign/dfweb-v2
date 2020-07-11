@@ -26,12 +26,10 @@ export default function Hamburger() {
         onClick={handleMobileMenuClick}
         className="w-10 h-8 m-4 text-white hover:text-gray-500"
       />
-
-      {
-        // Start the mobile menu initially as hidden, then remove hidden class if we have clicked on the mobile menu
-        // Add Animate.css animation classes once we click on the mobile menu
-      }
-
+      {/* 
+        Start the mobile menu initially as hidden, then remove hidden class if we have clicked on the mobile menu
+        Add Animate.css animation classes once we click on the mobile menu
+        */}
       <div
         id="mobile-menu"
         className={`absolute right-0 w-full text-center bg-gray-800 w-30 h-60  ${

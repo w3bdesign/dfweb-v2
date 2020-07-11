@@ -43,7 +43,6 @@ const srConfig = (delay = 200) => ({
  * Displays portfolio entries based on the projects filter prop passed to Portfolio
  */
 function PorteføljeContent() {
-  
   /**
    * Setup references to containers so we can use ScrollReveal
    */
@@ -60,7 +59,6 @@ function PorteføljeContent() {
     ScrollShow.reveal(firstRevealContainer.current, srConfig())
     ScrollShow.reveal(secondRevealContainer.current, srConfig())
   }, [])
-
   return (
     <>
       <main className="mt-24 bg-graybg">
@@ -75,7 +73,7 @@ function PorteføljeContent() {
           </div>
           <div className="px-4 mx-auto lg:px-0 xl:px-0 md:px-0">
             <div className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
-             Javascript
+              Javascript
             </div>
           </div>
           <div
