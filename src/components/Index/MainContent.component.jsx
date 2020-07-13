@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import "../../css/main.css"
+import "../../css/animate.min.css"
+
 import FontAwesome from "../FontAwesome/FontAwesome.component"
 
 /**
@@ -14,20 +17,20 @@ function MainContent() {
         <div className="mx-auto mt-20 rounded bg-graybg shadow-large">
           <div
             id="main-hero"
-            className="flex flex-col justify-center text-lg text-white"
+            className="flex flex-col justify-center text-lg text-white animate__animated animate__fadeIn animate__delay-1s"
           >
             <div className="text-white rounded">
               <section>
-                <p className="text-5xl text-center animate__animated animate__fadeInDown">
+                <p className="text-5xl text-center animate__animated animate__fadeInDown animate__delay-2s">
                   Hei!
                 </p>
                 <h1
                   data-cy="daniel"
-                  className="px-12 text-lg animate__animated animate__fadeInDown animate__delay-2s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full"
+                  className="px-12 text-lg animate__animated animate__fadeInDown animate__delay-3s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full"
                 >
                   Jeg heter Daniel Fjeldstad og er en webutvikler.
                 </h1>
-                <h2 className="px-12 mt-4 text-lg animate__animated animate__fadeInDown animate__delay-3s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full">
+                <h2 className="px-12 mt-4 text-lg animate__animated animate__fadeInDown animate__delay-4s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full">
                   Jeg kan PHP, mySQL, Wordpress, HTML, CSS, Javascript, React,
                   Redux, Docker og mye mer.
                 </h2>

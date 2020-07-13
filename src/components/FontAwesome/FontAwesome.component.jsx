@@ -22,7 +22,7 @@ const ICONS = [faWordpress, faHtml5, faJs, faReact, faGithub]
 export const FontAwesome = () => {
   // We avoid repeating ourselves by using a map() here
   return (
-    <p className="mt-4 text-center">
+    <p className="mt-4 text-center animate__animated animate__fadeInDown animate__delay-5s">
       {ICONS.map((icon) => (
         <FontAwesomeIcon
           className="m-2"
