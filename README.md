@@ -8,6 +8,8 @@
 
 Second version of my portfolio website with Gatsby instead of plain HTML and Javascript.
 
+100% handcoded from scratch. Nothing is copied or pasted from anywhere.
+
 Uses a remote GraphQL API for fetching portfolio projects.
 
 Uses Tailwind CSS for styling.
