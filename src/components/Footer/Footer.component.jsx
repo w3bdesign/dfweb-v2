@@ -8,9 +8,9 @@ import { FontAwesomeCopyright } from "../FontAwesome/FontAwesome.component"
 export default function Footer() {
   return (
     <>
-      <footer>
+      <footer role="footerinformasjon" aria-label="Innholdet for bunnteksten med copyright">
         <div className="mt-4 bg-gray-800 shadow-lg">
-          <div className="container p-6 mx-auto text-xl text-center text-white">
+          <div role="copyrightinfo" aria-label="Her kommer selve copyright teksten" className="container p-6 mx-auto text-xl text-center text-white">
             Copyright Daniel Fjeldstad <FontAwesomeCopyright /> 2020
           </div>
         </div>
