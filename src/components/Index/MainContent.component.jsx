@@ -14,12 +14,12 @@ function MainContent() {
   return (
     <>
       <main id="maincontent">
-        <div className="mx-auto mt-20 rounded bg-graybg shadow-large">
+        <div className="mx-auto mt-20 rounded bg-graybg shadow-large md:mt-16">
           <div
             id="main-hero"
-            className="flex flex-col justify-center text-lg text-white animate__animated animate__fadeIn animate__delay-1s"
+            className="flex flex-col justify-center text-lg animate__animated animate__fadeIn animate__delay-1s"
           >
-            <div className="text-white rounded">
+            <div className="text-black rounded">
               <section>
                 <p className="text-5xl text-center animate__animated animate__fadeInDown animate__delay-2s">
                   Hei!

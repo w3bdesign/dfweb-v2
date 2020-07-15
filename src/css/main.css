@@ -28,21 +28,21 @@ body {
 
 /* All delay classes will take less time to start */
 .animate__delay-1s {
-  --animate-delay: 0.20s;
+  --animate-delay: 0.35s;
 }
 .animate__delay-2s {
-  --animate-delay: 0.40s;
+  --animate-delay: 0.50s;
 }
 
 .animate__delay-3s {
-  --animate-delay: 0.60s;
+  --animate-delay: 0.70s;
 }
 
 .animate__delay-4s {
-  --animate-delay: 0.80s;
+  --animate-delay: 0.90s;
 }
 .animate__delay-5s {
-  --animate-delay: 1.00s;
+  --animate-delay: 1.10s;
 }
 
 @import "tailwindcss/utilities";
