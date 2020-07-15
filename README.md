@@ -8,9 +8,9 @@
 
 Second version of my portfolio website with Gatsby instead of plain HTML and Javascript.
 
-Tested and verified for WCAG accessibility standards.
-
 100% handcoded from scratch. Nothing is copied or pasted from anywhere.
+
+Tested and verified for WCAG accessibility standards.
 
 Uses a remote GraphQL API for fetching portfolio projects.
 
@@ -26,6 +26,7 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 - Animate.css for menu animations
 - GraphQL for fetching portfolio project information
 - WCAG accessibility tested
+- Relevant aria labels added for all content
 - Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
 - Sonarcloud integration on every push to maintain code quality
 - FontAwesome SVG icons for project icons
@@ -39,5 +40,5 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 
 ## TODO
 
-- Implement additional Cypress tests (for example mobile testing)
+- Implement more Cypress tests
 - Implement additional tests with React-Testing-Library
