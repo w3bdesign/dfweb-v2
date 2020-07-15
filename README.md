@@ -10,6 +10,8 @@ Second version of my portfolio website with Gatsby instead of plain HTML and Jav
 
 Tested and verified for WCAG accessibility standards.
 
+100% handcoded from scratch. Nothing is copied or pasted from anywhere.
+
 Uses a remote GraphQL API for fetching portfolio projects.
 
 Uses Tailwind CSS for styling.
