@@ -13,45 +13,65 @@ import FontAwesome from "../FontAwesome/FontAwesome.component"
 function MainContent() {
   return (
     <>
-      <main id="maincontent">
+      <main
+        role="hovedinnhold-forside"
+        aria-label="Her kommer hovedinnholdet"
+        id="maincontent"
+      >
         <div className="mx-auto mt-20 rounded bg-graybg shadow-large md:mt-16">
           <div
+            role="animasjon"
+            aria-label="Kontainer for animasjoner av introtekst"
             id="main-hero"
             className="flex flex-col justify-center text-lg animate__animated animate__fadeIn animate__delay-1s"
           >
-            <div className="text-black rounded">
-              <section>
-                <p className="text-5xl text-center animate__animated animate__fadeInDown animate__delay-2s">
-                  Hei!
-                </p>
-                <h1
-                  data-cy="daniel"
-                  className="px-12 text-lg animate__animated animate__fadeInDown animate__delay-3s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full"
-                >
-                  Jeg heter Daniel Fjeldstad og er en webutvikler.
-                </h1>
-                <h2 className="px-12 mt-4 text-lg animate__animated animate__fadeInDown animate__delay-4s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full">
-                  Jeg kan PHP, mySQL, Wordpress, HTML, CSS, Javascript, React,
-                  Redux, Docker og mye mer.
-                </h2>
-                <FontAwesome />
-              </section>
+            <div className="bg-white opacity-75">
+              <div className="text-black rounded">
+                <section role="introtekst" aria-label="Introduksjonstekst">
+                  <p className="text-5xl text-center animate__animated animate__fadeInDown animate__delay-2s">
+                    Hei!
+                  </p>
+                  <h1
+                    data-cy="daniel"
+                    className="px-12 text-lg animate__animated animate__fadeInDown animate__delay-3s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full"
+                  >
+                    Jeg heter Daniel Fjeldstad og er en webutvikler.
+                  </h1>
+                  <h2 className="px-12 mt-4 text-lg animate__animated animate__fadeInDown animate__delay-4s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full">
+                    Jeg kan PHP, mySQL, Wordpress, HTML, CSS, Javascript, React,
+                    Redux, Docker og mye mer.
+                  </h2>
+                  <FontAwesome />
+                </section>
+              </div>
             </div>
           </div>
           <div className="container grid gap-4 p-4 mx-auto mt-2 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
             <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
-              <section>
+              <section role="hovedinnhold" aria-label="Hovedinnhold om meg">
                 <h1 className="text-3xl text-center">Om Meg</h1>
-                <p className="mt-6 text-lg">
+                <p
+                  role="bakgrunnsinfo"
+                  aria-label="Informasjon om mine ferdigheter"
+                  className="mt-6 text-lg"
+                >
                   Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
                   Javascript. Jeg har arbeidet med Wordpress og Woocommerce
                   siden 2011 hvor jeg har arbeidet frilans via Fiverr og kan
                   skilte med 100% positiv tilbakemelding på samtlige oppdrag.
                 </p>
-                <p className="mt-6 text-lg">
+                <p
+                  role="opensourceinfo"
+                  aria-label="Info om open-source bidrag"
+                  className="mt-6 text-lg"
+                >
                   Har også bidratt til flere open-source prosjekter på Github.
                 </p>
-                <p className="mt-6 text-lg">
+                <p
+                  role="reactinfo"
+                  aria-label="Info om andre teknologier jeg har jobbet med"
+                  className="mt-6 text-lg"
+                >
                   Jeg har også erfaring med andre teknologier som React, moderne
                   Javascript (ES6+), Node.js, Firebase, Context, Redux, Axios,
                   Docker, NextJS, Gatsby, MongoDB, Opencart, Magento med mer.
@@ -59,9 +79,13 @@ function MainContent() {
               </section>
             </div>
             <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
-              <section>
+              <section role="githubinfo" aria-label="Github seksjon">
                 <h1 className="text-3xl text-center">Prosjekter</h1>
-                <p className="mt-6 text-lg">
+                <p
+                  role="prosjektinfo"
+                  aria-label="Informasjon om Github og prosjekter"
+                  className="mt-6 text-lg"
+                >
                   Jeg arbeider jevnlig med hobbyprosjekter.
                   <br />
                   <br />
