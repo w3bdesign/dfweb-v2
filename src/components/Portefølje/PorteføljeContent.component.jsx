@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { Portfolio } from "./Portefølje.component"
+import { Portfolio } from "./PorteføljeProjects.component"
 import ScrollShow from "../../utils/scrollshow"
 
 const ALL_PROJECTS_QUERY = graphql`
@@ -73,9 +73,7 @@ function PorteføljeContent() {
       <div className="container mx-auto rounded">
         <div className="px-4 mx-auto mt-4 lg:px-0 xl:px-0 md:px-0">
           <span className="flex justify-end mb-4">
-            <label className="mr-4 text-lg">
-              Velg kategori for å filtrere:
-            </label>
+            <label className="mr-4 text-lg">Filtrer kategori:</label>
             <select onChange={handleFilterChange}>
               <option value=""></option>
               <option value="React">React</option>
@@ -102,28 +100,24 @@ function PorteføljeContent() {
                 React
               </div>
 
-              <div className="grid gap-4 px-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
+              <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
                 <Portfolio filter="React" projects={allProjects} />
               </div>
 
-              <div className="px-4 mx-auto lg:px-0 xl:px-0 md:px-0">
-                <div className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
-                  Javascript
-                </div>
+              <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
+                React
               </div>
               <div
-                className="grid gap-4 px-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
+                className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
                 ref={firstRevealContainer}
               >
                 <Portfolio filter="Javascript" projects={allProjects} />
               </div>
-              <div className="px-4 mx-auto lg:px-0 xl:px-0 md:px-0">
-                <div className="p-4 font-sans text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
-                  WooCommerce
-                </div>
+              <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
+                React
               </div>
               <div
-                className="grid gap-4 px-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
+                className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
                 ref={secondRevealContainer}
               >
                 <Portfolio filter="WooCommerce" projects={allProjects} />
