@@ -11,7 +11,7 @@ export default function AppLogo() {
       <a className="text-white" href="/" aria-label="Forside">
         <Logo
           aria-label="Dfweb logo"
-          className="h-12 lg:p-2 xl:p-2 lg:h-16 xl:h-16 lg:ml-2 xl:ml-2"
+          className="h-10 ml-4 lg:p-2 xl:p-2 lg:h-16 xl:h-16 lg:ml-2 xl:ml-2"
         />
       </a>
     </div>
