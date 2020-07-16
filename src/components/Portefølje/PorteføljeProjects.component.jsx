@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from "uuid"
  * @param {Object} filter The filter that we apply to the component so we only displays projects from the correct category
  * @param {Object} projects The portfolio project data to display, contains name, image etc
  */
-export const Portfolio = ({ filter, projects }) => (
+const Portfolio = ({ filter, projects }) => (
   <>
     {projects.map(
       ({
@@ -54,3 +54,5 @@ export const Portfolio = ({ filter, projects }) => (
     )}
   </>
 )
+
+export default Portfolio

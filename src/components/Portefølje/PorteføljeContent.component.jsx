@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import Fade from "react-reveal-effects/Fade"
 
-import { Portfolio } from "./PorteføljeProjects.component"
-import ScrollShow from "../../utils/scrollshow"
+import Portfolio from "./PorteføljeProjects.component"
+import CATEGORIES from "../../constants/CATEGORIES"
 
 const ALL_PROJECTS_QUERY = graphql`
   query MyQuery {
@@ -20,23 +21,6 @@ const ALL_PROJECTS_QUERY = graphql`
     }
   }
 `
-
-const srConfig = (delay = 200) => ({
-  origin: "bottom",
-  distance: "20px",
-  duration: 500,
-  delay,
-  rotate: { x: 0, y: 0, z: 0 },
-  opacity: 0,
-  scale: 1,
-  easing: "cubic-bezier(0.645, 0.045, 0.355, 1)",
-  mobile: true,
-  reset: false,
-  useDelay: "always",
-  viewFactor: 0.25,
-  viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
-})
-
 /**
  * Fetch portfolio projects from GraphQL
  * Also uses ScrollReveal for displaying projects during scrolling
@@ -49,12 +33,6 @@ function PorteføljeContent() {
   const [categoryFilter, setcategoryFilter] = useState()
 
   /**
-   * Setup references to containers so we can use ScrollReveal
-   */
-  const firstRevealContainer = useRef(null)
-  const secondRevealContainer = useRef(null)
-
-  /**
    * GraphQL setup
    */
   const projectData = useStaticQuery(ALL_PROJECTS_QUERY)
@@ -64,10 +42,6 @@ function PorteføljeContent() {
     e.target.value ? setcategoryFilter(e.target.value) : setcategoryFilter(null)
   }
 
-  useEffect(() => {
-    ScrollShow.reveal(firstRevealContainer.current, srConfig())
-    ScrollShow.reveal(secondRevealContainer.current, srConfig())
-  }, [])
   return (
     <main className="mt-24 bg-graybg">
       <div className="container mx-auto rounded">
@@ -93,37 +67,19 @@ function PorteføljeContent() {
               </div>
             </>
           )}
-
-          {!categoryFilter && (
-            <>
-              <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
-                React
-              </div>
-
-              <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
-                <Portfolio filter="React" projects={allProjects} />
-              </div>
-
-              <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
-                React
-              </div>
-              <div
-                className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
-                ref={firstRevealContainer}
-              >
-                <Portfolio filter="Javascript" projects={allProjects} />
-              </div>
-              <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
-                React
-              </div>
-              <div
-                className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
-                ref={secondRevealContainer}
-              >
-                <Portfolio filter="WooCommerce" projects={allProjects} />
-              </div>
-            </>
-          )}
+          <Fade>
+            {!categoryFilter &&
+              CATEGORIES.map(({ name }) => (
+                <>
+                  <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
+                    {name}
+                  </div>
+                  <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
+                    <Portfolio filter={name} projects={allProjects} />
+                  </div>
+                </>
+              ))}
+          </Fade>
         </div>
       </div>
     </main>
