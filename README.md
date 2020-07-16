@@ -20,6 +20,8 @@ Uses Cypress for testing.
 
 First version is located here: https://github.com/w3bdesign/dfweb-v1
 
+Code and repository for GraphQL backend is here: https://github.com/w3bdesign/graphql-express-dfweb
+
 ## Features:
 
 - Gatsby as main project dependency
