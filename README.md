@@ -26,6 +26,7 @@ First version is located here: https://github.com/w3bdesign/dfweb-v1
 - Animate.css for menu animations
 - GraphQL for fetching portfolio project information
 - WCAG accessibility tested
+- Filter projects based on category
 - Relevant aria labels added for all content
 - Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
 - Sonarcloud integration on every push to maintain code quality
