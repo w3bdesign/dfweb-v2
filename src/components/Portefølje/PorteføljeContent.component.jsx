@@ -62,7 +62,6 @@ function PorteføljeContent() {
 
   const handleFilterChange = (e) => {
     e.target.value ? setcategoryFilter(e.target.value) : setcategoryFilter(null)
-    //alert(categoryFilter)
   }
 
   useEffect(() => {
@@ -81,7 +80,7 @@ function PorteføljeContent() {
               <option value=""></option>
               <option value="React">React</option>
               <option value="Javascript">Javascript</option>
-              <option value="Woocommerce">WooCommerce</option>
+              <option value="WooCommerce">WooCommerce</option>
             </select>
           </span>
 
@@ -127,7 +126,7 @@ function PorteføljeContent() {
                 className="grid gap-4 px-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
                 ref={secondRevealContainer}
               >
-                <Portfolio filter="Woocommerce" projects={allProjects} />
+                <Portfolio filter="WooCommerce" projects={allProjects} />
               </div>
             </>
           )}
