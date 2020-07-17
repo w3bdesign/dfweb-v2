@@ -7,7 +7,7 @@ import CATEGORIES from "../../constants/CATEGORIES"
 
 /**
  * Fetch portfolio projects from GraphQL
- * Also uses ScrollReveal for displaying projects during scrolling
+ * Also uses React-reveal-effects for displaying projects during scrolling
  * Displays portfolio entries based on the projects filter prop passed to Portfolio
  */
 function PorteføljeContent() {
