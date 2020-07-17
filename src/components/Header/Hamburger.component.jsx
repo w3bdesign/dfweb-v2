@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
-
 import { HamburgerCollapse } from "react-animated-burgers"
 
 /**
  * Mobile menu
- * Uses state to keep track of if the menu is expanded.
- * If yes, we add Animate.css animation classes
+ * Uses useState to keep track of if the menu is expanded.
+ * If true, we add Animate.css animation classes
  */
 
 export default function Hamburger() {
