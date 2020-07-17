@@ -66,6 +66,7 @@ function PorteføljeContent() {
               <option value="WooCommerce">WooCommerce</option>
             </select>
           </span>
+
           <Fade when={shouldAnimate}>
             {categoryFilter && (
               <>
