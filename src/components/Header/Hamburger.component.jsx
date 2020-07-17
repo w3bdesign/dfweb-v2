@@ -43,12 +43,6 @@ export default function Hamburger() {
             ? `animate__animated animate__fadeInUp`
             : `animate__animated animate__fadeOutDown`
         }`}
-        initial={{
-          width: "0%",
-        }}
-        animate={{
-          width: "100%",
-        }}
       >
         <ul>
           <li className="w-full border-t border-gray-600 border-solid shadow-md ">

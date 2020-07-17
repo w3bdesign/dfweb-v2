@@ -5,22 +5,6 @@ import Fade from "react-reveal-effects/Fade"
 import Portfolio from "./PorteføljeProjects.component"
 import CATEGORIES from "../../constants/CATEGORIES"
 
-const ALL_PROJECTS_QUERY = graphql`
-  query MyQuery {
-    Project {
-      allProjects {
-        id
-        image
-        name
-        subdescription
-        urlgithub
-        urlwww
-        category
-        description
-      }
-    }
-  }
-`
 /**
  * Fetch portfolio projects from GraphQL
  * Also uses ScrollReveal for displaying projects during scrolling
@@ -31,6 +15,9 @@ function PorteføljeContent() {
    * Setup filter funtionality to only show projects from the selected category
    */
   const [categoryFilter, setcategoryFilter] = useState()
+  /**
+   * Should we fade in portfolio projects that are filtered?
+   */
   const [shouldAnimate, setshouldAnimate] = useState(false)
 
   /**
@@ -100,3 +87,20 @@ function PorteføljeContent() {
 }
 
 export default PorteføljeContent
+
+const ALL_PROJECTS_QUERY = graphql`
+  query MyQuery {
+    Project {
+      allProjects {
+        id
+        image
+        name
+        subdescription
+        urlgithub
+        urlwww
+        category
+        description
+      }
+    }
+  }
+`
