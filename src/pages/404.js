@@ -7,7 +7,9 @@ function ErrorPage() {
   return (
     <>
      <Layout>
-      <h1>Oppps... something went wrong</h1>
+     <div className="mx-auto mt-32 rounded lg:mt-32 xl:mt-32 bg-graybg shadow-large md:mt-32 sm:mt-64 xs:mt-64">
+      <h1 className="h-32 m-12 mx-auto text-2xl text-center">Oppps... something went wrong<br/>Please try a different URL</h1>
+      </div>
       </Layout>
     </>
   )
