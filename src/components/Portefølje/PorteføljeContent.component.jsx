@@ -31,6 +31,7 @@ function PorteføljeContent() {
    * Setup filter funtionality to only show projects from the selected category
    */
   const [categoryFilter, setcategoryFilter] = useState()
+  const [shouldAnimate, setshouldAnimate] = useState(false)
 
   /**
    * GraphQL setup
@@ -40,6 +41,16 @@ function PorteføljeContent() {
 
   const handleFilterChange = (e) => {
     e.target.value ? setcategoryFilter(e.target.value) : setcategoryFilter(null)
+
+    /**
+     * By using a setTimeout to switch the shouldAnimate boolean value we get a fade effect when switching filters
+     */
+
+    setshouldAnimate(false)
+
+    setTimeout(() => {
+      setshouldAnimate(true)
+    }, 1000)
   }
 
   return (
@@ -55,17 +66,19 @@ function PorteføljeContent() {
               <option value="WooCommerce">WooCommerce</option>
             </select>
           </span>
+          <Fade when={shouldAnimate}>
+            {categoryFilter && (
+              <>
+                <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
+                  {categoryFilter}
+                </div>
+                <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
+                  <Portfolio filter={categoryFilter} projects={allProjects} />
+                </div>
+              </>
+            )}
+          </Fade>
 
-          {categoryFilter && (
-            <>
-              <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
-                {categoryFilter}
-              </div>
-              <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
-                <Portfolio filter={categoryFilter} projects={allProjects} />
-              </div>
-            </>
-          )}
           <Fade>
             {!categoryFilter &&
               CATEGORIES.map(({ name }) => (
