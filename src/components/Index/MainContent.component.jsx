@@ -18,7 +18,7 @@ function MainContent() {
         aria-label="Her kommer hovedinnholdet"
         id="maincontent"
       >
-        <div className="mx-auto mt-20 rounded bg-graybg shadow-large md:mt-16">
+        <div className="mx-auto mt-16 rounded lg:mt-20 xl:mt-20 bg-graybg shadow-large md:mt-16 sm:mt-64 xs:mt-64">
           <div
             role="animasjon"
             aria-label="Kontainer for animasjoner av introtekst"

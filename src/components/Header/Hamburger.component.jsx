@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 
-import HamburgerSVG from "../../svg/hamburger.svg"
+import { HamburgerCollapse } from "react-animated-burgers"
 
 /**
  * Mobile menu
@@ -20,7 +20,11 @@ export default function Hamburger() {
 
   return (
     <div className="z-50 md:hidden lg:hidden xl:hidden">
-      <HamburgerSVG
+      <HamburgerCollapse
+        isActive={isExpanded}
+        toggleButton={handleMobileMenuClick}
+        buttonColor="#2d3748"
+        barColor="white"
         id="hamburger"
         data-cy="hamburger"
         onClick={handleMobileMenuClick}
