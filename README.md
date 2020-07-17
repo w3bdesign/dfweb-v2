@@ -38,7 +38,8 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 - Google fonts with Gatsby plugin for prefetching
 - Gatsby plugin for generating robots.txt and sitemap.xml
 - UUID for unique IDs for mapped elements
-- ScrollReveal for revealing content on portfolio
+- React-reveal-effects for revealing content on portfolio
+- React-animated-burgers for animating hamburger in menu
 - React-PDF for displaying PDF CV
 
 ## TODO
