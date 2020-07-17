@@ -8,12 +8,9 @@ body {
 }
 
 #hamburger {
-  width: 2.5rem;
-  height: 2rem;
-  margin: 1rem;
+  margin-right: 1rem;
   color: #fff;
   cursor: pointer;
-  
 }
 
 .shadow-outline-red {
@@ -31,18 +28,18 @@ body {
   --animate-delay: 0.35s;
 }
 .animate__delay-2s {
-  --animate-delay: 0.50s;
+  --animate-delay: 0.5s;
 }
 
 .animate__delay-3s {
-  --animate-delay: 0.70s;
+  --animate-delay: 0.7s;
 }
 
 .animate__delay-4s {
-  --animate-delay: 0.90s;
+  --animate-delay: 0.9s;
 }
 .animate__delay-5s {
-  --animate-delay: 1.10s;
+  --animate-delay: 1.1s;
 }
 
 @import "tailwindcss/utilities";

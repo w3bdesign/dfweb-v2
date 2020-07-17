@@ -57,6 +57,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-fontawesome-css",
+    "gatsby-plugin-styled-components",
     "gatsby-plugin-react-svg",     
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-robots-txt",
