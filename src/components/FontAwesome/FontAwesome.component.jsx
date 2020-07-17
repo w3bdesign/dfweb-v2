@@ -40,7 +40,7 @@ export const FontAwesomeCopyright = () => {
     <FontAwesomeIcon
       className="mt-2"
       icon={faCopyright}
-      style={{ fontSize: "20px" }}
+      style={{ fontSize: "15px" }}
     />
   )
 }
