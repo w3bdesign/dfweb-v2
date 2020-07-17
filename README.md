@@ -28,6 +28,7 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 - Animate.css for menu animations
 - GraphQL for fetching portfolio project information
 - WCAG accessibility tested
+- Fully responsive design tested on all devices
 - Filter projects based on category
 - Relevant aria labels added for all content
 - Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
