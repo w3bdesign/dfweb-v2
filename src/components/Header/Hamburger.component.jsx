@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
 
 import { HamburgerCollapse } from "react-animated-burgers"
@@ -12,14 +12,39 @@ import { HamburgerCollapse } from "react-animated-burgers"
 export default function Hamburger() {
   const [isExpanded, setisExpanded] = useState(false)
   const [isInitialRender, setisInitialRender] = useState(true)
+  const node = useRef()
+
+  const handleClickOutside = (e) => {
+    if (node.current.contains(e.target)) {
+      /**
+       * Clicked inside of the menu
+       */
+      return
+    }
+    /**
+     * Clicked outside of the menu
+     */
+    setisExpanded(false)
+  }
 
   const handleMobileMenuClick = () => {
     setisExpanded(!isExpanded)
     setisInitialRender(false)
   }
 
+  useEffect(() => {
+    if (isExpanded) {
+      document.addEventListener("mousedown", handleClickOutside)
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [isExpanded])
+
   return (
-    <div className="z-50 md:hidden lg:hidden xl:hidden">
+    <div ref={node} className="z-50 md:hidden lg:hidden xl:hidden">
       <HamburgerCollapse
         isActive={isExpanded}
         toggleButton={handleMobileMenuClick}
