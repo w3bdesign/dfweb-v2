@@ -2,7 +2,7 @@
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=w3bdesign_dfweb&metric=alert_status)](https://sonarcloud.io/dashboard?id=w3bdesign_dfweb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
+![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/w3bdesign/dfweb)
 
 
