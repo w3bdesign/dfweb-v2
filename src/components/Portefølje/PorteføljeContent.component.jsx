@@ -47,9 +47,10 @@ function PorteføljeContent() {
           <span className="flex justify-end mb-4">
             <label className="mr-4 text-lg">Filtrer kategori:</label>
             <select onChange={handleFilterChange}>
-              <option value=""></option>
-              <option value="React">React</option>
+              <option value="">Ingen filtrering</option>
               <option value="Javascript">Javascript</option>
+              <option value="Magento">Magento</option>
+              <option value="React">React</option>
               <option value="WooCommerce">WooCommerce</option>
             </select>
           </span>
