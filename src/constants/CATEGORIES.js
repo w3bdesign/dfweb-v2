@@ -8,6 +8,9 @@ export const CATEGORIES = [
   {
     name: "WooCommerce",
   },
+  {
+    name: "Magento",
+  },
 ]
 
 export default CATEGORIES
