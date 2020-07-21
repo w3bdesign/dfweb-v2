@@ -27,7 +27,10 @@ export default function Hamburger() {
   }
 
   const handleMobileMenuClick = () => {
-    setisExpanded(!isExpanded)
+    /**
+     * Anti-pattern: setisExpanded(!isExpanded)
+     */
+    setisExpanded((prevExpanded) => !prevExpanded)
     setisInitialRender(false)
   }
 
