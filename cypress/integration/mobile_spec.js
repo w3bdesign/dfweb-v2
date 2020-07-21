@@ -23,7 +23,6 @@ describe("Navigation", () => {
 
     it("Displays mobile menu on click", () => {
       cy.get("#main-navigation").find("#hamburger").click()
-
       cy.get("#mobile-menu").should("be.visible")
     })
   })
