@@ -29,6 +29,8 @@ export default function Hamburger() {
   const handleMobileMenuClick = () => {
     /**
      * Anti-pattern: setisExpanded(!isExpanded)
+     * Even if your state updates are batched and multiple updates to the enabled/disabled state are made together
+     * each update will rely on the correct previous state so that you always end up with the result you expect.
      */
     setisExpanded((prevExpanded) => !prevExpanded)
     setisInitialRender(false)
@@ -40,6 +42,9 @@ export default function Hamburger() {
     } else {
       document.removeEventListener("mousedown", handleClickOutside)
     }
+    /**
+     * Cleanup
+     */
     return () => {
       document.removeEventListener("mousedown", handleClickOutside)
     }
