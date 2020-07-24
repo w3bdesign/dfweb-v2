@@ -16,12 +16,12 @@ describe("Navigation", () => {
     beforeEach(() => {
       // Run these tests as if in a mobile browser and ensure our resolution is correct
       cy.viewport("iphone-5")
-      cy.visit("/")
+      cy.visit("/").as("frontPage")
     })
 
     it("Displays mobile menu on click", () => {     
       cy.get("#main-navigation").find("#hamburger").click()
-      cy.wait(2000)
+      cy.wait("@frontPage")
       cy.get("#mobile-menu").should("be.visible")
     })
   })
