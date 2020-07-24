@@ -19,8 +19,9 @@ describe("Navigation", () => {
       cy.visit("/")
     })
 
-    it("Displays mobile menu on click", () => {
+    it("Displays mobile menu on click", () => {     
       cy.get("#main-navigation").find("#hamburger").click()
+      cy.wait(2000)
       cy.get("#mobile-menu").should("be.visible")
     })
   })
