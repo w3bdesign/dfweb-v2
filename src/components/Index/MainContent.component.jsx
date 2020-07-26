@@ -30,6 +30,7 @@ function MainContent() {
                 <section role="introtekst" aria-label="Introduksjonstekst">
                   <p className="text-5xl text-center animate__animated animate__fadeInDown animate__delay-2s">
                     Hei!
+                    Jeg tester Percy
                   </p>
                   <h1
                     data-cy="daniel"
