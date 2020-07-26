@@ -29,7 +29,7 @@ function MainContent() {
               <div className="text-black rounded">
                 <section role="introtekst" aria-label="Introduksjonstekst">
                   <p className="text-5xl text-center animate__animated animate__fadeInDown animate__delay-2s">
-                    Hei!                    
+                    Hei!
                   </p>
                   <h1
                     data-cy="daniel"
@@ -55,7 +55,6 @@ function MainContent() {
                   aria-label="Informasjon om mine ferdigheter"
                   className="mt-6 text-lg"
                 >
-                  Jeg tester Percy
                   Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
                   Javascript. Jeg har arbeidet med Wordpress og Woocommerce
                   siden 2011 hvor jeg har arbeidet frilans via Fiverr og kan
