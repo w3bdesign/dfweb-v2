@@ -20,9 +20,8 @@ describe("Navigation", () => {
     })
 
     it("Displays mobile menu on click", () => {     
-      cy.get("#main-navigation").find("#hamburger").click()
-      cy.wait(2500)
-      cy.get("#mobile-menu").should("be.visible")
+      cy.get('[data-cy=hamburger]').click()     
+      cy.get('#mobile-menu > ul > :nth-child(1)').should("be.visible")
     })
   })
 })
