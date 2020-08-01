@@ -3,7 +3,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faWordpress,
-  faHtml5,
+  faDocker,
   faJs,
   faReact,
   faGithub,
@@ -13,7 +13,7 @@ import { faCopyright } from "@fortawesome/free-regular-svg-icons"
 
 import { v4 as uuidv4 } from "uuid"
 
-const ICONS = [faWordpress, faHtml5, faJs, faReact, faGithub]
+const ICONS = [faWordpress, faDocker, faJs, faReact, faGithub]
 
 /**
  * Display technologies used as FontAwesome SVG icons
