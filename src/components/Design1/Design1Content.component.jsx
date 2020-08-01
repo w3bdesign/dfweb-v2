@@ -40,7 +40,7 @@ function Design1Content() {
             ref={(el) => (omMeg = el)}
             className="grid gap-4 mx-auto mt-6 lg:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
           >
-            <div className="p-6 text-lg text-black bg-white rounded shadow-lg">
+            <div className="p-6 text-lg text-black bg-white rounded shadow">
               <section className="container mx-auto">
                 <p className="text-3xl text-center">Om Meg</p>
                 <p className="mt-6 text-lg text-left">
@@ -66,7 +66,7 @@ function Design1Content() {
                 </p>
               </section>
             </div>
-            <div className="p-6 text-lg text-black bg-white rounded shadow-lg">
+            <div className="p-6 text-lg text-black bg-white rounded shadow">
               <section className="container mx-auto">
                 <p className="text-3xl text-center">Github</p>
                 <p className="mt-6 text-lg text-left">

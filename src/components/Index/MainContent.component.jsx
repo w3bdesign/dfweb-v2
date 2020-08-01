@@ -14,20 +14,20 @@ function MainContent() {
   return (
     <>
       <main
-        role="hovedinnhold-forside"
+        role="main"
         aria-label="Her kommer hovedinnholdet"
         id="maincontent"
       >
         <div className="mx-auto mt-16 rounded lg:mt-20 xl:mt-20 bg-graybg shadow-large md:mt-16 sm:mt-64 xs:mt-64">
           <div
-            role="animasjon"
+            role="article"
             aria-label="Kontainer for animasjoner av introtekst"
             id="main-hero"
             className="flex flex-col justify-center text-lg animate__animated animate__fadeIn animate__delay-1s"
           >
             <div className="bg-white opacity-75">
               <div className="text-black rounded">
-                <section role="introtekst" aria-label="Introduksjonstekst">
+                <section aria-label="Introduksjonstekst">
                   <p className="text-5xl text-center animate__animated animate__fadeInDown animate__delay-2s">
                     Hei!
                   </p>
@@ -47,11 +47,11 @@ function MainContent() {
             </div>
           </div>
           <div className="container grid gap-4 p-4 mx-auto mt-2 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
-            <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
-              <section role="hovedinnhold" aria-label="Hovedinnhold om meg">
+            <div className="p-8 text-lg text-black bg-white rounded shadow">
+              <section aria-label="Hovedinnhold om meg">
                 <h1 className="text-3xl text-center">Om Meg</h1>
                 <p
-                  role="bakgrunnsinfo"
+                  role="article"
                   aria-label="Informasjon om mine ferdigheter"
                   className="mt-6 text-lg"
                 >
@@ -61,14 +61,14 @@ function MainContent() {
                   skilte med 100% positiv tilbakemelding på samtlige oppdrag.
                 </p>
                 <p
-                  role="opensourceinfo"
+                  role="article"
                   aria-label="Info om open-source bidrag"
                   className="mt-6 text-lg"
                 >
                   Har også bidratt til flere open-source prosjekter på Github.
                 </p>
                 <p
-                  role="reactinfo"
+                  role="article"
                   aria-label="Info om andre teknologier jeg har jobbet med"
                   className="mt-6 text-lg"
                 >
@@ -78,11 +78,11 @@ function MainContent() {
                 </p>
               </section>
             </div>
-            <div className="p-8 text-lg text-black bg-white rounded shadow-lg">
-              <section role="githubinfo" aria-label="Github seksjon">
+            <div className="p-8 text-lg text-black bg-white rounded shadow">
+              <section aria-label="Github seksjon">
                 <h1 className="text-3xl text-center">Prosjekter</h1>
                 <p
-                  role="prosjektinfo"
+                  role="article"
                   aria-label="Informasjon om Github og prosjekter"
                   className="mt-6 text-lg"
                 >

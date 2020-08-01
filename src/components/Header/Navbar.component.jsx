@@ -16,8 +16,8 @@ import LINKS from "../../constants/LINKS"
 export default function NavbarContent() {
   return (
     <>
-      <header role="menyheader" aria-label="Header for logo og navigasjon">
-        <nav className="fixed top-0 z-50 w-full p-2 bg-gray-800 shadow-lg">
+      <header role="banner" aria-label="Header for logo og navigasjon">
+        <nav className="fixed top-0 z-50 w-full p-2 bg-gray-800 shadow">
           <div
             id="main-navigation"
             data-cy="main-navigation"
@@ -31,19 +31,31 @@ export default function NavbarContent() {
             >
               <Hamburger />
               <ul
-                role="meny"
+                role="navigation"
                 aria-label="Navigasjon"
                 className="items-center justify-between flex-1 hidden list-reset md:flex lg:flex xl:flex lg:-mr-4 xl:-mr-4"
               >
                 {LINKS.map((link) => (
                   <li key={uuidv4()} className="mr-3">
-                    <Link
-                      className="inline-block m-4 text-xl text-white hover:underline"
-                      activeClassName="underline"
-                      to={link.url}
-                    >
-                      {link.text}
-                    </Link>
+                    {link.external ? (
+                      <a
+                        className="inline-block m-4 text-xl text-white hover:underline"
+                        aria-label={link.text}
+                        href={link.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {link.text}
+                      </a>
+                    ) : (
+                      <Link
+                        className="inline-block m-4 text-xl text-white hover:underline"
+                        activeClassName="underline"
+                        to={link.url}
+                      >
+                        {link.text}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
