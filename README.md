@@ -40,7 +40,7 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 - React Helmet for modifying HTML header
 - Google fonts with Gatsby plugin for prefetching
 - Gatsby plugin for generating robots.txt and sitemap.xml
-- UUID for unique IDs for mapped elements
+- Unique IDs for mapped elements
 - React-reveal-effects for revealing content on portfolio
 - React-animated-burgers for animating hamburger in menu
 - React-PDF for displaying PDF CV
