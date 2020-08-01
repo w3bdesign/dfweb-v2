@@ -29,7 +29,7 @@ function MainContent() {
               <div className="text-black rounded">
                 <section role="introtekst" aria-label="Introduksjonstekst">
                   <p className="text-5xl text-center animate__animated animate__fadeInDown animate__delay-2s">
-                    Hei!
+                    XHei!
                   </p>
                   <h1
                     data-cy="daniel"
@@ -55,7 +55,7 @@ function MainContent() {
                   aria-label="Informasjon om mine ferdigheter"
                   className="mt-6 text-lg"
                 >
-                  Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
+                  XSiden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
                   Javascript. Jeg har arbeidet med Wordpress og Woocommerce
                   siden 2011 hvor jeg har arbeidet frilans via Fiverr og kan
                   skilte med 100% positiv tilbakemelding på samtlige oppdrag.

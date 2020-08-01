@@ -5,7 +5,7 @@ export const LINKS = [
   },
   {
     url: "/portefølje",
-    text: "Porteføljex",
+    text: "Portefølje",
   },
   {
     url: "https://www.github.com/w3bdesign",
