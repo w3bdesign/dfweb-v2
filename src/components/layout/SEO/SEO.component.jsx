@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
  * @param {Boolean} article If page is article type, display relevant meta property
  */
 
-const SEO = ({ title, description, image, article }) => {
+export default function SEO({ title, description, image, article }) {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
 
@@ -70,8 +70,6 @@ const SEO = ({ title, description, image, article }) => {
   )
 }
 
-export default SEO
-
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
@@ -80,7 +78,7 @@ SEO.propTypes = {
 }
 
 SEO.defaultProps = {
-  title: null,
+  title: "Portefølje",
   description: null,
   image: null,
   article: false,
