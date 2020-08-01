@@ -8,6 +8,10 @@ export const LINKS = [
     text: "Portefølje",
   },
   {
+    url: "https://www.github.com/w3bdesign",
+    text: "Github",
+  },
+  {
     url: "/cv",
     text: "CV",
   },
