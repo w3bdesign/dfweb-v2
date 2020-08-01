@@ -1,7 +1,6 @@
 import React from "react"
 
 import FontAwesome from "../../layout/FontAwesome/FontAwesome.component"
-
 import heroimage from "../../../assets/blue-hero.jpg"
 
 /**
@@ -12,19 +11,12 @@ export default function Design1Content() {
   return (
     <>
       <main id="maincontent">
-        <div
-          ref={(el) => (app = el)}
-          className="invisible mx-auto rounded shadow-large"
-        >
+        <div className="invisible mx-auto rounded shadow-md">
           <div
-            ref={(el) => (heroRef = el)}
             className="flex flex-col justify-center text-lg text-white"
             style={{ backgroundImage: `url(${heroimage})`, height: "450px" }}
           >
-            <div
-              ref={(el) => (heroContent = el)}
-              className="text-white rounded"
-            >
+            <div className="text-white rounded">
               <section>
                 <p className="text-5xl text-center">Hei!</p>
                 <p className="p-12 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-center md:text-center xl:text-2xl lg:text-xl md:text-xl xs:">
@@ -36,10 +28,7 @@ export default function Design1Content() {
               </section>
             </div>
           </div>
-          <div
-            ref={(el) => (omMeg = el)}
-            className="grid gap-4 mx-auto mt-6 lg:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
-          >
+          <div className="grid gap-4 mx-auto mt-6 lg:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
             <div className="p-6 text-lg text-black bg-white rounded shadow">
               <section className="container mx-auto">
                 <p className="text-3xl text-center">Om Meg</p>
