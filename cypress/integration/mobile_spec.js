@@ -22,10 +22,6 @@ describe("Navigation", () => {
     it("Hamburger is visible", () => {
       cy.get("[data-cy=hamburger]").should("be.visible")
     })
-
-    it("Mobile menu is visible after we click on the hamburger", () => {
-      cy.get("[data-cy=hamburger]").click()
-      cy.contains("Kontakt").should("be.visible")
-    })
+    
   })
 })
