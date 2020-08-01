@@ -1,19 +1,9 @@
 import React from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faWordpress,
-  faDocker,
-  faJs,
-  faReact,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons"
-
 import { faCopyright } from "@fortawesome/free-regular-svg-icons"
 
-import { v4 as uuidv4 } from "uuid"
-
-const ICONS = [faWordpress, faDocker, faJs, faReact, faGithub]
+import { ICONS } from "../../constants/ICONS"
 
 /**
  * Display technologies used as FontAwesome SVG icons
@@ -23,10 +13,10 @@ export const FontAwesome = () => {
   // We avoid repeating ourselves by using a map() here
   return (
     <p className="mt-4 text-center animate__animated animate__fadeInDown animate__delay-5s">
-      {ICONS.map((icon) => (
+      {ICONS.map(({ id, icon }) => (
         <FontAwesomeIcon
           className="m-2"
-          key={uuidv4()}
+          key={id}
           icon={icon}
           style={{ fontSize: "50px" }}
         />

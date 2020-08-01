@@ -1,5 +1,4 @@
 import React from "react"
-import { v4 as uuidv4 } from "uuid"
 
 /**
  * Display individual portfilio projects if they match the filter passed down through props
@@ -11,6 +10,7 @@ const Portfolio = ({ filter, projects }) => (
   <>
     {projects.map(
       ({
+        id,
         name,
         description,
         subdescription,
@@ -22,7 +22,7 @@ const Portfolio = ({ filter, projects }) => (
         // Use ternary to apply filter so we only see projects from the relevant category
         return filter === category ? (
           <div
-            key={uuidv4()}
+            key={id}
             className="p-6 text-lg text-black bg-white rounded shadow xl:p-12 lg:p-12 md:p-12"
           >
             <p className="text-xl font-black text-center">{name}</p>

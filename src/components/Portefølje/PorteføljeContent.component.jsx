@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Fade from "react-reveal-effects/Fade"
-import { v4 as uuidv4 } from "uuid"
 
 import Portfolio from "./PorteføljeProjects.component"
 import CATEGORIES from "../../constants/CATEGORIES"
@@ -45,7 +44,9 @@ function PorteføljeContent() {
       <div className="container mx-auto rounded">
         <div className="px-4 mx-auto mt-4 lg:px-0 xl:px-0 md:px-0">
           <span className="flex justify-end mb-4">
-            <label htmlFor="Kategorifilter" className="mr-4 text-lg">Filtrer kategori:</label>
+            <label htmlFor="Kategorifilter" className="mr-4 text-lg">
+              Filtrer kategori:
+            </label>
             <select onChange={handleFilterChange}>
               <option value="">Ingen filtrering</option>
               <option value="Javascript">Javascript</option>
@@ -54,11 +55,10 @@ function PorteføljeContent() {
               <option value="WooCommerce">WooCommerce</option>
             </select>
           </span>
-
           <Fade when={shouldAnimate}>
             {categoryFilter && (
               <>
-                <div key={uuidv4()} className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow">
+                <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow">
                   {categoryFilter}
                 </div>
                 <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
@@ -67,18 +67,17 @@ function PorteføljeContent() {
               </>
             )}
           </Fade>
-
           <Fade>
             {!categoryFilter &&
-              CATEGORIES.map(({ name }) => (
-                <>
+              CATEGORIES.map(({ id, name }) => (
+                <div key={id}>
                   <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow">
                     {name}
                   </div>
                   <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
                     <Portfolio filter={name} projects={allProjects} />
                   </div>
-                </>
+                </div>
               ))}
           </Fade>
         </div>

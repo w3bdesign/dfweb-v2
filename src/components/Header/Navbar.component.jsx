@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { v4 as uuidv4 } from "uuid"
 
 import AppLogo from "./Applogo.component"
 import Hamburger from "./Hamburger.component"
@@ -36,7 +35,7 @@ export default function NavbarContent() {
                 className="items-center justify-between flex-1 hidden list-reset md:flex lg:flex xl:flex lg:-mr-4 xl:-mr-4"
               >
                 {LINKS.map((link) => (
-                  <li key={uuidv4()} className="mr-3">
+                  <li key={link.id} className="mr-3">
                     {link.external ? (
                       <a
                         className="inline-block m-4 text-xl text-white hover:underline"

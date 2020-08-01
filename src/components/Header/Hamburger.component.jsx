@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
 import { HamburgerCollapse } from "react-animated-burgers"
-import { v4 as uuidv4 } from "uuid"
 
 import LINKS from "../../constants/LINKS"
 
@@ -83,7 +82,7 @@ export default function Hamburger() {
         <ul role="navigation" aria-label="Navigasjon">
           {LINKS.map((link) => (
             <li
-              key={uuidv4()}
+              key={link.id}
               className="w-full border-t border-gray-600 border-solid shadow "
             >
               {link.external ? (
