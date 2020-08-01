@@ -51,6 +51,7 @@
     "cypress": "^4.11.0",
     "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.5",
     "gatsby-cypress": "^0.4.10",
     "netlify-cli": "^2.58.0",

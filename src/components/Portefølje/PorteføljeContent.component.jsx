@@ -32,7 +32,6 @@ function PorteføljeContent() {
     /**
      * By using a setTimeout to switch the shouldAnimate boolean value we get a fade effect when switching filters
      */
-
     setshouldAnimate(false)
 
     setTimeout(() => {
@@ -41,11 +40,11 @@ function PorteføljeContent() {
   }
 
   return (
-    <main className="mt-24 bg-graybg">
+    <main aria-label="Innhold portefølje" className="mt-24 bg-graybg">
       <div className="container mx-auto rounded">
         <div className="px-4 mx-auto mt-4 lg:px-0 xl:px-0 md:px-0">
           <span className="flex justify-end mb-4">
-            <label className="mr-4 text-lg">Filtrer kategori:</label>
+            <label htmlFor="Kategorifilter" className="mr-4 text-lg">Filtrer kategori:</label>
             <select onChange={handleFilterChange}>
               <option value="">Ingen filtrering</option>
               <option value="Javascript">Javascript</option>
@@ -58,7 +57,7 @@ function PorteføljeContent() {
           <Fade when={shouldAnimate}>
             {categoryFilter && (
               <>
-                <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
+                <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow">
                   {categoryFilter}
                 </div>
                 <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
@@ -72,7 +71,7 @@ function PorteføljeContent() {
             {!categoryFilter &&
               CATEGORIES.map(({ name }) => (
                 <>
-                  <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow-lg">
+                  <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow">
                     {name}
                   </div>
                   <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
