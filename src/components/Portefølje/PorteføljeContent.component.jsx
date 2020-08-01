@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Fade from "react-reveal-effects/Fade"
-import { v4 as uuidv4 } from "uuid"
 
 import Portfolio from "./PorteføljeProjects.component"
 import CATEGORIES from "../../constants/CATEGORIES"

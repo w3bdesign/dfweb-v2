@@ -1,5 +1,4 @@
 import React from "react"
-import { v4 as uuidv4 } from "uuid"
 
 /**
  * Display individual portfilio projects if they match the filter passed down through props
