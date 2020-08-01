@@ -13,15 +13,13 @@ import Design1Content from "../components/pages/Design1/Design1Content.component
  * Experimental design
  */
 
-function Design1() {
+export default function Design1() {
   return (
     <>
-    <SEO title="Forside - Design1 - " />
-    <Layout>
-      <Design1Content />
-    </Layout>
-  </>
+      <SEO title="Forside - Design1 - " />
+      <Layout>
+        <Design1Content />
+      </Layout>
+    </>
   )
 }
-
-export default Design1

@@ -14,7 +14,7 @@ import CVContent from "../components/pages/CV/CVContent.component"
  * Shows download link on mobile
  */
 
-function CV() {
+export default function CV() {
   return (
     <>
       <SEO title="CV - Portefølje - " />
@@ -24,5 +24,3 @@ function CV() {
     </>
   )
 }
-
-export default CV

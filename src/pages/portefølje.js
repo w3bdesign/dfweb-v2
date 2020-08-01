@@ -11,10 +11,10 @@ import PorteføljeContent from "../components/pages/Portefølje/PorteføljeConte
 
 /**
  * Portfolio page
- * Includes Scroll-Reveal for scrolling reveal animations
+ * Includes react-reveal-effects for scrolling reveal animations
  */
 
-function Portefølje() {
+export default function Portefølje() {
   return (
     <>
       <SEO title="Portefølje - " />
@@ -24,5 +24,3 @@ function Portefølje() {
     </>
   )
 }
-
-export default Portefølje

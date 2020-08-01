@@ -3,16 +3,18 @@ import React from "react"
 // Layout
 import Layout from "../components/layout/Header/Layout.component"
 
-function ErrorPage() {
+export default function ErrorPage() {
   return (
     <>
-     <Layout>
-     <div className="mx-auto mt-32 rounded lg:mt-32 xl:mt-32 bg-graybg shadow-large md:mt-32 sm:mt-64 xs:mt-64">
-      <h1 className="h-32 m-12 mx-auto text-2xl text-center">Oppps... something went wrong<br/>Please try a different URL</h1>
-      </div>
+      <Layout>
+        <div className="mx-auto mt-32 rounded lg:mt-32 xl:mt-32 bg-graybg shadow-large md:mt-32 sm:mt-64 xs:mt-64">
+          <h1 className="h-32 m-12 mx-auto text-2xl text-center">
+            Oppps... something went wrong
+            <br />
+            Please try a different URL
+          </h1>
+        </div>
       </Layout>
     </>
   )
 }
-
-export default ErrorPage
