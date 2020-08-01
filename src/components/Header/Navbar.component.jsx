@@ -37,13 +37,25 @@ export default function NavbarContent() {
               >
                 {LINKS.map((link) => (
                   <li key={uuidv4()} className="mr-3">
-                    <Link
-                      className="inline-block m-4 text-xl text-white hover:underline"
-                      activeClassName="underline"
-                      to={link.url}
-                    >
-                      {link.text}
-                    </Link>
+                    {link.external ? (
+                      <a
+                        className="inline-block m-4 text-xl text-white hover:underline"
+                        aria-label={link.text}
+                        href={link.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {link.text}
+                      </a>
+                    ) : (
+                      <Link
+                        className="inline-block m-4 text-xl text-white hover:underline"
+                        activeClassName="underline"
+                        to={link.url}
+                      >
+                        {link.text}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

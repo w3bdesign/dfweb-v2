@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Fade from "react-reveal-effects/Fade"
+import { v4 as uuidv4 } from "uuid"
 
 import Portfolio from "./PorteføljeProjects.component"
 import CATEGORIES from "../../constants/CATEGORIES"
@@ -57,7 +58,7 @@ function PorteføljeContent() {
           <Fade when={shouldAnimate}>
             {categoryFilter && (
               <>
-                <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow">
+                <div key={uuidv4()} className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow">
                   {categoryFilter}
                 </div>
                 <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
