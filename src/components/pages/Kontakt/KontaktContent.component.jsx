@@ -2,7 +2,7 @@ import React from "react"
 
 import Button from "../../layout/Button/Button.component"
 
-function KontaktContent() {
+export default function KontaktContent() {
   return (
     <>
       <main id="maincontent">
@@ -83,5 +83,3 @@ function KontaktContent() {
     </>
   )
 }
-
-export default KontaktContent

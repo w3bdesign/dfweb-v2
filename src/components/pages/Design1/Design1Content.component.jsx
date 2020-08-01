@@ -2,13 +2,13 @@ import React from "react"
 
 import FontAwesome from "../../layout/FontAwesome/FontAwesome.component"
 
-import heroimage from "../../../assets/blue-hero.jpg" 
+import heroimage from "../../../assets/blue-hero.jpg"
 
 /**
  * Sample design I am experimenting with
  */
 
-function Design1Content() {
+export default function Design1Content() {
   return (
     <>
       <main id="maincontent">
@@ -91,5 +91,3 @@ function Design1Content() {
     </>
   )
 }
-
-export default Design1Content

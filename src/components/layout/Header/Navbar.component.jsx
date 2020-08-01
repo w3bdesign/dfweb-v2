@@ -12,7 +12,7 @@ import LINKS from "../../../constants/LINKS"
  * We reduce code duplication by loading the links from a JSON object and map over it
  */
 
-export default function NavbarContent() {
+export default function Navbar() {
   return (
     <>
       <header role="banner" aria-label="Header for logo og navigasjon">

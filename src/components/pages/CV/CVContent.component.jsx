@@ -9,11 +9,7 @@ import myCV from "../../../assets/CV-dfweb.pdf"
  * On mobile, we only show a link to display the PDF directly
  */
 
-function CVContent() {
-  const page = {
-    pageNumber: 1,
-  }
-
+export default function CVContent() {
   return (
     <>
       <main id="maincontent">
@@ -33,8 +29,8 @@ function CVContent() {
                       <Page
                         renderMode="svg"
                         className="flex content-center justify-center"
-                        scale="1.5"
-                        pageNumber={page.pageNumber}
+                        scale={1.5}
+                        pageNumber={1}
                       />
                     </Document>
                   </div>
@@ -53,5 +49,3 @@ function CVContent() {
     </>
   )
 }
-
-export default CVContent

@@ -10,7 +10,7 @@ import CATEGORIES from "../../../constants/CATEGORIES"
  * Also uses React-reveal-effects for displaying projects during scrolling
  * Displays portfolio entries based on the projects filter prop passed to Portfolio
  */
-function PorteføljeContent() {
+export default function PorteføljeContent() {
   /**
    * Setup filter funtionality to only show projects from the selected category
    */
@@ -89,8 +89,6 @@ function PorteføljeContent() {
     </main>
   )
 }
-
-export default PorteføljeContent
 
 const ALL_PROJECTS_QUERY = graphql`
   query MyQuery {
