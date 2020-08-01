@@ -44,10 +44,10 @@ function PorteføljeContent() {
       <div className="container mx-auto rounded">
         <div className="px-4 mx-auto mt-4 lg:px-0 xl:px-0 md:px-0">
           <span className="flex justify-end mb-4">
-            <label htmlFor="Kategorifilter" className="mr-4 text-lg">
+            <label htmlFor="Kategorifilter" className="p-2 mr-4 text-lg">
               Filtrer kategori:
             </label>
-            <select onChange={handleFilterChange}>
+            <select id="Kategorifilter" onChange={handleFilterChange} className="w-40 p-2 leading-tight text-black border rounded shadow appearance-none focus:outline-none focus:shadow-outline">
               <option value="">Ingen filtrering</option>
               <option value="Javascript">Javascript</option>
               <option value="Magento">Magento</option>

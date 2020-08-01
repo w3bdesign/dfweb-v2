@@ -36,13 +36,13 @@ const Portfolio = ({ filter, projects }) => (
                 {/* Display only Github button if not empty  */}
                 {urlgithub && (
                   <a href={urlgithub}>
-                    <button className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700">
+                    <button className="p-4 m-4 text-white bg-gray-800 rounded hover:shadow-outline hover:bg-gray-600">
                       Github
                     </button>
                   </a>
                 )}
                 <a href={urlwww}>
-                  <button className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700">
+                  <button className="p-4 m-4 text-white bg-gray-800 rounded hover:shadow-outline hover:bg-gray-600">
                     Besøk
                   </button>
                 </a>
