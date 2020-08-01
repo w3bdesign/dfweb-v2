@@ -1,5 +1,7 @@
 import React from "react"
 
+import Button from "../../layout/Button/Button.component"
+
 /**
  * Display individual portfilio projects if they match the filter passed down through props
  *
@@ -36,16 +38,14 @@ const Portfolio = ({ filter, projects }) => (
                 {/* Display only Github button if not empty  */}
                 {urlgithub && (
                   <a href={urlgithub}>
-                    <button className="p-4 m-4 text-white bg-gray-800 rounded hover:shadow-outline hover:bg-gray-600">
-                      Github
-                    </button>
+                    <Button>Github</Button>
                   </a>
                 )}
-                <a href={urlwww}>
-                  <button className="p-4 m-4 text-white bg-gray-800 rounded hover:shadow-outline hover:bg-gray-600">
-                    Besøk
-                  </button>
-                </a>
+                {urlwww && (
+                  <a href={urlwww}>
+                    <Button>Besøk</Button>
+                  </a>
+                )}
               </div>
             </div>
           </div>

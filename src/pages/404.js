@@ -1,7 +1,7 @@
 import React from "react"
 
 // Layout
-import Layout from "../components/Header/Layout.component"
+import Layout from "../components/layout/Header/Layout.component"
 
 function ErrorPage() {
   return (

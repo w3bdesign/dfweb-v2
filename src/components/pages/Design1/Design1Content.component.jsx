@@ -1,8 +1,8 @@
 import React from "react"
 
-import FontAwesome from "../FontAwesome/FontAwesome.component"
+import FontAwesome from "../../layout/FontAwesome/FontAwesome.component"
 
-import heroimage from "../../assets/blue-hero.jpg"
+import heroimage from "../../../assets/blue-hero.jpg" 
 
 /**
  * Sample design I am experimenting with

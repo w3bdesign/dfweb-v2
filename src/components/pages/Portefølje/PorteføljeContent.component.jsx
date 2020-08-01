@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Fade from "react-reveal-effects/Fade"
 
 import Portfolio from "./PorteføljeProjects.component"
-import CATEGORIES from "../../constants/CATEGORIES"
+import CATEGORIES from "../../../constants/CATEGORIES"
 
 /**
  * Fetch portfolio projects from GraphQL
@@ -47,7 +47,11 @@ function PorteføljeContent() {
             <label htmlFor="Kategorifilter" className="p-2 mr-4 text-lg">
               Filtrer kategori:
             </label>
-            <select id="Kategorifilter" onChange={handleFilterChange} className="w-40 p-2 leading-tight text-black border rounded shadow appearance-none focus:outline-none focus:shadow-outline">
+            <select
+              id="Kategorifilter"
+              onChange={handleFilterChange}
+              className="w-40 p-2 leading-tight text-black border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+            >
               <option value="">Ingen filtrering</option>
               <option value="Javascript">Javascript</option>
               <option value="Magento">Magento</option>

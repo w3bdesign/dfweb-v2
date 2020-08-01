@@ -1,13 +1,13 @@
 import React from "react"
 
 // Layout
-import Layout from "../components/Header/Layout.component"
+import Layout from "../components/layout/Header/Layout.component"
 
 // SEO component with title and description
-import SEO from "../components/SEO/SEO.component"
+import SEO from "../components/layout/SEO/SEO.component"
 
 // Main
-import MainContent from "../components/Index/MainContent.component"
+import MainContent from "../components/pages/Index/MainContent.component"
 
 /**
  * Main index page

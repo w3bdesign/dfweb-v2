@@ -1,7 +1,8 @@
 import React from "react"
 import { Document, Page } from "react-pdf"
 
-import myCV from "../../assets/CV-dfweb.pdf"
+import Button from "../../layout/Button/Button.component"
+import myCV from "../../../assets/CV-dfweb.pdf"
 
 /**
  * Displays the CV content using react-pdf
@@ -39,9 +40,9 @@ function CVContent() {
                   </div>
 
                   <div className="mx-auto mt-0 text-center sm:mt-2 xs:mt-2">
-                    <button className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700">
+                    <Button>
                       <a href={myCV}>Last ned PDF</a>
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
 import { HamburgerCollapse } from "react-animated-burgers"
 
-import LINKS from "../../constants/LINKS"
+import LINKS from "../../../constants/LINKS"
 
 /**
  * Mobile menu

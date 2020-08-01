@@ -1,5 +1,7 @@
 import React from "react"
 
+import Button from "../../layout/Button/Button.component"
+
 function KontaktContent() {
   return (
     <>
@@ -33,8 +35,8 @@ function KontaktContent() {
                           name="navn"
                           type="text"
                           placeholder="Fullt navn"
-                          required="true"
-                          aria-required="true"
+                          required
+                          aria-required
                         />
                       </label>
                     </fieldset>
@@ -48,8 +50,8 @@ function KontaktContent() {
                           name="telefon"
                           type="text"
                           placeholder="Telefon"
-                          required="true"
-                          aria-required="true"
+                          required
+                          aria-required
                           pattern=".[0-9]{7}"
                         />
                       </label>
@@ -62,17 +64,12 @@ function KontaktContent() {
                           className="w-64 p-2 m-2 placeholder-black border border-gray-500 rounded focus:shadow-outline"
                           name="tekst"
                           id="textarea"
-                          required="true"
-                          aria-required="true"
+                          required
+                          aria-required
                         ></textarea>
                       </label>
                     </fieldset>
-                    <button
-                      type="submit"
-                      className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700"
-                    >
-                      Send skjema
-                    </button>
+                    <Button>Send skjema</Button>                   
                   </form>
                 </div>
               </div>

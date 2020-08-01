@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import AppLogo from "./Applogo.component"
 import Hamburger from "./Hamburger.component"
 
-import LINKS from "../../constants/LINKS"
+import LINKS from "../../../constants/LINKS"
 
 /**
  * Display the menu and the links

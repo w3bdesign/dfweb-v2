@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import "../../css/main.css"
-import "../../css/animate.min.css"
+import "../../../css/main.css"
+import "../../../css/animate.min.css"
 
-import FontAwesome from "../FontAwesome/FontAwesome.component"
+import FontAwesome from "../../layout/FontAwesome/FontAwesome.component"
 
 /**
  * Main content that is displayed from index.js

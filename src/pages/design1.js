@@ -1,14 +1,13 @@
 import React from "react"
 
-// Header
-import Navbar from "../components/Header/Navbar.component"
-import NavbarContent from "../components/Header/Navbar.component"
+// Layout
+import Layout from "../components/layout/Header/Layout.component"
+
+// SEO component with title and description
+import SEO from "../components/layout/SEO/SEO.component"
 
 // Main
-import Design1Content from "../components/Design1/Design1Content.component"
-
-// Footer
-import Footer from "../components/Footer/Footer.component"
+import Design1Content from "../components/pages/Design1/Design1Content.component"
 
 /**
  * Experimental design
@@ -17,12 +16,11 @@ import Footer from "../components/Footer/Footer.component"
 function Design1() {
   return (
     <>
-      <Navbar>
-        <NavbarContent />
-      </Navbar>
+    <SEO title="Forside - Design1 - " />
+    <Layout>
       <Design1Content />
-      <Footer />
-    </>
+    </Layout>
+  </>
   )
 }
 
