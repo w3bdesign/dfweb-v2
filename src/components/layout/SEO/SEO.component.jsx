@@ -6,11 +6,11 @@ import { useStaticQuery, graphql } from "gatsby"
 
 /**
  * Setup site meta data through React-helmet
- *
+ * 
  * @param {Object} title Title of site
  * @param {Object} description Description of site
  * @param {Object} image Meta image of site
- * @param {Boolean} article If page is article type, display relevant meta property
+ * @param {boolean} article If page is article type, display relevant meta property
  */
 
 export default function SEO({ title, description, image, article }) {
