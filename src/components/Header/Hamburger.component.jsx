@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
 import { HamburgerCollapse } from "react-animated-burgers"
+import { v4 as uuidv4 } from "uuid"
+
+import LINKS from "../../constants/LINKS"
 
 /**
  * Mobile menu
@@ -37,11 +40,13 @@ export default function Hamburger() {
   }
 
   useEffect(() => {
-    if (isExpanded) {
-      document.addEventListener("mousedown", handleClickOutside)
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
+    /**
+     * Add the event listeners so we can close the menu when we click outside the mobile menu
+     */
+    isExpanded
+      ? document.addEventListener("mousedown", handleClickOutside)
+      : document.removeEventListener("mousedown", handleClickOutside)
+
     /**
      * Cleanup
      */
@@ -61,7 +66,6 @@ export default function Hamburger() {
         data-cy="hamburger"
         onClick={handleMobileMenuClick}
       />
-
       {/* 
         Start the mobile menu initially as hidden, then remove hidden class if we have clicked on the mobile menu
         Add Animate.css animation classes once we click on the mobile menu
@@ -76,43 +80,21 @@ export default function Hamburger() {
             : `animate__animated animate__fadeOutDown`
         }`}
       >
-        <ul>
-          <li className="w-full border-t border-gray-600 border-solid shadow-md ">
-            <Link
-              className="inline-block m-4 text-xl text-white hover:underline"
-              activeClassName="underline"
-              to="/"
+        <ul role="meny" aria-label="Navigasjon">
+          {LINKS.map((link) => (
+            <li
+              key={uuidv4()}
+              className="w-full border-t border-gray-600 border-solid shadow-md "
             >
-              Hjem
-            </Link>
-          </li>
-          <li className="w-full border-t border-gray-600 border-solid shadow-md ">
-            <Link
-              className="inline-block m-4 text-xl text-white hover:underline"
-              activeClassName="underline"
-              to="/portefølje"
-            >
-              Portefølje
-            </Link>
-          </li>
-          <li className="w-full border-t border-gray-600 border-solid shadow-md ">
-            <Link
-              className="inline-block m-4 text-xl text-white hover:underline"
-              activeClassName="underline"
-              to="/cv"
-            >
-              CV
-            </Link>
-          </li>
-          <li className="w-full border-t border-gray-600 border-solid shadow-md ">
-            <Link
-              className="inline-block m-4 text-xl text-white hover:underline"
-              activeClassName="underline"
-              to="/kontakt"
-            >
-              Kontakt
-            </Link>
-          </li>
+              <Link
+                className="inline-block m-4 text-xl text-white hover:underline"
+                activeClassName="underline"
+                to={link.url}
+              >
+                {link.text}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
