@@ -1,18 +1,17 @@
 import React from "react"
-import { Document, Page } from "react-pdf"
+import { Document, Page,  pdfjs } from "react-pdf"
 
-import myCV from "../../assets/CV-dfweb.pdf"
+import Button from "../../layout/Button/Button.component"
+import myCV from "../../../assets/CV-dfweb.pdf"
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 /**
  * Displays the CV content using react-pdf
  * On mobile, we only show a link to display the PDF directly
  */
 
-function CVContent() {
-  const page = {
-    pageNumber: 1,
-  }
-
+export default function CVContent() {
   return (
     <>
       <main id="maincontent">
@@ -32,16 +31,15 @@ function CVContent() {
                       <Page
                         renderMode="svg"
                         className="flex content-center justify-center"
-                        scale="1.5"
-                        pageNumber={page.pageNumber}
+                        scale={1.5}
+                        pageNumber={1}
                       />
                     </Document>
                   </div>
-
                   <div className="mx-auto mt-0 text-center sm:mt-2 xs:mt-2">
-                    <button className="p-4 m-4 text-white rounded bg-button hover:shadow-outline hover:bg-gray-700">
+                    <Button>
                       <a href={myCV}>Last ned PDF</a>
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -52,5 +50,3 @@ function CVContent() {
     </>
   )
 }
-
-export default CVContent

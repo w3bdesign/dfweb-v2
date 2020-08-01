@@ -2,27 +2,27 @@
 
 @import "tailwindcss/components";
 
+/* Global font */
 body {
   font-family: Lato, sans-serif;
   background-color: #f2f2f2;
 }
 
+/* Custom styling for hamburger SVG */
 #hamburger {
   margin-right: 1rem;
   color: #fff;
   cursor: pointer;
 }
 
-.shadow-outline-red {
-  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.5);
-}
-
+/* Custom styling for main hero image */
 #main-hero {
   opacity: 0;
   background-image: url("../assets/blue-hero.jpg");
   height: 450px;
 }
 
+/* Animations */
 /* All delay classes will take less time to start */
 .animate__delay-1s {
   --animate-delay: 0.35s;

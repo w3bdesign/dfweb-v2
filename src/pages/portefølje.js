@@ -1,20 +1,20 @@
 import React from "react"
 
 // Layout
-import Layout from "../components/Header/Layout.component"
+import Layout from "../components/layout/Header/Layout.component"
 
 // SEO component with title and description
-import SEO from "../components/SEO/SEO.component"
+import SEO from "../components/layout/SEO/SEO.component"
 
 // Main content
-import PorteføljeContent from "../components/Portefølje/PorteføljeContent.component"
+import PorteføljeContent from "../components/pages/Portefølje/PorteføljeContent.component"
 
 /**
  * Portfolio page
- * Includes Scroll-Reveal for scrolling reveal animations
+ * Includes react-reveal-effects for scrolling reveal animations
  */
 
-function Portefølje() {
+export default function Portefølje() {
   return (
     <>
       <SEO title="Portefølje - " />
@@ -24,5 +24,3 @@ function Portefølje() {
     </>
   )
 }
-
-export default Portefølje

@@ -1,16 +1,13 @@
 import React from "react"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCopyright } from "@fortawesome/free-regular-svg-icons"
 
-import { ICONS } from "../../constants/ICONS"
+import { ICONS } from "../../../constants/ICONS"
 
 /**
  * Display technologies used as FontAwesome SVG icons
  */
-
-export const FontAwesome = () => {
-  // We avoid repeating ourselves by using a map() here
+export default function FontAwesome() {
   return (
     <p className="mt-4 text-center animate__animated animate__fadeInDown animate__delay-5s">
       {ICONS.map(({ id, icon }) => (
@@ -25,7 +22,7 @@ export const FontAwesome = () => {
   )
 }
 
-export const FontAwesomeCopyright = () => {
+export function FontAwesomeCopyright() {
   return (
     <FontAwesomeIcon
       className="mt-2"
@@ -34,5 +31,3 @@ export const FontAwesomeCopyright = () => {
     />
   )
 }
-
-export default FontAwesome
