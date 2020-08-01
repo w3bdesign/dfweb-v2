@@ -19,12 +19,13 @@ describe("Navigation", () => {
       cy.visit("/")
     })
 
-    /*
-    it("Displays mobile menu on click", () => {     
-      cy.get('[data-cy=hamburger]').click()     
-      cy.get('#mobile-menu').should("be.visible")
+    it("Hamburger is visible", () => {
+      cy.get("[data-cy=hamburger]").should("be.visible")
+    })
+
+    it("Mobile menu is visible", () => {
+      cy.get("[data-cy=hamburger]").click()
+      cy.contains("Kontakt").should("be.visible")
     })
   })
-  */
- 
 })
