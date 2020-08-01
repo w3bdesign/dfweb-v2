@@ -26,7 +26,8 @@ function KontaktContent() {
                       value="kontaktskjema"
                     />
                     <fieldset>
-                      <label className="text-black" htmlFor="text">
+                      <legend className="container m-4 mx-auto text-xl text-center">Vennligst fyll ut kontaktskjemaet nedenfor: </legend>
+                      <label className="text-black">
                         Fullt navn
                         <br />
                         <input
@@ -39,8 +40,7 @@ function KontaktContent() {
                           aria-required
                         />
                       </label>
-                    </fieldset>
-                    <fieldset>
+                      <br />
                       <label className="text-black" htmlFor="phone">
                         Telefonnummer
                         <br />
@@ -55,8 +55,7 @@ function KontaktContent() {
                           pattern=".[0-9]{7}"
                         />
                       </label>
-                    </fieldset>
-                    <fieldset>
+                      <br />
                       <label className="text-black" htmlFor="textarea">
                         Hva ønsker du å si?
                         <br />
@@ -69,7 +68,7 @@ function KontaktContent() {
                         ></textarea>
                       </label>
                     </fieldset>
-                    <Button>Send skjema</Button>                   
+                    <Button>Send skjema</Button>
                   </form>
                 </div>
               </div>
