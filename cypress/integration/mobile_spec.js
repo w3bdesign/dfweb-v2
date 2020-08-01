@@ -21,7 +21,7 @@ describe("Navigation", () => {
 
     it("Displays mobile menu on click", () => {     
       cy.get('[data-cy=hamburger]').click()     
-      cy.get('#mobile-menu > ul > :nth-child(1)').should("be.visible")
+      cy.get('#mobile-menu').should("be.visible")
     })
   })
 })
