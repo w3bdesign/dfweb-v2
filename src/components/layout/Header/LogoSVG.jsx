@@ -4,7 +4,7 @@ import React from "react"
  * Main application logo
  */
 
-export default function Logo() {
+export default function LogoSVG() {
   return (
     <>
       <svg
