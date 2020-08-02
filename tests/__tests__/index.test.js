@@ -4,7 +4,7 @@ import { render } from "@testing-library/react"
 //import userEvent from "@testing-library/user-event"
 import { useStaticQuery } from "gatsby"
 
-import Index from "../pages/index"
+import Index from "../../src/pages/index"
 
 describe("General checks", () => {
   /**
