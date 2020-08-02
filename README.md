@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/257f94b1-03ed-4340-af84-7480754fcc6f/deploy-status)](https://app.netlify.com/sites/dfweb/deploys)
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
-[![React-Testing-Library](https://img.shields.io/badge/tested%20with-React--Testing--Library-purple)](https://testing-library.com/)
+[![React-Testing-Library](https://img.shields.io/badge/unit%20testing-React--Test--Library-purple)](https://testing-library.com/)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/45702547/Dfweb)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=w3bdesign_dfweb&metric=alert_status)](https://sonarcloud.io/dashboard?id=w3bdesign_dfweb)
 ![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
