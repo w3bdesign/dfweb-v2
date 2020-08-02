@@ -63,6 +63,7 @@ export default function Hamburger() {
         barColor="white"
         id="hamburger"
         data-cy="hamburger"
+        data-testid="hamburger"
         onClick={handleMobileMenuClick}
       />
       {/* 
@@ -71,9 +72,10 @@ export default function Hamburger() {
         */}
       <div
         id="mobile-menu"
+        data-testid="mobile-menu"
+        aria-hidden={isInitialRender}
+        hidden={isInitialRender}
         className={`absolute right-0 w-full text-center bg-gray-800 w-30 h-60  ${
-          isInitialRender && `hidden`
-        }   ${
           isExpanded
             ? `animate__animated animate__fadeInUp`
             : `animate__animated animate__fadeOutDown`
@@ -83,7 +85,7 @@ export default function Hamburger() {
           {LINKS.map((link) => (
             <li
               key={link.id}
-              className="w-full border-t border-gray-600 border-solid shadow "
+              className="w-full border-t border-gray-600 border-solid shadow"
             >
               {link.external ? (
                 <a
@@ -92,6 +94,7 @@ export default function Hamburger() {
                   href={link.url}
                   target="_blank"
                   rel="noreferrer"
+                  data-testid={`mobil-${link.text}`}
                 >
                   {link.text}
                 </a>
@@ -99,6 +102,7 @@ export default function Hamburger() {
                 <Link
                   className="inline-block m-4 text-xl text-white hover:underline"
                   activeClassName="underline"
+                  data-testid={`mobil-${link.text}`}
                   to={link.url}
                 >
                   {link.text}

@@ -1,20 +1,19 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
 /**
  * Setup site meta data through React-helmet
- * 
+ *
  * @param {Object} title Title of site
  * @param {Object} description Description of site
  * @param {Object} image Meta image of site
- * @param {boolean} article If page is article type, display relevant meta property
+ * @param {Boolean} article If page is article type, display relevant meta property
  */
 
-export default function SEO({ title, description, image, article }) {
-  const { pathname } = useLocation()
+const SEO = ({ title, description, image, article }) => {
+  const pathname = "/"
   const { site } = useStaticQuery(query)
 
   const {
@@ -70,6 +69,8 @@ export default function SEO({ title, description, image, article }) {
   )
 }
 
+export default SEO
+
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
@@ -78,7 +79,7 @@ SEO.propTypes = {
 }
 
 SEO.defaultProps = {
-  title: "Portefølje",
+  title: null,
   description: null,
   image: null,
   article: false,
