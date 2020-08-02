@@ -25,7 +25,7 @@ describe("Navigation", () => {
 
     it("Mobile menu is visible after we click on the hamburger", () => {
       cy.findByRole("button", { name: /navigation/i }).click()
-      cy.findByRole("link", { name: /hjem/i }).should("exist")
+      cy.findByRole("link", { name: /Forside/i }).should("exist")
 
       //cy.get("[data-cy=hamburger]").click()
       //cy.contains("Kontakt").should("be.visible")
