@@ -17,7 +17,7 @@ Uses a remote GraphQL API for fetching portfolio projects.
 
 Uses Tailwind CSS for styling.
 
-Uses Cypress for testing.
+Uses Cypress, Jest, React-Testing-Library and Percy for testing.
 
 First version is located here: https://github.com/w3bdesign/dfweb-v1
 
@@ -25,26 +25,38 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 ## Features:
 
+### Misc:
+
 - Gatsby as main project dependency
-- Animate.css for menu animations
 - GraphQL for fetching portfolio project information
-- WCAG accessibility tested
-- Fully responsive design tested on all devices
 - Filter projects based on category
-- Relevant aria labels added for all content
-- Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
-- Unit testing with Jest and React-Testing-Library
-- Sonarcloud integration on every push to maintain code quality
-- FontAwesome SVG icons for project icons
-- Tailwind CSS for styling
 - React Helmet for modifying HTML header
-- Google fonts with Gatsby plugin for prefetching
 - Gatsby plugin for generating robots.txt and sitemap.xml
-- UUID for unique IDs for mapped elements
+- React-PDF for displaying PDF CV
+
+### Animations:
+
+- Animate.css for menu animations
 - React-reveal-effects for revealing content on portfolio
 - React-animated-burgers for animating hamburger in menu
-- React-PDF for displaying PDF CV
+
+### Accessibility and design:
+
+- WCAG accessibility tested
+- Fully responsive design tested on all devices
+- Relevant aria labels added for all content
+- FontAwesome SVG icons for project icons
+- Tailwind CSS for styling
+- Google fonts with Gatsby plugin for prefetching
+
+### Code quality:
+
+- E2E testing with Cypress through Netlify build plugins and netlify-plugin-cypress
+- Unit testing with Jest and React-Testing-Library
+- Visual testing with Percy
+- Sonarcloud integration on every push to maintain code quality
 
 ## TODO
 
-- Add SVG badge for React-Testing-Library
+- Add additional tests
+- Implement Sanity CMS and create a blog
