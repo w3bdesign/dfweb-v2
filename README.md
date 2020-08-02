@@ -34,6 +34,7 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 - Filter projects based on category
 - Relevant aria labels added for all content
 - Cypress E2E testing through Netlify build plugins and netlify-plugin-cypress
+- Unit testing with Jest and React-Testing-Library
 - Sonarcloud integration on every push to maintain code quality
 - FontAwesome SVG icons for project icons
 - Tailwind CSS for styling
@@ -47,5 +48,4 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 ## TODO
 
-- Implement more Cypress tests
-- Implement additional tests with React-Testing-Library
+- Add SVG badge for React-Testing-Library
