@@ -52,7 +52,8 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 ### Code quality:
 
-- E2E testing with Cypress through Netlify build plugins and netlify-plugin-cypress
+- Continuous Integration with CircleCI
+- E2E testing with Cypress and netlify-plugin-cypress
 - Unit testing with Jest and React-Testing-Library
 - Visual testing with Percy
 - Sonarcloud integration on every push to maintain code quality
