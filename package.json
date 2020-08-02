@@ -12,7 +12,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "cypress run",
+    "test:cypress": "cypress run",
+    "test": "jest",
     "cy:open": "cypress open"
   },
   "dependencies": {
@@ -46,7 +47,12 @@
   },
   "devDependencies": {
     "@testing-library/cypress": "^6.0.0",
+    "@testing-library/dom": "^7.21.7",
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.7",
+    "@testing-library/user-event": "^12.1.0",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.2.2",
     "babel-preset-gatsby": "^0.5.4",
     "cypress": "^4.11.0",
     "eslint": "^7.5.0",
@@ -54,6 +60,8 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.5",
     "gatsby-cypress": "^0.4.10",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.2.2",
     "netlify-cli": "^2.58.0",
     "netlify-plugin-cypress": "^1.4.1",
     "prettier": "^2.0.5",
