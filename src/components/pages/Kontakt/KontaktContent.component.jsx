@@ -26,7 +26,7 @@ export default function KontaktContent() {
                       value="kontaktskjema"
                     />
                     <fieldset>
-                      <legend className="container m-4 mx-auto text-xl text-center">Vennligst fyll ut kontaktskjemaet nedenfor: </legend>
+                      <legend className="container m-4 mx-auto text-xl text-center">Vennligst fyll ut kontaktskjemaet: </legend>
                       <label className="text-black">
                         Fullt navn
                         <br />

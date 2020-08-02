@@ -1,13 +1,4 @@
-import React from "react"
-
-/**
- * Main application logo
- */
-
-export default function LogoSVG() {
-  return (
-    <>
-      <svg
+<svg
         id="Layer_1"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -73,6 +64,3 @@ export default function LogoSVG() {
           />
         </g>
       </svg>
-    </>
-  )
-}

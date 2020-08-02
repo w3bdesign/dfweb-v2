@@ -6,6 +6,9 @@ import { useStaticQuery } from "gatsby"
 
 import Index from "../../src/pages/index"
 
+
+//import MYLOGO from "../../src/svg/logo-vector.svg"
+
 describe("General checks", () => {
   /**
    * We need to mock the Gatsby useStaticQuery in the SEO component
