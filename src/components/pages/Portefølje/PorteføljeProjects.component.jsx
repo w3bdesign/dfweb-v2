@@ -33,17 +33,27 @@ export default function PorteføljeProjects({ filter, projects }) {
                 <p>{description}</p>
                 <p className="mt-6">{subdescription}</p>
                 <p className="mt-6">
-                  <img src={image} alt="React" />
+                  <img src={image} alt={name} />
                 </p>
                 <div className="flex justify-center mt-4">
                   {/* Display only Github button if not empty  */}
                   {urlgithub && (
-                    <a href={urlgithub}>
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label={name}
+                      href={urlgithub}
+                    >
                       <Button>Github</Button>
                     </a>
                   )}
                   {urlwww && (
-                    <a href={urlwww}>
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label={name}
+                      href={urlwww}
+                    >
                       <Button>Besøk</Button>
                     </a>
                   )}

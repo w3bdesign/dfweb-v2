@@ -1,10 +1,10 @@
 import React from "react"
-import { Document, Page,  pdfjs } from "react-pdf"
+import { Document, Page, pdfjs } from "react-pdf"
 
 import Button from "../../layout/Button/Button.component"
 import myCV from "../../../assets/CV-dfweb.pdf"
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 /**
  * Displays the CV content using react-pdf
@@ -38,7 +38,9 @@ export default function CVContent() {
                   </div>
                   <div className="mx-auto mt-0 text-center sm:mt-2 xs:mt-2">
                     <Button>
-                      <a href={myCV}>Last ned PDF</a>
+                      <a rel="noopener noreferrer" target="_blank" href={myCV}>
+                        Last ned PDF
+                      </a>
                     </Button>
                   </div>
                 </div>
