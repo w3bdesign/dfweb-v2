@@ -41,8 +41,8 @@ export default function Navbar() {
                         className="inline-block m-4 text-xl text-white hover:underline"
                         aria-label={link.text}
                         href={link.url}
+                        rel="noopener noreferrer"
                         target="_blank"
-                        rel="noreferrer"
                       >
                         {link.text}
                       </a>
