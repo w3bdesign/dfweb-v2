@@ -13,13 +13,7 @@ Second version of my portfolio website with Gatsby instead of plain HTML and Jav
 
 Tested and verified for WCAG accessibility standards.
 
-Uses a remote GraphQL API for fetching portfolio projects.
-
-Uses Tailwind CSS for styling.
-
-Uses Cypress, Jest, React-Testing-Library and Percy for testing.
-
-ESLint with Airbnb style guide.
+See below for details about features.
 
 First version is located here: https://github.com/w3bdesign/dfweb-v1
 
