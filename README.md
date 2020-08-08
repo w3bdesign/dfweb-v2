@@ -53,6 +53,7 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 - Visual testing with Percy
 - Sonarcloud integration on every push to maintain code quality
 - Eslint setup with Airbnb style guide
+- Proptypes setup where necessary
 
 ## TODO
 
