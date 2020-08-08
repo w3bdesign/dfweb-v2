@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCopyright } from "@fortawesome/free-regular-svg-icons"
 
-import { ICONS } from "../../../constants/ICONS"
+import ICONS from "../../../constants/ICONS"
 
 /**
  * Display technologies used as FontAwesome SVG icons

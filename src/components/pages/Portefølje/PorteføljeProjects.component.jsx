@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import Button from "../../layout/Button/Button.component"
 
@@ -65,4 +66,14 @@ export default function PorteføljeProjects({ filter, projects }) {
       )}
     </>
   )
+}
+
+PorteføljeProjects.propTypes = {
+  filter: PropTypes.string,
+  projects: PropTypes.arrayOf(PropTypes.object),
+}
+
+PorteføljeProjects.defaultProps = {
+  filter: null,
+  projects: null,
 }

@@ -1,4 +1,4 @@
-export const LINKS = [
+const LINKS = [
   {
     id: 1,
     url: "/",
