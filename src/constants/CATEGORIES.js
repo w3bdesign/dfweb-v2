@@ -1,4 +1,4 @@
-export const CATEGORIES = [
+const CATEGORIES = [
   {
     id: 1,
     name: "React",

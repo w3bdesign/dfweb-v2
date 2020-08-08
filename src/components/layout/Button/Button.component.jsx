@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 /**
  * Common button component used by several pages
@@ -15,4 +16,11 @@ export default function Button({ children }) {
       {children}
     </button>
   )
+}
+
+Button.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 }

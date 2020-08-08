@@ -19,6 +19,8 @@ Uses Tailwind CSS for styling.
 
 Uses Cypress, Jest, React-Testing-Library and Percy for testing.
 
+ESLint with Airbnb style guide.
+
 First version is located here: https://github.com/w3bdesign/dfweb-v1
 
 Code and repository for GraphQL backend is here: https://github.com/w3bdesign/graphql-express-dfweb
@@ -56,6 +58,7 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 - Unit testing with Jest and React-Testing-Library
 - Visual testing with Percy
 - Sonarcloud integration on every push to maintain code quality
+- Eslint setup with Airbnb style guide
 
 ## TODO
 

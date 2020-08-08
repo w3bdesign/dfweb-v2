@@ -27,12 +27,12 @@ export default function KontaktContent() {
                     />
                     <fieldset>
                       <legend className="container m-4 mx-auto text-xl text-center">Vennligst fyll ut kontaktskjemaet: </legend>
-                      <label className="text-black">
+                      <label htmlFor="navn" className="text-black">
                         Fullt navn
                         <br />
                         <input
                           className="w-64 p-2 m-2 placeholder-black border border-gray-500 rounded focus:shadow-outline"
-                          id="text"
+                          id="navn"
                           name="navn"
                           type="text"
                           placeholder="Fullt navn"
@@ -65,7 +65,7 @@ export default function KontaktContent() {
                           id="textarea"
                           required
                           aria-required
-                        ></textarea>
+                        />
                       </label>
                     </fieldset>
                     <Button>Send skjema</Button>

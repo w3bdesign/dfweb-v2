@@ -41,10 +41,14 @@ export default function Hamburger() {
   useEffect(() => {
     /**
      * Add the event listeners so we can close the menu when we click outside the mobile menu
+     * Eslint doesnt like it if I use a ternary here
      */
-    isExpanded
-      ? document.addEventListener("mousedown", handleClickOutside)
-      : document.removeEventListener("mousedown", handleClickOutside)
+
+    if (isExpanded) {
+      document.addEventListener("mousedown", handleClickOutside)
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
 
     /**
      * Cleanup

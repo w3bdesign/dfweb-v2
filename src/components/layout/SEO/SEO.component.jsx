@@ -3,6 +3,21 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+const query = graphql`
+  query SEO {
+    site {
+      siteMetadata {
+        defaultTitle: title
+        titleTemplate
+        defaultDescription: description
+        siteUrl: url
+        defaultImage: image
+        twitterUsername
+      }
+    }
+  }
+`
+
 /**
  * Setup site meta data through React-helmet
  *
@@ -12,7 +27,7 @@ import { useStaticQuery, graphql } from "gatsby"
  * @param {Boolean} article If page is article type, display relevant meta property
  */
 
-const SEO = ({ title, description, image, article }) => {
+export default function SEO({ title, description, image, article }) {
   const pathname = "/"
   const { site } = useStaticQuery(query)
 
@@ -69,8 +84,6 @@ const SEO = ({ title, description, image, article }) => {
   )
 }
 
-export default SEO
-
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
@@ -84,18 +97,3 @@ SEO.defaultProps = {
   image: null,
   article: false,
 }
-
-const query = graphql`
-  query SEO {
-    site {
-      siteMetadata {
-        defaultTitle: title
-        titleTemplate
-        defaultDescription: description
-        siteUrl: url
-        defaultImage: image
-        twitterUsername
-      }
-    }
-  }
-`

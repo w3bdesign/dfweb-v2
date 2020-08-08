@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 // Header
 import Navbar from "./Navbar.component"
@@ -19,4 +20,11 @@ export default function Layout({ children }) {
       <Footer />
     </>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 }

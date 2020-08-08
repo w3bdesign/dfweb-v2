@@ -62,7 +62,8 @@ export default function Design1Content() {
                   Jeg oppdaterer jevnlig min Github konto med nye prosjekter.
                   <br />
                   <br />
-                  Hvis du er interessert kan du ta en titt{" "}
+                  Hvis du er interessert kan du ta en titt
+                  {" "}
                   <a
                     className="underline"
                     href="https://github.com/w3bdesign"
