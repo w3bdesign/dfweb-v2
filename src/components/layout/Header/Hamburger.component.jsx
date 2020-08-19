@@ -1,29 +1,19 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
 import { HamburgerCollapse } from "react-animated-burgers"
-import { useAnimatePresence } from "use-animate-presence"
 
 import LINKS from "../../../constants/LINKS"
 
 /**
  * Mobile menu
  * Uses useState to keep track of if the menu is expanded.
- * If true, we trigger animatedMobileMenu.togglePresence()
- *
+ * If true, we add Animate.css animation classes
  */
-const mobileMenuAnimateVariants = {
-  x: { from: -800, to: 0 },
-}
 
 export default function Hamburger() {
   const [isExpanded, setisExpanded] = useState(false)
   const [isInitialRender, setisInitialRender] = useState(true)
   const node = useRef()
-
-  const animatedMobileMenu = useAnimatePresence({
-    variants: mobileMenuAnimateVariants,
-    initial: "hidden",
-  })
 
   const handleClickOutside = (e) => {
     if (node.current.contains(e.target)) {
@@ -44,9 +34,8 @@ export default function Hamburger() {
      * Even if your state updates are batched and multiple updates to the enabled/disabled state are made together
      * each update will rely on the correct previous state so that you always end up with the result you expect.
      */
-    setisInitialRender(false)
     setisExpanded((prevExpanded) => !prevExpanded)
-    animatedMobileMenu.togglePresence()
+    setisInitialRender(false)
   }
 
   useEffect(() => {
@@ -83,16 +72,18 @@ export default function Hamburger() {
       />
       {/* 
         Start the mobile menu initially as hidden, then remove hidden class if we have clicked on the mobile menu
-        Trigger animatedMobileMenu.togglePresence() once we click on the mobile menu
+        Add Animate.css animation classes once we click on the mobile menu
         */}
-
       <div
         id="mobile-menu"
         data-testid="mobile-menu"
         aria-hidden={isInitialRender}
         hidden={isInitialRender}
-        ref={animatedMobileMenu.ref}
-        className="absolute right-0 w-full text-center bg-gray-800 w-30 h-60"
+        className={`absolute right-0 w-full text-center bg-gray-800 w-30 h-60  ${
+          isExpanded
+            ? `animate__animated animate__fadeInUp`
+            : `animate__animated animate__fadeOutDown`
+        }`}
       >
         <ul role="navigation" aria-label="Navigasjon">
           {LINKS.map((link) => (
