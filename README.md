@@ -32,7 +32,7 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 ### Animations:
 
-- Animate.css for menu animations
+- Use-animate-presence for menu animations
 - React-reveal-effects for revealing content on portfolio
 - React-animated-burgers for animating hamburger in menu
 
@@ -43,7 +43,7 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 - Relevant aria labels added for all content
 - FontAwesome SVG icons for project icons
 - Tailwind CSS for styling
-- Google fonts with Gatsby plugin for prefetching
+- Google fonts with Lato
 
 ### Code quality:
 
@@ -57,6 +57,5 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 ## TODO
 
-- Look into replacing Animate.css with https://github.com/jlkiri/use-animate-presence
 - Add additional tests
 - Implement Sanity CMS and create a blog
