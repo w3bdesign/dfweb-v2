@@ -43,7 +43,7 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 - Relevant aria labels added for all content
 - FontAwesome SVG icons for project icons
 - Tailwind CSS for styling
-- Google fonts with Gatsby plugin for prefetching
+- Google fonts with Lato
 
 ### Code quality:
 
