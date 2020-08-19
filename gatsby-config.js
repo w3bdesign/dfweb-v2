@@ -33,18 +33,7 @@ module.exports = {
         display: "standalone",
         icon: "src/svg/favicon.svg",
       },
-    },
-    {
-      resolve: "gatsby-plugin-prefetch-google-fonts",
-      options: {
-        fonts: [
-          {
-            family: "Lato",
-            variants: ["400", "700", "900"],
-          },
-        ],
-      },
-    },
+    },    
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
