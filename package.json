@@ -44,7 +44,8 @@
     "react-pdf": "^4.2.0",
     "react-reveal-effects": "^1.0.5",
     "styled-components": "^5.1.1",
-    "tailwindcss": "^1.7.1"
+    "tailwindcss": "^1.7.1",
+    "use-animate-presence": "^0.5.1"
   },
   "devDependencies": {
     "@testing-library/cypress": "^6.0.0",
