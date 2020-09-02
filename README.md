@@ -57,5 +57,6 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 ## TODO
 
+- Add CSS animations to header on hover
 - Add additional tests
-- Implement Sanity CMS and create a blog
+- Implement Sanity CMS or Strapi and create a blog
