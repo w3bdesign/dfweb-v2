@@ -35,7 +35,7 @@ export default function MainContent() {
                   </h1>
                   <h2 className="px-12 mt-4 text-lg animate__animated animate__fadeInDown animate__delay-4s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full">
                     Jeg kan PHP, mySQL, Wordpress, HTML, CSS, Javascript, Typescript, React,
-                    Redux, Docker og mye mer.
+                    Redux, Docker, Photoshop og mye mer.
                   </h2>
                   <FontAwesome />
                 </section>
@@ -52,7 +52,7 @@ export default function MainContent() {
                   className="mt-6 text-lg"
                 >
                   Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
-                  Javascript. Jeg har arbeidet med Wordpress og Woocommerce
+                  Javascript. Jeg har arbeidet med WordPress og WooCommerce
                   siden 2011 hvor jeg har arbeidet frilans via Fiverr og kan
                   skilte med 100% positiv tilbakemelding på samtlige oppdrag.
                 </p>
