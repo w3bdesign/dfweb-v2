@@ -1,13 +1,11 @@
 import React from "react"
-//import { render, screen, fireEvent } from "@testing-library/react"
 import { render } from "@testing-library/react"
-//import userEvent from "@testing-library/user-event"
 import { useStaticQuery } from "gatsby"
 
+// import userEvent from "@testing-library/user-event"
+// import { render, screen, fireEvent } from "@testing-library/react"
+
 import Index from "../../src/pages/index"
-
-
-//import MYLOGO from "../../src/svg/logo-vector.svg"
 
 describe("General checks", () => {
   /**
