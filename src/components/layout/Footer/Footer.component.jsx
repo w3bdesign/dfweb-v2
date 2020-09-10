@@ -1,5 +1,5 @@
 import React from "react"
-import { FontAwesomeCopyright } from "../FontAwesome/FontAwesome.component"
+import { FontAwesomeCopyright } from "../SVGIcons/SVGIcons.component"
 
 /**
  * Footer for site

@@ -2,7 +2,7 @@
   "name": "dfweb-v2",
   "private": true,
   "description": "Personal portfolio",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -17,10 +17,6 @@
     "cy:open": "cypress open"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-regular-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
     "@percy/agent": "^0.28.2",
     "babel-jest": "^26.3.0",
     "babel-plugin-styled-components": "^1.11.1",

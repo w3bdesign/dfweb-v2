@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import "../../../css/main.css"
 import "../../../css/animate.min.css"
 
-import FontAwesome from "../../layout/FontAwesome/FontAwesome.component"
+import FontAwesome from "../../layout/SVGIcons/SVGIcons.component"
 
 /**
  * Main content that is displayed from index.js
