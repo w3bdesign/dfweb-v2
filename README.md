@@ -41,7 +41,7 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 - WCAG accessibility tested
 - Fully responsive design tested on all devices
 - Relevant aria labels added for all content
-- FontAwesome SVG icons for project icons
+- Devicon SVG icons for project icons
 - Tailwind CSS for styling
 - Google fonts with Lato
 
@@ -58,4 +58,4 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 ## TODO
 
 - Add additional tests
-- Implement Sanity CMS and create a blog
+- Integrate with Strapi and create a blog
