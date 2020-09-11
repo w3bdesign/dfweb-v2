@@ -1,9 +1,9 @@
 import React from "react"
 
 /**
- * Display technologies used as FontAwesome SVG icons
+ * Display technologies used as DevIcons SVG icons
  */
-export default function FontAwesome() {
+export default function SVGIcons() {
   return (
     <p className="flex justify-center mt-4 animate__animated animate__fadeInDown animate__delay-5s">
       <WordpressSVG />
