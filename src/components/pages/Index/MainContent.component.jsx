@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import "../../../css/main.css"
 import "../../../css/animate.min.css"
 
-import FontAwesome from "../../layout/SVGIcons/SVGIcons.component"
+import SVGIcons from "../../layout/SVGIcons/SVGIcons.component"
 
 /**
  * Main content that is displayed from index.js
@@ -37,7 +37,7 @@ export default function MainContent() {
                     Jeg kan PHP, mySQL, Wordpress, HTML, CSS, Javascript, Typescript, React,
                     Redux, Docker, Photoshop og mye mer.
                   </h2>
-                  <FontAwesome />
+                  <SVGIcons />
                 </section>
               </div>
             </div>
