@@ -57,5 +57,6 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 ## TODO
 
+- Look into replacing contact form with one that uses a serverless backend and Google reCaptcha v2
 - Add additional tests
 - Integrate with Strapi and create a blog
