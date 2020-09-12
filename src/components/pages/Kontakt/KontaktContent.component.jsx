@@ -19,7 +19,9 @@ export default function KontaktContent() {
                     name="kontaktskjema"
                     method="POST"
                     data-netlify="true"
+                    data-netlify-recaptcha="true"
                   >
+                    <div className="hidden" data-netlify-recaptcha="true" />
                     <input
                       type="hidden"
                       name="form-name"
