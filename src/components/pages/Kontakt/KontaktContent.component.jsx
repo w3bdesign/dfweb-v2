@@ -19,16 +19,18 @@ export default function KontaktContent() {
                     name="kontaktskjema"
                     method="POST"
                     data-netlify="true"
-                    data-netlify-recaptcha="true"
+                    netlify-honeypot="spam-field"
                   >
-                    <div className="hidden" data-netlify-recaptcha="true" />
                     <input
                       type="hidden"
                       name="form-name"
                       value="kontaktskjema"
                     />
+                    <input name="spam-field" className="hidden" />
                     <fieldset>
-                      <legend className="container m-4 mx-auto text-xl text-center">Vennligst fyll ut kontaktskjemaet: </legend>
+                      <legend className="container m-4 mx-auto text-xl text-center">
+                        Vennligst fyll ut kontaktskjemaet:{" "}
+                      </legend>
                       <label htmlFor="navn" className="text-black">
                         Fullt navn
                         <br />
@@ -44,7 +46,7 @@ export default function KontaktContent() {
                       </label>
                       <br />
                       <label className="text-black" htmlFor="phone">
-                        Telefonnummer
+                        Telefonnummer (i norskt format)
                         <br />
                         <input
                           className="w-64 p-2 m-2 placeholder-black border border-gray-500 rounded focus:shadow-outline"
@@ -70,6 +72,7 @@ export default function KontaktContent() {
                         />
                       </label>
                     </fieldset>
+                    
                     <Button>Send skjema</Button>
                   </form>
                 </div>
