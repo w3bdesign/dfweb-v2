@@ -1,5 +1,5 @@
 import React from "react"
-import { FontAwesomeCopyright } from "../SVGIcons/SVGIcons.component"
+import CopyrightSVG from "../SVGIcons/SVG/Copyright.SVG"
 
 /**
  * Footer for site
@@ -19,7 +19,7 @@ export default function Footer() {
           >
             Copyright Daniel Fjeldstad 
             {' '}
-            <FontAwesomeCopyright />
+            <CopyrightSVG />
             {' '}
             2020
           </div>
