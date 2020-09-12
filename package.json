@@ -2,7 +2,7 @@
   "name": "dfweb-v2",
   "private": true,
   "description": "Personal portfolio",
-  "version": "0.7.8",
+  "version": "0.7.9",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -17,10 +17,11 @@
     "cy:open": "cypress open"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
     "@percy/agent": "^0.28.2",
     "babel-jest": "^26.3.0",
     "babel-plugin-styled-components": "^1.11.1",
-    "gatsby": "^2.24.56",
+    "gatsby": "^2.24.57",
     "gatsby-plugin-manifest": "^2.4.28",
     "gatsby-plugin-netlify": "^2.3.14",
     "gatsby-plugin-percy": "^0.1.4",
@@ -40,12 +41,11 @@
     "react-pdf": "4.2.0",
     "react-reveal-effects": "^1.0.5",
     "styled-components": "^5.2.0",
-    "tailwindcss": "^1.8.6"
+    "tailwindcss": "^1.8.8"
   },
   "devDependencies": {
     "@testing-library/cypress": "^7.0.0",
-    "@testing-library/dom": "^7.24.1",
-    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/dom": "^7.24.1",    
     "@testing-library/react": "^11.0.2",
     "@testing-library/user-event": "^12.1.4",
     "babel-eslint": "^10.1.0",
@@ -57,7 +57,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.0",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "gatsby-cypress": "^0.4.10",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.2",
