@@ -2,6 +2,7 @@ import React from "react"
 
 /**
  * Import all the SVGs from the SVG folder
+ * Because we fade in the SVGs, we have no need for gatsby-image
  */
 
 import WordpressSVG from "./SVG/Wordpress.SVG"
