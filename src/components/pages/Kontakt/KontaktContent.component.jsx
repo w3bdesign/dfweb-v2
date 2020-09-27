@@ -29,7 +29,8 @@ export default function KontaktContent() {
                     <input name="spam-field" className="hidden" />
                     <fieldset>
                       <legend className="container m-4 mx-auto text-xl text-center">
-                        Vennligst fyll ut kontaktskjemaet:{" "}
+                        Vennligst fyll ut kontaktskjemaet:
+                        {" "}
                       </legend>
                       <label htmlFor="navn" className="text-black">
                         Fullt navn
@@ -72,7 +73,7 @@ export default function KontaktContent() {
                         />
                       </label>
                     </fieldset>
-                    
+
                     <Button>Send skjema</Button>
                   </form>
                 </div>
