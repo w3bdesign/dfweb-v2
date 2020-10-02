@@ -11,7 +11,7 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: "module",
   },
-  plugins: ["react"],
+  plugins: ["react", "cypress"],
   rules: {
     "jsx-a11y/label-has-associated-control": [
       "error",
