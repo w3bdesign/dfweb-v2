@@ -2,7 +2,13 @@ import React from "react"
 
 export default function TypescriptSVG() {
   return (
-    <svg className="w-16 h-16 p-2 m-2" viewBox="0 0 128 128">
+    <svg
+      role="img"
+      focusable="true"
+      aria-label="Typescript SVG Ikon"
+      className="w-16 h-16 p-2 m-2"
+      viewBox="0 0 128 128"
+    >
       <path
         id="original-2"
         data-name="original"

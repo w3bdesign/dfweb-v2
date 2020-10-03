@@ -3,7 +3,7 @@ import React from "react"
 export default function FontAwesomeCopyright() {
   return (
     <svg
-      aria-hidden="true"
+      aria-label="Copyright SVG Ikon"
       className="inline w-4 h-4"
       focusable="false"
       data-prefix="far"
