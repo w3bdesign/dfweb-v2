@@ -2,9 +2,6 @@ import React from "react"
 import { render } from "@testing-library/react"
 import { useStaticQuery } from "gatsby"
 
-// import userEvent from "@testing-library/user-event"
-// import { render, screen, fireEvent } from "@testing-library/react"
-
 import Index from "../../src/pages/index"
 
 describe("General checks", () => {
