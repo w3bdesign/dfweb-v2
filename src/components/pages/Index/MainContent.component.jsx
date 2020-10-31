@@ -34,8 +34,7 @@ export default function MainContent() {
                     Jeg heter Daniel Fjeldstad og er en webutvikler.
                   </h1>
                   <h2 className="px-12 mt-4 text-lg animate__animated animate__fadeInDown animate__delay-4s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full">
-                    Jeg kan PHP, mySQL, Wordpress, HTML, CSS, Javascript, Typescript, React, Vue,
-                    Redux, Docker, Photoshop og mye mer.
+                    Jeg kan PHP, mySQL, Wordpress, Javascript, Typescript, React, Vue, Redux, Docker, Photoshop og mye mer.
                   </h2>
                   <SVGIcons />
                 </section>
@@ -51,8 +50,8 @@ export default function MainContent() {
                   aria-label="Informasjon om mine ferdigheter"
                   className="mt-6 text-lg"
                 >
-                  Siden 2000 har jeg arbeidet med HTML, CSS, PHP, mySQL og
-                  Javascript. Jeg har arbeidet med WordPress og WooCommerce
+                  Siden 2000 har jeg arbeidet med webutvikling. 
+                  Jeg har arbeidet med WordPress og WooCommerce
                   siden 2011 hvor jeg har arbeidet frilans via Fiverr og kan
                   skilte med 100% positiv tilbakemelding på samtlige oppdrag.
                 </p>
