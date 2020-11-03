@@ -13,7 +13,7 @@ const CATEGORIES = [
   },
   {
     id: 4,
-    name: "Magento",
+    name: "Vue",
   },
 ]
 
