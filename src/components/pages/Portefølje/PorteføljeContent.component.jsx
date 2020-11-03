@@ -85,10 +85,12 @@ export default function PorteføljeContent() {
                 <option label="" value="">
                   Ingen filtrering
                 </option>
-                <option value="Javascript">Javascript</option>
-                <option value="Magento">Magento</option>
-                <option value="React">React</option>
-                <option value="WooCommerce">WooCommerce</option>
+                {CATEGORIES &&
+                  CATEGORIES.map(({ id, name }) => (
+                    <option key={id} value={name}>
+                      {name}
+                    </option>
+                  ))}
               </select>
             </form>
           </span>
