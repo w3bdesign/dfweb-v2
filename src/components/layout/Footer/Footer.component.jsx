@@ -1,5 +1,5 @@
 import React from "react"
-import CopyrightSVG from "../SVGIcons/SVG/Copyright.SVG"
+import CopyrightSVG from "../SVGIcons/SVG/FontAwesomeCopyright"
 
 /**
  * Footer for site
