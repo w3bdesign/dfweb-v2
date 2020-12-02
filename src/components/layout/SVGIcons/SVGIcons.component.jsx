@@ -5,11 +5,11 @@ import React from "react"
  * Because we fade in the SVGs, we have no need for gatsby-image
  */
 
-import WordpressSVG from "./SVG/Wordpress.SVG"
-import DockerSVG from "./SVG/Docker.SVG"
-import TypescriptSVG from "./SVG/Typescript.SVG"
-import ReactSVG from "./SVG/React.SVG"
-import PhotoshopSVG from "./SVG/Photoshop.SVG"
+import WordpressSVG from "./SVG/WordpressSVG"
+import DockerSVG from "./SVG/DockerSVG"
+import TypescriptSVG from "./SVG/TypescriptSVG"
+import ReactSVG from "./SVG/ReactSVG"
+import PhotoshopSVG from "./SVG/PhotoshopSVG"
 
 /**
  * Display technologies used as DevIcons SVG icons
