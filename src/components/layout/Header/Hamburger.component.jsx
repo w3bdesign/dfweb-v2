@@ -79,7 +79,7 @@ export default function Hamburger() {
         data-testid="mobile-menu"
         aria-hidden={isInitialRender}
         hidden={isInitialRender}
-        className={`absolute right-0 w-full text-center bg-gray-800 w-30 h-60  ${
+        className={`absolute right-0 w-full text-center bg-gray-800 w-30  ${
           isExpanded
             ? `animate__animated animate__fadeInUp`
             : `animate__animated animate__fadeOutDown`
