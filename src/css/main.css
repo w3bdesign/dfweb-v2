@@ -19,7 +19,7 @@ body {
 #main-hero {
   opacity: 0;
   background-image: url("../assets/blue-hero.jpg");
-  height: 470px;
+  height: 450px;  
 }
 
 /* Animations */
