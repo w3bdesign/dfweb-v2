@@ -63,7 +63,7 @@ export default function Hamburger() {
       <HamburgerCollapse
         isActive={isExpanded}
         toggleButton={handleMobileMenuClick}
-        buttonColor="#2d3748"
+        buttonColor="#1f2937"
         barColor="white"
         id="hamburger"
         data-cy="hamburger"
