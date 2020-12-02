@@ -21,7 +21,7 @@ export default function MainContent() {
             id="main-hero"
             className="flex flex-col justify-center text-lg animate__animated animate__fadeIn animate__delay-1s"
           >
-            <div className="bg-white opacity-75">
+            <div className="p-2 bg-white opacity-75">
               <div className="text-black rounded">
                 <section aria-label="Introduksjonstekst">
                   <p className="text-5xl text-center animate__animated animate__fadeInDown animate__delay-2s">
@@ -29,7 +29,7 @@ export default function MainContent() {
                   </p>
                   <h1
                     data-cy="daniel"
-                    className="px-12 text-lg animate__animated animate__fadeInDown animate__delay-3s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full"
+                    className="px-12 mt-2 text-lg animate__animated animate__fadeInDown animate__delay-3s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-left xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-2/3 lg:w-2/3 xl:w-full"
                   >
                     Jeg heter Daniel Fjeldstad og er en webutvikler.
                   </h1>
