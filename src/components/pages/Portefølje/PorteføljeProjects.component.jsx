@@ -30,9 +30,9 @@ export default function PorteføljeProjects({ filter, projects }) {
               className="p-6 text-lg text-black bg-white rounded shadow xl:p-12 lg:p-12 md:p-12"
             >
               <p className="text-xl font-black text-center">{name}</p>
-              <div className="mt-6 text-lg text-left lg:text-center">
+              <div className="mt-6 text-lg text-left lg:text-center md:text-center">
                 <p>{description}</p>
-                <p className="mt-6 text-left lg:text-center">{subdescription}</p>
+                <p className="mt-6 text-left md:text-center lg:text-center">{subdescription}</p>
                 <div className="flex justify-center mt-6">
                   <img src={image} alt={name} />
                 </div>
