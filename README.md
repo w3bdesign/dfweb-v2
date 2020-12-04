@@ -59,7 +59,8 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 - Add more fancy effects. References: 
 
-https://www.joshwcomeau.com/react/boop/
-https://www.joshwcomeau.com/snippets/
+- https://www.joshwcomeau.com/react/boop/
+
+- https://www.joshwcomeau.com/snippets/
 
 - Go more into detail about each project
