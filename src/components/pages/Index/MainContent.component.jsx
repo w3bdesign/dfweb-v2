@@ -98,9 +98,9 @@ export default function MainContent() {
                 <p className="mt-6 text-lg">
                   På
                   {" "}
-                  <Link className="underline" to="/portefølje">
+                  <Link className="underline" to="/prosjekter">
                     {" "}
-                    PORTEFØLJE
+                    PROSJEKTER
                     {" "}
                   </Link>
                   kan du se eksempler på arbeid jeg har gjort i 2019 og 2020.
