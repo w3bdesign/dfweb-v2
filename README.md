@@ -61,3 +61,5 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 https://www.joshwcomeau.com/react/boop/
 https://www.joshwcomeau.com/snippets/
+
+- Go more into detail about each project
