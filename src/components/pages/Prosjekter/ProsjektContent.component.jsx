@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Fade from "react-reveal-effects/Fade"
 
-import Portfolio from "./PorteføljeProjects.component"
+import Portfolio from "./ProsjektProjects.component"
 import CATEGORIES from "../../../constants/CATEGORIES"
 
 const ALL_PROJECTS_QUERY = graphql`
