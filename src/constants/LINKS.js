@@ -7,8 +7,8 @@ const LINKS = [
   },
   {
     id: 2,
-    url: "/portefølje",
-    text: "Portefølje",
+    url: "/prosjekter",
+    text: "Prosjekter",
     external: false,
   },
   {

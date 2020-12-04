@@ -7,7 +7,7 @@ import Layout from "../components/layout/Header/Layout.component"
 import SEO from "../components/layout/SEO/SEO.component"
 
 // Main content
-import PorteføljeContent from "../components/pages/Portefølje/PorteføljeContent.component"
+import ProsjektContent from "../components/pages/Prosjekter/ProsjektContent.component"
 
 /**
  * Portfolio page
@@ -19,7 +19,7 @@ export default function Portefølje() {
     <>
       <SEO title="Portefølje - " />
       <Layout>
-        <PorteføljeContent />
+        <ProsjektContent />
       </Layout>
     </>
   )
