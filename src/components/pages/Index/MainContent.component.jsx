@@ -2,8 +2,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import styled from "styled-components"
-
 import { animated, useTrail, interpolate } from "react-spring"
 
 import "../../../css/main.css"
@@ -11,30 +9,14 @@ import "../../../css/animate.min.css"
 
 import SVGIcons from "../../layout/SVGIcons/SVGIcons.component"
 
-const textList = [
-  { itemIndex: 0, text: "Hei!" },
-  { itemIndex: 1, text: "Jeg heter Daniel Fjeldstad og er en webutvikler." },
-  {
-    itemIndex: 2,
-    text:
-      "Jeg kan PHP, mySQL, Wordpress, Javascript, Typescript, React, Vue, Redux, Docker, Photoshop og mye mer.",
-  },
-  {
-    itemIndex: 3,
-    text: "SVG",
-  },
-]
-
-const StyledDiv = styled.div``
-
-const AnimatedText = styled(animated(StyledDiv))``
+import TEXTLIST from "../../../constants/TEXTLIST"
 
 /**
  * Main content that is displayed from index.js
  */
 
 export default function MainContent() {
-  const [trail] = useTrail(textList.length, () => ({
+  const [trail] = useTrail(TEXTLIST.length, () => ({
     config: {
       mass: 1,
       tension: 180,
@@ -46,9 +28,9 @@ export default function MainContent() {
     skewX: 0,
     from: {
       opacity: 0,
-      x: "105%",
-      y: "0px",
-      skewX: 30,
+      x: "0%",
+      y: "-200px",
+      skewX: 10,
     },
   }))
 
@@ -66,7 +48,7 @@ export default function MainContent() {
               <div className="text-black rounded">
                 <section aria-label="Introduksjonstekst">
                   {trail.map(({ x, y, skewX, itemIndex }, index) => (
-                    <AnimatedText
+                    <animated.div
                       key={itemIndex}
                       style={{
                         transform: interpolate(
@@ -81,16 +63,16 @@ export default function MainContent() {
                       */}
                       {index === 0 && (
                         <p className="text-5xl text-center">
-                          {textList[index].text}
+                          {TEXTLIST[index].text}
                         </p>
                       )}
                       {index > 0 && index !== 3 && (
-                        <p className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full">
-                          {textList[index].text}
+                        <p data-cy="daniel" className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full">
+                          {TEXTLIST[index].text}
                         </p>
                       )}
                       {index === 3 && <SVGIcons />}
-                    </AnimatedText>
+                    </animated.div>
                   ))}
                 </section>
               </div>
@@ -139,7 +121,8 @@ export default function MainContent() {
                   Jeg arbeider jevnlig med hobbyprosjekter.
                   <br />
                   <br />
-                  Kildekoden publiserer jeg på{" "}
+                  Kildekoden publiserer jeg på
+                  {" "}
                   <a
                     className="underline"
                     href="https://github.com/w3bdesign"
@@ -150,10 +133,12 @@ export default function MainContent() {
                   </a>
                 </p>
                 <p className="mt-6 text-lg">
-                  På{" "}
+                  På
+                  {" "}
                   <Link className="underline" to="/prosjekter">
                     {" "}
-                    PROSJEKTER{" "}
+                    PROSJEKTER
+                    {" "}
                   </Link>
                   kan du se eksempler på arbeid jeg har gjort i 2019 og 2020.
                 </p>
