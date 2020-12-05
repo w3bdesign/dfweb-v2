@@ -17,7 +17,7 @@ body {
 
 /* Custom styling for main hero image */
 #main-hero {
-  opacity: 0;
+  /* opacity: 0; */
   background-image: url("../assets/blue-hero.jpg");
   height: 450px;  
 }

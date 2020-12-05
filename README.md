@@ -32,9 +32,10 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 ### Animations:
 
-- Animate.css for menu and content animations
+- Animate.css for menu animations
 - React-reveal-effects for revealing content on portfolio
 - React-animated-burgers for animating hamburger in menu
+- React-spring for animations on front page
 
 ### Accessibility and design:
 

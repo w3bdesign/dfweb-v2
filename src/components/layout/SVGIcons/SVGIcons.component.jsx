@@ -16,7 +16,7 @@ import PhotoshopSVG from "./SVG/PhotoshopSVG"
  */
 export default function SVGIcons() {
   return (
-    <p className="flex justify-center mt-4 animate__animated animate__fadeInDown animate__delay-5s">
+    <p className="flex justify-center mt-4">
       <WordpressSVG />
       <DockerSVG />
       <TypescriptSVG />
