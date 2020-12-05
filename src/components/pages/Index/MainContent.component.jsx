@@ -1,16 +1,57 @@
+/* eslint-disable no-shadow */
 import React from "react"
 import { Link } from "gatsby"
+
+import styled from "styled-components"
+
+import { animated, useTrail, interpolate } from "react-spring"
 
 import "../../../css/main.css"
 import "../../../css/animate.min.css"
 
 import SVGIcons from "../../layout/SVGIcons/SVGIcons.component"
 
+const textList = [
+  { itemIndex: 0, text: "Hei!" },
+  { itemIndex: 1, text: "Jeg heter Daniel Fjeldstad og er en webutvikler." },
+  {
+    itemIndex: 2,
+    text:
+      "Jeg kan PHP, mySQL, Wordpress, Javascript, Typescript, React, Vue, Redux, Docker, Photoshop og mye mer.",
+  },
+  {
+    itemIndex: 3,
+    text: "SVG",
+  },
+]
+
+const StyledDiv = styled.div``
+
+const AnimatedText = styled(animated(StyledDiv))``
+
 /**
  * Main content that is displayed from index.js
  */
 
 export default function MainContent() {
+  const [trail] = useTrail(textList.length, () => ({
+    config: {
+      mass: 1,
+      tension: 180,
+      friction: 30,
+    },
+    opacity: 1,
+    x: "0%",
+    y: "0px",
+    skewX: 0,
+    from: {
+      opacity: 0,
+      x: "105%",
+      y: "0px",
+      skewX: 30,
+    },
+  }))
+
   return (
     <>
       <main role="main" aria-label="Her kommer hovedinnholdet" id="maincontent">
@@ -19,24 +60,38 @@ export default function MainContent() {
             role="article"
             aria-label="Kontainer for animasjoner av introtekst"
             id="main-hero"
-            className="flex flex-col justify-center text-lg animate__animated animate__fadeIn animate__delay-1s"
+            className="flex flex-col justify-center text-lg"
           >
             <div className="p-2 mt-4 mb-4 bg-white opacity-75">
               <div className="text-black rounded">
                 <section aria-label="Introduksjonstekst">
-                  <p className="text-5xl text-center animate__animated animate__fadeInDown animate__delay-2s">
-                    Hei!
-                  </p>
-                  <h1
-                    data-cy="daniel"
-                    className="px-6 mt-4 text-lg animate__animated animate__fadeInDown animate__delay-3s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full"
-                  >
-                    Jeg heter Daniel Fjeldstad og er en webutvikler.
-                  </h1>
-                  <h2 className="px-6 mt-4 text-lg animate__animated animate__fadeInDown animate__delay-4s md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full">
-                    Jeg kan PHP, mySQL, Wordpress, Javascript, Typescript, React, Vue, Redux, Docker, Photoshop og mye mer.
-                  </h2>
-                  <SVGIcons />
+                  {trail.map(({ x, y, skewX, itemIndex }, index) => (
+                    <AnimatedText
+                      key={itemIndex}
+                      style={{
+                        transform: interpolate(
+                          [x, y, skewX],
+                          (x, y, skewX) =>
+                            `scale(1) translate(${x}, ${y}) skewX(${skewX}deg)`
+                        ),
+                      }}
+                    >
+                      {/*
+                      Ensure that the first item has a larger text size by checking the index
+                      */}
+                      {index === 0 && (
+                        <p className="text-5xl text-center">
+                          {textList[index].text}
+                        </p>
+                      )}
+                      {index > 0 && index !== 3 && (
+                        <p className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full">
+                          {textList[index].text}
+                        </p>
+                      )}
+                      {index === 3 && <SVGIcons />}
+                    </AnimatedText>
+                  ))}
                 </section>
               </div>
             </div>
@@ -50,10 +105,10 @@ export default function MainContent() {
                   aria-label="Informasjon om mine ferdigheter"
                   className="mt-6 text-lg"
                 >
-                  Siden 2000 har jeg arbeidet med webutvikling. 
-                  Jeg har arbeidet med WordPress og WooCommerce
-                  siden 2011 hvor jeg har arbeidet frilans via Fiverr og kan
-                  skilte med 100% positiv tilbakemelding på samtlige oppdrag.
+                  Siden 2000 har jeg arbeidet med webutvikling. Jeg har arbeidet
+                  med WordPress og WooCommerce siden 2011 hvor jeg har arbeidet
+                  frilans via Fiverr og kan skilte med 100% positiv
+                  tilbakemelding på samtlige oppdrag.
                 </p>
                 <p
                   role="article"
@@ -84,8 +139,7 @@ export default function MainContent() {
                   Jeg arbeider jevnlig med hobbyprosjekter.
                   <br />
                   <br />
-                  Kildekoden publiserer jeg på
-                  {" "}
+                  Kildekoden publiserer jeg på{" "}
                   <a
                     className="underline"
                     href="https://github.com/w3bdesign"
@@ -96,12 +150,10 @@ export default function MainContent() {
                   </a>
                 </p>
                 <p className="mt-6 text-lg">
-                  På
-                  {" "}
+                  På{" "}
                   <Link className="underline" to="/prosjekter">
                     {" "}
-                    PROSJEKTER
-                    {" "}
+                    PROSJEKTER{" "}
                   </Link>
                   kan du se eksempler på arbeid jeg har gjort i 2019 og 2020.
                 </p>
