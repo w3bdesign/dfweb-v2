@@ -20,17 +20,18 @@ export default function MainContent() {
     config: {
       mass: 1,
       tension: 180,
-      friction: 32,
+      friction: 40,
     },
     opacity: 1,
     x: "0%",
     y: "0px",
     skewX: 0,
     from: {
+      position: "absolute",
       opacity: 0,
       x: "0%",
-      y: "-200px",
-      skewX: 10,
+      y: "-500px",
+      skewX: 30,
     },
   }))
 
