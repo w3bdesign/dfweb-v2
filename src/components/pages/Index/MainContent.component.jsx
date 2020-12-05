@@ -38,7 +38,7 @@ export default function MainContent() {
     config: {
       mass: 1,
       tension: 180,
-      friction: 30,
+      friction: 20,
     },
     opacity: 1,
     x: "0%",
