@@ -37,7 +37,7 @@ export default function Navbar() {
                 className="items-center justify-between flex-1 hidden list-reset md:flex lg:flex xl:flex lg:-mr-4 xl:-mr-4"
               >
                 {LINKS.map((link) => (
-                  <li key={link.id} className="mr-3 portfolio-experiment">
+                  <li key={link.id} className="mr-3 animate-link">
                     {link.external ? (
                       <a
                         className="inline-block text-xl text-white text"
