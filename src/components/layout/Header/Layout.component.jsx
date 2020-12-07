@@ -18,7 +18,8 @@ export default function Layout({ children }) {
     <>
       <Navbar />
       <Transition
-        // config={{ duration: 5500, delay: 200 }}
+       // We could make more complex page transitions here
+       // But we do not want to overwhelm the user with distracting animations
         config={{
           duration: 1000,
         }}
@@ -26,7 +27,7 @@ export default function Layout({ children }) {
         enter={{ opacity: 1 }}
         leave={{ opacity: 0 }}
       >
-        {() => (style) => <main style={style}>{children}</main>}
+        {() => (style) => <div style={style}>{children}</div>}
       </Transition>
       <Footer />
     </>
