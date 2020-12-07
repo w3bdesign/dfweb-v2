@@ -2,6 +2,11 @@
 
 @import "tailwindcss/components";
 
+.tl-wrapper.tl-wrapper--mount.tl-wrapper-status--entered {
+	transform: none !important;
+}
+
+
 /* Global font */
 body {
   font-family: Lato, sans-serif;
