@@ -31,7 +31,6 @@ export default function MainContent() {
       opacity: 0,
       x: "0%",
       y: "-500px",
-      skewX: 30,
     },
   }))
 
@@ -68,7 +67,10 @@ export default function MainContent() {
                         </p>
                       )}
                       {index > 0 && index !== 3 && (
-                        <p data-cy="daniel" className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full">
+                        <p
+                          data-cy="daniel"
+                          className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full"
+                        >
                           {TEXTLIST[index].text}
                         </p>
                       )}
@@ -122,8 +124,7 @@ export default function MainContent() {
                   Jeg arbeider jevnlig med hobbyprosjekter.
                   <br />
                   <br />
-                  Kildekoden publiserer jeg på
-                  {" "}
+                  Kildekoden publiserer jeg på{" "}
                   <a
                     className="underline"
                     href="https://github.com/w3bdesign"
@@ -134,12 +135,10 @@ export default function MainContent() {
                   </a>
                 </p>
                 <p className="mt-6 text-lg">
-                  På
-                  {" "}
+                  På{" "}
                   <Link className="underline" to="/prosjekter">
                     {" "}
-                    PROSJEKTER
-                    {" "}
+                    PROSJEKTER{" "}
                   </Link>
                   kan du se eksempler på arbeid jeg har gjort i 2019 og 2020.
                 </p>
