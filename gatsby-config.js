@@ -10,6 +10,7 @@ module.exports = {
     twitterUsername: "@occlumency",
   },
   plugins: [
+    "gatsby-plugin-transition-link",
     "gatsby-plugin-postcss",
     {
       resolve: "gatsby-source-graphql",
