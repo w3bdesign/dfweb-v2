@@ -34,10 +34,9 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 - Animate.css for menu animations
 - CSS hover animations in navigation menu
-- Page transition animations with GSAP and gatsby-plugin-transition-link
 - React-reveal-effects for revealing content on portfolio
 - React-animated-burgers for animating hamburger in menu
-- React-spring for animations on front page
+- React-spring for animations on front page and page transitions
 
 ### Accessibility and design:
 

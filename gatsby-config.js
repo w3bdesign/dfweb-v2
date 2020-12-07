@@ -9,8 +9,7 @@ module.exports = {
     image: "/images/screenshot.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@occlumency",
   },
-  plugins: [
-    "gatsby-plugin-transition-link",
+  plugins: [    
     "gatsby-plugin-postcss",
     {
       resolve: "gatsby-source-graphql",

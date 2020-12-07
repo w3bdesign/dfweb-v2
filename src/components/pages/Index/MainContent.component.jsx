@@ -1,4 +1,3 @@
-/* eslint-disable no-shadow */
 import React from "react"
 import { Link } from "gatsby"
 
@@ -36,7 +35,11 @@ export default function MainContent() {
 
   return (
     <>
-      <main role="main" aria-label="Her kommer hovedinnholdet" id="maincontent">
+      <main       
+        role="main"
+        aria-label="Her kommer hovedinnholdet"
+        id="maincontent"
+      >
         <div className="mx-auto mt-16 rounded lg:mt-20 xl:mt-20 bg-graybg shadow-large md:mt-16 sm:mt-64 xs:mt-64">
           <div
             role="article"
@@ -124,7 +127,8 @@ export default function MainContent() {
                   Jeg arbeider jevnlig med hobbyprosjekter.
                   <br />
                   <br />
-                  Kildekoden publiserer jeg på{" "}
+                  Kildekoden publiserer jeg på
+                  {" "}
                   <a
                     className="underline"
                     href="https://github.com/w3bdesign"
@@ -135,10 +139,12 @@ export default function MainContent() {
                   </a>
                 </p>
                 <p className="mt-6 text-lg">
-                  På{" "}
+                  På
+                  {" "}
                   <Link className="underline" to="/prosjekter">
                     {" "}
-                    PROSJEKTER{" "}
+                    PROSJEKTER
+                    {" "}
                   </Link>
                   kan du se eksempler på arbeid jeg har gjort i 2019 og 2020.
                 </p>
