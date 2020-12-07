@@ -1,4 +1,3 @@
-/* eslint-disable no-shadow */
 import React from "react"
 import { Link } from "gatsby"
 
@@ -15,7 +14,7 @@ import TEXTLIST from "../../../constants/TEXTLIST"
  * Main content that is displayed from index.js
  */
 
-export default function MainContent() {
+export default function MainContent({ style }) {
   const [trail] = useTrail(TEXTLIST.length, () => ({
     config: {
       mass: 1,
@@ -36,7 +35,12 @@ export default function MainContent() {
 
   return (
     <>
-      <main role="main" aria-label="Her kommer hovedinnholdet" id="maincontent">
+      <main
+        style={style && style}
+        role="main"
+        aria-label="Her kommer hovedinnholdet"
+        id="maincontent"
+      >
         <div className="mx-auto mt-16 rounded lg:mt-20 xl:mt-20 bg-graybg shadow-large md:mt-16 sm:mt-64 xs:mt-64">
           <div
             role="article"

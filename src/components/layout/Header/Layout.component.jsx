@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Transition } from "react-spring/renderprops"
 
 // Header
 import Navbar from "./Navbar.component"
@@ -16,7 +17,17 @@ export default function Layout({ children }) {
   return (
     <>
       <Navbar />
-      {children}
+      <Transition
+        // config={{ duration: 5500, delay: 200 }}
+        config={{
+          duration: 1000,
+        }}
+        from={{ opacity: 0 }}
+        enter={{ opacity: 1 }}
+        leave={{ opacity: 0 }}
+      >
+        {() => (style) => <main style={style}>{children}</main>}
+      </Transition>
       <Footer />
     </>
   )
