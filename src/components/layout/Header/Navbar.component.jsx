@@ -6,6 +6,8 @@ import Hamburger from "./Hamburger.component"
 
 import LINKS from "../../../constants/LINKS"
 
+import "../../../css/button-animate.css"
+
 /**
  * Display the menu and the links
  * On mobile, we display a hamburger icon and include the Hamburger component
@@ -35,24 +37,32 @@ export default function Navbar() {
                 className="items-center justify-between flex-1 hidden list-reset md:flex lg:flex xl:flex lg:-mr-4 xl:-mr-4"
               >
                 {LINKS.map((link) => (
-                  <li key={link.id} className="mr-3">
+                  <li key={link.id} className="mr-3 animate-link">
                     {link.external ? (
                       <a
-                        className="inline-block m-4 text-xl text-white hover:underline"
+                        className="inline-block text-xl text-white text"
                         aria-label={link.text}
                         href={link.url}
                         rel="noopener noreferrer"
                         target="_blank"
                       >
                         {link.text}
+                        <span className="line -right" />
+                        <span className="line -top" />
+                        <span className="line -left" />
+                        <span className="line -bottom" />
                       </a>
                     ) : (
                       <Link
-                        className="inline-block m-4 text-xl text-white hover:underline"
+                        className="inline-block text-xl text-white text"
                         activeClassName="underline"
                         to={link.url}
                       >
                         {link.text}
+                        <span className="line -right" />
+                        <span className="line -top" />
+                        <span className="line -left" />
+                        <span className="line -bottom" />
                       </Link>
                     )}
                   </li>
