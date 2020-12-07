@@ -55,7 +55,8 @@ export default function Navbar() {
                       </a>
                     ) : (
                       <AniLink
-                        fade
+                        paintDrip
+                        hex="#1f2937"
                         exit={{
                           length: 1,
                         }}
