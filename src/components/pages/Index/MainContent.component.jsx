@@ -37,7 +37,7 @@ export default function MainContent() {
   return (
     <>
       <main role="main" aria-label="Her kommer hovedinnholdet" id="maincontent">
-        <div className="mx-auto mt-16 rounded lg:mt-20 xl:mt-20 bg-graybg shadow-large md:mt-16 sm:mt-64 xs:mt-64">
+        <div className="mx-auto rounded bg-graybg shadow-large">
           <div
             role="article"
             aria-label="Kontainer for animasjoner av introtekst"
