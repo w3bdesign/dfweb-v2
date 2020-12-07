@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import AppLogo from "./Applogo.component"
 import Hamburger from "./Hamburger.component"
@@ -53,7 +54,15 @@ export default function Navbar() {
                         <span className="line -bottom" />
                       </a>
                     ) : (
-                      <Link
+                      <AniLink
+                        paintDrip
+                        hex="#1f2937"
+                        exit={{
+                          length: 1,
+                        }}
+                        entry={{
+                          delay: 0.6,
+                        }}
                         className="inline-block text-xl text-white text"
                         activeClassName="underline"
                         to={link.url}
@@ -63,7 +72,7 @@ export default function Navbar() {
                         <span className="line -top" />
                         <span className="line -left" />
                         <span className="line -bottom" />
-                      </Link>
+                      </AniLink>
                     )}
                   </li>
                 ))}

@@ -11,8 +11,7 @@
     display: block;
     transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
-.animate-link a:after {
-    /*position: absolute;*/
+.animate-link a:after {    
     content: '';
     bottom: -3px;
     left: calc(0.7em * 1.2);
