@@ -2,7 +2,7 @@
   "name": "dfweb-v2",
   "private": true,
   "description": "Personal portfolio",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -13,7 +13,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test:cypress": "cypress run",
-    "test": "jest",
+    "test": "jest --clearCache",
     "cy:open": "cypress open"
   },
   "dependencies": {

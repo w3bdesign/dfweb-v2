@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react"
 import { render } from "@testing-library/react"
 import { useStaticQuery } from "gatsby"
@@ -17,11 +18,12 @@ describe("General checks", () => {
       },
     }))
   })
-  test("Om meg is visible", () => {
+  
+   test("Om meg is visible", () => {
     const { getByRole } = render(<Index />)
     const OmMeg = getByRole("heading", { name: /om meg/i })
     expect(OmMeg).toBeVisible()
-  })
+  }) 
 })
 
 describe("Verify that the mobile menu is in the document", () => {
