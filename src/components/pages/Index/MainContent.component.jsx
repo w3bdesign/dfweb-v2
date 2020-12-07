@@ -14,7 +14,7 @@ import TEXTLIST from "../../../constants/TEXTLIST"
  * Main content that is displayed from index.js
  */
 
-export default function MainContent({ style }) {
+export default function MainContent() {
   const [trail] = useTrail(TEXTLIST.length, () => ({
     config: {
       mass: 1,
@@ -35,8 +35,7 @@ export default function MainContent({ style }) {
 
   return (
     <>
-      <main
-        style={style && style}
+      <main       
         role="main"
         aria-label="Her kommer hovedinnholdet"
         id="maincontent"
@@ -128,7 +127,8 @@ export default function MainContent({ style }) {
                   Jeg arbeider jevnlig med hobbyprosjekter.
                   <br />
                   <br />
-                  Kildekoden publiserer jeg på{" "}
+                  Kildekoden publiserer jeg på
+                  {" "}
                   <a
                     className="underline"
                     href="https://github.com/w3bdesign"
@@ -139,10 +139,12 @@ export default function MainContent({ style }) {
                   </a>
                 </p>
                 <p className="mt-6 text-lg">
-                  På{" "}
+                  På
+                  {" "}
                   <Link className="underline" to="/prosjekter">
                     {" "}
-                    PROSJEKTER{" "}
+                    PROSJEKTER
+                    {" "}
                   </Link>
                   kan du se eksempler på arbeid jeg har gjort i 2019 og 2020.
                 </p>
