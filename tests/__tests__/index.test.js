@@ -5,6 +5,9 @@ import InternalProvider from "gatsby-plugin-transition-link/context/InternalProv
 
 import Index from "../../src/pages/index"
 
+// We need to mock window.matchMedia and import the InternalProvider for gatsby-plugin-transition-link to work
+// see https://github.com/TylerBarnes/gatsby-plugin-transition-link/issues/161
+
 describe("General checks", () => {
   /**
    * We need to mock the Gatsby useStaticQuery in the SEO component
