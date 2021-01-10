@@ -13,7 +13,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test:cypress": "cypress run",
-    "test": "jest --clearCache",
+    "test": "jest",
     "cy:open": "cypress open"
   },
   "dependencies": {

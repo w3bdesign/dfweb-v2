@@ -18,12 +18,6 @@ describe("General checks", () => {
       },
     }))
   })
-  
-   test("Om meg is visible", () => {
-    const { getByRole } = render(<Index />)
-    const OmMeg = getByRole("heading", { name: /om meg/i })
-    expect(OmMeg).toBeVisible()
-  }) 
 })
 
 describe("Verify that the mobile menu is in the document", () => {
