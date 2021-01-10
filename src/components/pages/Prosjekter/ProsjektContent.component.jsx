@@ -45,7 +45,7 @@ export default function PorteføljeContent() {
 
   const handleFilterChange = (e) => {
     /**
-     * Eslint seems to complain if I replace this with a ternary
+     * ESLint seems to complain if I replace this with a ternary
      */
     if (e.target.value) {
       setcategoryFilter(e.target.value)

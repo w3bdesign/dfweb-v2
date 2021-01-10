@@ -4,11 +4,12 @@ import PropTypes from "prop-types"
 import Button from "../../layout/Button/Button.component"
 
 /**
- * Display individual portfilio projects if they match the filter passed down through props
+ * Display individual portfolio projects if they match the filter passed down through props
  *
  * @param {Object} filter The filter that we apply to the component so we only displays projects from the correct category
  * @param {Object} projects The portfolio project data to display, contains name, image etc
  */
+
 export default function PorteføljeProjects({ filter, projects }) {
   return (
     <>
@@ -32,8 +33,10 @@ export default function PorteføljeProjects({ filter, projects }) {
               <p className="text-xl font-black text-center">{name}</p>
               <div className="mt-6 text-lg text-left lg:text-center md:text-center">
                 <p>{description}</p>
-                <p className="mt-6 text-left md:text-center lg:text-center">{subdescription}</p>
-                <div className="flex justify-center mt-6">
+                <p className="mt-6 text-left md:text-center lg:text-center">
+                  {subdescription}
+                </p>
+                <div className="relative flex justify-center mt-6">
                   <img src={image} alt={name} />
                 </div>
                 <div className="flex justify-center mt-4">
