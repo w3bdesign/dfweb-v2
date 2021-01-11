@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { animated, useTrail, interpolate, a } from "react-spring"
+import { animated, useTrail, } from "react-spring"
 
 import "../../../css/main.css"
 import "../../../css/animate.min.css"
@@ -42,7 +42,7 @@ export default function MainContent() {
                 <section aria-label="Introduksjonstekst">
                   <div>
                     {mytrail.map(({ x, height, ...rest }, index) => (
-                      <a.div
+                      <animated.div
                         key={TEXTLIST[index]}
                         className="trails-text"
                         style={{
@@ -53,21 +53,21 @@ export default function MainContent() {
                         }}
                       >
                         {index === 0 && (
-                          <p className="text-5xl text-center">
+                          <animated.div className="text-5xl text-center">
                             {TEXTLIST[index].text}
-                          </p>
+                          </animated.div>
                         )}
 
                         {index > 0 && index !== 3 && (
-                          <p
+                          <animated.div
                             data-cy="daniel"
                             className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full"
                           >
                             {TEXTLIST[index].text}
-                          </p>
+                          </animated.div>
                         )}
                         {index === 3 && <SVGIcons />}
-                      </a.div>
+                      </animated.div>
                     ))}
                   </div>
                 </section>
