@@ -2,7 +2,7 @@
   "name": "dfweb-v2",
   "private": true,
   "description": "Personal portfolio",
-  "version": "0.9.9",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -39,7 +39,7 @@
     "react-animated-burgers": "^1.2.8",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-pdf": "5.0.0",
+    "react-pdf": "5.1.0",
     "react-reveal-effects": "^1.0.10",
     "react-spring": "^8.0.27",
     "styled-components": "^5.2.1",

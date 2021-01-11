@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { animated, useTrail, interpolate } from "react-spring"
+import { animated, useTrail, interpolate, a } from "react-spring"
 
 import "../../../css/main.css"
 import "../../../css/animate.min.css"
@@ -15,31 +15,21 @@ import TEXTLIST from "../../../constants/TEXTLIST"
  */
 
 export default function MainContent() {
-  const [trail] = useTrail(TEXTLIST.length, () => ({
+  const mytrail = useTrail(TEXTLIST.length, {
     config: {
-      mass: 1,
-      tension: 180,
-      friction: 40,
+      mass: 3,
+      tension: 900,
+      friction: 50,
     },
     opacity: 1,
-    x: "0%",
-    y: "0px",
-    skewX: 0,
-    from: {
-      position: "absolute",
-      opacity: 0,
-      x: "0%",
-      y: "-500px",
-    },
-  }))
+    x: 0,
+    height: 1000,
+    from: { opacity: 0, x: 120, height: 0 },
+  })
 
   return (
     <>
-      <main       
-        role="main"
-        aria-label="Her kommer hovedinnholdet"
-        id="maincontent"
-      >
+      <main role="main" aria-label="Her kommer hovedinnholdet" id="maincontent">
         <div className="mx-auto mt-16 rounded lg:mt-20 xl:mt-20 bg-graybg shadow-large md:mt-16 sm:mt-64 xs:mt-64">
           <div
             role="article"
@@ -50,36 +40,36 @@ export default function MainContent() {
             <div className="p-2 mt-4 mb-4 bg-white opacity-75">
               <div className="text-black rounded">
                 <section aria-label="Introduksjonstekst">
-                  {trail.map(({ x, y, skewX, itemIndex }, index) => (
-                    <animated.div
-                      key={itemIndex}
-                      style={{
-                        transform: interpolate(
-                          [x, y, skewX],
-                          (x, y, skewX) =>
-                            `scale(1) translate(${x}, ${y}) skewX(${skewX}deg)`
-                        ),
-                      }}
-                    >
-                      {/*
-                      Ensure that the first item has a larger text size by checking the index
-                      */}
-                      {index === 0 && (
-                        <p className="text-5xl text-center">
-                          {TEXTLIST[index].text}
-                        </p>
-                      )}
-                      {index > 0 && index !== 3 && (
-                        <p
-                          data-cy="daniel"
-                          className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full"
-                        >
-                          {TEXTLIST[index].text}
-                        </p>
-                      )}
-                      {index === 3 && <SVGIcons />}
-                    </animated.div>
-                  ))}
+                  <div>
+                    {mytrail.map(({ x, height, ...rest }, index) => (
+                      <a.div
+                        key={TEXTLIST[index]}
+                        className="trails-text"
+                        style={{
+                          ...rest,
+                          transform: x.interpolate(
+                            (x) => `translate3d(0,${x}px,0)`
+                          ),
+                        }}
+                      >
+                        {index === 0 && (
+                          <p className="text-5xl text-center">
+                            {TEXTLIST[index].text}
+                          </p>
+                        )}
+
+                        {index > 0 && index !== 3 && (
+                          <p
+                            data-cy="daniel"
+                            className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full"
+                          >
+                            {TEXTLIST[index].text}
+                          </p>
+                        )}
+                        {index === 3 && <SVGIcons />}
+                      </a.div>
+                    ))}
+                  </div>
                 </section>
               </div>
             </div>
