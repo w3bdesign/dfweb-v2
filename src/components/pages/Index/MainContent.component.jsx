@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { animated, useTrail, } from "react-spring"
+import { animated, useTrail } from "react-spring"
 
 import "../../../css/main.css"
 import "../../../css/animate.min.css"
@@ -40,36 +40,33 @@ export default function MainContent() {
             <div className="p-2 mt-4 mb-4 bg-white opacity-75">
               <div className="text-black rounded">
                 <section aria-label="Introduksjonstekst">
-                  <div>
-                    {mytrail.map(({ x, height, ...rest }, index) => (
-                      <animated.div
-                        key={TEXTLIST[index]}
-                        className="trails-text"
-                        style={{
-                          ...rest,
-                          transform: x.interpolate(
-                            (x) => `translate3d(0,${x}px,0)`
-                          ),
-                        }}
-                      >
-                        {index === 0 && (
-                          <animated.div className="text-5xl text-center">
-                            {TEXTLIST[index].text}
-                          </animated.div>
-                        )}
+                  {mytrail.map(({ x, height, ...rest }, index) => (
+                    <animated.div
+                      key={TEXTLIST[index]}
+                      style={{
+                        ...rest,
+                        transform: x.interpolate(
+                          (x) => `translate3d(0,${x}px,0)`
+                        ),
+                      }}
+                    >
+                      {index === 0 && (
+                        <animated.div className="text-5xl text-center">
+                          {TEXTLIST[index].text}
+                        </animated.div>
+                      )}
 
-                        {index > 0 && index !== 3 && (
-                          <animated.div
-                            data-cy="daniel"
-                            className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full"
-                          >
-                            {TEXTLIST[index].text}
-                          </animated.div>
-                        )}
-                        {index === 3 && <SVGIcons />}
-                      </animated.div>
-                    ))}
-                  </div>
+                      {index > 0 && index !== 3 && (
+                        <animated.div
+                          data-cy="daniel"
+                          className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full"
+                        >
+                          {TEXTLIST[index].text}
+                        </animated.div>
+                      )}
+                      {index === 3 && <SVGIcons />}
+                    </animated.div>
+                  ))}
                 </section>
               </div>
             </div>
