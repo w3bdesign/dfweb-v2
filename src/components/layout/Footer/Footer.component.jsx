@@ -14,14 +14,14 @@ export default function Footer() {
       >
         <div className="mt-4 bg-gray-800 shadow">
           <div
-            aria-label="Her kommer selve copyright teksten"
+            aria-label="Copyright tekst"
             className="container p-6 mx-auto text-base text-center text-white"
           >
             Copyright Daniel Fjeldstad 
             {' '}
-            <CopyrightSVG />
+            <CopyrightSVG /> 
             {' '}
-            2020
+            {new Date().getFullYear()}
           </div>
         </div>
       </footer>
