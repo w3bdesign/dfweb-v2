@@ -133,7 +133,7 @@ export default function MainContent() {
                     PROSJEKTER
                     {" "}
                   </Link>
-                  kan du se eksempler på arbeid jeg har gjort i 2019 og 2020.
+                  kan du se eksempler på arbeid jeg har gjort i 2019, 2020 og 2021.
                 </p>
               </section>
             </div>
