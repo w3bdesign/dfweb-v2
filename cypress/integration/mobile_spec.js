@@ -1,4 +1,5 @@
-/// <reference types="cypress" />
+import { cy, describe, context, beforeEach, it } from "cypress"
+
 describe("Navigation", () => {
   context("720p resolution", () => {
     beforeEach(() => {
