@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 describe("Navigation", () => {
   context("720p resolution", () => {
     beforeEach(() => {
