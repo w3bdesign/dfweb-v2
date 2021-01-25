@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+import { cy, describe, beforeEach, it } from "cypress"
 
 describe(`The Home Page`, () => {
   beforeEach(() => {
