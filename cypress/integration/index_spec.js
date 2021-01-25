@@ -1,5 +1,3 @@
-/* globals cy */
-
 describe(`The Home Page`, () => {
   beforeEach(() => {
     cy.visit("/")
