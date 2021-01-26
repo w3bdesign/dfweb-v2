@@ -1,4 +1,4 @@
-import { cy, describe, beforeEach, it } from "cypress"
+/* global cy, describe, beforeEach, it */
 
 describe(`The Home Page`, () => {
   beforeEach(() => {
