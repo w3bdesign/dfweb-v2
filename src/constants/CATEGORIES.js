@@ -5,15 +5,15 @@ const CATEGORIES = [
   },
   {
     id: 2,
-    name: "Javascript",
+    name: "Vue",
   },
   {
     id: 3,
-    name: "WooCommerce",
+    name: "Javascript",
   },
   {
     id: 4,
-    name: "Vue",
+    name: "PHP",
   },
 ]
 
