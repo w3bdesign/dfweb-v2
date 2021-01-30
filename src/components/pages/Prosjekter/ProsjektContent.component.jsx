@@ -27,7 +27,7 @@ const ALL_PROJECTS_QUERY = graphql`
  * Also uses React-reveal-effects for displaying projects during scrolling
  * Displays portfolio entries based on the projects filter prop passed to Portfolio
  */
-export default function PorteføljeContent() {
+export default function ProsjektContent() {
   /**
    * Setup filter funtionality to only show projects from the selected category
    */

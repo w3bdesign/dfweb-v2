@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: ["react", "cypress"],
   rules: {
-    "no-shadow": 1,
+    "no-shadow": 0,
     "jsx-a11y/label-has-associated-control": [
       "error",
       {
