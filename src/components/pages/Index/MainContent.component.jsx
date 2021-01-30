@@ -40,13 +40,13 @@ export default function MainContent() {
             <div className="p-2 mt-4 mb-4 bg-white opacity-75">
               <div className="text-black rounded">
                 <section aria-label="Introduksjonstekst">
-                  {mytrail.map(({ xval, height, ...rest }, index) => (
+                  {mytrail.map(({ x, height, ...rest }, index) => (
                     <animated.div
                       key={TEXTLIST[index]}
                       style={{
                         ...rest,
-                        transform: xval.interpolate(
-                          (xvalue) => `translate3d(0,${xvalue}px,0)`
+                        transform: x.interpolate(
+                          (x) => `translate3d(0,${x}px,0)`
                         ),
                       }}
                     >
