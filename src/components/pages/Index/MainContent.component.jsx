@@ -46,7 +46,7 @@ export default function MainContent() {
                       style={{
                         ...rest,
                         transform: x.interpolate(
-                          (x) => `translate3d(0,${x}px,0)`
+                          (xval) => `translate3d(0,${xval}px,0)`
                         ),
                       }}
                     >
