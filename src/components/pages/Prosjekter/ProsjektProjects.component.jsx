@@ -22,49 +22,50 @@ export default function ProsjektProjects({ filter, projects }) {
           urlwww,
           urlgithub,
           image,
-        }) => 
+        }) =>
           // Use ternary to apply filter so we only see projects from the relevant category
-           filter === category ? (
-             <div
-               key={id}
-               className="p-6 text-lg text-black bg-white rounded shadow xl:p-12 lg:p-12 md:p-12"
-             >
-               <p className="text-xl font-black text-center">{name}</p>
-               <div className="mt-6 text-lg text-left lg:text-center md:text-center">
-                 <p>{description}</p>
-                 <p className="mt-6 text-left md:text-center lg:text-center">
-                   {subdescription}
-                 </p>
-                 <div className="flex justify-center mt-6">
-                   <img src={image} alt={name} />
-                 </div>
-                 <div className="flex justify-center mt-4">
-                   {/* Display only Github button if not empty  */}
-                   {urlgithub && (
-                   <a
-                     rel="noopener noreferrer"
-                     target="_blank"
-                     aria-label={name}
-                     href={urlgithub}
-                   >
-                     <Button>Github</Button>
-                   </a>
+          filter === category && (
+            <div
+              key={id}
+              className="p-6 text-lg text-black bg-white rounded shadow xl:p-12 lg:p-12 md:p-12"
+            >
+              <p className="text-xl font-black text-center">{name}</p>
+              <div className="mt-6 text-lg text-left lg:text-left md:text-left">
+                <p>{description}</p>
+                <p className="mt-6 text-left md:text-left lg:text-left">
+                  Stikkord: 
+                  {' '}
+                  {subdescription}
+                </p>
+                <div className="flex justify-center mt-6">
+                  <img src={image} alt={name} />
+                </div>
+                <div className="flex justify-center mt-4">
+                  {/* Display only Github button if not empty  */}
+                  {urlgithub && (
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label={name}
+                      href={urlgithub}
+                    >
+                      <Button>Github</Button>
+                    </a>
                   )}
-                   {urlwww && (
-                   <a
-                     rel="noopener noreferrer"
-                     target="_blank"
-                     aria-label={name}
-                     href={urlwww}
-                   >
-                     <Button>Besøk</Button>
-                   </a>
+                  {urlwww && (
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label={name}
+                      href={urlwww}
+                    >
+                      <Button>Besøk</Button>
+                    </a>
                   )}
-                 </div>
-               </div>
-             </div>
-          ) : null
-        
+                </div>
+              </div>
+            </div>
+          )
       )}
     </>
   )
