@@ -1,89 +1,120 @@
 .animate-link a {
-    color: white;
-    padding: 0.7em calc(0.7em * 1.2);
-    display: inline-block;
-    border: 3px solid transparent;
-    position: relative;    
-    cursor: pointer;    
+  color: white;
+  padding: 0.7em calc(0.7em * 1.2);
+  display: inline-block;
+  border: 3px solid transparent;
+  position: relative;
+  cursor: pointer;
 }
-.animate-link a .text {    
-    transform: translate3d(0, 0.7em, 0);
-    display: block;
-    transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+
+.animate-link a .text {
+  transform: translate3d(0, 0.7em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
-.animate-link a:after {    
-    content: '';
-    bottom: -3px;
-    left: calc(0.7em * 1.2);
-    right: calc(0.7em * 1.2);
-    height: 3px;
-    background: #fff;
-    transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
-    transform-origin: left;
+
+.animate-link a::after {
+  content: "";
+  bottom: -3px;
+  left: calc(0.7em * 1.2);
+  right: calc(0.7em * 1.2);
+  height: 3px;
+  background: #fff;
+  transition:
+    transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s,
+    right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s,
+    left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
 }
+
 .animate-link .line {
-    position: absolute;
-    background: #fff;
+  position: absolute;
+  background: #fff;
 }
-.animate-link .line.-right, .animate-link .line.-left {
-    width: 3px;
-    bottom: -3px;
-    top: -3px;
-    transform: scale3d(1, 0, 1);
-}
-.animate-link .line.-top, .animate-link .line.-bottom {
-    height: 3px;
-    left: 0px;
-    right: 0px;
-    transform: scale3d(0, 1, 1);
-}
-.animate-link .line.-right {
-    right: -3px;
-    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
-    transform-origin: top;
-}
-.animate-link .line.-top {
-    top: -3px;
-    transition: transform 0.08s linear 0.43s;
-    transform-origin: left;
-}
+
+.animate-link .line.-right,
 .animate-link .line.-left {
-    left: -3px;
-    transition: transform 0.08s linear 0.51s;
-    transform-origin: bottom;
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  transform: scale3d(1, 0, 1);
 }
+
+.animate-link .line.-top,
 .animate-link .line.-bottom {
-    bottom: -3px;    
-    transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
-    transform-origin: right;
+  height: 3px;
+  left: 0;
+  right: 0;
+  transform: scale3d(0, 1, 1);
 }
-.animate-link a:hover .text, .animate-link a:active .text {
-    transform: translate3d(0, 0, 0);
-    transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+
+.animate-link .line.-right {
+  right: -3px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
 }
-.animate-link a:hover:after, .animate-link a:active:after {
-    transform: scale3d(0, 1, 1);
-    right: -2px;
-    left: -2px;
-    transform-origin: right;
-    transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+
+.animate-link .line.-top {
+  top: -3px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
 }
-.animate-link a:hover .line, .animate-link a:active .line {
-    transform: scale3d(1, 1, 1);
+
+.animate-link .line.-left {
+  left: -3px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
 }
-.animate-link a:hover .line.-right, .animate-link a:active .line.-right {
-    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
-    transform-origin: bottom;
+
+.animate-link .line.-bottom {
+  bottom: -3px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
 }
-.animate-link a:hover .line.-top, .animate-link a:active .line.-top {
-    transition: transform 0.08s linear 0.4s;
-    transform-origin: right;
+
+.animate-link a:hover .text,
+.animate-link a:active .text {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
 }
-.animate-link a:hover .line.-left, .animate-link a:active .line.-left {
-    transition: transform 0.08s linear 0.48s;
-    transform-origin: top;
+
+.animate-link a:hover::after,
+.animate-link a:active::after {
+  transform: scale3d(0, 1, 1);
+  right: -2px;
+  left: -2px;
+  transform-origin: right;
+  transition:
+    transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s,
+    right 0.2s cubic-bezier(1, 0, 0.65, 1.01),
+    left 0s 0.3s;
 }
-.animate-link a:hover .line.-bottom, .animate-link a:active .line.-bottom {
-    transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
-    transform-origin: left;
+
+.animate-link a:hover .line,
+.animate-link a:active .line {
+  transform: scale3d(1, 1, 1);
+}
+
+.animate-link a:hover .line.-right,
+.animate-link a:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+
+.animate-link a:hover .line.-top,
+.animate-link a:active .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+
+.animate-link a:hover .line.-left,
+.animate-link a:active .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+
+.animate-link a:hover .line.-bottom,
+.animate-link a:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
 }
