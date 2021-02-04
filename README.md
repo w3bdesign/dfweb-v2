@@ -14,54 +14,54 @@ Tested and verified for WCAG accessibility standards.
 
 See below for details about features.
 
-First version is located here: https://github.com/w3bdesign/dfweb-v1
+First version is located here: <https://github.com/w3bdesign/dfweb-v1>
 
-Code and repository for GraphQL backend is here: https://github.com/w3bdesign/graphql-express-dfweb
+Code and repository for GraphQL backend is here: <https://github.com/w3bdesign/graphql-express-dfweb>
 
 ## Features:
 
 ### Misc:
 
-- Gatsby as main project dependency
-- GraphQL for fetching portfolio project information
-- Filter projects based on category
-- React Helmet for modifying HTML header
-- Gatsby plugin for generating robots.txt and sitemap.xml
-- React-PDF for displaying PDF CV
+-   Gatsby as main project dependency
+-   GraphQL for fetching portfolio project information
+-   Filter projects based on category
+-   React Helmet for modifying HTML header
+-   Gatsby plugin for generating robots.txt and sitemap.xml
+-   React-PDF for displaying PDF CV
 
 ### Animations:
 
-- Animate.css for menu animations
-- CSS hover animations in navigation menu
-- React-reveal-effects for revealing content on portfolio
-- React-animated-burgers for animating hamburger in menu
-- React-spring for animations on front page and page transitions
+-   Animate.css for menu animations
+-   CSS hover animations in navigation menu
+-   React-reveal-effects for revealing content on portfolio
+-   React-animated-burgers for animating hamburger in menu
+-   React-spring for animations on front page and page transitions
 
 ### Accessibility and design:
 
-- WCAG accessibility tested
-- Fully responsive design tested on all devices
-- Relevant aria labels added for all content
-- Devicon SVG icons for project icons
-- Tailwind CSS for styling
-- Google fonts with Lato
+-   WCAG accessibility tested
+-   Fully responsive design tested on all devices
+-   Relevant aria labels added for all content
+-   Devicon SVG icons for project icons
+-   Tailwind CSS for styling
+-   Google fonts with Lato
 
 ### Code quality:
 
-- Continuous Integration with CircleCI
-- E2E testing with Cypress and netlify-plugin-cypress
-- Unit testing with Jest and React-Testing-Library
-- Visual testing with Percy
-- Sonarcloud integration on every push to maintain code quality
-- Eslint setup with Airbnb style guide
-- Proptypes setup where necessary
+-   Continuous Integration with CircleCI
+-   E2E testing with Cypress and netlify-plugin-cypress
+-   Unit testing with Jest and React-Testing-Library
+-   Visual testing with Percy
+-   Sonarcloud integration on every push to maintain code quality
+-   Eslint setup with Airbnb style guide
+-   Proptypes setup where necessary
 
 ## TODO
 
-- Add more fancy effects. References:
+-   Add more fancy effects. References:
 
-- https://www.joshwcomeau.com/react/boop/
+-   <https://www.joshwcomeau.com/react/boop/>
 
-- https://www.joshwcomeau.com/snippets/
+-   <https://www.joshwcomeau.com/snippets/>
 
-- Go more into detail about each project
+-   Go more into detail about each project
