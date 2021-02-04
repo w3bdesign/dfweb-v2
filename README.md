@@ -4,7 +4,6 @@
 [![Percy](https://percy.io/static/images/percy-badge.svg)](https://percy.io/45702547/Dfweb)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=w3bdesign_dfweb&metric=alert_status)](https://sonarcloud.io/dashboard?id=w3bdesign_dfweb)
 
-
 # Dfweb
 
 Second version of my portfolio website with Gatsby instead of plain HTML and Javascript.
@@ -59,7 +58,7 @@ Code and repository for GraphQL backend is here: https://github.com/w3bdesign/gr
 
 ## TODO
 
-- Add more fancy effects. References: 
+- Add more fancy effects. References:
 
 - https://www.joshwcomeau.com/react/boop/
 
