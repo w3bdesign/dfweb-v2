@@ -1,4 +1,3 @@
 global.loader = {
-    // eslint-disable-next-line no-undef
-    enqueue: jest.fn(),
-  }
+  enqueue: jest.fn(),
+}
