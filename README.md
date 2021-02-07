@@ -1,7 +1,7 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ca1f4d3ffd4b40a5ac872428787f1442)](https://app.codacy.com/gh/w3bdesign/dfweb?utm_source=github.com&utm_medium=referral&utm_content=w3bdesign/dfweb&utm_campaign=Badge_Grade)
 [![CircleCI](https://circleci.com/gh/w3bdesign/dfweb.svg?style=shield&circle-token=7c55071b52c34a92536b8de1c0dafe226f8e6ef8)](https://circleci.com/)
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 [![React-Testing-Library](https://img.shields.io/badge/unit%20testing-React--Testing--Library-purple)](https://testing-library.com/)
-[![Percy](https://percy.io/static/images/percy-badge.svg)](https://percy.io/45702547/Dfweb)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=w3bdesign_dfweb&metric=alert_status)](https://sonarcloud.io/dashboard?id=w3bdesign_dfweb)
 
 # Dfweb
@@ -49,6 +49,7 @@ Code and repository for GraphQL backend is here: <https://github.com/w3bdesign/g
 ### Code quality:
 
 -   Continuous Integration with CircleCI
+-   Codacy static code quality analysis
 -   E2E testing with Cypress and netlify-plugin-cypress
 -   Unit testing with Jest and React-Testing-Library
 -   Visual testing with Percy
