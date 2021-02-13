@@ -52,7 +52,6 @@ Code and repository for GraphQL backend is here: <https://github.com/w3bdesign/g
 -   Codacy static code quality analysis
 -   E2E testing with Cypress and netlify-plugin-cypress
 -   Unit testing with Jest and React-Testing-Library
--   Visual testing with Percy
 -   Scrutinizer code quality inspection integration
 -   Sonarcloud integration on every push to maintain code quality
 -   Eslint setup with Airbnb style guide
