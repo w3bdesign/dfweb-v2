@@ -114,8 +114,7 @@ export default function MainContent() {
                   Jeg arbeider jevnlig med hobbyprosjekter.
                   <br />
                   <br />
-                  Kildekoden publiserer jeg på
-                  {" "}
+                  Kildekoden publiserer jeg på{" "}
                   <a
                     className="underline"
                     href="https://github.com/w3bdesign"
@@ -126,14 +125,13 @@ export default function MainContent() {
                   </a>
                 </p>
                 <p className="mt-6 text-lg">
-                  På
-                  {" "}
+                  På{" "}
                   <Link className="underline" to="/prosjekter">
                     {" "}
-                    PROSJEKTER
-                    {" "}
+                    PROSJEKTER{" "}
                   </Link>
-                  kan du se eksempler på arbeid jeg har gjort i 2019, 2020 og 2021.
+                  kan du se eksempler på arbeid jeg har gjort i 2019, 2020 og
+                  2021.
                 </p>
               </section>
             </div>

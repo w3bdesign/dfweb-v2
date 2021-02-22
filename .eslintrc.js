@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es2020: true,
   },
-  extends: ["plugin:react/recommended", "airbnb", "prettier", "plugin:cypress/recommended"],
+  extends: [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "plugin:cypress/recommended",
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
