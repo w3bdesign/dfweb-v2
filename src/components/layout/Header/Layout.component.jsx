@@ -18,8 +18,8 @@ export default function Layout({ children }) {
     <>
       <Navbar />
       <Transition
-       // We could make more complex page transitions here
-       // But we do not want to overwhelm the user with distracting animations
+        // We could make more complex page transitions here
+        // But we do not want to overwhelm the user with distracting animations
         config={{
           duration: 1000,
         }}
