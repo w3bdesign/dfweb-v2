@@ -10,7 +10,7 @@ module.exports = {
     image: "/images/screenshot.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@occlumency",
   },
-  plugins: [
+  plugins: [    
     "gatsby-plugin-postcss",
     {
       resolve: "gatsby-source-graphql",
@@ -34,7 +34,7 @@ module.exports = {
         display: "standalone",
         icon: "src/svg/favicon.svg",
       },
-    },
+    },    
     {
       resolve: "gatsby-plugin-purgecss",
       options: {
@@ -43,7 +43,7 @@ module.exports = {
         tailwind: true,
         ignore: ["fontawesome-svg-core/"],
       },
-    },
+    },  
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-svg",
     "gatsby-plugin-react-helmet",
