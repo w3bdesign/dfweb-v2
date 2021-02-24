@@ -71,3 +71,5 @@ yarn-error.log
 
 *.mp4
 TEST.txt
+
+.yarn/*
