@@ -42,11 +42,11 @@ export default function MainContent() {
                 <section aria-label="Introduksjonstekst">
                   {mytrail.map(({ x, height, ...rest }, index) => (
                     <animated.div
-                      key={TEXTLIST[index]}
+                      key={TEXTLIST[index].text}
                       style={{
                         ...rest,
                         transform: x.interpolate(
-                          (xval) => `translate3d(0,${xval}px,0)`
+                          (xval) => `translate3d(0, ${xval}px, 0) `
                         ),
                       }}
                     >
