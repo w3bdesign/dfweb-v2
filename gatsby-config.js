@@ -45,7 +45,14 @@ module.exports = {
       },
     },
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-react-svg",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-sitemap",
