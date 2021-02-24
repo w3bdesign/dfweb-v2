@@ -1,1 +1,1 @@
-module.exports = "applicationlogo"
+module.exports = "div"
