@@ -5,21 +5,6 @@ import { useStaticQuery } from "gatsby"
 
 import Index from "../../src/pages/index"
 
-describe("General checks", () => {
-  /**
-   * We need to mock the Gatsby useStaticQuery in the SEO component
-   */
-  beforeEach(() => {
-    useStaticQuery.mockImplementationOnce(() => ({
-      site: {
-        siteMetadata: {
-          title: "Default Starter",
-        },
-      },
-    }))
-  })
-})
-
 describe("Verify that the mobile menu is in the document", () => {
   /**
    * We need to mock the Gatsby useStaticQuery in the SEO component
