@@ -3,7 +3,7 @@ import React from "react"
 import { render } from "@testing-library/react"
 import { useStaticQuery } from "gatsby"
 
-import Index from "../../src/pages/index"
+import Hamburger from "../../src/components/layout/Header/Hamburger.component"
 
 describe("Verify that the mobile menu is in the document", () => {
   /**
@@ -20,14 +20,14 @@ describe("Verify that the mobile menu is in the document", () => {
   })
 
   test("Hamburger is in the document", () => {
-    const { getByTestId } = render(<Index />)
-    const Hamburger = getByTestId("hamburger")
-    expect(Hamburger).toBeInTheDocument()
+    const { getByTestId } = render(<Hamburger />)
+    const HamburgerButton = getByTestId("hamburger")
+    expect(HamburgerButton).toBeInTheDocument()
   })
 
   test("Mobile menu is initially hidden", () => {
-    const { getByTestId } = render(<Index />)
-    const Main = getByTestId("mobile-menu")
-    expect(Main).not.toBeVisible()
+    const { getByTestId } = render(<Hamburger />)
+    const MobileMenu = getByTestId("mobile-menu")
+    expect(MobileMenu).not.toBeVisible()
   })
 })
