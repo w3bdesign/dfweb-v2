@@ -1,7 +1,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ca1f4d3ffd4b40a5ac872428787f1442)](https://app.codacy.com/gh/w3bdesign/dfweb?utm_source=github.com&utm_medium=referral&utm_content=w3bdesign/dfweb&utm_campaign=Badge_Grade)
 [![CircleCI](https://circleci.com/gh/w3bdesign/dfweb.svg?style=shield&circle-token=7c55071b52c34a92536b8de1c0dafe226f8e6ef8)](https://circleci.com/)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/w3bdesign/dfweb/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/w3bdesign/dfweb/?branch=master)
-[![React-Testing-Library](https://img.shields.io/badge/unit%20testing-React--Testing--Library-purple)](https://testing-library.com/)
+[![CodeFactor](https://www.codefactor.io/repository/github/w3bdesign/dfweb/badge)](https://www.codefactor.io/repository/github/w3bdesign/dfweb)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=w3bdesign_dfweb&metric=alert_status)](https://sonarcloud.io/dashboard?id=w3bdesign_dfweb)
 
 # Dfweb
