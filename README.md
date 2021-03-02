@@ -53,6 +53,7 @@ Code and repository for GraphQL backend is here: <https://github.com/w3bdesign/g
 -   E2E testing with Cypress and netlify-plugin-cypress
 -   Unit testing with Jest and React-Testing-Library
 -   Scrutinizer code quality inspection integration
+-   Codefactor code quality inspection integration
 -   Sonarcloud integration on every push to maintain code quality
 -   Eslint setup with Airbnb style guide
 -   Proptypes setup where necessary
