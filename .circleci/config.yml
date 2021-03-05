@@ -10,6 +10,7 @@ jobs:
     steps:
       - checkout
       - browser-tools/install-browser-tools
+      - node/install-packages
       - restore_cache:
           key: yarn-packages-{{ checksum "package-lock.json" }}
       - run:
