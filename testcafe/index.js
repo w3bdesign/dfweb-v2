@@ -1,7 +1,7 @@
  import { Selector } from 'testcafe';
 
 fixture `Check main page text`
-    .page `http://localhost:8000/`;
+    .page `/`;
 
 test('Verify text on front page', async t => {
     await t
