@@ -45,9 +45,11 @@ export default function MainContent() {
                       key={TEXTLIST[index].text}
                       style={{
                         ...rest,
-                        transform: x.interpolate(
-                          (xval) => `translate3d(0,${xval}px,0)`
-                        ),
+
+                        transform:
+                          x.interpolate(
+                            (xval) => `translate3d(0, ${xval}px, 0) `
+                          ),
                       }}
                     >
                       {index === 0 && (
@@ -58,6 +60,7 @@ export default function MainContent() {
 
                       {index > 0 && index !== 3 && (
                         <animated.div
+                          id="daniel"
                           data-cy="daniel"
                           className="px-6 mt-4 text-lg md:p-0 lg:p-0 xl:p-0 xl:text-center lg:text-left md:text-center xl:text-2xl lg:text-xl md:text-xl md:mx-auto md:w-full lg:w-2/3 xl:w-full"
                         >

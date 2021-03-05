@@ -14,6 +14,7 @@
     "clean": "gatsby clean",
     "test:cypress": "cypress run",
     "test": "jest",
+    "testcafe": "testcafe chrome testcafe/",
     "cy:open": "cypress open"
   },
   "dependencies": {
@@ -43,7 +44,8 @@
     "react-reveal-effects": "^1.0.12",
     "react-spring": "^8.0.27",
     "styled-components": "^5.2.1",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.0.3",
+    "testcafe-react-selectors": "^4.1.4"
   },
   "devDependencies": {
     "@testing-library/cypress": "^7.0.4",
@@ -69,7 +71,8 @@
     "react-test-renderer": "^17.0.1",
     "start-server-and-test": "^1.12.0",
     "stylelint": "^13.11.0",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "testcafe": "^1.12.0"
   },
   "repository": {
     "type": "git",
