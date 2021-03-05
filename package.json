@@ -14,7 +14,8 @@
     "clean": "gatsby clean",
     "test:cypress": "cypress run",
     "test": "jest",
-    "testcafe": "start-test develop 8000 && testcafe chrome:headless testcafe/**/*",
+    "testcafe": "start-test develop testcafex 8000",
+    "testcafex": "testcafe chrome:headless testcafe/**/*",
     "cy:open": "cypress open"
   },
   "dependencies": {
