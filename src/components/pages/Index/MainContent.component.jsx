@@ -57,7 +57,6 @@ export default function MainContent() {
                           {TEXTLIST[index].text}
                         </animated.div>
                       )}
-
                       {index > 0 && index !== 3 && (
                         <animated.div
                           id="daniel"
