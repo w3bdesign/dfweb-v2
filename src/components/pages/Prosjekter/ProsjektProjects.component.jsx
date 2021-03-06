@@ -38,7 +38,7 @@ export default function ProsjektProjects({ filter, projects }) {
                   {subdescription}
                 </p>
                 <div className="flex justify-center mt-6">
-                  <img src={image} alt={name} />
+                  <img src={image} alt={name} role="presentation"/>
                 </div>
                 <div className="flex justify-center mt-4">
                   {/* Display only Github button if not empty  */}
