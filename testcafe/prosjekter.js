@@ -8,6 +8,7 @@ fixture`Check that category filter works`.page`http://localhost:8000/prosjekter`
 
 test(`Select Vue from the category filter and check that the value changes`, async (test) => {
   await test
+    .wait(2000)
     .click(prosjektSelect)
     .click(prosjektOption.withText("Vue"))
     .expect(prosjektSelect.value)
@@ -22,5 +23,5 @@ test(`Select Vue and check that the header content changes`, async (test) => {
     .wait(2000)
     .expect(Selector("#categoryFilterDiv").innerText)
     .eql("Vue")
-    await percySnapshot(test, "Showing Vue projects")
+  await percySnapshot(test, "Showing Vue projects")
 })
