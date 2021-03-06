@@ -51,7 +51,7 @@ Code and repository for GraphQL backend is here: <https://github.com/w3bdesign/g
 -   Continuous Integration with CircleCI
 -   Codacy static code quality analysis
 -   E2E testing with Cypress and netlify-plugin-cypress
--   E2E testing with Testcafe
+-   Visual snapshot testing with Testcafe and Percy
 -   Unit testing with Jest and React-Testing-Library
 -   Scrutinizer code quality inspection integration
 -   Codefactor code quality inspection integration
