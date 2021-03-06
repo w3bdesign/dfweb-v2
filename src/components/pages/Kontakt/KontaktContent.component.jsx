@@ -36,7 +36,7 @@ export default function KontaktContent() {
                         Fullt navn
                         <br />
                         <input
-                          className="w-64 p-2 m-2 placeholder-black transition duration-500 ease-in-out border border-gray-500 rounded focus:shadow-outline focus:-translate-y-2 hover:bg-gray-200 transform-gpu"
+                          className="w-64 p-2 m-2 placeholder-black transition duration-500 ease-in-out border border-gray-500 rounded focus:shadow-outline focus:scale-110 hover:bg-gray-200 transform-gpu"
                           id="navn"
                           name="navn"
                           type="text"
@@ -50,7 +50,7 @@ export default function KontaktContent() {
                         Telefonnummer (i norskt format)
                         <br />
                         <input
-                          className="w-64 p-2 m-2 placeholder-black transition duration-500 ease-in-out border border-gray-500 rounded focus:shadow-outline focus:-translate-y-2 hover:bg-gray-200 transform-gpu"
+                          className="w-64 p-2 m-2 placeholder-black transition duration-500 ease-in-out border border-gray-500 rounded focus:scale-110 focus:shadow-outline hover:bg-gray-200 transform-gpu"
                           id="phone"
                           name="telefon"
                           type="text"
@@ -65,7 +65,7 @@ export default function KontaktContent() {
                         Hva ønsker du å si?
                         <br />
                         <textarea
-                          className="w-64 p-2 m-2 placeholder-black transition duration-500 ease-in-out border border-gray-500 rounded focus:shadow-outline focus:-translate-y-2 hover:bg-gray-200 transform-gpu"
+                          className="w-64 p-2 m-2 placeholder-black transition duration-500 ease-in-out border border-gray-500 rounded focus:shadow-outline focus:scale-110 hover:bg-gray-200 transform-gpu"
                           name="tekst"
                           id="textarea"
                           required
