@@ -27,7 +27,7 @@ export default function ProsjektProjects({ filter, projects }) {
           filter === category && (
             <div
               key={id}
-              className="p-6 text-lg text-black transition duration-500 ease-in-out bg-white rounded shadow xl:p-12 lg:p-12 md:p-12 hover:bg-gray-200 transform-gpu hover:-translate-y-2"
+              className="p-6 text-lg text-black transition duration-500 ease-in-out bg-white rounded shadow bg-opacity-5 hover:bg-gray-200 transform-gpu"
             >
               <p className="text-xl font-black text-center">{name}</p>
               <div className="mt-6 text-lg text-left lg:text-left md:text-left">
