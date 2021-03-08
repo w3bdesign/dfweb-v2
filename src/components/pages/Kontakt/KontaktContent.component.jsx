@@ -29,8 +29,7 @@ export default function KontaktContent() {
                     <input name="spam-field" className="hidden" />
                     <fieldset>
                       <legend className="container m-4 mx-auto text-xl text-center">
-                        Vennligst fyll ut kontaktskjemaet:
-                        {" "}
+                        Vennligst fyll ut kontaktskjemaet:{" "}
                       </legend>
                       <label htmlFor="navn" className="text-black">
                         Fullt navn
@@ -40,7 +39,6 @@ export default function KontaktContent() {
                           id="navn"
                           name="navn"
                           type="text"
-                          placeholder="Fullt navn"
                           required
                           aria-required
                         />
@@ -54,7 +52,6 @@ export default function KontaktContent() {
                           id="phone"
                           name="telefon"
                           type="text"
-                          placeholder="Telefon"
                           required
                           aria-required
                           pattern=".[0-9]{7}"
