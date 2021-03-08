@@ -52,7 +52,7 @@
   "devDependencies": {
     "@percy/testcafe": "^0.2.1",
     "@testing-library/cypress": "^7.0.4",
-    "@testing-library/dom": "^7.29.6",
+    "@testing-library/dom": "^7.30.0",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
     "babel-eslint": "^10.1.0",
