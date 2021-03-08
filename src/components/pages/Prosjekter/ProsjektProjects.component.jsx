@@ -26,6 +26,7 @@ export default function ProsjektProjects({ filter, projects }) {
           // Use ternary to apply filter so we only see projects from the relevant category
           filter === category && (
             <div
+              id="projectdiv"
               key={id}
               className="p-6 text-lg text-black transition duration-500 ease-in-out bg-white rounded shadow bg-opacity-5 hover:bg-gray-200 transform-gpu"
             >
@@ -33,12 +34,10 @@ export default function ProsjektProjects({ filter, projects }) {
               <div className="mt-6 text-lg text-left lg:text-left md:text-left">
                 <p>{description}</p>
                 <p className="mt-6 text-left md:text-left lg:text-left">
-                  Stikkord: 
-                  {' '}
-                  {subdescription}
+                  Stikkord: {subdescription}
                 </p>
                 <div className="flex justify-center mt-6">
-                  <img src={image} alt={name} role="presentation"/>
+                  <img src={image} alt={name} role="presentation" />
                 </div>
                 <div className="flex justify-center mt-4">
                   {/* Display only Github button if not empty  */}
