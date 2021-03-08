@@ -20,4 +20,8 @@ body {
   height: 450px;
 }
 
+#prosjektgrid {
+  grid-gap: 1rem;
+}
+
 @import "tailwindcss/utilities";
