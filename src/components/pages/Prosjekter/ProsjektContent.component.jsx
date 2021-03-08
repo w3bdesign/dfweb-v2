@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Fade from "react-reveal-effects/Fade"
 
-import Portfolio from "./ProsjektProjects.component"
+import ProsjektProjects from "./ProsjektProjects.component"
 import CATEGORIES from "../../../constants/CATEGORIES"
 
 const ALL_PROJECTS_QUERY = graphql`
@@ -97,11 +97,11 @@ export default function ProsjektContent() {
           <Fade when={shouldAnimate}>
             {categoryFilter && (
               <>
-                <div id="categoryFilterDiv" className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow">
+                <div className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow">
                   {categoryFilter}
                 </div>
                 <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
-                  <Portfolio filter={categoryFilter} projects={allProjects} />
+                  <ProsjektProjects filter={categoryFilter} projects={allProjects} />
                 </div>
               </>
             )}
@@ -114,7 +114,7 @@ export default function ProsjektContent() {
                     {name}
                   </div>
                   <div className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1">
-                    <Portfolio filter={name} projects={allProjects} />
+                    <ProsjektProjects filter={name} projects={allProjects} />
                   </div>
                 </div>
               ))}
