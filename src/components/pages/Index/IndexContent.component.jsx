@@ -14,7 +14,7 @@ import TEXTLIST from "../../../constants/TEXTLIST"
  * Main content that is displayed from index.js
  */
 
-export default function MainContent() {
+export default function IndexContent() {
   const mytrail = useTrail(TEXTLIST.length, {
     config: {
       mass: 10,

@@ -7,7 +7,7 @@ import Layout from "../components/layout/Header/Layout.component"
 import SEO from "../components/layout/SEO/SEO.component"
 
 // Main
-import MainContent from "../components/pages/Index/MainContent.component"
+import IndexContent from "../components/pages/Index/IndexContent.component"
 
 /**
  * Main index page
@@ -18,7 +18,7 @@ export default function Index() {
     <>
       <SEO title="Forside - Portefølje - " />
       <Layout>
-        <MainContent />
+        <IndexContent />
       </Layout>
     </>
   )
