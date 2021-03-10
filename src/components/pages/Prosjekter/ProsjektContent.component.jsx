@@ -60,7 +60,7 @@ export default function ProsjektContent() {
 
     setTimeout(() => {
       setshouldAnimate(true)
-    }, 1000)
+    }, 500)
   }
 
   return (
