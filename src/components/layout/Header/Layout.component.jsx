@@ -21,7 +21,7 @@ export default function Layout({ children }) {
        // We could make more complex page transitions here
        // But we do not want to overwhelm the user with distracting animations
         config={{
-          duration: 1000,
+          duration: 500,
         }}
         from={{ opacity: 0 }}
         enter={{ opacity: 1 }}
