@@ -17,14 +17,14 @@ import TEXTLIST from "../../../constants/TEXTLIST"
 export default function MainContent() {
   const mytrail = useTrail(TEXTLIST.length, {
     config: {
-      mass: 3,
-      tension: 900,
-      friction: 50,
+      mass: 5,
+      tension: 300,
+      friction: 100,
     },
     opacity: 1,
     x: 0,
-    height: 1000,
-    from: { opacity: 0, x: 120, height: 0 },
+    height: 400,
+    from: { opacity: 0, x: 40, height: 0 },
   })
 
   return (
