@@ -16,7 +16,7 @@ See below for details about features.
 
 First version is located here: <https://github.com/w3bdesign/dfweb-v1>
 
-Code and repository for GraphQL backend is here: <https://github.com/w3bdesign/graphql-express-dfweb>
+GraphQL backend is here: <https://github.com/w3bdesign/graphql-express-dfweb>
 
 ## Features:
 
