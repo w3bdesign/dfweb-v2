@@ -22,9 +22,8 @@ export default function IndexContent() {
       friction: 100,
     },
     opacity: 1,
-    x: 0,
-    height: 300,
-    from: { opacity: 0, x: 40, height: 0 },
+    x: 0,    
+    from: { opacity: 0, x: 50, height: 0 },
   })
 
   return (
