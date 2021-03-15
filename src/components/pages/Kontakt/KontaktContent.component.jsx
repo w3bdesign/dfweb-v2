@@ -19,10 +19,9 @@ export default function KontaktContent() {
                     name="Kontakt"
                     method="POST"
                     data-netlify="true"
-                    netlify-honeypot="spam-field"
                   >
                     <input type="hidden" name="form-name" value="Kontakt" />
-                    <input name="spam-field" className="hidden" />
+
                     <fieldset>
                       <legend className="container m-4 mx-auto text-xl text-center">
                         Vennligst fyll ut kontaktskjemaet:{" "}
