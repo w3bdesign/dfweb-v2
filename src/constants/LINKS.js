@@ -23,12 +23,6 @@ const LINKS = [
     text: "CV",
     external: false,
   },
-  {
-    id: 5,
-    url: "/kontakt",
-    text: "Kontakt",
-    external: false,
-  },
 ]
 
 export default LINKS
