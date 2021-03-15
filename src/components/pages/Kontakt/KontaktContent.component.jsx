@@ -16,16 +16,12 @@ export default function KontaktContent() {
                   </h3>
                   <form
                     className="text-center"
-                    name="kontaktskjema"
+                    name="Kontakt"
                     method="POST"
                     data-netlify="true"
                     netlify-honeypot="spam-field"
                   >
-                    <input
-                      type="hidden"
-                      name="form-name"
-                      value="kontaktskjema"
-                    />
+                    <input type="hidden" name="form-name" value="Kontakt" />
                     <input name="spam-field" className="hidden" />
                     <fieldset>
                       <legend className="container m-4 mx-auto text-xl text-center">
@@ -70,7 +66,6 @@ export default function KontaktContent() {
                         />
                       </label>
                     </fieldset>
-
                     <Button>Send skjema</Button>
                   </form>
                 </div>
