@@ -21,7 +21,6 @@ export default function KontaktContent() {
                     data-netlify="true"
                   >
                     <input type="hidden" name="form-name" value="Kontakt" />
-
                     <fieldset>
                       <legend className="container m-4 mx-auto text-xl text-center">
                         Vennligst fyll ut kontaktskjemaet:{" "}
