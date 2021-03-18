@@ -50,7 +50,7 @@
     "testcafe": "^1.12.0"
   },
   "devDependencies": {
-    "@percy/testcafe": "^0.2.1",
+    "@percy/testcafe": "^1.0.0",
     "@testing-library/cypress": "^7.0.4",
     "@testing-library/dom": "^7.30.0",
     "@testing-library/react": "^11.2.5",
