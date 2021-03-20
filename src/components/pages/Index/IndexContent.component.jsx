@@ -18,12 +18,12 @@ export default function IndexContent() {
   const mytrail = useTrail(TEXTLIST.length, {
     config: {
       mass: 10,
-      tension: 500,
+      tension: 600,
       friction: 100,
     },
     opacity: 1,
     x: 0,    
-    from: { opacity: 0, x: 50, height: 0 },
+    from: { opacity: 0, x: 70, height: 0 },
   })
 
   return (
