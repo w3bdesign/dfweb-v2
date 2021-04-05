@@ -2,7 +2,7 @@
   "name": "dfweb-v2",
   "private": true,
   "description": "Personal portfolio",
-  "version": "1.0.11",
+  "version": "1.0.13",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -28,8 +28,7 @@
     "gatsby-plugin-manifest": "^3.2.0",
     "gatsby-plugin-netlify": "^3.2.0",
     "gatsby-plugin-postcss": "^4.2.0",
-    "gatsby-plugin-purgecss": "^6.0.0",
-    "gatsby-plugin-react-helmet": "^4.1.0",
+    "gatsby-plugin-react-helmet": "^4.2.0",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-robots-txt": "^1.5.5",
     "gatsby-plugin-sitemap": "^3.2.0",
@@ -45,12 +44,12 @@
     "react-reveal-effects": "^1.0.12",
     "react-spring": "^8.0.27",
     "styled-components": "^5.2.3",
-    "tailwindcss": "^2.0.4",
+    "tailwindcss": "^2.1.1",
     "testcafe-react-selectors": "^4.1.5",
     "testcafe": "^1.13.0"
   },
   "devDependencies": {
-    "@percy/cli": "^1.0.0-beta.44",
+    "@percy/cli": "1.0.0-beta.46",
     "@percy/testcafe": "^1.0.0",
     "@testing-library/cypress": "^7.0.5",
     "@testing-library/dom": "^7.30.3",
