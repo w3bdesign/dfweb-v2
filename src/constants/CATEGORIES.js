@@ -9,7 +9,7 @@ const CATEGORIES = [
   },
   {
     id: 3,
-    name: "Javascript",
+    name: "Typescript",
   },
   {
     id: 4,
