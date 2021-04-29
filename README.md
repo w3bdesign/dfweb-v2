@@ -1,4 +1,3 @@
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=w3bdesign/dfweb)](https://dependabot.com)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ca1f4d3ffd4b40a5ac872428787f1442)](https://app.codacy.com/gh/w3bdesign/dfweb?utm_source=github.com&utm_medium=referral&utm_content=w3bdesign/dfweb&utm_campaign=Badge_Grade)
 [![CircleCI](https://circleci.com/gh/w3bdesign/dfweb/tree/master.svg?style=shield)](https://circleci.com/gh/w3bdesign/dfweb)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/w3bdesign/dfweb/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/w3bdesign/dfweb/?branch=master)
