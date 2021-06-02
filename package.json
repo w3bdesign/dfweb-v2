@@ -52,7 +52,7 @@
     "@percy/cli": "1.0.0-beta.52",
     "@percy/testcafe": "^1.0.0",
     "@testing-library/cypress": "^7.0.5",
-    "@testing-library/dom": "^7.30.3",
+    "@testing-library/dom": "^7.31.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^13.1.9",
     "babel-eslint": "^10.1.0",
@@ -72,7 +72,7 @@
     "netlify-plugin-cypress": "^2.2.0",
     "prettier": "^2.3.0",
     "react-test-renderer": "^17.0.2",
-    "start-server-and-test": "^1.12.1",
+    "start-server-and-test": "^1.12.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0"
   },
