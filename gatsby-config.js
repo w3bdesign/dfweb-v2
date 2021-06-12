@@ -45,6 +45,7 @@ module.exports = {
       },
     }, */
     "gatsby-plugin-styled-components",
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-react-svg",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-robots-txt",
