@@ -3,8 +3,3 @@
 [build]
   command = "npm run build"
   publish = "public"
-# Cypress plugin
-[[plugins]]
-  package = "netlify-plugin-cypress"
-  [plugins.inputs]
-    record = false
