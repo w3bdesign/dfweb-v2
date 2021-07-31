@@ -6,7 +6,7 @@ import React from "react"
  */
 
 import WordpressSVG from "./SVG/WordpressSVG"
-import DockerSVG from "./SVG/DockerSVG"
+import VueSVG from "./SVG/VueSVG"
 import TypescriptSVG from "./SVG/TypescriptSVG"
 import ReactSVG from "./SVG/ReactSVG"
 import PhotoshopSVG from "./SVG/PhotoshopSVG"
@@ -18,7 +18,7 @@ export default function SVGIcons() {
   return (
     <p className="flex justify-center mt-4">
       <WordpressSVG />
-      <DockerSVG />
+      <VueSVG />
       <TypescriptSVG />
       <ReactSVG />
       <PhotoshopSVG />
