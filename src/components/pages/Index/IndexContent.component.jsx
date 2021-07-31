@@ -22,7 +22,7 @@ export default function IndexContent() {
       friction: 100,
     },
     opacity: 1,
-    x: 0,    
+    x: 0,
     from: { opacity: 0, x: 70, height: 0 },
   })
 
@@ -44,11 +44,9 @@ export default function IndexContent() {
                       key={TEXTLIST[index].text}
                       style={{
                         ...rest,
-
-                        transform:
-                          x.interpolate(
-                            (xval) => `translate3d(0, ${xval}px, 0) `
-                          ),
+                        transform: x.interpolate(
+                          (xval) => `translate3d(0, ${xval}px, 0) `
+                        ),
                       }}
                     >
                       {index === 0 && (
@@ -115,8 +113,7 @@ export default function IndexContent() {
                   Jeg arbeider jevnlig med hobbyprosjekter.
                   <br />
                   <br />
-                  Kildekoden publiserer jeg på
-                  {" "}
+                  Kildekoden publiserer jeg på{" "}
                   <a
                     className="underline"
                     href="https://github.com/w3bdesign"
@@ -127,14 +124,13 @@ export default function IndexContent() {
                   </a>
                 </p>
                 <p className="mt-6 text-lg">
-                  På
-                  {" "}
+                  På{" "}
                   <Link className="underline" to="/prosjekter">
                     {" "}
-                    PROSJEKTER
-                    {" "}
+                    PROSJEKTER{" "}
                   </Link>
-                  kan du se eksempler på arbeid jeg har gjort i 2019, 2020 og 2021.
+                  kan du se eksempler på arbeid jeg har gjort i 2019, 2020 og
+                  2021.
                 </p>
               </section>
             </div>

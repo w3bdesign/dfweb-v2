@@ -1,5 +1,4 @@
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: {
     title: "Portefølje",
     siteUrl: "https://www.dfweb.no",
