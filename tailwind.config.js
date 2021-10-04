@@ -1,5 +1,5 @@
 module.exports = {
-  mode: "jit", 
+  mode: "jit",
   purge: ["./public/**/*.html", "./src/**/*.{js,jsx}"],
   theme: {
     fontFamily: {
@@ -16,8 +16,4 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
 }

@@ -34,15 +34,6 @@ module.exports = {
         icon: "src/svg/favicon.svg",
       },
     },
-    /* {
-      resolve: "gatsby-plugin-purgecss",
-      options: {
-        printRejected: false,
-        develop: false,
-        tailwind: true,
-        ignore: ["fontawesome-svg-core/"],
-      },
-    }, */
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-react-svg",
