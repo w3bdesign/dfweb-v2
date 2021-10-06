@@ -98,7 +98,7 @@ export default function IndexContent() {
                 >
                   Jeg har også erfaring med andre teknologier som moderne
                   Javascript (ES6+), Node.js, Firebase, Context, Redux, Axios,
-                  Docker, NextJS, Gatsby, MongoDB, Opencart, Magento med mer.
+                  Docker, Storybook, NextJS, Gatsby, MongoDB, Opencart, Magento med mer.
                 </p>
               </section>
             </div>
