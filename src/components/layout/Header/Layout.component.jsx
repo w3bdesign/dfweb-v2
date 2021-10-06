@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Transition } from "react-spring/renderprops"
+
+import { animated, Transition } from "react-spring"
 
 // Header
 import Navbar from "./Navbar.component"
@@ -18,16 +19,26 @@ export default function Layout({ children }) {
     <>
       <Navbar />
       <Transition
-       // We could make more complex page transitions here
-       // But we do not want to overwhelm the user with distracting animations
+        items={children}
         config={{
-          duration: 500,
+          duration: 1000,
         }}
         from={{ opacity: 0 }}
         enter={{ opacity: 1 }}
         leave={{ opacity: 0 }}
       >
-        {() => (style) => <div style={style}>{children}</div>}
+        {({ opacity }, item) => (
+          <animated.div
+            style={{
+              opacity: opacity.to({
+                range: [0.0, 1.0],
+                output: [0, 1],
+              }),
+            }}
+          >
+            {item}
+          </animated.div>
+        )}
       </Transition>
       <Footer />
     </>
