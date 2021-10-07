@@ -47,7 +47,7 @@
     "react-helmet": "^6.1.0",
     "react-pdf": "5.4.0",
     "react-reveal-effects": "^1.0.12",
-    "react-spring": "^9.2.5",
+    "react-spring": "^9.2.6",
     "styled-components": "^5.3.1",
     "tailwindcss": "^2.2.16",
     "testcafe": "^1.16.1",
