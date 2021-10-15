@@ -49,7 +49,7 @@
     "react-reveal-effects": "^1.0.12",
     "react-spring": "^9.2.6",
     "styled-components": "^5.3.1",
-    "tailwindcss": "^2.2.16",
+    "tailwindcss": "^2.2.17",
     "testcafe": "^1.16.1",
     "testcafe-react-selectors": "^4.1.5"
   },
