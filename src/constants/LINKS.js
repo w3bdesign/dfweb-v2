@@ -16,13 +16,7 @@ const LINKS = [
     url: "https://www.github.com/w3bdesign",
     text: "Github",
     external: true,
-  },
-  {
-    id: 4,
-    url: "/cv",
-    text: "CV",
-    external: false,
-  },
+  },  
 ]
 
 export default LINKS
