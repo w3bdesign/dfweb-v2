@@ -98,7 +98,8 @@ export default function IndexContent() {
                 >
                   Jeg har også erfaring med andre teknologier som moderne
                   Javascript (ES6+), Node.js, Firebase, Context, Redux, Axios,
-                  Docker, Storybook, NextJS, Gatsby, MongoDB, Opencart, Magento med mer.
+                  Docker, Storybook, NextJS, Gatsby, MongoDB, Opencart, Magento
+                  med mer.
                 </p>
               </section>
             </div>
@@ -111,9 +112,7 @@ export default function IndexContent() {
                   className="mt-6 text-lg"
                 >
                   Jeg arbeider jevnlig med hobbyprosjekter.
-                  <br />
-                  <br />
-                  Kildekoden publiserer jeg på{" "}
+                  <span className="mt-4">Kildekoden publiserer jeg på </span>
                   <a
                     className="underline"
                     href="https://github.com/w3bdesign"
