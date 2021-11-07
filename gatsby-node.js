@@ -1,4 +1,4 @@
-exports.onCreateWebpackConfig = ({
+/*exports.onCreateWebpackConfig = ({
   stage,
   loaders,
   actions,
@@ -16,3 +16,4 @@ exports.onCreateWebpackConfig = ({
     })
   }
 }
+*/
