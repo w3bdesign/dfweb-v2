@@ -23,6 +23,6 @@ jobs:
       - run:
           name: Run Jest Tests
           command: npm run test
-      - run:
-          name: Run Testcafe Tests
-          command: npm run testcafe
+#      - run:
+#          name: Run Testcafe Tests
+#          command: npm run testcafe
