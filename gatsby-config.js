@@ -19,7 +19,7 @@ module.exports = {
         // This is the field under which it's accessible
         fieldName: "Project",
         // URL to query from
-        url: "https://graphql-express-dfweb.now.sh",
+        url: "https://graphql-express-dfweb.vercel.app",
       },
     },
     {
@@ -42,6 +42,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-netlify",
+    // "gatsby-plugin-netlify",
   ],
 }

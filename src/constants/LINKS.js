@@ -22,7 +22,7 @@ const LINKS = [
     url: "https://www.github.com/w3bdesign",
     text: "Github",
     external: true,
-  },  
+  },
 ]
 
 export default LINKS

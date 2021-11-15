@@ -17,10 +17,7 @@ export default function Footer() {
             aria-label="Copyright tekst"
             className="container p-6 mx-auto text-base text-center text-white"
           >
-            Copyright Daniel Fjeldstad 
-            {' '}
-            <CopyrightSVG /> 
-            {' '}
+            Copyright Daniel Fjeldstad <CopyrightSVG />{" "}
             {new Date().getFullYear()}
           </div>
         </div>
