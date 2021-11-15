@@ -13,6 +13,12 @@ const LINKS = [
   },
   {
     id: 3,
+    url: "/cv",
+    text: "CV",
+    external: false,
+  },
+  {
+    id: 4,
     url: "https://www.github.com/w3bdesign",
     text: "Github",
     external: true,

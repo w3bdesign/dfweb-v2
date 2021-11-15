@@ -1,10 +1,8 @@
 import React from "react"
-import { Document, Page, pdfjs } from "react-pdf"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Button from "../../layout/Button/Button.component"
 import myCV from "../../../assets/CV-dfweb.pdf"
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 /**
  * Displays the CV content using react-pdf
@@ -22,19 +20,20 @@ export default function CVContent() {
                 <div className="p-4 text-lg rounded">
                   <h3 className="m-2 text-3xl text-center text-black">CV</h3>
                   <div className="mt-0 sm:mt-2 xs:mt-2">
-                    <Document
-                      className="hidden mt-4 text-center xl:block lg:block"
-                      error="En feil har oppstått under lasting av PDF"
-                      loading="Laster inn PDF ..."
-                      file={myCV}
-                    >
-                      <Page
-                        renderMode="svg"
-                        className="flex content-center justify-center"
-                        scale={1.5}
-                        pageNumber={1}
+                    <a rel="noopener noreferrer" target="_blank" href={myCV}>
+                      <StaticImage
+                        src="../../../images/cv-side1.jpg"
+                        alt="CV side 1"
+                        placeholder="blurred"
+                        className="hidden mt-4 text-center xl:block lg:block"
                       />
-                    </Document>
+                      <StaticImage
+                        src="../../../images/cv-side2.jpg"
+                        alt="CV side 2"
+                        placeholder="blurred"
+                        className="hidden mt-4 text-center xl:block lg:block"
+                      />
+                    </a>
                   </div>
                   <div className="mx-auto mt-0 text-center sm:mt-2 xs:mt-2">
                     <Button>

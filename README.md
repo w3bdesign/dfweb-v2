@@ -26,7 +26,6 @@ GraphQL backend is here: <https://github.com/w3bdesign/graphql-express-dfweb>
 -   Filter projects based on category
 -   React Helmet for modifying HTML header
 -   Gatsby plugin for generating robots.txt and sitemap.xml
--   React-PDF for displaying PDF CV
 
 ### Animations:
 
