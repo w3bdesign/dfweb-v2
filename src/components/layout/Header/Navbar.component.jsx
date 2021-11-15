@@ -53,7 +53,7 @@ export default function Navbar() {
                         <span className="line -bottom" />
                       </a>
                     ) : (
-                      <Link
+                      <Link                       
                         className="inline-block text-xl text-white text"
                         activeClassName="underline"
                         to={link.url}

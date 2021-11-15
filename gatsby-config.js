@@ -19,7 +19,7 @@ module.exports = {
         // This is the field under which it's accessible
         fieldName: "Project",
         // URL to query from
-        url: "https://graphql-express-dfweb.vercel.app",
+        url: "https://graphql-express-dfweb.now.sh",
       },
     },
     {
