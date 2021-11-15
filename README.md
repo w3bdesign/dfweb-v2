@@ -15,14 +15,14 @@ See below for details about features.
 
 First version is located here: <https://github.com/w3bdesign/dfweb-v1>
 
-GraphQL backend is here: <https://github.com/w3bdesign/graphql-express-dfweb>
+GraphQL backend that was previously used is here: <https://github.com/w3bdesign/graphql-express-dfweb>
 
 ## Features:
 
 ### Misc:
 
 - Gatsby as main project dependency
-- GraphQL for fetching portfolio project information
+- Gatsby functions for fetching portfolio project information
 - Filter projects based on category
 - React Helmet for modifying HTML header
 - Gatsby plugin for generating robots.txt and sitemap.xml

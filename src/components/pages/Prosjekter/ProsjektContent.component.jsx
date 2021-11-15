@@ -1,26 +1,10 @@
-import React, { useState } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React, { useState, useEffect } from "react"
+
+import fetch from "node-fetch"
 import Fade from "react-reveal-effects/Fade"
 
 import ProsjektProjects from "./ProsjektProjects.component"
 import CATEGORIES from "../../../constants/CATEGORIES"
-
-const ALL_PROJECTS_QUERY = graphql`
-  query MyQuery {
-    Project {
-      allProjects {
-        id
-        image
-        name
-        subdescription
-        urlgithub
-        urlwww
-        category
-        description
-      }
-    }
-  }
-`
 
 /**
  * Fetch portfolio projects from GraphQL
@@ -38,10 +22,18 @@ export default function ProsjektContent() {
   const [shouldAnimate, setshouldAnimate] = useState(false)
 
   /**
-   * GraphQL setup
+   * API setup
    */
-  const projectData = useStaticQuery(ALL_PROJECTS_QUERY)
-  const { allProjects } = projectData.Project
+
+  const [allProjects, setAllProjects] = useState([])
+  useEffect(() => {
+    // Get data from Gatsby local function
+    fetch(`/api/projects`)
+      .then((response) => response.json()) // parse JSON from request
+      .then((resultData) => {
+        setAllProjects(resultData.data)
+      })
+  }, [])
 
   const handleFilterChange = (e) => {
     /**
@@ -95,7 +87,7 @@ export default function ProsjektContent() {
             </form>
           </span>
           <Fade when={shouldAnimate}>
-            {categoryFilter && (
+            {categoryFilter && allProjects && (
               <>
                 <div
                   id="categoryFilterDiv"
@@ -117,6 +109,7 @@ export default function ProsjektContent() {
           </Fade>
           <Fade>
             {!categoryFilter &&
+              allProjects &&
               CATEGORIES.map(({ id, name }) => (
                 <div key={id}>
                   <div
