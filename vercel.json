@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "name": "dfweb",
+    "alias": "dfweb",
+    "public": true,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "packages/example/public"
+        }
+      },
+      {
+        "src": "fonts/**/*.{woff2,ttf}",
+        "use": "@now/static"
+      }
+    ]
+  }
+  
