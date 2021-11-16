@@ -36,7 +36,6 @@ exports.data = [
     image:
       "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588559314/Dfweb/dfweb-v2_g9wjyw.jpg",
   },
-
   {
     id: 4,
     name: "Algolia Woo Indexer",
@@ -99,5 +98,5 @@ exports.data = [
     urlgithub: "https://github.com/w3bdesign/laravel-vue",
     image:
       "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1614834460/Dfweb/laravel-vue_vpusac.png",
-  },
+  }
 ]
