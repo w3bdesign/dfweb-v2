@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "Portefølje",
@@ -10,7 +14,7 @@ module.exports = {
     twitterUsername: "@occlumency",
   },
   plugins: [
-    "gatsby-plugin-postcss",    
+    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
