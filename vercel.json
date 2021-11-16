@@ -6,10 +6,7 @@
     "builds": [
       {
         "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "packages/example/public"
-        }
+        "use": "@vercel/static-build"        
       },
       {
         "src": "fonts/**/*.{woff2,ttf}",
