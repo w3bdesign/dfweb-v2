@@ -5,7 +5,7 @@
   "version": "1.0.19",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby clean && vercel build",
+    "build": "gatsby clean && gatsby build",
     "develop": "gatsby clean && gatsby develop",
     "dev": "start-test develop 8000 cy:open",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
