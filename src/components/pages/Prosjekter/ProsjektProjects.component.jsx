@@ -9,7 +9,7 @@ import Button from "../../layout/Button/Button.component"
  * @param {Object} filter The filter that we apply to the component so we only displays projects from the correct category
  * @param {Object} projects The portfolio project data to display, contains name, image etc
  */
-export default function ProsjektProjects({ filter, projects }) {
+const ProsjektProjects =  function ProsjektProjects({ filter, projects }) {
   return (
     <>
       {projects.map(
@@ -70,6 +70,8 @@ export default function ProsjektProjects({ filter, projects }) {
   )
 }
 
+export default ProsjektProjects
+
 ProsjektProjects.propTypes = {
   filter: PropTypes.string,
   projects: PropTypes.arrayOf(PropTypes.object),
@@ -79,3 +81,5 @@ ProsjektProjects.defaultProps = {
   filter: null,
   projects: null,
 }
+
+

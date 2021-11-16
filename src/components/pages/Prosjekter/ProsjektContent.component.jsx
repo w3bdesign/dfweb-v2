@@ -11,7 +11,7 @@ import CATEGORIES from "../../../constants/CATEGORIES"
  * Also uses React-reveal-effects for displaying projects during scrolling
  * Displays portfolio entries based on the projects filter prop passed to Portfolio
  */
-export default function ProsjektContent() {
+const ProsjektContent = function ProsjektContent() {
   /**
    * Setup filter funtionality to only show projects from the selected category
    */
@@ -132,3 +132,5 @@ export default function ProsjektContent() {
     </main>
   )
 }
+
+export default ProsjektContent
