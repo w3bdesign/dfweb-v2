@@ -6,6 +6,8 @@ import Fade from "react-reveal-effects/Fade"
 import ProsjektProjects from "./ProsjektProjects.component"
 import CATEGORIES from "../../../constants/CATEGORIES"
 
+import LoadingSpinner from "./LoadingSpinner.component"
+
 /**
  * Fetch portfolio projects from GraphQL
  * Also uses React-reveal-effects for displaying projects during scrolling
@@ -20,18 +22,29 @@ const ProsjektContent = function ProsjektContent() {
    * Should we fade in portfolio projects that are filtered?
    */
   const [shouldAnimate, setshouldAnimate] = useState(false)
+  /**
+   * Should we show loading spinner?
+   */
+  const [loading, setLoading] = useState(true)
+  /**
+   * Show error while fetching projects
+   */
+  const [error, setError] = useState()
 
   /**
-   * API setup
+   * Fetch project data from API
    */
-
   const [allProjects, setAllProjects] = useState([])
   useEffect(() => {
     // Get data from Gatsby local function
     fetch(`/api/projects`)
       .then((response) => response.json()) // parse JSON from request
       .then((resultData) => {
+        setLoading(false)
         setAllProjects(resultData.data)
+      })
+      .catch(() => {
+        setError("Feil under henting av prosjektdata")
       })
   }, [])
 
@@ -86,47 +99,61 @@ const ProsjektContent = function ProsjektContent() {
               </select>
             </form>
           </span>
-          <Fade when={shouldAnimate}>
-            {categoryFilter && allProjects && (
-              <>
-                <div
-                  id="categoryFilterDiv"
-                  className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow"
-                >
-                  {categoryFilter}
-                </div>
-                <div
-                  id="prosjektgrid"
-                  className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
-                >
-                  <ProsjektProjects
-                    filter={categoryFilter}
-                    projects={allProjects}
-                  />
-                </div>
-              </>
-            )}
-          </Fade>
-          <Fade>
-            {!categoryFilter &&
-              allProjects &&
-              CATEGORIES.map(({ id, name }) => (
-                <div key={id}>
-                  <div
-                    id="categoryFilterDiv"
-                    className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow"
-                  >
-                    {name}
-                  </div>
-                  <div
-                    id="prosjektgrid"
-                    className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
-                  >
-                    <ProsjektProjects filter={name} projects={allProjects} />
-                  </div>
-                </div>
-              ))}
-          </Fade>
+
+          {error && (
+            <h1 className="text-3xl mt-24 h-96 text-center">{error}</h1>
+          )}
+
+          {loading && !error && <LoadingSpinner />}
+
+          {!loading && (
+            <>
+              <Fade when={shouldAnimate}>
+                {categoryFilter && allProjects && (
+                  <>
+                    <div
+                      id="categoryFilterDiv"
+                      className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow"
+                    >
+                      {categoryFilter}
+                    </div>
+                    <div
+                      id="prosjektgrid"
+                      className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
+                    >
+                      <ProsjektProjects
+                        filter={categoryFilter}
+                        projects={allProjects}
+                      />
+                    </div>
+                  </>
+                )}
+              </Fade>
+              <Fade>
+                {!categoryFilter &&
+                  allProjects &&
+                  CATEGORIES.map(({ id, name }) => (
+                    <div key={id}>
+                      <div
+                        id="categoryFilterDiv"
+                        className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow"
+                      >
+                        {name}
+                      </div>
+                      <div
+                        id="prosjektgrid"
+                        className="grid gap-4 pt-4 pb-4 lg:px-0 xl:px-0 md:px-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 xs:grid-cols-1"
+                      >
+                        <ProsjektProjects
+                          filter={name}
+                          projects={allProjects}
+                        />
+                      </div>
+                    </div>
+                  ))}
+              </Fade>
+            </>
+          )}
         </div>
       </div>
     </main>
