@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function WordpressSVG() {
+const WordpressSVG = function WordpressSVG() {
   return (
     <svg
       role="img"
@@ -17,3 +17,5 @@ export default function WordpressSVG() {
     </svg>
   )
 }
+
+export default WordpressSVG

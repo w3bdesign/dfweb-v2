@@ -13,7 +13,7 @@ import IndexContent from "../components/pages/Index/IndexContent.component"
  * Main index page
  */
 
-export default function Index() {
+const Index = function Index() {
   return (
     <>
       <SEO title="Forside - Portefølje - " />
@@ -23,3 +23,5 @@ export default function Index() {
     </>
   )
 }
+
+export default Index

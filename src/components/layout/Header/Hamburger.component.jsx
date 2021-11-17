@@ -10,7 +10,7 @@ import LINKS from "../../../constants/LINKS"
  * If true, we add Animate.css animation classes
  */
 
-export default function Hamburger() {
+const Hamburger = function Hamburger() {
   const [isExpanded, setisExpanded] = useState(false)
   const [isInitialRender, setisInitialRender] = useState(true)
   const node = useRef()
@@ -119,3 +119,5 @@ export default function Hamburger() {
     </div>
   )
 }
+
+export default Hamburger

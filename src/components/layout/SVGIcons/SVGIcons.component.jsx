@@ -14,7 +14,7 @@ import PhotoshopSVG from "./SVG/PhotoshopSVG"
 /**
  * Display technologies used as DevIcons SVG icons
  */
-export default function SVGIcons() {
+const SVGIcons = function SVGIcons() {
   return (
     <p className="flex justify-center mt-4">
       <WordpressSVG />
@@ -25,3 +25,5 @@ export default function SVGIcons() {
     </p>
   )
 }
+
+export default SVGIcons

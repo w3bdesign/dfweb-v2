@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function ReactSVG() {
+const ReactSVG = function ReactSVG() {
   return (
     <svg
       role="img"
@@ -16,3 +16,5 @@ export default function ReactSVG() {
     </svg>
   )
 }
+
+export default ReactSVG

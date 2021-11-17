@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function VueSVG() {
+const VueSVG = function VueSVG() {
   return (
     <svg
       role="img"
@@ -17,3 +17,5 @@ export default function VueSVG() {
     </svg>
   )
 }
+
+export default VueSVG

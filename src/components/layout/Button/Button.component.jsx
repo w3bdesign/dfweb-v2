@@ -7,7 +7,7 @@ import PropTypes from "prop-types"
  * @param {Object} children Text passed into the button
  */
 
-export default function Button({ children }) {
+const Button = function Button({ children }) {
   return (
     <button
       type="submit"
@@ -17,6 +17,8 @@ export default function Button({ children }) {
     </button>
   )
 }
+
+export default Button
 
 Button.propTypes = {
   children: PropTypes.oneOfType([

@@ -14,7 +14,7 @@ import Footer from "../Footer/Footer.component"
  *
  * @param {Object} children Display the React components passed down from the menu
  */
-export default function Layout({ children }) {
+const Layout = function Layout({ children }) {
   return (
     <>
       <Navbar />
@@ -44,6 +44,8 @@ export default function Layout({ children }) {
     </>
   )
 }
+
+export default Layout
 
 Layout.propTypes = {
   children: PropTypes.oneOfType([
