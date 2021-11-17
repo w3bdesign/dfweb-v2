@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function TypescriptSVG() {
+const TypescriptSVG = function TypescriptSVG() {
   return (
     <svg
       role="img"
@@ -17,3 +17,5 @@ export default function TypescriptSVG() {
     </svg>
   )
 }
+
+export default TypescriptSVG

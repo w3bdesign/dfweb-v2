@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function PhotoshopSVG() {
+const PhotoshopSVG = function PhotoshopSVG() {
   return (
     <svg
       role="img"
@@ -17,3 +17,5 @@ export default function PhotoshopSVG() {
     </svg>
   )
 }
+
+export default PhotoshopSVG

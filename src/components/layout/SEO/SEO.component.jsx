@@ -27,7 +27,7 @@ const query = graphql`
  * @param {Boolean} article If page is article type, display relevant meta property
  */
 
-export default function SEO({ title, description, image, article }) {
+const SEO = function SEO({ title, description, image, article }) {
   const pathname = "/"
   const { site } = useStaticQuery(query)
 
@@ -83,6 +83,8 @@ export default function SEO({ title, description, image, article }) {
     </Helmet>
   )
 }
+
+export default SEO
 
 SEO.propTypes = {
   title: PropTypes.string,

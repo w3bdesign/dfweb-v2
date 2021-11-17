@@ -10,11 +10,9 @@ const LoadingSpinner = function LoadingSpinner() {
         r="20"
         fill="none"
         strokeWidth="5"
-       />
+      />
     </svg>
   )
 }
 
 export default LoadingSpinner
-
-
