@@ -5,7 +5,7 @@ import CopyrightSVG from "../SVGIcons/SVG/FontAwesomeCopyright"
  * Footer for site
  */
 
-const Footer = function Footer() {
+function Footer() {
   return (
     <footer
       role="contentinfo"

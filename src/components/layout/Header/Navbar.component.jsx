@@ -14,7 +14,7 @@ import "../../../css/button-animate.css"
  * We reduce code duplication by loading the links from a JSON object and map over it
  */
 
-const Navbar = function Navbar() {
+function Navbar() {
   return (
     <header role="banner" aria-label="Header for logo og navigasjon">
       <nav className="fixed top-0 z-50 w-full p-2 bg-gray-800">

@@ -9,7 +9,7 @@ import myCV from "../../../assets/CV-dfweb.pdf"
  * On mobile, we only show a link to display the PDF directly
  */
 
-const CVContent = function CVContent() {
+function CVContent() {
   return (
     <main id="maincontent">
       <div className="mt-24 bg-graybg">

@@ -1,6 +1,6 @@
 import React from "react"
 
-const PhotoshopSVG = function PhotoshopSVG() {
+function PhotoshopSVG() {
   return (
     <svg
       role="img"

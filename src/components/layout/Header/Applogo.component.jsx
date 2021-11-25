@@ -4,7 +4,7 @@ import React from "react"
  * Main SVG logo component
  */
 
-const AppLogo = function AppLogo() {
+function AppLogo() {
   return (
     <div className="flex w-full font-extrabold text-white md:w-1/2 md:justify-start">
       <a className="text-white" href="/" aria-label="Forside">

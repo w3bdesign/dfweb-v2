@@ -1,6 +1,6 @@
 import React from "react"
 
-const VueSVG = function VueSVG() {
+function VueSVG() {
   return (
     <svg
       role="img"

@@ -14,7 +14,7 @@ import ProsjektContent from "../components/pages/Prosjekter/ProsjektContent.comp
  * Includes react-reveal-effects for scrolling reveal animations
  */
 
-const Prosjekter = function Prosjekter() {
+function Prosjekter() {
   return (
     <>
       <SEO title="Portefølje - " />

@@ -14,7 +14,7 @@ import PhotoshopSVG from "./SVG/PhotoshopSVG"
 /**
  * Display technologies used as DevIcons SVG icons
  */
-const SVGIcons = function SVGIcons() {
+function SVGIcons() {
   return (
     <p className="flex justify-center mt-4">
       <WordpressSVG />

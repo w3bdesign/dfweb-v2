@@ -4,7 +4,7 @@ import React from "react"
  * Loading spinner to show while loading projects
  */
 
-const LoadingSpinner = function LoadingSpinner() {
+function LoadingSpinner() {
   return (
     <>
       <h1 className="text-3xl text-center">Laster inn prosjekter ...</h1>

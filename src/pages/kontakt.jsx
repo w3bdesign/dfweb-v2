@@ -13,7 +13,7 @@ import KontaktContent from "../components/pages/Kontakt/KontaktContent.component
  * Contact form page
  */
 
-const Kontakt = function Kontakt() {
+function Kontakt() {
   return (
     <>
       <SEO title="Kontakt - Portefølje - " />

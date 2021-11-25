@@ -14,7 +14,7 @@ import CVContent from "../components/pages/CV/CVContent.component"
  * Shows download link on mobile
  */
 
-const CV = function CV() {
+function CV() {
   return (
     <>
       <SEO title="CV - Portefølje - " />
