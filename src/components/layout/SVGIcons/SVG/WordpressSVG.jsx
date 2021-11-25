@@ -1,6 +1,6 @@
 import React from "react"
 
-const WordpressSVG = function WordpressSVG() {
+function WordpressSVG() {
   return (
     <svg
       role="img"

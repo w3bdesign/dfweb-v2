@@ -1,6 +1,6 @@
 import React from "react"
 
-const FontAwesomeCopyright = function FontAwesomeCopyright() {
+function FontAwesomeCopyright() {
   return (
     <svg
       aria-label="Copyright SVG Ikon"

@@ -13,12 +13,19 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 11,
+    ecmaVersion: 12,
     sourceType: "module",
   },
   plugins: ["react", "cypress"],
   rules: {
     "no-shadow": 0,
+    "react/function-component-definition": [
+      "warn",
+      {
+        namedComponents: "function-declaration",
+        unnamedComponents: "function-expression",
+      },
+    ],
     "jsx-a11y/label-has-associated-control": [
       "error",
       {

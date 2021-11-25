@@ -1,6 +1,6 @@
 import React from "react"
 
-const ReactSVG = function ReactSVG() {
+function ReactSVG() {
   return (
     <svg
       role="img"

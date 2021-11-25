@@ -1,6 +1,6 @@
 import React from "react"
 
-const TypescriptSVG = function TypescriptSVG() {
+function TypescriptSVG() {
   return (
     <svg
       role="img"

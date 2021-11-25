@@ -13,7 +13,7 @@ import LoadingSpinner from "./LoadingSpinner.component"
  * Also uses React-reveal-effects for displaying projects during scrolling
  * Displays portfolio entries based on the projects filter prop passed to Portfolio
  */
-const ProsjektContent = function ProsjektContent() {
+function ProsjektContent() {
   /**
    * Setup filter funtionality to only show projects from the selected category
    */

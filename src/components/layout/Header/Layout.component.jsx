@@ -14,7 +14,7 @@ import Footer from "../Footer/Footer.component"
  *
  * @param {Object} children Display the React components passed down from the menu
  */
-const Layout = function Layout({ children }) {
+function Layout({ children }) {
   return (
     <>
       <Navbar />

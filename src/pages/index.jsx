@@ -13,7 +13,7 @@ import IndexContent from "../components/pages/Index/IndexContent.component"
  * Main index page
  */
 
-const Index = function Index() {
+function Index() {
   return (
     <>
       <SEO title="Forside - Portefølje - " />

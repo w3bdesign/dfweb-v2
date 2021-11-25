@@ -7,7 +7,7 @@ import PropTypes from "prop-types"
  * @param {Object} children Text passed into the button
  */
 
-const Button = function Button({ children }) {
+function Button({ children }) {
   return (
     <button
       type="submit"
