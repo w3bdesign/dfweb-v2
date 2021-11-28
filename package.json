@@ -16,7 +16,8 @@
     "test": "jest --env=jsdom",
     "testcafe": "start-test develop http://localhost:8000 testcafex",
     "testcafex": "percy exec -- testcafe chrome:headless testcafe/**/*",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "stylelint": "stylelint **/*.css --fix"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
@@ -40,7 +41,7 @@
     "gatsby-transformer-sharp": "^4.2.0",
     "netlify-plugin-cypress": "^2.2.0",
     "node-fetch": "2.6.6",
-    "postcss": "^8.4.1",
+    "postcss": "^8.4.4",
     "postmark": "^2.7.8",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -72,8 +73,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "gatsby-cypress": "^2.2.0",
-    "identity-obj-proxy": "^3.0.0",
+    "gatsby-cypress": "^2.2.0",  
     "jest": "^27.3.1",
     "prettier": "^2.5.0",
     "react-test-renderer": "^17.0.2",
