@@ -18,7 +18,8 @@
     "testcafex": "percy exec -- testcafe chrome:headless testcafe/**/*",
     "cy:open": "cypress open",
     "stylelint": "stylelint **/*.css --fix",
-    "refresh": "rm -rf node_modules && rm package-lock.json && npm i"
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm i",
+    "bump": "npx npm-check-updates --target minor -u && npm i"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
