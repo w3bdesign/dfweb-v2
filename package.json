@@ -39,7 +39,7 @@
     "gatsby-plugin-sharp": "^4.2.0",
     "gatsby-plugin-sitemap": "^5.2.0",
     "gatsby-plugin-styled-components": "^5.2.0",
-    "gatsby-source-filesystem": "^4.2.0",
+    "gatsby-source-filesystem": "^4.3.0",
     "gatsby-transformer-sharp": "^4.2.0",
     "netlify-plugin-cypress": "^2.2.0",
     "node-fetch": "2.6.6",
