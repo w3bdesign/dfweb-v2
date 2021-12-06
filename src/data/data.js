@@ -40,7 +40,7 @@ exports.data = [
     id: 4,
     name: "Dfweb versjon 2",
     description:
-      "Porteføljen er lagd med Gatsby og React. Animasjoner er implementert via Animate.css og React-Spring. For design har jeg brukt Tailwind. CVen lastes via React-PDF.",
+      "Porteføljen er lagd med Gatsby og React. Animasjoner er implementert via Animate.css og React-Spring. For design har jeg brukt Tailwind.",
     subdescription: "Gatsby, React-Spring, Animate.css, Tailwind, Cypress",
     category: "React",
     urlwww: "https://www.dfweb.no/",
