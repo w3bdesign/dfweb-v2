@@ -94,9 +94,21 @@ exports.data = [
     subdescription:
       "Laravel, Vue, Vee Validate, Tailwind, Stripe, PostgreSQL, Vuex",
     category: "Vue",
-    urlwww: "https://laravel-vue3.herokuapp.com/",
+    urlwww: "https://laravel-vue3.herokuapp.com",
     urlgithub: "https://github.com/w3bdesign/laravel-vue",
     image:
       "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1614834460/Dfweb/laravel-vue_vpusac.png",
+  },
+  {
+    id: 9,
+    name: "LO - Partiene Svarer",
+    description:
+      "Valgomat for LO. Frontend er lagd i Vue 2. Styling via CSS. Backend er hentet fra CMS-løsningen til LO i Episerver.",
+    subdescription: "Vue, SCSS, Episerver",
+    category: "Vue",
+    urlwww: "https://www.lo.no/hva-vi-gjor/partiene-svarer-2021",
+    urlgithub: "",
+    image:
+      "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1638754632/Dfweb/partienesvarer_w6jwnp.jpg",
   },
 ]
