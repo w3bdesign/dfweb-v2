@@ -9,9 +9,9 @@ function LoadingSpinner() {
     <>
       <h1 className="text-3xl text-center">Laster inn prosjekter ...</h1>
       <div className="mt-8 flex items-center justify-center space-x-4 animate-bounce h-64">
-        <div className="w-16 h-16 bg-blue-400 rounded-full" />
-        <div className="w-16 h-16 bg-blue-400 rounded-full" />
-        <div className="w-16 h-16 bg-blue-400 rounded-full" />
+        <div className="w-12 h-12 bg-blue-400 rounded-full" />
+        <div className="w-12 h-12 bg-blue-400 rounded-full" />
+        <div className="w-12 h-12 bg-blue-400 rounded-full" />
       </div>
     </>
   )
