@@ -34,7 +34,7 @@ function ProsjektProjects({ filter, projects }) {
               <div className="mt-6 text-lg text-left lg:text-left md:text-left">
                 <p>{description}</p>
                 <p className="mt-6 text-left md:text-left lg:text-left">
-                  Stikkord: {subdescription}
+                  Teknologier: {subdescription}
                 </p>
                 <div className="flex justify-center mt-6">
                   <img src={image} alt={name} role="presentation" />
