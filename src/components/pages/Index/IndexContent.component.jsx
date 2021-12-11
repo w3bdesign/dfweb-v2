@@ -111,7 +111,7 @@ function IndexContent() {
                 className="mt-6 text-lg"
               >
                 Jeg arbeider jevnlig med hobbyprosjekter.
-                <span className="mt-4">Kildekoden publiserer jeg på </span>
+                <br/>Kildekoden publiserer jeg på
                 <a
                   className="underline"
                   href="https://github.com/w3bdesign"
