@@ -20,8 +20,6 @@ function LoadingSpinner() {
       <h1 className="text-3xl text-center">Laster inn prosjekter ...</h1>
       <div className="mt-8 flex items-center justify-center space-x-4 animate-bounce h-64">
         <BlueBouncingBall />
-        <BlueBouncingBall />
-        <BlueBouncingBall />
       </div>
     </>
   )
