@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
-import { HamburgerCollapse } from "react-animated-burgers"
+// import { HamburgerCollapse } from "react-animated-burgers"
+import { GiHamburgerMenu } from "react-icons/gi"
 
 import LINKS from "../../../constants/LINKS"
 
@@ -60,11 +61,8 @@ function Hamburger() {
 
   return (
     <div ref={node} className="z-50 md:hidden lg:hidden xl:hidden">
-      <HamburgerCollapse
-        isActive={isExpanded}
-        toggleButton={handleMobileMenuClick}
-        buttonColor="#1f2937"
-        barColor="white"
+      <GiHamburgerMenu
+        className="fill-white w-10 h-10"
         id="hamburger"
         data-cy="hamburger"
         data-testid="hamburger"
@@ -79,7 +77,7 @@ function Hamburger() {
         data-testid="mobile-menu"
         aria-hidden={isInitialRender}
         hidden={isInitialRender}
-        className={`absolute right-0 w-full text-center bg-gray-800 w-30  ${
+        className={`absolute right-0 w-full text-center bg-gray-800 mt-4 w-30 ${
           isExpanded
             ? `animate__animated animate__fadeInUp`
             : `animate__animated animate__fadeOutDown`

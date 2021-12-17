@@ -27,7 +27,7 @@ function Navbar() {
           <div
             id="hamburger-div"
             data-cy="hamburger-div"
-            className="flex content-center justify-between md:w-1/2 md:justify-end"
+            className="flex content-center justify-between md:w-1/2 md:justify-end p-3"
           >
             <Hamburger />
             <ul
