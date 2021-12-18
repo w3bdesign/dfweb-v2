@@ -97,7 +97,7 @@ function IndexContent() {
               >
                 Jeg har også erfaring med andre teknologier som moderne
                 Javascript (ES6+), Node.js, Firebase, Context, Redux, Axios,
-                Docker, Storybook, NextJS, Gatsby, MongoDB, Opencart, Magento
+                Docker, Storybook, NextJS, Gatsby, MongoDB, OpenCart, Magento
                 med mer.
               </p>
             </section>
@@ -111,14 +111,16 @@ function IndexContent() {
                 className="mt-6 text-lg"
               >
                 Jeg arbeider jevnlig med hobbyprosjekter.
-                <span className="mt-4">Kildekoden publiserer jeg på </span>
+                <br/>
+                <br/>
+                Kildekoden publiserer jeg på
                 <a
                   className="underline"
                   href="https://github.com/w3bdesign"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GITHUB
+                  {" "}GITHUB
                 </a>
               </p>
               <p className="mt-6 text-lg">
@@ -127,8 +129,7 @@ function IndexContent() {
                   {" "}
                   PROSJEKTER{" "}
                 </Link>
-                kan du se eksempler på arbeid jeg har gjort i 2019, 2020 og
-                2021.
+                kan du se eksempler på arbeid jeg har gjort i nyere tid.
               </p>
             </section>
           </div>
