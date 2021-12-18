@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
-// import { HamburgerCollapse } from "react-animated-burgers"
 import { GiHamburgerMenu } from "react-icons/gi"
 
 import LINKS from "../../../constants/LINKS"
