@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./public/**/*.html", "./src/**/*.{js,jsx}"],
+  content: ["./public/**/*.html", "./src/**/*.{js,jsx}"],
   theme: {
     fontFamily: {
       body: ["Lato"],

@@ -69,7 +69,7 @@ function ProsjektContent() {
   }
 
   return (
-    <main aria-label="Innhold portefølje" className="mt-24 bg-graybg">
+    <main aria-label="Innhold portefølje" className="mt-32 bg-graybg">
       <div className="container mx-auto rounded">
         <div className="px-4 mx-auto mt-4 lg:px-0 xl:px-0 md:px-0">
           <span className="flex justify-end mb-4">

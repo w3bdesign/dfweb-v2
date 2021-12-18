@@ -23,6 +23,12 @@ const LINKS = [
     text: "Github",
     external: true,
   },
+  {
+    id: 5,
+    url: "/kontakt",
+    text: "Kontakt",
+    external: false,
+  },
 ]
 
 export default LINKS
