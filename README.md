@@ -24,6 +24,7 @@ GraphQL backend that was previously used is here: <https://github.com/w3bdesign/
 
 - Gatsby as main project dependency
 - Gatsby functions for fetching portfolio project information
+- Contact form with CAPTCHA
 - Filter projects based on category
 - React Helmet for modifying HTML header
 - Gatsby plugin for generating robots.txt and sitemap.xml
