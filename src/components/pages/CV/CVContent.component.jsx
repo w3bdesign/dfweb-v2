@@ -17,7 +17,7 @@ function CVContent() {
           <div className="container mx-auto bg-white rounded shadow">
             <div className="p-4 mx-auto mt-4">
               <div className="p-4 text-lg rounded">
-                <h3 className="m-2 text-3xl text-center text-black">CV</h3>
+                <h1 className="m-2 text-3xl text-center text-black">CV</h1>
                 <div className="mt-0 sm:mt-2 xs:mt-2">
                   <a rel="noopener noreferrer" target="_blank" href={myCV}>
                     <StaticImage
