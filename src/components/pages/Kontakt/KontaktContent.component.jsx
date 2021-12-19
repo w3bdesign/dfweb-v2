@@ -11,7 +11,7 @@ import Button from "../../layout/Button/Button.component"
 function KontaktContent() {
   const formRef = useRef()
   const captchaRef = useRef()
-  const [serverResponse, setServerResponse] = useState("")
+  const [serverResponse, setServerResponse] = useState()
   const [captchaError, setcaptchaError] = useState()
 
   useEffect(() => loadCaptchaEnginge(6), [])
