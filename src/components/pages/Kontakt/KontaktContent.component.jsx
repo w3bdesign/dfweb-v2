@@ -52,14 +52,17 @@ function KontaktContent() {
           <div className="container mx-auto bg-white rounded shadow">
             <div className="p-4 mx-auto mt-4">
               <div className="p-4 text-lg rounded">
-                
-                  {serverResponse && (<h3 className="m-12 text-3xl text-center text-green">{serverResponse}</h3>)}
-               
+                {serverResponse && (
+                  <h3 className="m-12 text-3xl text-center text-green">
+                    {serverResponse}
+                  </h3>
+                )}
+
                 {!serverResponse && (
                   <>
-                    <h3 className="m-2 text-3xl text-center text-black">
+                    <h1 className="m-2 text-3xl text-center text-black">
                       Kontakt
-                    </h3>
+                    </h1>
                     <form
                       className="text-center"
                       ref={formRef}

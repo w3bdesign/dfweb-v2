@@ -30,7 +30,7 @@ function ProsjektProjects({ filter, projects }) {
               key={id}
               className="p-6 text-lg text-black transition duration-500 ease-in-out bg-white rounded shadow hover:bg-gray-200 transform-gpu"
             >
-              <p className="text-xl font-black text-center">{name}</p>
+              <h2 className="text-xl font-black text-center">{name}</h2>
               <div className="mt-6 text-lg text-left lg:text-left md:text-left">
                 <p>{description}</p>
                 <p className="mt-6 text-left md:text-left lg:text-left">
