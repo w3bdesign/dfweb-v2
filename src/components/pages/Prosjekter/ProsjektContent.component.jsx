@@ -138,7 +138,7 @@ function ProsjektContent() {
                         id="categoryFilterDiv"
                         className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow"
                       >
-                        {name}
+                       <h1>{name}</h1>
                       </div>
                       <div
                         id="prosjektgrid"
