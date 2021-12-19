@@ -101,7 +101,7 @@ function ProsjektContent() {
           </span>
 
           {error && (
-            <h1 className="text-3xl mt-24 h-96 text-center">{error}</h1>
+            <h2 className="text-3xl mt-24 h-96 text-center">{error}</h2>
           )}
 
           {loading && !error && <LoadingSpinner />}
@@ -115,7 +115,7 @@ function ProsjektContent() {
                       id="categoryFilterDiv"
                       className="p-4 text-2xl font-bold text-center text-black bg-white rounded shadow"
                     >
-                      {categoryFilter}
+                      <h1>{categoryFilter}</h1>
                     </div>
                     <div
                       id="prosjektgrid"
