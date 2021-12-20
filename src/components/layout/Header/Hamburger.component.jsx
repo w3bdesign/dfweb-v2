@@ -13,7 +13,7 @@ function Hamburger() {
   const [isExpanded, setisExpanded] = useState(false)
   const [isInitialRender, setisInitialRender] = useState(true)
   const hamburgerLine =
-    "h-1 w-10 my-1 rounded-full bg-white transition ease transform duration-200"
+    "h-1 w-10 my-1 rounded-full bg-white transition ease transform duration-300"
   const node = useRef()
 
   const handleClickOutside = (e) => {
