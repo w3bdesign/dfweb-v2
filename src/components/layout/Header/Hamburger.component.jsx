@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
-import { GiHamburgerMenu } from "react-icons/gi"
 
 import LINKS from "../../../constants/LINKS"
 
@@ -67,6 +66,7 @@ function Hamburger() {
         data-cy="hamburger"
         data-testid="hamburger"
         onClick={handleMobileMenuClick}
+        aria-expanded={isExpanded}
         type="button"
       >
         <div
