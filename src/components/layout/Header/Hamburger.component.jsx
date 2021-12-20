@@ -13,6 +13,8 @@ import LINKS from "../../../constants/LINKS"
 function Hamburger() {
   const [isExpanded, setisExpanded] = useState(false)
   const [isInitialRender, setisInitialRender] = useState(true)
+  const hamburgerLine =
+    "h-1 w-10 my-1 rounded-full bg-white transition ease transform duration-200"
   const node = useRef()
 
   const handleClickOutside = (e) => {
@@ -60,13 +62,33 @@ function Hamburger() {
 
   return (
     <div ref={node} className="z-50 md:hidden lg:hidden xl:hidden">
-      <GiHamburgerMenu
-        className="fill-white w-10 h-10"
-        id="hamburger"
+      <button
+        className="flex flex-col w-16 rounded justify-center items-center group"
         data-cy="hamburger"
         data-testid="hamburger"
         onClick={handleMobileMenuClick}
-      />
+        type="button"
+      >
+        <div
+          className={`${hamburgerLine} ${
+            isExpanded
+              ? "rotate-45 translate-y-3 opacity-100 group-hover:opacity-100"
+              : "opacity-100 group-hover:opacity-100"
+          }`}
+        />
+        <div
+          className={`${hamburgerLine} ${
+            isExpanded ? "opacity-0" : "opacity-100 group-hover:opacity-100"
+          }`}
+        />
+        <div
+          className={`${hamburgerLine} ${
+            isExpanded
+              ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
+              : "opacity-100 group-hover:opacity-100"
+          }`}
+        />
+      </button>
       {/* 
         Start the mobile menu initially as hidden, then remove hidden class if we have clicked on the mobile menu
         Add Animate.css animation classes once we click on the mobile menu
