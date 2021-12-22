@@ -34,7 +34,7 @@ GraphQL backend that was previously used is here: <https://github.com/w3bdesign/
 - Animate.css for menu animations
 - CSS hover animations in navigation menu
 - React-reveal-effects for revealing content on portfolio
-- React-animated-burgers for animating hamburger in menu
+- Tailwind CSS for animating hamburger in menu
 - React-spring for animations on front page and page transitions
 
 ### Accessibility and design:
