@@ -111,8 +111,8 @@ function IndexContent() {
                 className="mt-6 text-lg"
               >
                 Jeg arbeider jevnlig med hobbyprosjekter.
-                <br/>
-                <br/>
+                <br />
+                <br />
                 Kildekoden publiserer jeg på
                 <a
                   className="underline"
@@ -120,7 +120,8 @@ function IndexContent() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {" "}GITHUB
+                  {" "}
+                  GITHUB
                 </a>
               </p>
               <p className="mt-6 text-lg">
