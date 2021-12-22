@@ -19,7 +19,9 @@
     "cy:open": "cypress open",
     "stylelint": "stylelint **/*.css --fix",
     "refresh": "rm -rf node_modules && rm package-lock.json && npm i",
-    "bump": "npx npm-check-updates --target minor -u && npm i"
+    "bump": "npx npm-check-updates --target minor -u && npm i",
+    "lint": "eslint --fix --ext .js,.jsx ."
+    
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",

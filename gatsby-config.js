@@ -34,6 +34,6 @@ module.exports = {
     "gatsby-plugin-react-svg",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-robots-txt",
-    "gatsby-plugin-sitemap",    
+    "gatsby-plugin-sitemap",
   ],
 }
