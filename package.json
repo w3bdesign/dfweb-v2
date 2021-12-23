@@ -2,7 +2,7 @@
   "name": "dfweb-v2",
   "private": true,
   "description": "Personal portfolio",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "license": "MIT",
   "scripts": {
     "build": "gatsby clean && gatsby build",

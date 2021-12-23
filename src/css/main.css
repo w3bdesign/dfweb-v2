@@ -1,5 +1,6 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Global font */
 body {
@@ -16,12 +17,10 @@ body {
 
 /* Custom styling for main hero image */
 #main-hero {
-  background-image: url("../assets/blue-hero.jpg");
+  background-image: url("../assets/img/blue-hero.jpg");
   height: 450px;
 }
 
 #prosjektgrid {
   grid-gap: 1rem;
 }
-
-@import "tailwindcss/utilities";
