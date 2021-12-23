@@ -2,7 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Button from "../../layout/Button/Button.component"
-import myCV from "../../../assets/CV-dfweb.pdf"
+import myCV from "../../../assets/pdf/CV-dfweb.pdf"
 
 /**
  * Displays the CV content using react-pdf
