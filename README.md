@@ -43,7 +43,7 @@ GraphQL backend that was previously used is here: <https://github.com/w3bdesign/
 - Fully responsive design tested on all devices
 - Relevant aria labels added for all content
 - Devicon SVG icons for project icons
-- Tailwind CSS with JIT for styling
+- Tailwind CSS for styling
 - Google fonts with Lato
 
 ### Code quality:
