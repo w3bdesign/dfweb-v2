@@ -14,7 +14,7 @@ function KontaktContent() {
   const [serverResponse, setServerResponse] = useState("")
   const [captchaError, setcaptchaError] = useState()
 
-  useEffect(() => loadCaptchaEnginge(6), [])
+  useEffect(() => loadCaptchaEnginge(3), [])
 
   const handleCaptchaSubmit = () => {
     const captchaValue = captchaRef.current.value
