@@ -5,7 +5,7 @@ import Button from "../../layout/Button/Button.component"
 import myCV from "../../../assets/pdf/CV-dfweb.pdf"
 
 /**
- * Displays the CV content using react-pdf
+ * Displays the CV content
  * On mobile, we only show a link to display the PDF directly
  */
 
