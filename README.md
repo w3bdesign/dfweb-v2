@@ -34,7 +34,7 @@ GraphQL backend that was previously used is here: <https://github.com/w3bdesign/
 - Animate.css for menu animations
 - CSS hover animations in navigation menu
 - React-reveal-effects for revealing content on portfolio
-- React-animated-burgers for animating hamburger in menu
+- Tailwind CSS for animating hamburger in menu
 - React-spring for animations on front page and page transitions
 
 ### Accessibility and design:
@@ -43,14 +43,14 @@ GraphQL backend that was previously used is here: <https://github.com/w3bdesign/
 - Fully responsive design tested on all devices
 - Relevant aria labels added for all content
 - Devicon SVG icons for project icons
-- Tailwind CSS with JIT for styling
+- Tailwind CSS for styling
 - Google fonts with Lato
 
 ### Code quality:
 
 - Continuous Integration with CircleCI
 - Codacy static code quality analysis
-- E2E testing with Cypress and netlify-plugin-cypress
+- E2E testing with Cypress
 - Visual snapshot testing with Testcafe and Percy
 - Unit testing with Jest and React-Testing-Library
 - Scrutinizer code quality inspection integration
