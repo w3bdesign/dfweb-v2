@@ -71,7 +71,7 @@ function KontaktContent() {
                       action="/api/form"
                     >
                       <fieldset>
-                        <legend className="container m-4 mx-auto text-xl text-center sm:w-32">
+                        <legend className="container m-4 mx-auto text-xl text-center w-32">
                           Vennligst fyll ut kontaktskjemaet:{" "}
                         </legend>
                         <label htmlFor="navn" className="text-black">
