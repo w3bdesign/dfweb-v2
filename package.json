@@ -52,7 +52,7 @@
     "react-helmet": "^6.1.0",
     "react-reveal-effects": "^1.0.12",
     "react-simple-captcha": "^8.2.4",
-    "react-spring": "^9.4.0",
+    "react-spring": "^9.4.1",
     "styled-components": "^5.3.3",
     "tailwindcss": "^3.0.10",
     "testcafe": "^1.18.1",
