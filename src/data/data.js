@@ -93,7 +93,7 @@ exports.data = [
     subdescription:
       "React, Typescript, SASS, Easy Peasy, React-Toastify, React Transition Group, Animate.css ",
     category: "Typescript",
-    urlwww: "https://nav.dfweb.no/",
+    urlwww: "",
     urlgithub: "https://github.com/w3bdesign/nav-jobs",
     image:
       "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1618012244/Dfweb/nav-jobber_t2exy7.jpg",
