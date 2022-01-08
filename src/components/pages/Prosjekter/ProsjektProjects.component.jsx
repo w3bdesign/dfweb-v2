@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import Button from "../../layout/Button/Button.component"
 
 /**
- * Display individual portfilio projects if they match the filter passed down through props
+ * Display individual portfolio projects if they match the filter passed down through props
  *
  * @param {Object} filter The filter that we apply to the component so we only displays projects from the correct category
  * @param {Object} projects The portfolio project data to display, contains name, image etc
