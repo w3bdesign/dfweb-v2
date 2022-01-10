@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"
-import { init, sendForm } from "emailjs-com"
+import { init, sendForm } from "@emailjs/browser"
 import {
   loadCaptchaEnginge,
   LoadCanvasTemplateNoReload,
