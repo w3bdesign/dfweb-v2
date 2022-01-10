@@ -16,7 +16,7 @@ import "../../../css/button-animate.css"
 
 function Navbar() {
   return (
-    <header role="banner" aria-label="Header for logo og navigasjon">
+    <header aria-label="Header for logo og navigasjon">
       <nav className="fixed top-0 z-50 w-full p-2 bg-gray-800">
         <div
           id="main-navigation"
