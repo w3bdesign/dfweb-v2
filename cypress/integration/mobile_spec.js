@@ -10,7 +10,7 @@ describe("Navigation", () => {
 
     it("Hamburger should not be visible", () => {
       cy.get("#main-navigation").should("be.visible")
-      cy.get("#hamburger").should("not.be.visible")
+      cy.get("[data-cy=hamburger]").should("not.be.visible")
     })
   })
 
@@ -26,11 +26,8 @@ describe("Navigation", () => {
     })
 
     it("Mobile menu is visible after we click on the hamburger", () => {
-      cy.findByRole("button", { name: /navigation/i }).click()
-      cy.findByRole("link", { name: /Forside/i }).should("exist")
-
-      // cy.get("[data-cy=hamburger]").click()
-      // cy.contains("Kontakt").should("be.visible")
+      cy.get("[data-cy=hamburger]").click()
+      cy.contains("Kontakt").should("be.visible")
     })
   })
 })
