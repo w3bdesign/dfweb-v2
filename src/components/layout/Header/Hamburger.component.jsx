@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
+import classNames from "classnames"
 
 import LINKS from "../../../constants/LINKS"
 
@@ -14,6 +15,15 @@ function Hamburger() {
   const [isInitialRender, setisInitialRender] = useState(true)
   const hamburgerLine =
     "h-1 w-10 my-1 rounded-full bg-white transition ease transform duration-300"
+
+  const fadeInUpCSS = classNames(
+    "absolute right-0 w-full text-center bg-gray-800 mt-4 w-30",
+    {
+      "animate__animated animate__fadeInUp": isExpanded,
+      "animate__animated animate__fadeOutDown": !isExpanded,
+    }
+  )
+
   const node = useRef()
 
   const handleClickOutside = (e) => {
@@ -98,11 +108,7 @@ function Hamburger() {
         data-testid="mobile-menu"
         aria-hidden={isInitialRender}
         hidden={isInitialRender}
-        className={`absolute right-0 w-full text-center bg-gray-800 mt-4 w-30 ${
-          isExpanded
-            ? `animate__animated animate__fadeInUp`
-            : `animate__animated animate__fadeOutDown`
-        }`}
+        className={fadeInUpCSS}
       >
         <ul aria-label="Navigasjon">
           {LINKS.map((link) => (
