@@ -7,10 +7,7 @@ import CopyrightSVG from "../SVGIcons/SVG/FontAwesomeCopyright"
 
 function Footer() {
   return (
-    <footer
-      role="contentinfo"
-      aria-label="Innholdet for bunnteksten med copyright"
-    >
+    <footer aria-label="Innholdet for bunnteksten med copyright">
       <div className="mt-4 bg-gray-800 shadow">
         <div
           aria-label="Copyright tekst"
