@@ -1,3 +1,4 @@
+![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/dfweb.no?publish)
 [![DeepScan grade](https://deepscan.io/api/teams/11080/projects/19507/branches/508466/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11080&pid=19507&bid=508466)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ca1f4d3ffd4b40a5ac872428787f1442)](https://app.codacy.com/gh/w3bdesign/dfweb?utm_source=github.com&utm_medium=referral&utm_content=w3bdesign/dfweb&utm_campaign=Badge_Grade)
 [![CircleCI](https://circleci.com/gh/w3bdesign/dfweb/tree/master.svg?style=shield)](https://circleci.com/gh/w3bdesign/dfweb)
