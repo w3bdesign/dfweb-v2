@@ -69,19 +69,19 @@ function Hamburger() {
         aria-expanded={isExpanded}
         type="button"
       >
-        <div
+        <span
           className={`${hamburgerLine} ${
             isExpanded
               ? "rotate-45 translate-y-3 opacity-100 group-hover:opacity-100"
               : "opacity-100 group-hover:opacity-100"
           }`}
         />
-        <div
+        <span
           className={`${hamburgerLine} ${
             isExpanded ? "opacity-0" : "opacity-100 group-hover:opacity-100"
           }`}
         />
-        <div
+        <span
           className={`${hamburgerLine} ${
             isExpanded
               ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
