@@ -31,7 +31,6 @@ function Navbar() {
           >
             <Hamburger />
             <ul
-              role="navigation"
               aria-label="Navigasjon"
               className="items-center justify-between flex-1 hidden list-reset md:flex lg:flex xl:flex lg:-mr-4 xl:-mr-4"
             >

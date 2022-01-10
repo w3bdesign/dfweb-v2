@@ -104,7 +104,7 @@ function Hamburger() {
             : `animate__animated animate__fadeOutDown`
         }`}
       >
-        <ul role="navigation" aria-label="Navigasjon">
+        <ul aria-label="Navigasjon">
           {LINKS.map((link) => (
             <li
               key={link.id}
