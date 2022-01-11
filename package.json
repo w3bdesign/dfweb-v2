@@ -2,7 +2,7 @@
   "name": "dfweb-v2",
   "private": true,
   "description": "Personal portfolio",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "license": "MIT",
   "scripts": {
     "build": "gatsby clean && gatsby build",
@@ -67,7 +67,7 @@
     "babel-eslint": "^10.1.0",
     "babel-preset-gatsby": "^2.4.0",
     "classnames": "^2.3.1",
-    "cypress": "^9.2.0",
+    "cypress": "^9.2.1",
     "eslint": "^8.6.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.3.0",
