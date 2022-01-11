@@ -79,6 +79,7 @@ function Hamburger() {
         aria-expanded={isExpanded}
         type="button"
       >
+        <span className="sr-only text-white text-2xl">Hamburger</span>
         <span
           className={`${hamburgerLine} ${
             isExpanded
