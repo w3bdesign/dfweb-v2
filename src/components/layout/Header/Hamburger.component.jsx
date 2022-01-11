@@ -14,7 +14,7 @@ function Hamburger() {
   const [isExpanded, setisExpanded] = useState(false)
   const [isInitialRender, setisInitialRender] = useState(true)
   const hamburgerLine =
-    "h-1 w-10 my-1 rounded-full bg-white transition ease transform duration-300"
+    "h-1 w-10 my-1 rounded-full bg-white transition ease transform duration-300 not-sr-only"
 
   const fadeInUpCSS = classNames(
     "absolute right-0 w-full text-center bg-gray-800 mt-4 w-30",
@@ -79,6 +79,7 @@ function Hamburger() {
         aria-expanded={isExpanded}
         type="button"
       >
+        <span className="sr-only text-white text-2xl">Hamburger</span>
         <span
           className={`${hamburgerLine} ${
             isExpanded
