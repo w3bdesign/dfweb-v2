@@ -42,7 +42,7 @@
     "gatsby-source-filesystem": "^4.5.1",
     "gatsby-transformer-sharp": "^4.5.0",
     "netlify-plugin-cypress": "^2.2.0",
-    "node-fetch": "2.6.6",
+    "node-fetch": "2.6.7",
     "postcss": "^8.4.5",
     "postmark": "^2.8.1",
     "prop-types": "^15.8.1",
