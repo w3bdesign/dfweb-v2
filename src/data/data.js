@@ -83,7 +83,7 @@ exports.data = [
     urlwww: "https://vegvesen.dfweb.no",
     urlgithub: "https://github.com/w3bdesign/Statens-Vegvesen",
     image:
-      "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1588556573/Dfweb/statens-vegvesen_xsth2e.jpg",
+      "https://res.cloudinary.com/duelisue0/image/upload/c_fill,h_255,w_500/v1642620910/Dfweb/statensvegvesen_vbthsh.png",
   },
   {
     id: 8,
