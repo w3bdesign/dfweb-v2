@@ -51,7 +51,7 @@ function KontaktContent() {
         <div className="px-4 p lg:px-0 xl:px-0 md:px-0">
           <div className="container mx-auto bg-white rounded shadow">
             <div className="p-4 mx-auto mt-4">
-              <div className="p-4 text-lg rounded">
+              <div className="text-lg rounded md:p-4">
                 {serverResponse && (
                   <h3 className="m-12 text-3xl text-center text-green">
                     {serverResponse}
@@ -71,8 +71,8 @@ function KontaktContent() {
                       action="/api/form"
                     >
                       <fieldset>
-                        <legend className="container m-4 mx-auto text-xl text-center w-full">
-                          Vennligst fyll ut kontaktskjemaet:{" "}
+                        <legend className="container m-4 mx-auto text-xl text-center w-80">
+                          Vennligst fyll ut kontaktskjemaet:
                         </legend>
                         <label htmlFor="navn" className="text-black">
                           Fullt navn
