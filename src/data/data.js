@@ -77,8 +77,8 @@ exports.data = [
     id: 7,
     name: "Statens Vegvesen",
     description:
-      "Henter informasjon fra Statens Vegvesen sitt REST API med en serverless backend som benyttes som proxy. Bruker Parcel bundler og er kodet i Typescript med HTML5 og Materialize for design.",
-    subdescription: "HTML5, Typescript, OOP, Materialize, Parcel, Serverless",
+      "Henter informasjon fra Statens Vegvesen sitt REST API med en serverless backend som benyttes som proxy. Bruker Parcel bundler og er kodet i Typescript med HTML5 og Bootstrap 5 for design.",
+    subdescription: "HTML5, Typescript, OOP, Bootstrap, Parcel, Serverless",
     category: "Typescript",
     urlwww: "https://vegvesen.dfweb.no",
     urlgithub: "https://github.com/w3bdesign/Statens-Vegvesen",
