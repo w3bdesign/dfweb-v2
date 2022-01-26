@@ -1,5 +1,3 @@
-/* global cy, describe, context, beforeEach, it */
-
 describe("Navigation", () => {
   context("720p resolution", () => {
     beforeEach(() => {
