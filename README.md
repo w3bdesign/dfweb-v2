@@ -1,5 +1,5 @@
 [![DeepScan grade](https://deepscan.io/api/teams/11080/projects/19507/branches/508466/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11080&pid=19507&bid=508466)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ca1f4d3ffd4b40a5ac872428787f1442)](https://app.codacy.com/gh/w3bdesign/dfweb?utm_source=github.com&utm_medium=referral&utm_content=w3bdesign/dfweb&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1b9614b413af47d8b8f506e45c3e7f10)](https://www.codacy.com/gh/w3bdesign/dfweb/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=w3bdesign/dfweb&amp;utm_campaign=Badge_Grade)
 [![CircleCI](https://circleci.com/gh/w3bdesign/dfweb/tree/master.svg?style=shield)](https://circleci.com/gh/w3bdesign/dfweb)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/w3bdesign/dfweb.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/w3bdesign/dfweb/context:javascript)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=w3bdesign_dfweb&metric=alert_status)](https://sonarcloud.io/dashboard?id=w3bdesign_dfweb)
