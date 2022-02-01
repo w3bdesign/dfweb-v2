@@ -90,12 +90,11 @@ function ProsjektContent() {
                 <option label="" value="">
                   Ingen filtrering
                 </option>
-                {CATEGORIES &&
-                  CATEGORIES.map(({ id, name }) => (
-                    <option key={id} value={name}>
-                      {name}
-                    </option>
-                  ))}
+                {CATEGORIES?.map(({ id, name }) => (
+                  <option key={id} value={name}>
+                    {name}
+                  </option>
+                ))}
               </select>
             </form>
           </span>
