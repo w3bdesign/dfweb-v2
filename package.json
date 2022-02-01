@@ -2,7 +2,7 @@
   "name": "dfweb-v2",
   "private": true,
   "description": "Personal portfolio",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "license": "MIT",
   "scripts": {
     "build": "gatsby clean && gatsby build",
@@ -43,8 +43,7 @@
     "gatsby-transformer-sharp": "^4.6.0",
     "netlify-plugin-cypress": "^2.2.0",
     "node-fetch": "2.6.7",
-    "postcss": "^8.4.6",
-    "postmark": "^2.8.1",
+    "postcss": "^8.4.6",  
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
