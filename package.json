@@ -43,7 +43,7 @@
     "gatsby-transformer-sharp": "^4.6.0",
     "netlify-plugin-cypress": "^2.2.0",
     "node-fetch": "2.6.7",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.6",
     "postmark": "^2.8.1",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
