@@ -3,6 +3,7 @@
 [![CircleCI](https://circleci.com/gh/w3bdesign/dfweb/tree/master.svg?style=shield)](https://circleci.com/gh/w3bdesign/dfweb)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/w3bdesign/dfweb.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/w3bdesign/dfweb/context:javascript)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=w3bdesign_dfweb&metric=alert_status)](https://sonarcloud.io/dashboard?id=w3bdesign_dfweb)
+[![CodeQL](https://github.com/w3bdesign/dfweb/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/w3bdesign/dfweb/actions/workflows/codeql-analysis.yml)
 
 # Dfweb
 
