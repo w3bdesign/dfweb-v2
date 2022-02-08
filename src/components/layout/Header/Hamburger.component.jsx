@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
-import { Link } from "gatsby"
+
 import classNames from "classnames"
 
 import LINKS from "../../../constants/LINKS"
@@ -129,14 +129,13 @@ function Hamburger() {
                   {link.text}
                 </a>
               ) : (
-                <Link
+                <a
                   className="inline-block m-4 text-xl text-white hover:underline"
-                  activeClassName="underline"
                   data-testid={`mobil-${link.text}`}
-                  to={link.url}
+                  href={link.url}
                 >
                   {link.text}
-                </Link>
+                </a>
               )}
             </li>
           ))}
